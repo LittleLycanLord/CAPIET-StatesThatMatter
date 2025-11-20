@@ -158,5 +158,8 @@ MonoBehaviour:
   particleA: {fileID: 0}
   particleB: {fileID: 0}
   bondLength: 1
+  correctionIterations: 20
   lineWidth: 0.05
   bondColor: {r: 1, g: 1, b: 1, a: 1}
+  stiffness: 0.5
+  maxBondLengthMultiplier: 2

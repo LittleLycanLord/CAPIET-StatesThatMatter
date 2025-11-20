@@ -32,6 +32,7 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Bond Settings")]
         [SerializeField] private float bondLength = 1f;
+        [SerializeField] private int correctionIterations = 30;
         [SerializeField] private float lineWidth = 0.05f;
         [SerializeField] private Color bondColor = Color.white;
         [SerializeField] [Range(0f, 1f)] private float stiffness = 0.5f;
@@ -133,7 +134,7 @@ namespace LilLycanLord_Official
             
             // Determine constraint iterations based on stiffness
             // Low stiffness: 1 iteration, High stiffness: up to 50 iterations for very rigid constraints
-            int iterations = Mathf.Max(1, Mathf.RoundToInt(stiffness * 25f));
+            int iterations = Mathf.Max(1, Mathf.RoundToInt(stiffness * correctionIterations));
             
             for (int i = 0; i < iterations; i++)
             {
