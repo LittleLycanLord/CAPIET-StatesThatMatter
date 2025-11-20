@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4639485518091192756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6495817499631121836}
+  - component: {fileID: 2983696327513127984}
+  m_Layer: 0
+  m_Name: Debugging Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6495817499631121836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639485518091192756}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.76390034, y: -0.45865858, z: 17.355043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2983696327513127984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639485518091192756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56323368f49ff8f4db7cd4654d22c421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugOptions:
+  - text: Sample (0, 0)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #0
+  - text: Sample (0, 1)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #1
+  - text: Sample (0, 2)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #2
+  - text: Sample (0, 3)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #3
+  - text: Sample (0, 4)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #4
+  - text: Sample (1, 0)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #5
+  - text: Sample (1, 1)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #6
+  - text: Sample (1, 2)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #7
+  - text: Sample (1, 3)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #8
+  - text: Sample (1, 4)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #9
+  - text: Sample (2, 0)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #10
+  - text: Sample (2, 1)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #11
+  - text: Sample (2, 2)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #12
+  - text: Sample (2, 3)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #13
+  - text: Sample (2, 4)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #14
+  - text: Sample (3, 0)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #15
+  - text: Sample (3, 1)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #16
+  - text: Sample (3, 2)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #17
+  - text: Sample (3, 3)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #18
+  - text: Sample (3, 4)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #19
+  - text: Sample (4, 0)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #20
+  - text: Sample (4, 1)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #21
+  - text: Sample (4, 2)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #22
+  - text: Sample (4, 3)
+    enabled: 0
+    texture: {fileID: 0}
+    description: This is Sample #23
+  - text: Sample (4, 4)
+    enabled: 1
+    texture: {fileID: 0}
+    description: This is Sample #24
+  debugMode: 1
+  leftOffset: 20
+  topOffset: 20
+  width: 150
+  height: 30
+  gap: 10
+  optionsPerColumn: 5

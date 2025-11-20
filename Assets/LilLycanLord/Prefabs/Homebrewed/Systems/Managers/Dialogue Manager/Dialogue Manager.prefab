@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7784332975822391562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8490471663060721805}
+  - component: {fileID: 7789650472188115397}
+  m_Layer: 0
+  m_Name: Dialogue Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8490471663060721805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784332975822391562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1870584190438380355}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7789650472188115397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784332975822391562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f891a8945a36cd34c918c3d6f0df5d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.DialogueManager
+  persistAcrossScenes: 1
+  transferDataOnReplace: 1
+  autoRecreateOnDestroy: 1
+  currentDialogue: {fileID: 0}
+  isDialogueActive: 0
+  currentDialogueUI: {fileID: 0}
+  activeCharacters: []
+  currentLineIndex: 0
+  spokesCharacters: []
+  defaultDialogueUI: {fileID: 3307176689587235385}
+  registeredDialogueUIs: []
+  allowDialogueInterruption: 0
+  enablePlayerDisabling: 1
+  enableEventIntegration: 1
+  playerReEnableDelay: 0.1
+  maxActiveCharacters: 6
+  resetCharacterEmotionsAfterDialogue: 0
+  enableBackgroundMusic: 1
+  fadeOutMusicDuringDialogue: 0
+  musicFadeDuration: 1
+  debugMode: 1
+  showParsingDebug: 0
+  logCharacterStateChanges: 0
+  onDialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueInterrupted:
+    m_PersistentCalls:
+      m_Calls: []
+  onCharacterSpeakingStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onCharacterSpeakingStopped:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1001 &4256530601120885010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8490471663060721805}
+    m_Modifications:
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890299537599869612, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+      propertyPath: m_Name
+      value: Dialogue UI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+--- !u!224 &1870584190438380355 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2515148716410239569, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+  m_PrefabInstance: {fileID: 4256530601120885010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3307176689587235385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1654878982986744619, guid: 6abcc48eec1e3634b9a527b7e2da974d, type: 3}
+  m_PrefabInstance: {fileID: 4256530601120885010}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f391d0aa3b230e4e87f11d555576dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.DialogueUI
