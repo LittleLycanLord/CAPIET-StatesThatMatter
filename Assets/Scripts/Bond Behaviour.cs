@@ -115,6 +115,10 @@ namespace LilLycanLord_Official
         {
             lineRenderer.SetPosition(0, particleA.transform.position);
             lineRenderer.SetPosition(1, particleB.transform.position);
+            lineRenderer.startColor = bondColor;
+            lineRenderer.endColor = bondColor;
+            lineRenderer.startWidth = lineWidth;
+            lineRenderer.endWidth = lineWidth;
         }
         
         private void ApplyDistanceConstraint()

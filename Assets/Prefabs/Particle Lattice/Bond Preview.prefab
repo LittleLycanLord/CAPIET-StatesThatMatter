@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9113864967085452539
+--- !u!1 &4450311718327141542
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6118798953483336466}
-  - component: {fileID: 1417449141372455489}
-  - component: {fileID: 7558662136610622031}
+  - component: {fileID: 5477653420679032484}
+  - component: {fileID: 1249039576820400653}
   m_Layer: 0
-  m_Name: Bond
+  m_Name: Bond Preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6118798953483336466
+--- !u!4 &5477653420679032484
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113864967085452539}
+  m_GameObject: {fileID: 4450311718327141542}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!120 &1417449141372455489
+--- !u!120 &1249039576820400653
 LineRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113864967085452539}
+  m_GameObject: {fileID: 4450311718327141542}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -143,23 +142,3 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &7558662136610622031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113864967085452539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3255e5d9fde376541b5d46093f4e8b7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.BondBehaviour
-  particleA: {fileID: 0}
-  particleB: {fileID: 0}
-  bondLength: 1
-  correctionIterations: 40
-  lineWidth: 0.05
-  bondColor: {r: 1, g: 1, b: 1, a: 1}
-  stiffness: 0.5
-  maxBondLengthMultiplier: 2

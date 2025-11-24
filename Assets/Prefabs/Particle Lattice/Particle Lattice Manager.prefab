@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2274764461008953503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8417538012435270380}
+  m_Layer: 0
+  m_Name: Lattice Origin
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8417538012435270380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274764461008953503}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9168024218827020926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4448957413673344716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9168024218827020926}
+  - component: {fileID: 3804360709687776451}
+  m_Layer: 0
+  m_Name: Particle Lattice Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9168024218827020926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448957413673344716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8417538012435270380}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3804360709687776451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448957413673344716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953fdd471844773428d47c2b47bcf878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleLatticeManager
+  particlePrefab: {fileID: 571705121515823847, guid: d2b682924f70b3a46a30d0bccfb8cea6, type: 3}
+  bondPrefab: {fileID: 9113864967085452539, guid: b19a6bb8aaa3659419cf7db36c2f190f, type: 3}
+  latticeOrigin: {fileID: 2274764461008953503}
+  latticeRows: 4
+  latticeColumns: 4
+  createAsGas: 1
+  particleRadius: 1
+  particleMass: 1
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  bondLength: 1
+  bondWidth: 0.5
+  bondColor: {r: 1, g: 1, b: 1, a: 1}
+  bondStiffness: 0.98
+  maxBondLengthMultiplier: 2
+  dynamicBondLength: 1
+  dynamicBondWidth: 0.5
+  dynamicBondColor: {r: 0, g: 0, b: 1, a: 1}
+  dynamicBondStiffness: 0.98
+  dynamicMaxBondLengthMultiplier: 2
+  bondingProximity: 1.5
+  bondingMode: 0
+  bondCheckInterval: 0.2
+  maxDynamicBondsCreated: 2
