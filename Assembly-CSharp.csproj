@@ -57,6 +57,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEventManagerSimplified.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DMovementCore.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\ExampleSignalUser.cs" />
+    <Compile Include="Assets\Scripts\Temperature Brush.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
     <Compile Include="Assets\Scripts\Bond Behaviour.cs" />
@@ -153,6 +154,7 @@
     <Compile Include="Assets\Scripts\Particle Lattice Manager.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
+    <Compile Include="Assets\Scripts\Temperature Brush Collider.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerController.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerMovementSetup.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />

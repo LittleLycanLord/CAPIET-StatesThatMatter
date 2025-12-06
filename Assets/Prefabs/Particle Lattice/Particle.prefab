@@ -68,8 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac913569683df640a0146313a6c887d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleBehaviour
-  dragDistanceFromCamera: 10
   enableDragging: 1
+  currentTemperature: 0
+  dragDistanceFromCamera: 10
   dragSpeed: 20
   dragDamping: 5
   bondCheckInterval: 0.1
@@ -78,6 +79,8 @@ MonoBehaviour:
   bondPreviewPrefab: {fileID: 4450311718327141542, guid: 1d0d6b21bf6493548b3e1c3f6d434097, type: 3}
   bondPreviewColor: {r: 0, g: 0.92156863, b: 0.015686275, a: 1}
   bondPreviewWidth: 0.2
+  maxTemperature: 110
+  minTemperature: -10
 --- !u!54 &8777366569267362325
 Rigidbody:
   m_ObjectHideFlags: 0

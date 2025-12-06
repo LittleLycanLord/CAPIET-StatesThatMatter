@@ -19,7 +19,8 @@ namespace LilLycanLord_Official
         //* ╔══════════╗
         //* ║ Displays ║
         //* ╚══════════╝
-        // [Header("Displays")]
+        [Header("Displays")]
+        [SerializeField] private float currentTemperature = 30.0f;
 
         //* ╔════════╗
         //* ║ Fields ║
@@ -38,10 +39,31 @@ namespace LilLycanLord_Official
         [SerializeField] [Range(0f, 1f)] private float stiffness = 0.5f;
         [SerializeField] private float maxBondLengthMultiplier = 2f;
         
+        [Space(10)]
+        [Header("Temperature Settings")]
+        [SerializeField] [Tooltip("Minimum temperature in Celsius")] private float minTemperature = -10.0f;
+        [SerializeField] [Tooltip("Maximum temperature in Celsius")] private float maxTemperature = 110.0f;
+        
+        [Space(10)]
+        [Header("Phase Transition Settings")]
+        [SerializeField] [Tooltip("Temperature at which bond behaves as liquid (in Celsius)")] private float liquidTemperature = 50f;
+        [SerializeField] [Tooltip("Stiffness when at liquid temperature")] [Range(0f, 1f)] private float liquidStiffness = 0.5f;
+        [SerializeField] [Tooltip("Temperature at which bond behaves as solid (in Celsius)")] private float solidTemperature = 0f;
+        [SerializeField] [Tooltip("Stiffness when at solid temperature")] [Range(0f, 1f)] private float solidStiffness = 0.98f;
+        
+        [Space(10)]
+        [Header("Breaking Settings")]
+        [SerializeField] private bool canBreak = true;
+        [SerializeField] [Tooltip("Temperature at which bond breaks (in Celsius)")] private float breakingTemperature = 110f;
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
         private float fixedBondDistance;
+        private ParticleBehaviour particleABehaviour;
+        private ParticleBehaviour particleBBehaviour;
+        private float baseStiffness; // Store the original stiffness value
+        private float currentStiffness; // Current stiffness based on temperature
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -62,6 +84,10 @@ namespace LilLycanLord_Official
                 colliderA = particleA.GetComponent<SphereCollider>();
                 colliderB = particleB.GetComponent<SphereCollider>();
                 
+                // Get ParticleBehaviour components
+                particleABehaviour = particleA.GetComponent<ParticleBehaviour>();
+                particleBBehaviour = particleB.GetComponent<ParticleBehaviour>();
+                
                 // Get sphere radii (accounting for scale)
                 float radiusA = colliderA != null ? colliderA.radius * particleA.transform.localScale.x : 0f;
                 float radiusB = colliderB != null ? colliderB.radius * particleB.transform.localScale.x : 0f;
@@ -77,6 +103,10 @@ namespace LilLycanLord_Official
                 
                 // Fixed bond distance = radiusA + bondLength + radiusB (center to center distance)
                 fixedBondDistance = radiusA + bondLength + radiusB;
+                
+                // Store base stiffness value
+                baseStiffness = stiffness;
+                currentStiffness = stiffness;
             }
         }
         
@@ -85,6 +115,21 @@ namespace LilLycanLord_Official
             if (particleA != null && particleB != null && rbA != null && rbB != null)
             {
                 ApplyDistanceConstraint();
+            }
+        }
+        
+        void Update()
+        {
+            // Update temperature based on average of connected particles
+            UpdateTemperature();
+            
+            // Calculate dynamic stiffness based on temperature
+            CalculateDynamicStiffness();
+            
+            // Check if bond should break
+            if (canBreak && currentTemperature >= breakingTemperature)
+            {
+                BreakBond();
             }
         }
         
@@ -136,9 +181,9 @@ namespace LilLycanLord_Official
             float radiusB = colliderB != null ? colliderB.radius * particleB.transform.localScale.x : 0f;
             float maxAllowedDistance = radiusA + (bondLength * maxBondLengthMultiplier) + radiusB;
             
-            // Determine constraint iterations based on stiffness
+            // Determine constraint iterations based on current dynamic stiffness
             // Low stiffness: 1 iteration, High stiffness: up to 50 iterations for very rigid constraints
-            int iterations = Mathf.Max(1, Mathf.RoundToInt(stiffness * correctionIterations));
+            int iterations = Mathf.Max(1, Mathf.RoundToInt(currentStiffness * correctionIterations));
             
             for (int i = 0; i < iterations; i++)
             {
@@ -153,7 +198,7 @@ namespace LilLycanLord_Official
                 float targetDistance;
                 float correctionStrength;
                 
-                if (stiffness < 0.01f)
+                if (currentStiffness < 0.01f)
                 {
                     // Very low stiffness: only enforce max stretch limit
                     if (currentDistance > maxAllowedDistance)
@@ -171,7 +216,7 @@ namespace LilLycanLord_Official
                     // Normal stiffness: blend between stretchy and rigid
                     targetDistance = fixedBondDistance;
                     // Higher stiffness = stronger correction per iteration
-                    correctionStrength = Mathf.Lerp(0.3f, 1.0f, stiffness);
+                    correctionStrength = Mathf.Lerp(0.3f, 1.0f, currentStiffness);
                 }
                 
                 // Calculate correction needed
@@ -182,6 +227,73 @@ namespace LilLycanLord_Official
                 rbA.MovePosition(posA + correction);
                 rbB.MovePosition(posB - correction);
             }
+        }
+        
+        /// <summary>
+        /// Update bond temperature based on average of connected particles
+        /// </summary>
+        private void UpdateTemperature()
+        {
+            if (particleABehaviour == null || particleBBehaviour == null) return;
+            
+            // Calculate average temperature from both particles
+            float tempA = particleABehaviour.GetTemperature();
+            float tempB = particleBBehaviour.GetTemperature();
+            
+            currentTemperature = (tempA + tempB) / 2f;
+            
+            // Clamp to min/max range
+            currentTemperature = Mathf.Clamp(currentTemperature, minTemperature, maxTemperature);
+        }
+        
+        /// <summary>
+        /// Calculate dynamic stiffness based on current temperature
+        /// Interpolates between solid and liquid states
+        /// </summary>
+        private void CalculateDynamicStiffness()
+        {
+            // If temperatures are the same, no transition occurs
+            if (Mathf.Approximately(solidTemperature, liquidTemperature))
+            {
+                currentStiffness = baseStiffness;
+                return;
+            }
+            
+            // Determine the temperature range for interpolation
+            float tempRange = liquidTemperature - solidTemperature;
+            
+            // Calculate normalized position in temperature range (0 = solid, 1 = liquid)
+            float normalizedTemp = Mathf.Clamp01((currentTemperature - solidTemperature) / tempRange);
+            
+            // Interpolate stiffness based on temperature
+            // At solidTemperature: use solidStiffness
+            // At liquidTemperature: use liquidStiffness
+            currentStiffness = Mathf.Lerp(solidStiffness, liquidStiffness, normalizedTemp);
+            
+            // Update the serialized stiffness field for visualization in inspector
+            stiffness = currentStiffness;
+        }
+        
+        /// <summary>
+        /// Break the bond - remove from particles and destroy
+        /// </summary>
+        private void BreakBond()
+        {
+            Debug.Log($"Bond breaking at temperature {currentTemperature}°C (breaking point: {breakingTemperature}°C)");
+            
+            // Remove bond from particles
+            if (particleABehaviour != null)
+            {
+                particleABehaviour.RemoveBond(gameObject);
+            }
+            
+            if (particleBBehaviour != null)
+            {
+                particleBBehaviour.RemoveBond(gameObject);
+            }
+            
+            // Destroy this bond
+            Destroy(gameObject);
         }
                 
         /// <summary>

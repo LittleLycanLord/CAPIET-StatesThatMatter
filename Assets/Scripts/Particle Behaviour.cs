@@ -19,11 +19,14 @@ namespace LilLycanLord_Official
         private SphereCollider sphereCollider;
         private Rigidbody rb;
         private Transform bondingRadiusSprite;
+        private TemperatureBrush temperatureBrush;
 
         //* ╔══════════╗
         //* ║ Displays ║
         //* ╚══════════╝
-        // [Header("Displays")]
+        [Header("Displays")]
+        [SerializeField] private bool enableDragging = true;
+        [SerializeField] private float currentTemperature = 30.0f;
 
         //* ╔════════╗
         //* ║ Fields ║
@@ -31,7 +34,6 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Drag Settings")]
         [SerializeField] private float dragDistanceFromCamera = 10f;
-        [SerializeField] private bool enableDragging = true;
         [SerializeField] private float dragSpeed = 20f;
         [SerializeField] private float dragDamping = 15f;
         [SerializeField] private float bondCheckInterval = 0.1f;
@@ -43,6 +45,11 @@ namespace LilLycanLord_Official
         [SerializeField] private GameObject bondPreviewPrefab;
         [SerializeField] private Color bondPreviewColor = Color.yellow;
         [SerializeField] private float bondPreviewWidth = 2.0f;
+        
+        [Space(10)]
+        [Header("Temperature Settings")]
+        [SerializeField] [Tooltip("Maximum temperature in Celsius")] private float maxTemperature = 110.0f;
+        [SerializeField] [Tooltip("Minimum temperature in Celsius")] private float minTemperature = -10.0f;
         
         //* ╔════════════╗
         //* ║ Attributes ║
@@ -78,6 +85,9 @@ namespace LilLycanLord_Official
             // Find the lattice manager in the scene
             latticeManager = FindObjectOfType<ParticleLatticeManager>();
             
+            // Find the temperature brush in the scene
+            temperatureBrush = FindObjectOfType<TemperatureBrush>();
+            
             // Store original drag value
             if (rb != null)
             {
@@ -100,6 +110,12 @@ namespace LilLycanLord_Official
         void Update() 
         {
             if (!enableDragging) return;
+            
+            // Don't allow dragging if temperature brush is in heating or cooling mode
+            if (temperatureBrush != null && temperatureBrush.IsAnyModeActive())
+            {
+                return;
+            }
 
             HandleTouchInput();
         }
@@ -283,6 +299,30 @@ namespace LilLycanLord_Official
         {
             connectedBonds.RemoveAll(bond => bond == null);
             return connectedBonds.Count;
+        }
+        
+        /// <summary>
+        /// Get the current temperature of this particle
+        /// </summary>
+        public float GetTemperature()
+        {
+            return currentTemperature;
+        }
+        
+        /// <summary>
+        /// Increase particle temperature
+        /// </summary>
+        public void IncreaseTemperature(float amount)
+        {
+            currentTemperature = Mathf.Min(currentTemperature + amount, maxTemperature);
+        }
+        
+        /// <summary>
+        /// Decrease particle temperature
+        /// </summary>
+        public void DecreaseTemperature(float amount)
+        {
+            currentTemperature = Mathf.Max(currentTemperature - amount, minTemperature);
         }
         
         /// <summary>

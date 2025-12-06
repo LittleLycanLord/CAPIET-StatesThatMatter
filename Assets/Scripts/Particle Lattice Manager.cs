@@ -10,6 +10,7 @@ namespace LilLycanLord_Official
         //* ╔════════════╗
         //* ║ Components ║
         //* ╚════════════╝
+        private TemperatureBrush temperatureBrush;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -74,7 +75,10 @@ namespace LilLycanLord_Official
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
         //* ╚═══════════════╝
-        void Awake() { }
+        void Awake() 
+        {
+            temperatureBrush = FindObjectOfType<TemperatureBrush>();
+        }
 
         void Start() { }
 
@@ -617,6 +621,12 @@ namespace LilLycanLord_Official
         public void SetBondingMode(bool enabled)
         {
             bondingMode = enabled;
+            
+            // Notify temperature brush to turn off when bonding is enabled
+            if (enabled && temperatureBrush != null)
+            {
+                temperatureBrush.OnBondingModeEnabled();
+            }
         }
         
         /// <summary>
