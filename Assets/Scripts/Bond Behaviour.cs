@@ -126,6 +126,9 @@ namespace LilLycanLord_Official
             // Calculate dynamic stiffness based on temperature
             CalculateDynamicStiffness();
             
+            // Apply drag based on stiffness
+            ApplyStiffnessDrag();
+            
             // Check if bond should break
             if (canBreak && currentTemperature >= breakingTemperature)
             {
@@ -294,6 +297,47 @@ namespace LilLycanLord_Official
             
             // Destroy this bond
             Destroy(gameObject);
+        }
+        
+        /// <summary>
+        /// Apply drag to connected particles based on bond stiffness
+        /// Higher stiffness = more drag, stiffness of 1.0 = complete freeze
+        /// </summary>
+        private void ApplyStiffnessDrag()
+        {
+            if (rbA == null || rbB == null) return;
+            
+            // Calculate drag multiplier based on stiffness
+            // At 0 stiffness: no drag (1.0 multiplier)
+            // At 1 stiffness: complete freeze (0.0 multiplier)
+            float dragEffect = Mathf.Lerp(0f, 20f, currentStiffness);
+            
+            // Apply drag to both rigidbodies
+            // Higher stiffness = higher drag = less movement
+            rbA.linearDamping = dragEffect;
+            rbB.linearDamping = dragEffect;
+            
+            // At maximum stiffness, also apply angular drag to prevent rotation
+            if (currentStiffness >= 0.95f)
+            {
+                float angularDragEffect = Mathf.Lerp(0f, 10f, (currentStiffness - 0.95f) / 0.05f);
+                rbA.angularDamping = angularDragEffect;
+                rbB.angularDamping = angularDragEffect;
+            }
+            
+            // Freeze particles when bond reaches minimum temperature
+            if (currentTemperature <= minTemperature)
+            {
+                // Lock X and Y position (allow Z for 2D depth)
+                rbA.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+                rbB.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+            }
+            else
+            {
+                // Unlock position constraints when temperature rises above minimum
+                rbA.constraints = RigidbodyConstraints.None;
+                rbB.constraints = RigidbodyConstraints.None;
+            }
         }
                 
         /// <summary>
