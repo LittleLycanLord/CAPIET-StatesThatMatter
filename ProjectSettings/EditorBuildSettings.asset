@@ -12,6 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/LEVEL_SELECT.unity
     guid: 5fe58503a72ee2d4ba9a8695d2bb56a8
   - enabled: 1
+    path: Assets/Scenes/Prototype Demonstration/Phase Changes/CONDENSATION.unity
+    guid: ff6044d323c29b74383be9e47158e750
+  - enabled: 1
+    path: Assets/Scenes/Prototype Demonstration/Phase Changes/DEPOSITION.unity
+    guid: 6d15d4112fe1ea043af2d0a900881431
+  - enabled: 1
+    path: Assets/Scenes/Prototype Demonstration/Phase Changes/EVAPORATION.unity
+    guid: dc616d05a2ab5d646933e28bbc77f344
+  - enabled: 1
+    path: Assets/Scenes/Prototype Demonstration/Phase Changes/MELTING & FREEZING.unity
+    guid: 72c08ec15bb91e746b1e6b4bd59d7e96
+  - enabled: 1
+    path: Assets/Scenes/Prototype Demonstration/Phase Changes/SUBLIMATION.unity
+    guid: 9ee75d3d3d2fee348944f177a1def528
+  - enabled: 1
     path: Assets/Scenes/Prototype Demonstration/GAS.unity
     guid: 63e63aaf633abed4d9305f860d453f52
   - enabled: 1

@@ -39,12 +39,29 @@ namespace LilLycanLord_Official
         [SerializeField] private Color particleColor = Color.white;
         
         [Space(10)]
+        [Header("Particle Temperature Settings")]
+        [SerializeField] [Tooltip("Initial temperature for particles in Celsius")] private float particleTemperature = 30f;
+        [SerializeField] [Tooltip("Minimum temperature in Celsius")] private float particleMinTemperature = -10f;
+        [SerializeField] [Tooltip("Maximum temperature in Celsius")] private float particleMaxTemperature = 110f;
+        
+        [Space(10)]
         [Header("Bond Attributes")]
         [SerializeField] private float bondLength = 1f;
         [SerializeField] private float bondWidth = 0.5f;
         [SerializeField] private Color bondColor = Color.white;
         [SerializeField] [Range(0f, 1f)] private float bondStiffness = 0.98f;
         [SerializeField] private float maxBondLengthMultiplier = 2f;
+        
+        [Space(10)]
+        [Header("Bond Temperature Settings")]
+        [SerializeField] [Tooltip("Minimum temperature in Celsius")] private float bondMinTemperature = -10f;
+        [SerializeField] [Tooltip("Maximum temperature in Celsius")] private float bondMaxTemperature = 110f;
+        [SerializeField] [Tooltip("Temperature at which bond behaves as liquid")] private float bondLiquidTemperature = 50f;
+        [SerializeField] [Tooltip("Stiffness when at liquid temperature")] [Range(0f, 1f)] private float bondLiquidStiffness = 0.5f;
+        [SerializeField] [Tooltip("Temperature at which bond behaves as solid")] private float bondSolidTemperature = 0f;
+        [SerializeField] [Tooltip("Stiffness when at solid temperature")] [Range(0f, 1f)] private float bondSolidStiffness = 0.98f;
+        [SerializeField] private bool bondCanBreak = true;
+        [SerializeField] [Tooltip("Temperature at which bond breaks")] private float bondBreakingTemperature = 110f;
         
         [Space(10)]
         [Header("Dynamic Bond Attributes")]
@@ -212,6 +229,23 @@ namespace LilLycanLord_Official
             
             // Scale particle to match radius
             particle.transform.localScale = Vector3.one * particleRadius * 2f;
+            
+            // Configure temperature settings
+            ParticleBehaviour particleBehaviour = particle.GetComponent<ParticleBehaviour>();
+            if (particleBehaviour != null)
+            {
+                // Use reflection to set private serialized temperature fields
+                var currentTempField = typeof(ParticleBehaviour).GetField("currentTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var minTempField = typeof(ParticleBehaviour).GetField("minTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var maxTempField = typeof(ParticleBehaviour).GetField("maxTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                
+                if (currentTempField != null) currentTempField.SetValue(particleBehaviour, particleTemperature);
+                if (minTempField != null) minTempField.SetValue(particleBehaviour, particleMinTemperature);
+                if (maxTempField != null) maxTempField.SetValue(particleBehaviour, particleMaxTemperature);
+            }
         }
         
         private void GenerateBonds()
@@ -265,6 +299,24 @@ namespace LilLycanLord_Official
                 var maxBondLengthMultiplierField = typeof(BondBehaviour).GetField("maxBondLengthMultiplier", 
                     System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
                 
+                // Temperature and phase transition fields
+                var minTempField = typeof(BondBehaviour).GetField("minTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var maxTempField = typeof(BondBehaviour).GetField("maxTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var liquidTempField = typeof(BondBehaviour).GetField("liquidTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var liquidStiffField = typeof(BondBehaviour).GetField("liquidStiffness",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var solidTempField = typeof(BondBehaviour).GetField("solidTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var solidStiffField = typeof(BondBehaviour).GetField("solidStiffness",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var canBreakField = typeof(BondBehaviour).GetField("canBreak",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var breakingTempField = typeof(BondBehaviour).GetField("breakingTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                
                 if (particleAField != null) particleAField.SetValue(bondBehaviour, particleA);
                 if (particleBField != null) particleBField.SetValue(bondBehaviour, particleB);
                 if (bondLengthField != null) bondLengthField.SetValue(bondBehaviour, bondLength);
@@ -272,6 +324,16 @@ namespace LilLycanLord_Official
                 if (bondColorField != null) bondColorField.SetValue(bondBehaviour, bondColor);
                 if (stiffnessField != null) stiffnessField.SetValue(bondBehaviour, bondStiffness);
                 if (maxBondLengthMultiplierField != null) maxBondLengthMultiplierField.SetValue(bondBehaviour, maxBondLengthMultiplier);
+                
+                // Set temperature settings
+                if (minTempField != null) minTempField.SetValue(bondBehaviour, bondMinTemperature);
+                if (maxTempField != null) maxTempField.SetValue(bondBehaviour, bondMaxTemperature);
+                if (liquidTempField != null) liquidTempField.SetValue(bondBehaviour, bondLiquidTemperature);
+                if (liquidStiffField != null) liquidStiffField.SetValue(bondBehaviour, bondLiquidStiffness);
+                if (solidTempField != null) solidTempField.SetValue(bondBehaviour, bondSolidTemperature);
+                if (solidStiffField != null) solidStiffField.SetValue(bondBehaviour, bondSolidStiffness);
+                if (canBreakField != null) canBreakField.SetValue(bondBehaviour, bondCanBreak);
+                if (breakingTempField != null) breakingTempField.SetValue(bondBehaviour, bondBreakingTemperature);
             }
             
             allBonds.Add(bond);
@@ -313,6 +375,24 @@ namespace LilLycanLord_Official
                 var maxBondLengthMultiplierField = typeof(BondBehaviour).GetField("maxBondLengthMultiplier", 
                     System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
                 
+                // Temperature and phase transition fields
+                var minTempField = typeof(BondBehaviour).GetField("minTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var maxTempField = typeof(BondBehaviour).GetField("maxTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var liquidTempField = typeof(BondBehaviour).GetField("liquidTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var liquidStiffField = typeof(BondBehaviour).GetField("liquidStiffness",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var solidTempField = typeof(BondBehaviour).GetField("solidTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var solidStiffField = typeof(BondBehaviour).GetField("solidStiffness",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var canBreakField = typeof(BondBehaviour).GetField("canBreak",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var breakingTempField = typeof(BondBehaviour).GetField("breakingTemperature",
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                
                 if (particleAField != null) particleAField.SetValue(bondBehaviour, particleA);
                 if (particleBField != null) particleBField.SetValue(bondBehaviour, particleB);
                 if (bondLengthField != null) bondLengthField.SetValue(bondBehaviour, dynamicBondLength);
@@ -321,6 +401,16 @@ namespace LilLycanLord_Official
 
                 if (stiffnessField != null) stiffnessField.SetValue(bondBehaviour, dynamicBondStiffness);
                 if (maxBondLengthMultiplierField != null) maxBondLengthMultiplierField.SetValue(bondBehaviour, dynamicMaxBondLengthMultiplier);
+                
+                // Set temperature settings (use same as regular bonds)
+                if (minTempField != null) minTempField.SetValue(bondBehaviour, bondMinTemperature);
+                if (maxTempField != null) maxTempField.SetValue(bondBehaviour, bondMaxTemperature);
+                if (liquidTempField != null) liquidTempField.SetValue(bondBehaviour, bondLiquidTemperature);
+                if (liquidStiffField != null) liquidStiffField.SetValue(bondBehaviour, bondLiquidStiffness);
+                if (solidTempField != null) solidTempField.SetValue(bondBehaviour, bondSolidTemperature);
+                if (solidStiffField != null) solidStiffField.SetValue(bondBehaviour, bondSolidStiffness);
+                if (canBreakField != null) canBreakField.SetValue(bondBehaviour, bondCanBreak);
+                if (breakingTempField != null) breakingTempField.SetValue(bondBehaviour, bondBreakingTemperature);
             }
             
             allBonds.Add(bond);
@@ -614,19 +704,24 @@ namespace LilLycanLord_Official
         /// Check if bonding mode is currently enabled
         /// </summary>
         public bool IsBondingModeEnabled() => bondingMode;
-        
+
         /// <summary>
         /// Toggle bonding mode on/off
         /// </summary>
         public void SetBondingMode(bool enabled)
         {
             bondingMode = enabled;
-            
+
             // Notify temperature brush to turn off when bonding is enabled
             if (enabled && temperatureBrush != null)
             {
                 temperatureBrush.OnBondingModeEnabled();
             }
+        }
+        
+        public void DisableBondingMode()
+        {
+            bondingMode = false;
         }
         
         /// <summary>

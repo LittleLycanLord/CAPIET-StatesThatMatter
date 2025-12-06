@@ -244,17 +244,10 @@ namespace LilLycanLord_Official
                         instance.TransferDataToNewInstance(this);
                     }
 
-                    //* Destroy the old instance and replace it
-                    SceneTransitionManager oldInstance = instance;
-                    instance = this;
-
-                    if (oldInstance != null && oldInstance.gameObject != this.gameObject)
-                    {
-                        isBeingDestroyed = true;
-                        Destroy(oldInstance.gameObject);
-                    }
-
-                    InitializeSingleton();
+                    //* Keep the old instance, destroy the new duplicate
+                    Debug.LogWarning($"[{nameof(SceneTransitionManager)}] Duplicate instance detected. Keeping the original instance and destroying the new one.");
+                    Destroy(this.gameObject);
+                    return;
                 }
             }
 

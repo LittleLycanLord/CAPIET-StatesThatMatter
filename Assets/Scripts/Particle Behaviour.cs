@@ -326,6 +326,22 @@ namespace LilLycanLord_Official
         }
         
         /// <summary>
+        /// Get the minimum temperature threshold
+        /// </summary>
+        public float GetMinTemperature()
+        {
+            return minTemperature;
+        }
+        
+        /// <summary>
+        /// Get the maximum temperature threshold
+        /// </summary>
+        public float GetMaxTemperature()
+        {
+            return maxTemperature;
+        }
+        
+        /// <summary>
         /// Update the size of the bonding radius sprite based on lattice manager settings
         /// </summary>
         private void UpdateBondingRadiusSize()

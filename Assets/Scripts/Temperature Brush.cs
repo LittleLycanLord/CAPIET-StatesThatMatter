@@ -213,6 +213,11 @@ namespace LilLycanLord_Official
                 }
             }
         }
+
+        public void DisableHeatingMode()
+        {
+            heatingMode = false;
+        }
         
         /// <summary>
         /// Enable cooling mode and disable heating mode and bonding
@@ -230,6 +235,11 @@ namespace LilLycanLord_Official
                     latticeManager.SetBondingMode(false);
                 }
             }
+        }
+
+        public void DisableCoolingMode()
+        {
+            coolingMode = false;
         }
         
         /// <summary>

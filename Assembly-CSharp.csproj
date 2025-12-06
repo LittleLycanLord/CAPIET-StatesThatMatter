@@ -66,7 +66,6 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\HoverableSample.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DJumpSystem.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
-    <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Interaction Scripts\ExampleHoldInteractable.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerInputHandler.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Progression Manager\GameProgressionSaverSample.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSequencer.cs" />
@@ -80,7 +79,6 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitions\SampleTransition.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
-    <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Usage Examples\EditorUtilitiesDemo.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSceneSwitching.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\TypewriterText.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Scriptable Objects\Sound.cs" />
@@ -156,6 +154,7 @@
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
     <Compile Include="Assets\Scripts\Temperature Brush Collider.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Particle Color Prototype.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerMovementSetup.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingMaxTweens.cs" />
