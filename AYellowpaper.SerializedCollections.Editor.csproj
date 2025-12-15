@@ -48,40 +48,40 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.7f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\SearchResultEntry.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\SerializedDictionaryInstanceDrawer.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\Matchers.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Data\ElementSettings.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\LabelWidth.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\RectUtility.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorEditor.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\NumericMatcher.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Data\ElementData.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\Implementors\IntSteppingGenerator.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\States\DefaultListState.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\Implementors\EnumGenerator.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\States\ListState.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\SerializedDictionaryDrawer.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\EnumMatcher.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorAttribute.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGenerator.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Data\PropertyData.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\SCEditorUtility.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\PagingElement.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\Matcher.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorCache.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\GUIEnabledScope.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\ModificationType.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\SearchQuery.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\PropertySearchResult.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\States\SearchListState.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Settings\EditorUserSettingsProvider.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\StringMatcher.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorSelectorWindow.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorData.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\Implementors\IntRangeGenerator.cs" />
-    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\SCEnumUtility.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Settings\EditorUserSettings.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\SearchResultEntry.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\SerializedDictionaryInstanceDrawer.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\Matchers.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Data\ElementSettings.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorEditor.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Data\ElementData.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\Implementors\IntSteppingGenerator.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\States\DefaultListState.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\States\ListState.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\EnumMatcher.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\KeyListGenerators\KeyListGeneratorAttribute.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\SCEditorUtility.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\PagingElement.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\SearchQuery.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\PropertySearchResult.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Search\Matchers\StringMatcher.cs" />
+    <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\Utility\SCEnumUtility.cs" />
     <Compile Include="Assets\Plugins\SerializedCollections\Editor\Scripts\DisplayType.cs" />
   </ItemGroup>
   <ItemGroup>

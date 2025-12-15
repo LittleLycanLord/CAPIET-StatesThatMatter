@@ -49,13 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
-    <Compile Include="Assets\Scripts\Scene Traversal Script.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Screen Container Generator.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingDescr.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DMovementCore.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\ExampleSignalUser.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
-    <Compile Include="Assets\Scripts\Bond Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitionManagerSample.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\HoverableSample.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Progression Manager\GameProgressionSaverSample.cs" />
@@ -74,7 +73,6 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\IHasSignals.cs" />
     <Compile Include="Assets\LeanTween\Testing\FollowingTests.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Beat Manager\Sample\BeatManagerSample.cs" />
-    <Compile Include="Assets\Scripts\Particle Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Audio Manager\Sample\SampleSoundPlayer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Dialogue Manager\DialogueManager.cs" />
@@ -86,15 +84,16 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\CanvasFader.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingRotate.cs" />
-    <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Camera View Manager\CameraViewManager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\Dialogue Controls\DialogueControls.cs" />
+    <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Camera View Manager\CameraViewManager.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Particle Color Prototype.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Scriptable Objects\Character.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitionManager.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing240.cs" />
     <Compile Include="Assets\LeanTween\Testing\Scripts\LeanPool.cs" />
     <Compile Include="Assets\LeanTween\Testing\PerformanceTests.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Bool Based Inspector Field\BoolBasedInspectorField.cs" />
-    <Compile Include="Assets\Scripts\Particle Lattice.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Particle Lattice Manager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ColorShifter.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEventManager.cs" />
@@ -107,11 +106,12 @@
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Clear Debug Log\ClearDebugLog.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Particle Lattice.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\General Controls\GeneralInputManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\PlayerIsInTrigger.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEventManagerSimplified.cs" />
-    <Compile Include="Assets\Scripts\Temperature Brush.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Temperature Brush.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DJumpSystem.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
@@ -127,9 +127,11 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\TypewriterText.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\Billboarding\Billboarding.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Particle Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\PopUpObject.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Debugging Manager\DebuggingManager.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Bond Behaviour.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\HealthBar.cs" />
@@ -142,7 +144,9 @@
     <Compile Include="Assets\LeanTween\Testing\TestingColorTweening.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing243.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Platformer Movement.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Scene Traversal Script.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Colored Hierarchy\ColoredHierarchy.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Interaction Scripts\GeneralPlayerInteraction.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\PixelViewMaker.cs" />
@@ -153,15 +157,12 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\General Controls\GeneralControls.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DMovementAnimator.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
-    <Compile Include="Assets\Scripts\Screen Container Generator.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\Dialogue Controls\DialogueInputManager.cs" />
-    <Compile Include="Assets\Scripts\Particle Lattice Manager.cs" />
-    <Compile Include="Assets\Scripts\Temperature Brush Collider.cs" />
-    <Compile Include="Assets\Scripts\Particle Color Prototype.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Temperature Brush Collider.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Audio Manager\AudioManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
   </ItemGroup>
