@@ -1,6 +1,7 @@
 using LilLycanLord_Official;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.InputSystem;
 
 namespace LilLycanLord_Official
 {
@@ -38,6 +39,10 @@ namespace LilLycanLord_Official
         [SerializeField] private float groundCheckDistance = 0.1f;
         [SerializeField] private LayerMask groundLayer;
         
+        [Space(10)]
+        [Header("Dev Settings")]
+        [SerializeField] private bool devmode = true;
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
@@ -45,6 +50,7 @@ namespace LilLycanLord_Official
         private bool movingLeft = false;
         private bool movingRight = false;
         private float moveDirection = 0f;
+        private bool inputEnabled = true; // Control input without disabling the script
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -72,13 +78,51 @@ namespace LilLycanLord_Official
 
         void Update() 
         {
+            // Dev mode keyboard controls
+            if (inputEnabled && devmode && Keyboard.current != null)
+            {
+                // A key for left movement
+                if (Keyboard.current[Key.A].wasPressedThisFrame)
+                {
+                    movingLeft = true;
+                }
+                if (Keyboard.current[Key.A].wasReleasedThisFrame)
+                {
+                    movingLeft = false;
+                }
+                
+                // D key for right movement
+                if (Keyboard.current[Key.D].wasPressedThisFrame)
+                {
+                    movingRight = true;
+                }
+                if (Keyboard.current[Key.D].wasReleasedThisFrame)
+                {
+                    movingRight = false;
+                }
+                
+                // Space for jump
+                if (Keyboard.current[Key.Space].wasPressedThisFrame)
+                {
+                    Jump();
+                }
+            }
+            
             // Check if grounded
             CheckGrounded();
             
-            // Calculate move direction based on button states
-            moveDirection = 0f;
-            if (movingLeft) moveDirection -= 1f;
-            if (movingRight) moveDirection += 1f;
+            // Calculate move direction based on button states (only if input enabled)
+            if (inputEnabled)
+            {
+                moveDirection = 0f;
+                if (movingLeft) moveDirection -= 1f;
+                if (movingRight) moveDirection += 1f;
+            }
+            else
+            {
+                // When input disabled, reset movement flags
+                moveDirection = 0f;
+            }
             
             // Update animator parameters
             UpdateAnimator();
@@ -86,17 +130,22 @@ namespace LilLycanLord_Official
         
         void FixedUpdate()
         {
-            // Apply horizontal movement
-            if (moveDirection != 0f)
+            // Only apply player-controlled movement if input is enabled
+            if (inputEnabled)
             {
-                rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
+                // Apply horizontal movement
+                if (moveDirection != 0f)
+                {
+                    rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
+                }
+                else
+                {
+                    // Decay horizontal velocity when no input
+                    float newXVelocity = Mathf.MoveTowards(rb.linearVelocity.x, 0f, deceleration * Time.fixedDeltaTime);
+                    rb.linearVelocity = new Vector2(newXVelocity, rb.linearVelocity.y);
+                }
             }
-            else
-            {
-                // Decay horizontal velocity when no input
-                float newXVelocity = Mathf.MoveTowards(rb.linearVelocity.x, 0f, deceleration * Time.fixedDeltaTime);
-                rb.linearVelocity = new Vector2(newXVelocity, rb.linearVelocity.y);
-            }
+            // When input disabled, external scripts (like GoalBehaviour) control velocity
             
             // Update velocity display values
             currentXVelocity = rb.linearVelocity.x;
@@ -150,12 +199,30 @@ namespace LilLycanLord_Official
         //* ╚══════════════════════╝
         
         /// <summary>
+        /// Enable or disable player input
+        /// </summary>
+        public void SetInputEnabled(bool enabled)
+        {
+            inputEnabled = enabled;
+            if (!enabled)
+            {
+                // Clear input flags when disabling
+                movingLeft = false;
+                movingRight = false;
+                moveDirection = 0f;
+            }
+        }
+        
+        /// <summary>
         /// Called by UIVirtualButton's buttonStateOutputEvent for left movement
         /// Parameter is true when button is held, false when released
         /// </summary>
         public void SetMovingLeft(bool isPressed)
         {
-            movingLeft = isPressed;
+            if (inputEnabled)
+            {
+                movingLeft = isPressed;
+            }
         }
         
         /// <summary>
@@ -164,7 +231,10 @@ namespace LilLycanLord_Official
         /// </summary>
         public void SetMovingRight(bool isPressed)
         {
-            movingRight = isPressed;
+            if (inputEnabled)
+            {
+                movingRight = isPressed;
+            }
         }
         
         /// <summary>
@@ -172,7 +242,7 @@ namespace LilLycanLord_Official
         /// </summary>
         public void Jump()
         {
-            if (isGrounded)
+            if (inputEnabled && isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
             }

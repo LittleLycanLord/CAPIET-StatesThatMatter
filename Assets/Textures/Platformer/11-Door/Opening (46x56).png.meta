@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c91ad071ae03314eaf71e2b256c4b5c
+guid: 5f1c8aafa4f27bf40b15c73e15f0fa9c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run (78x58)-sheet_0
+      name: Opening (46x56)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 78
-        height: 58
+        width: 46
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec936ac35c0bbca46b8403aa71eee2a1
-      internalID: 783760954
+      spriteID: 596446b41becafd4898ad0db280a8ae9
+      internalID: -684142374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run (78x58)-sheet_1
+      name: Opening (46x56)_1
       rect:
         serializedVersion: 2
-        x: 78
+        x: 46
         y: 0
-        width: 78
-        height: 58
+        width: 46
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ce23b7548b9d2e4895833561940a308
-      internalID: 2025431877
+      spriteID: fa939ff61cb084c47b580e53bbba1d57
+      internalID: -201563630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run (78x58)-sheet_2
+      name: Opening (46x56)_2
       rect:
         serializedVersion: 2
-        x: 156
+        x: 92
         y: 0
-        width: 78
-        height: 58
+        width: 46
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949f5d840988d5741a906984c05646fd
-      internalID: -19654068
+      spriteID: b9fef974503e39649abe9414497d4a2b
+      internalID: 291781867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run (78x58)-sheet_3
+      name: Opening (46x56)_3
       rect:
         serializedVersion: 2
-        x: 234
+        x: 138
         y: 0
-        width: 78
-        height: 58
+        width: 46
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29e3b45f6ba67fb4b97e7eba397c3154
-      internalID: -508599208
+      spriteID: d3e12e1dc2f0f0c41bee27b886f21fa5
+      internalID: 1174796904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run (78x58)-sheet_4
+      name: Opening (46x56)_4
       rect:
         serializedVersion: 2
-        x: 312
+        x: 184
         y: 0
-        width: 78
-        height: 58
+        width: 46
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,74 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6553adae712d494f95059210e113c1f
-      internalID: -608383558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)-sheet_5
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4793e13a40ad7fe4c9d21919ffeb26fe
-      internalID: -1992097741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)-sheet_6
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d32183ce9c533e24cb27e4b40f993606
-      internalID: 166141004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run (78x58)-sheet_7
-      rect:
-        serializedVersion: 2
-        x: 546
-        y: 0
-        width: 78
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fb4b321453372c4ea335e755fadbbbd
-      internalID: 130835079
+      spriteID: c00b5dc190ff07f428e9147020b94520
+      internalID: 1521988341
       vertices: []
       indices: 
       edges: []
@@ -299,16 +233,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":78.0,"y":58.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":46.0,"y":56.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Run (78x58)-sheet_0: 783760954
-      Run (78x58)-sheet_1: 2025431877
-      Run (78x58)-sheet_2: -19654068
-      Run (78x58)-sheet_3: -508599208
-      Run (78x58)-sheet_4: -608383558
-      Run (78x58)-sheet_5: -1992097741
-      Run (78x58)-sheet_6: 166141004
-      Run (78x58)-sheet_7: 130835079
+      Opening (46x56)_0: -684142374
+      Opening (46x56)_1: -201563630
+      Opening (46x56)_2: 291781867
+      Opening (46x56)_3: 1174796904
+      Opening (46x56)_4: 1521988341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

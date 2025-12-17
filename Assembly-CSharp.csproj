@@ -51,6 +51,7 @@
     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Scripts\Particle System\Screen Container Generator.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingDescr.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Entrance Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DMovementCore.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\ExampleSignalUser.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\IHasSignals.cs" />
     <Compile Include="Assets\LeanTween\Testing\FollowingTests.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Player Door Animation.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Beat Manager\Sample\BeatManagerSample.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Audio Manager\Sample\SampleSoundPlayer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\General Controls\GeneralInputManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\PlayerIsInTrigger.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Goal Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEventManagerSimplified.cs" />
     <Compile Include="Assets\Scripts\Particle System\Temperature Brush.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
