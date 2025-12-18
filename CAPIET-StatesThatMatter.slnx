@@ -1,7 +1,10 @@
 ﻿<Solution>
   <Project Path="AYellowpaper.SerializedCollections.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="PrimeTween.Demo.csproj" />
   <Project Path="AYellowpaper.SerializedCollections.Editor.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="PrimeTween.Debug.csproj" />
+  <Project Path="PrimeTween.Installer.csproj" />
 </Solution>

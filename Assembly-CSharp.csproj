@@ -95,6 +95,7 @@
     <Compile Include="Assets\LeanTween\Testing\Scripts\LeanPool.cs" />
     <Compile Include="Assets\LeanTween\Testing\PerformanceTests.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Bool Based Inspector Field\BoolBasedInspectorField.cs" />
+    <Compile Include="Assets\Scripts\UI\Button Behaviour.cs" />
     <Compile Include="Assets\Scripts\Particle System\Particle Lattice Manager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ColorShifter.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
@@ -1271,6 +1272,10 @@
       <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PrimeTween.Runtime">
+      <HintPath>Library\ScriptAssemblies\PrimeTween.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1427,6 +1432,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PrimeTween.Editor">
+      <HintPath>Library\ScriptAssemblies\PrimeTween.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1474,7 +1483,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj" />
+    <ProjectReference Include="PrimeTween.Demo.csproj" />
+    <ProjectReference Include="PrimeTween.Debug.csproj" />
     <ProjectReference Include="AYellowpaper.SerializedCollections.Editor.csproj" />
+    <ProjectReference Include="PrimeTween.Installer.csproj" />
     <ProjectReference Include="AYellowpaper.SerializedCollections.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

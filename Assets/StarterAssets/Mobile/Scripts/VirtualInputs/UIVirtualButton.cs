@@ -12,6 +12,9 @@ public class UIVirtualButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     [Header("Output")]
     public BoolEvent buttonStateOutputEvent;
     public Event buttonClickOutputEvent;
+    
+    [Header("Settings")]
+    public float clickDelay = 0.0f; // Delay before firing click event
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -25,7 +28,14 @@ public class UIVirtualButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     
     public void OnPointerClick(PointerEventData eventData)
     {
-        OutputButtonClickEvent();
+        if (clickDelay > 0f)
+        {
+            Invoke(nameof(OutputButtonClickEvent), clickDelay);
+        }
+        else
+        {
+            OutputButtonClickEvent();
+        }
     }
 
     void OutputButtonStateValue(bool buttonState)
