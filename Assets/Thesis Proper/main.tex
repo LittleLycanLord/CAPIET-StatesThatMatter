@@ -1,0 +1,76 @@
+% !TEX program = pdflatex
+% !TEX root = main.tex
+
+\documentclass[12pt,a4paper]{report}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times} % Times New Roman font
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[backend=biber,style=apa]{biblatex}
+
+% Bibliography
+\addbibresource{references.bib}
+
+% 1.5 line spacing
+\onehalfspacing
+
+% Graphics path
+\graphicspath{{./}{./chapters/frontmatter/}{./chapters/chapter1/figures/}{./chapters/chapter2/figures/}{./chapters/chapter3/figures/}{./chapters/chapter4/figures/}{./chapters/chapter5/figures/}}
+
+% Chapter formatting
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\centering}
+  {\MakeUppercase{\chaptertitlename\ \thechapter}}{0pt}{\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+% Front matter
+\pagenumbering{roman}
+\input{chapters/frontmatter/titlepage}
+\clearpage
+
+\input{chapters/frontmatter/abstract}
+\clearpage
+
+\input{chapters/frontmatter/abstrak}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+% Main content
+\pagenumbering{arabic}
+\input{chapters/chapter1/chapter1}
+\input{chapters/chapter2/chapter2}
+\input{chapters/chapter3/chapter3}
+\input{chapters/chapter4/chapter4}
+\input{chapters/chapter5/chapter5}
+
+% References
+\printbibliography[heading=bibintoc,title={REFERENCES}]
+
+\end{document}

@@ -1,0 +1,1483 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Barrot2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8d4f9f89bf3ea62392b061194267b459}{%
+           family={Barrot},
+           familyi={B\bibinitperiod},
+           given={Jessie\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9199f32f151178ba2ce5d4b48348fc14}{%
+           family={Llenares},
+           familyi={L\bibinitperiod},
+           given={Ian\bibnamedelima I.},
+           giveni={I\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d3440bb3955dd9203ee25c6e0215517}{%
+           family={Rosario},
+           familyi={R\bibinitperiod},
+           given={Laarni\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0,
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ef43aabc6ff1dc50fb3aca8f443287d}
+      \strng{fullhash}{837cd9e1099f17dd7132ffb50040092e}
+      \strng{bibnamehash}{837cd9e1099f17dd7132ffb50040092e}
+      \strng{authorbibnamehash}{837cd9e1099f17dd7132ffb50040092e}
+      \strng{authornamehash}{4ef43aabc6ff1dc50fb3aca8f443287d}
+      \strng{authorfullhash}{837cd9e1099f17dd7132ffb50040092e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Education and Information Technologies}
+      \field{title}{Students' online learning challenges during the pandemic and how they cope with them: The case of the Philippines}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{pages}{7321\bibrangedash 7338}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s10639-021-10589-x
+      \endverb
+    \endentry
+    \entry{Blyznyuk2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4395a39c8eb9e45db6e5d840b5340ef7}{%
+           family={Blyznyuk},
+           familyi={B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=0ffa0135d3d26a060549df41f323470f}{%
+           family={Kachak},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{fullhash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{bibnamehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{authorbibnamehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{authornamehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{authorfullhash}{e49a8e44aad5949045e019fac094ef83}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2024}
+    \endentry
+    \entry{Bridges2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b60c0d4d7e79d2d9eb6b397ca8529c4c}{%
+           family={Bridges},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{fullhash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{bibnamehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{authorbibnamehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{authornamehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{authorfullhash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2015}
+    \endentry
+    \entry{Byusa2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07a62f192271f5b33877c34f54dcdf89}{%
+           family={Byusa},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c85a096938a9ace34dc654749b77022}{%
+           family={Kampire},
+           familyi={K\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c110c23120ddee2579c40d3a9893dc30}{%
+           family={Mwesigye},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9f24d67453c153e3352695e8415a3677}
+      \strng{fullhash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \strng{bibnamehash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \strng{authorbibnamehash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \strng{authornamehash}{9f24d67453c153e3352695e8415a3677}
+      \strng{authorfullhash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Heliyon}
+      \field{number}{5}
+      \field{title}{Game-based learning approach on students' motivation and understanding of Chemistry Concepts: A systematic review of literature}
+      \field{volume}{8}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1016/j.heliyon.2022.e09541
+      \endverb
+    \endentry
+    \entry{DataTab2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=baffc9eb0a3ef5b827ffe4be2917139f}{%
+           family={{DataTab Team}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{fullhash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{bibnamehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{authorbibnamehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{authornamehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{authorfullhash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Repeated Measures ANOVA}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://datatab.net/tutorial/anova-with-repeated-measures
+      \endverb
+      \verb{url}
+      \verb https://datatab.net/tutorial/anova-with-repeated-measures
+      \endverb
+    \endentry
+    \entry{DepEd2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9aa241175132ef785c4ee1902ca7d157}{%
+           family={{Department of Education}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Republic of the Philippines}%
+      }
+      \strng{namehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{fullhash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{bibnamehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{authorbibnamehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{authornamehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{authorfullhash}{9aa241175132ef785c4ee1902ca7d157}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MATATAG curriculum guides}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.deped.gov.ph/matatag-curriculum/
+      \endverb
+      \verb{url}
+      \verb https://www.deped.gov.ph/matatag-curriculum/
+      \endverb
+    \endentry
+    \entry{Diquito2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=726e32886e623c782a02d463a6c7822e}{%
+           family={Diquito},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{fullhash}{726e32886e623c782a02d463a6c7822e}
+      \strng{bibnamehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{authorbibnamehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{authornamehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{authorfullhash}{726e32886e623c782a02d463a6c7822e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Education and Technology (AJET)}
+      \field{number}{3}
+      \field{title}{Basic Education Curriculum under the Newly Implemented K to 10 (MATATAG) Curriculum in the Philippines: The Case of Science Education}
+      \field{volume}{3}
+      \field{year}{2024}
+      \field{pages}{123\bibrangedash 132}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.54536/ajet.v3i3.3396
+      \endverb
+    \endentry
+    \entry{Hecker2025}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a43977d35958943460b16a01e72ede31}{%
+           family={Hecker},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9a86a43597fb0b2c4c959d739e417cc}{%
+           family={Kalpokas},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ATLAS.ti}%
+      }
+      \strng{namehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{fullhash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{bibnamehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{authorbibnamehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{authornamehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{authorfullhash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Thematic Analysis in mixed methods approach}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://atlasti.com/guides/thematic-analysis/thematic-analysis-mixed-methods
+      \endverb
+      \verb{url}
+      \verb https://atlasti.com/guides/thematic-analysis/thematic-analysis-mixed-methods
+      \endverb
+    \endentry
+    \entry{Hu2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=abca94954939cb7608a6fa0b712c8a57}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7618ee6999106e60e657c25f4c63a743}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f79a37508c43f67edaf720f51ab6236e}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a8c4c910eb93e74e7f8b8458a0de6a0}{%
+           family={Schaaf},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f45b3078b55a0ffdf3924bdb76a1d666}{%
+           family={Kester},
+           familyi={K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7dc2e29f2339be74ae256fda4541d47f}
+      \strng{fullhash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \strng{bibnamehash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \strng{authorbibnamehash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \strng{authornamehash}{7dc2e29f2339be74ae256fda4541d47f}
+      \strng{authorfullhash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Research in Science Teaching}
+      \field{number}{9}
+      \field{title}{Game‐based learning has good chemistry with Chemistry Education: A three‐level meta‐analysis}
+      \field{volume}{59}
+      \field{year}{2022}
+      \field{pages}{1499\bibrangedash 1543}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1002/tea.21765
+      \endverb
+    \endentry
+    \entry{Janah2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6ae25fe795a80d0783809e85a6ec87b1}{%
+           family={Janah},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21c5772dd9213e7ee17db657571cb907}{%
+           family={Mitarlis},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1996684dc642b61264861d836c55e49a}
+      \strng{fullhash}{1996684dc642b61264861d836c55e49a}
+      \strng{bibnamehash}{1996684dc642b61264861d836c55e49a}
+      \strng{authorbibnamehash}{1996684dc642b61264861d836c55e49a}
+      \strng{authornamehash}{1996684dc642b61264861d836c55e49a}
+      \strng{authorfullhash}{1996684dc642b61264861d836c55e49a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hydrogen: Jurnal Kependidikan Kimia}
+      \field{number}{1}
+      \field{title}{Development of Chemistry Learning Media based on Joyful Learning with Snakes and Ladders Game on Stoichiometry material to Improve Student Learning Outcomes}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{135\bibrangedash 150}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.33394/hjkk.v12i1.10192
+      \endverb
+    \endentry
+    \entry{Kilag2024a}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6649d627f995ccc3aab91856cbef2a6c}{%
+           family={Kilag},
+           familyi={K\bibinitperiod},
+           given={O.\bibnamedelimi K.},
+           giveni={O\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=710aa87499ba8b832c38fc0d14f9f50f}{%
+           family={Andrin},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92bbe1668320e939174dc917a39bdd70}{%
+           family={Abellanosa},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3ca4610a9d9d16782ad0c843bda5fdb}{%
+           family={Villaver},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2735d9e615961873c26e50ba79b3f5fa}{%
+           family={Uy},
+           familyi={U\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fcb6bce86394cc06031fd913859bd84}{%
+           family={Sasan},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b682c995cb20b68d2fc042e3b702837}
+      \strng{fullhash}{17f8e3184004a7e9e756855ec084e064}
+      \strng{bibnamehash}{17f8e3184004a7e9e756855ec084e064}
+      \strng{authorbibnamehash}{17f8e3184004a7e9e756855ec084e064}
+      \strng{authornamehash}{1b682c995cb20b68d2fc042e3b702837}
+      \strng{authorfullhash}{17f8e3184004a7e9e756855ec084e064}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RiseJournals.org}
+      \field{number}{5}
+      \field{title}{K-12 Program Challenges}
+      \field{volume}{1}
+      \field{year}{2024}
+      \field{pages}{172\bibrangedash 177}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.5281/zenodo.11183037
+      \endverb
+    \endentry
+    \entry{Maung2015}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f3e69b08ea6dc1ec48ad21003e5aa91}{%
+           family={Maung},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{fullhash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{bibnamehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{authorbibnamehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{authornamehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{authorfullhash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Semantic Scholar}
+      \field{title}{Bias Blaster: Aiding cognitive bias modification-interpretation through a bubble shooter induced game-flow}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20190221022335id_/http://pdfs.semanticscholar.org/2b97/8230e43e7c75cbb19ebc9cfd38fc0921f47e.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20190221022335id_/http://pdfs.semanticscholar.org/2b97/8230e43e7c75cbb19ebc9cfd38fc0921f47e.pdf
+      \endverb
+    \endentry
+    \entry{Putri2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=eb0d0eeed4c7ac509b7c5225ad054cc0}{%
+           family={Putri},
+           familyi={P\bibinitperiod},
+           given={I.\bibnamedelimi Y.\bibnamedelimi V.\bibnamedelimi S.},
+           giveni={I\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81b414206380fb26f82caa78224a940e}{%
+           family={Rahayu},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fabdaeccef11e2ef7d6c9276ad6fc930}{%
+           family={Dasna},
+           familyi={D\bibinitperiod},
+           given={I.\bibnamedelimi W.},
+           giveni={I\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d150fd28a91da29696694ddc526953b5}
+      \strng{fullhash}{e08fff812fd9486304402f4bff4f2e5e}
+      \strng{bibnamehash}{e08fff812fd9486304402f4bff4f2e5e}
+      \strng{authorbibnamehash}{e08fff812fd9486304402f4bff4f2e5e}
+      \strng{authornamehash}{d150fd28a91da29696694ddc526953b5}
+      \strng{authorfullhash}{e08fff812fd9486304402f4bff4f2e5e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jurnal Pendidikan MIPA}
+      \field{number}{1}
+      \field{title}{Game-based learning application in chemistry learning: A systematic literature review}
+      \field{volume}{23}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.23960/jpmipa/v23i1.pp01-12
+      \endverb
+    \endentry
+    \entry{Ren2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=81909f4b467fcece730febe796f15853}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=786af77513e12c05e5d39eb6e8c541e1}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4502ea5dcc2b2cf1ac11fe01b5f68826}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d369b69d5ab1264cb7b6b06cf64108e5}
+      \strng{fullhash}{b2752f810381453ee8663f70912f4051}
+      \strng{bibnamehash}{b2752f810381453ee8663f70912f4051}
+      \strng{authorbibnamehash}{b2752f810381453ee8663f70912f4051}
+      \strng{authornamehash}{d369b69d5ab1264cb7b6b06cf64108e5}
+      \strng{authorfullhash}{b2752f810381453ee8663f70912f4051}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Game-Based Learning (IJGBL)}
+      \field{number}{1}
+      \field{title}{The Impact of Educational Games on Learning Outcomes: Evidence From a Meta-Analysis}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.4018/IJGBL.336478
+      \endverb
+    \endentry
+    \entry{Saputri2025}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c7805db302d75933331ba6b5b151906e}{%
+           family={Saputri},
+           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6c3058924aa774da8cff7191f5db347d}{%
+           family={Pranata},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=883023dbe62b3188a26f9f22070dfa65}{%
+           family={Zebua},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc235271e79316124eed75b991eecd96}
+      \strng{fullhash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \strng{bibnamehash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \strng{authorbibnamehash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \strng{authornamehash}{fc235271e79316124eed75b991eecd96}
+      \strng{authorfullhash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2025}
+    \endentry
+    \entry{Sison2018}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=d0bb62ff041781cd7a32b0cdbb78f886}{%
+           family={Sison},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9714509d9e5254039540c75d07f36081}{%
+           family={Espulgar},
+           familyi={E\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e81740aae87e98b74f29dc6f891957ef}{%
+           family={Madrigal},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=215883315e18df4f0d7fd43853f59c07}{%
+           family={Obedoza},
+           familyi={O\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcaa903c1c9cb8cdc4b782bb014afe56}{%
+           family={Romblon},
+           familyi={R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=129b53a4c299441fce39fd07b0e94f6d}{%
+           family={Sace},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93ef83f5fa32fbf0df6fa595b29cf3a2}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{faeadcede4519c2de3f8d284bd5b7f5b}
+      \strng{fullhash}{c71e002e8a0e1956b8149c206c839e9c}
+      \strng{bibnamehash}{c71e002e8a0e1956b8149c206c839e9c}
+      \strng{authorbibnamehash}{c71e002e8a0e1956b8149c206c839e9c}
+      \strng{authornamehash}{faeadcede4519c2de3f8d284bd5b7f5b}
+      \strng{authorfullhash}{c71e002e8a0e1956b8149c206c839e9c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 26th International Conference on Computers in Education}
+      \field{title}{Toward an outcome-based methodology for developing game-based learning environments}
+      \field{year}{2018}
+      \field{pages}{613\bibrangedash 618}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://animorepository.dlsu.edu.ph/faculty_research/1054
+      \endverb
+      \verb{url}
+      \verb https://animorepository.dlsu.edu.ph/faculty_research/1054
+      \endverb
+    \endentry
+    \entry{Treagust2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4e4740a3b54373b9d0189fa2d91e22cc}{%
+           family={Treagust},
+           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=442a3d7ce00e826a9415e10d1ec61627}{%
+           family={Duit},
+           familyi={D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d2a0dcb471b16e5fa2dfbd09b46bd0f8}{%
+           family={Nieswandt},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1547994186a4bf162fdded53f9358e2}
+      \strng{fullhash}{838da5e19286561158e7580f25da6140}
+      \strng{bibnamehash}{838da5e19286561158e7580f25da6140}
+      \strng{authorbibnamehash}{838da5e19286561158e7580f25da6140}
+      \strng{authornamehash}{e1547994186a4bf162fdded53f9358e2}
+      \strng{authorfullhash}{838da5e19286561158e7580f25da6140}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2018}
+    \endentry
+    \entry{Vallespin2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4084ed99b57a77752c98c3251ea7e604}{%
+           family={Vallespin},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{fullhash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{bibnamehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{authorbibnamehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{authornamehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{authorfullhash}{4084ed99b57a77752c98c3251ea7e604}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2024}
+    \endentry
+    \entry{Vega2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bb8efcd4ab24730b7cd34e88ac390878}{%
+           family={Vega},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{fullhash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{bibnamehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{authorbibnamehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{authornamehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{authorfullhash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Barrot2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8d4f9f89bf3ea62392b061194267b459}{%
+           family={Barrot},
+           familyi={B\bibinitperiod},
+           given={Jessie\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9199f32f151178ba2ce5d4b48348fc14}{%
+           family={Llenares},
+           familyi={L\bibinitperiod},
+           given={Ian\bibnamedelima I.},
+           giveni={I\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d3440bb3955dd9203ee25c6e0215517}{%
+           family={Rosario},
+           familyi={R\bibinitperiod},
+           given={Laarni\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0,
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ef43aabc6ff1dc50fb3aca8f443287d}
+      \strng{fullhash}{837cd9e1099f17dd7132ffb50040092e}
+      \strng{bibnamehash}{837cd9e1099f17dd7132ffb50040092e}
+      \strng{authorbibnamehash}{837cd9e1099f17dd7132ffb50040092e}
+      \strng{authornamehash}{4ef43aabc6ff1dc50fb3aca8f443287d}
+      \strng{authorfullhash}{837cd9e1099f17dd7132ffb50040092e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Education and Information Technologies}
+      \field{title}{Students' online learning challenges during the pandemic and how they cope with them: The case of the Philippines}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{pages}{7321\bibrangedash 7338}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s10639-021-10589-x
+      \endverb
+    \endentry
+    \entry{Blyznyuk2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4395a39c8eb9e45db6e5d840b5340ef7}{%
+           family={Blyznyuk},
+           familyi={B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=0ffa0135d3d26a060549df41f323470f}{%
+           family={Kachak},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{fullhash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{bibnamehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{authorbibnamehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{authornamehash}{e49a8e44aad5949045e019fac094ef83}
+      \strng{authorfullhash}{e49a8e44aad5949045e019fac094ef83}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2024}
+    \endentry
+    \entry{Bridges2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b60c0d4d7e79d2d9eb6b397ca8529c4c}{%
+           family={Bridges},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{fullhash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{bibnamehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{authorbibnamehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{authornamehash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \strng{authorfullhash}{b60c0d4d7e79d2d9eb6b397ca8529c4c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2015}
+    \endentry
+    \entry{Byusa2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07a62f192271f5b33877c34f54dcdf89}{%
+           family={Byusa},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c85a096938a9ace34dc654749b77022}{%
+           family={Kampire},
+           familyi={K\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c110c23120ddee2579c40d3a9893dc30}{%
+           family={Mwesigye},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9f24d67453c153e3352695e8415a3677}
+      \strng{fullhash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \strng{bibnamehash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \strng{authorbibnamehash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \strng{authornamehash}{9f24d67453c153e3352695e8415a3677}
+      \strng{authorfullhash}{be92cf2c3ba03425c7a3e8412efc6c96}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Heliyon}
+      \field{number}{5}
+      \field{title}{Game-based learning approach on students' motivation and understanding of Chemistry Concepts: A systematic review of literature}
+      \field{volume}{8}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1016/j.heliyon.2022.e09541
+      \endverb
+    \endentry
+    \entry{DataTab2025}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=baffc9eb0a3ef5b827ffe4be2917139f}{%
+           family={{DataTab Team}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{fullhash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{bibnamehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{authorbibnamehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{authornamehash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \strng{authorfullhash}{baffc9eb0a3ef5b827ffe4be2917139f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Repeated Measures ANOVA}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://datatab.net/tutorial/anova-with-repeated-measures
+      \endverb
+      \verb{url}
+      \verb https://datatab.net/tutorial/anova-with-repeated-measures
+      \endverb
+    \endentry
+    \entry{DepEd2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9aa241175132ef785c4ee1902ca7d157}{%
+           family={{Department of Education}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Republic of the Philippines}%
+      }
+      \strng{namehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{fullhash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{bibnamehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{authorbibnamehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{authornamehash}{9aa241175132ef785c4ee1902ca7d157}
+      \strng{authorfullhash}{9aa241175132ef785c4ee1902ca7d157}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MATATAG curriculum guides}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.deped.gov.ph/matatag-curriculum/
+      \endverb
+      \verb{url}
+      \verb https://www.deped.gov.ph/matatag-curriculum/
+      \endverb
+    \endentry
+    \entry{Diquito2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=726e32886e623c782a02d463a6c7822e}{%
+           family={Diquito},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{fullhash}{726e32886e623c782a02d463a6c7822e}
+      \strng{bibnamehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{authorbibnamehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{authornamehash}{726e32886e623c782a02d463a6c7822e}
+      \strng{authorfullhash}{726e32886e623c782a02d463a6c7822e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Education and Technology (AJET)}
+      \field{number}{3}
+      \field{title}{Basic Education Curriculum under the Newly Implemented K to 10 (MATATAG) Curriculum in the Philippines: The Case of Science Education}
+      \field{volume}{3}
+      \field{year}{2024}
+      \field{pages}{123\bibrangedash 132}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.54536/ajet.v3i3.3396
+      \endverb
+    \endentry
+    \entry{Hecker2025}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a43977d35958943460b16a01e72ede31}{%
+           family={Hecker},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9a86a43597fb0b2c4c959d739e417cc}{%
+           family={Kalpokas},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ATLAS.ti}%
+      }
+      \strng{namehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{fullhash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{bibnamehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{authorbibnamehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{authornamehash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \strng{authorfullhash}{6e79ca1883f1b8809e2624a9e0210a46}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Thematic Analysis in mixed methods approach}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://atlasti.com/guides/thematic-analysis/thematic-analysis-mixed-methods
+      \endverb
+      \verb{url}
+      \verb https://atlasti.com/guides/thematic-analysis/thematic-analysis-mixed-methods
+      \endverb
+    \endentry
+    \entry{Hu2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=abca94954939cb7608a6fa0b712c8a57}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7618ee6999106e60e657c25f4c63a743}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f79a37508c43f67edaf720f51ab6236e}{%
+           family={Wouters},
+           familyi={W\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a8c4c910eb93e74e7f8b8458a0de6a0}{%
+           family={Schaaf},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f45b3078b55a0ffdf3924bdb76a1d666}{%
+           family={Kester},
+           familyi={K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7dc2e29f2339be74ae256fda4541d47f}
+      \strng{fullhash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \strng{bibnamehash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \strng{authorbibnamehash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \strng{authornamehash}{7dc2e29f2339be74ae256fda4541d47f}
+      \strng{authorfullhash}{2c288e8b6da06b3776cd4e05893d3b3d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Research in Science Teaching}
+      \field{number}{9}
+      \field{title}{Game‐based learning has good chemistry with Chemistry Education: A three‐level meta‐analysis}
+      \field{volume}{59}
+      \field{year}{2022}
+      \field{pages}{1499\bibrangedash 1543}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1002/tea.21765
+      \endverb
+    \endentry
+    \entry{Janah2024}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6ae25fe795a80d0783809e85a6ec87b1}{%
+           family={Janah},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21c5772dd9213e7ee17db657571cb907}{%
+           family={Mitarlis},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1996684dc642b61264861d836c55e49a}
+      \strng{fullhash}{1996684dc642b61264861d836c55e49a}
+      \strng{bibnamehash}{1996684dc642b61264861d836c55e49a}
+      \strng{authorbibnamehash}{1996684dc642b61264861d836c55e49a}
+      \strng{authornamehash}{1996684dc642b61264861d836c55e49a}
+      \strng{authorfullhash}{1996684dc642b61264861d836c55e49a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hydrogen: Jurnal Kependidikan Kimia}
+      \field{number}{1}
+      \field{title}{Development of Chemistry Learning Media based on Joyful Learning with Snakes and Ladders Game on Stoichiometry material to Improve Student Learning Outcomes}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{135\bibrangedash 150}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.33394/hjkk.v12i1.10192
+      \endverb
+    \endentry
+    \entry{Kilag2024a}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6649d627f995ccc3aab91856cbef2a6c}{%
+           family={Kilag},
+           familyi={K\bibinitperiod},
+           given={O.\bibnamedelimi K.},
+           giveni={O\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=710aa87499ba8b832c38fc0d14f9f50f}{%
+           family={Andrin},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92bbe1668320e939174dc917a39bdd70}{%
+           family={Abellanosa},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3ca4610a9d9d16782ad0c843bda5fdb}{%
+           family={Villaver},
+           familyi={V\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2735d9e615961873c26e50ba79b3f5fa}{%
+           family={Uy},
+           familyi={U\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fcb6bce86394cc06031fd913859bd84}{%
+           family={Sasan},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b682c995cb20b68d2fc042e3b702837}
+      \strng{fullhash}{17f8e3184004a7e9e756855ec084e064}
+      \strng{bibnamehash}{17f8e3184004a7e9e756855ec084e064}
+      \strng{authorbibnamehash}{17f8e3184004a7e9e756855ec084e064}
+      \strng{authornamehash}{1b682c995cb20b68d2fc042e3b702837}
+      \strng{authorfullhash}{17f8e3184004a7e9e756855ec084e064}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RiseJournals.org}
+      \field{number}{5}
+      \field{title}{K-12 Program Challenges}
+      \field{volume}{1}
+      \field{year}{2024}
+      \field{pages}{172\bibrangedash 177}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.5281/zenodo.11183037
+      \endverb
+    \endentry
+    \entry{Maung2015}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f3e69b08ea6dc1ec48ad21003e5aa91}{%
+           family={Maung},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{fullhash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{bibnamehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{authorbibnamehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{authornamehash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \strng{authorfullhash}{1f3e69b08ea6dc1ec48ad21003e5aa91}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Semantic Scholar}
+      \field{title}{Bias Blaster: Aiding cognitive bias modification-interpretation through a bubble shooter induced game-flow}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20190221022335id_/http://pdfs.semanticscholar.org/2b97/8230e43e7c75cbb19ebc9cfd38fc0921f47e.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20190221022335id_/http://pdfs.semanticscholar.org/2b97/8230e43e7c75cbb19ebc9cfd38fc0921f47e.pdf
+      \endverb
+    \endentry
+    \entry{Putri2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=eb0d0eeed4c7ac509b7c5225ad054cc0}{%
+           family={Putri},
+           familyi={P\bibinitperiod},
+           given={I.\bibnamedelimi Y.\bibnamedelimi V.\bibnamedelimi S.},
+           giveni={I\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81b414206380fb26f82caa78224a940e}{%
+           family={Rahayu},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fabdaeccef11e2ef7d6c9276ad6fc930}{%
+           family={Dasna},
+           familyi={D\bibinitperiod},
+           given={I.\bibnamedelimi W.},
+           giveni={I\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d150fd28a91da29696694ddc526953b5}
+      \strng{fullhash}{e08fff812fd9486304402f4bff4f2e5e}
+      \strng{bibnamehash}{e08fff812fd9486304402f4bff4f2e5e}
+      \strng{authorbibnamehash}{e08fff812fd9486304402f4bff4f2e5e}
+      \strng{authornamehash}{d150fd28a91da29696694ddc526953b5}
+      \strng{authorfullhash}{e08fff812fd9486304402f4bff4f2e5e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jurnal Pendidikan MIPA}
+      \field{number}{1}
+      \field{title}{Game-based learning application in chemistry learning: A systematic literature review}
+      \field{volume}{23}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.23960/jpmipa/v23i1.pp01-12
+      \endverb
+    \endentry
+    \entry{Ren2024}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=81909f4b467fcece730febe796f15853}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=786af77513e12c05e5d39eb6e8c541e1}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4502ea5dcc2b2cf1ac11fe01b5f68826}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d369b69d5ab1264cb7b6b06cf64108e5}
+      \strng{fullhash}{b2752f810381453ee8663f70912f4051}
+      \strng{bibnamehash}{b2752f810381453ee8663f70912f4051}
+      \strng{authorbibnamehash}{b2752f810381453ee8663f70912f4051}
+      \strng{authornamehash}{d369b69d5ab1264cb7b6b06cf64108e5}
+      \strng{authorfullhash}{b2752f810381453ee8663f70912f4051}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Game-Based Learning (IJGBL)}
+      \field{number}{1}
+      \field{title}{The Impact of Educational Games on Learning Outcomes: Evidence From a Meta-Analysis}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.4018/IJGBL.336478
+      \endverb
+    \endentry
+    \entry{Saputri2025}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c7805db302d75933331ba6b5b151906e}{%
+           family={Saputri},
+           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6c3058924aa774da8cff7191f5db347d}{%
+           family={Pranata},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=883023dbe62b3188a26f9f22070dfa65}{%
+           family={Zebua},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{fc235271e79316124eed75b991eecd96}
+      \strng{fullhash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \strng{bibnamehash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \strng{authorbibnamehash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \strng{authornamehash}{fc235271e79316124eed75b991eecd96}
+      \strng{authorfullhash}{db4f2852b708eabbee0b030e1f4fdac1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2025}
+    \endentry
+    \entry{Sison2018}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=d0bb62ff041781cd7a32b0cdbb78f886}{%
+           family={Sison},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9714509d9e5254039540c75d07f36081}{%
+           family={Espulgar},
+           familyi={E\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e81740aae87e98b74f29dc6f891957ef}{%
+           family={Madrigal},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=215883315e18df4f0d7fd43853f59c07}{%
+           family={Obedoza},
+           familyi={O\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bcaa903c1c9cb8cdc4b782bb014afe56}{%
+           family={Romblon},
+           familyi={R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=129b53a4c299441fce39fd07b0e94f6d}{%
+           family={Sace},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93ef83f5fa32fbf0df6fa595b29cf3a2}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{faeadcede4519c2de3f8d284bd5b7f5b}
+      \strng{fullhash}{c71e002e8a0e1956b8149c206c839e9c}
+      \strng{bibnamehash}{c71e002e8a0e1956b8149c206c839e9c}
+      \strng{authorbibnamehash}{c71e002e8a0e1956b8149c206c839e9c}
+      \strng{authornamehash}{faeadcede4519c2de3f8d284bd5b7f5b}
+      \strng{authorfullhash}{c71e002e8a0e1956b8149c206c839e9c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 26th International Conference on Computers in Education}
+      \field{title}{Toward an outcome-based methodology for developing game-based learning environments}
+      \field{year}{2018}
+      \field{pages}{613\bibrangedash 618}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://animorepository.dlsu.edu.ph/faculty_research/1054
+      \endverb
+      \verb{url}
+      \verb https://animorepository.dlsu.edu.ph/faculty_research/1054
+      \endverb
+    \endentry
+    \entry{Treagust2018}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4e4740a3b54373b9d0189fa2d91e22cc}{%
+           family={Treagust},
+           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=442a3d7ce00e826a9415e10d1ec61627}{%
+           family={Duit},
+           familyi={D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d2a0dcb471b16e5fa2dfbd09b46bd0f8}{%
+           family={Nieswandt},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1547994186a4bf162fdded53f9358e2}
+      \strng{fullhash}{838da5e19286561158e7580f25da6140}
+      \strng{bibnamehash}{838da5e19286561158e7580f25da6140}
+      \strng{authorbibnamehash}{838da5e19286561158e7580f25da6140}
+      \strng{authornamehash}{e1547994186a4bf162fdded53f9358e2}
+      \strng{authorfullhash}{838da5e19286561158e7580f25da6140}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2018}
+    \endentry
+    \entry{Vallespin2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4084ed99b57a77752c98c3251ea7e604}{%
+           family={Vallespin},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{fullhash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{bibnamehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{authorbibnamehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{authornamehash}{4084ed99b57a77752c98c3251ea7e604}
+      \strng{authorfullhash}{4084ed99b57a77752c98c3251ea7e604}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2024}
+    \endentry
+    \entry{Vega2024}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bb8efcd4ab24730b7cd34e88ac390878}{%
+           family={Vega},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{fullhash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{bibnamehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{authorbibnamehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{authornamehash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \strng{authorfullhash}{bb8efcd4ab24730b7cd34e88ac390878}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{TODO: Add complete citation details}
+      \field{title}{Title TBD}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

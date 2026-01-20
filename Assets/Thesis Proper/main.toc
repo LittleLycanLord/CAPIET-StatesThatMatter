@@ -1,0 +1,58 @@
+\contentsline {chapter}{Abstract}{i}{chapter*.1}%
+\contentsline {chapter}{Abstrak}{ii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background of the Study}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Statement of the Problem}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Project Objectives}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Scope and Limitations}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Significance of the Project}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}REVIEW OF RELATED LITERATURE}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Literature Review on the Educational Challenges in the Philippines in both a General and Scientific Scope}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Literature Review on Educational Serious Games}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Literature Review on Chemistry Game-Based Learning and Existing Chemistry Games}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Literature Review on Bubble Shooter Games for Learning}{6}{section.2.4}%
+\contentsline {chapter}{\numberline {3}GAME DESIGN}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Game Name}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Game Overview}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Game-Concept}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Genre}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Target Audience}{8}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Game Flow Summary}{8}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Look and Feel}{8}{section.3.7}%
+\contentsline {section}{\numberline {3.8}How does the game insert itself in a pedagogical scenario?}{8}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Gameplay and Mechanics}{9}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Gameplay}{9}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Moment to Moment}{9}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Mechanics}{9}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Physics}{10}{subsection.3.9.4}%
+\contentsline {subsection}{\numberline {3.9.5}Movement}{10}{subsection.3.9.5}%
+\contentsline {subsection}{\numberline {3.9.6}Objects}{10}{subsection.3.9.6}%
+\contentsline {subsection}{\numberline {3.9.7}Actions}{10}{subsection.3.9.7}%
+\contentsline {subsection}{\numberline {3.9.8}Combat}{10}{subsection.3.9.8}%
+\contentsline {subsection}{\numberline {3.9.9}Economy}{10}{subsection.3.9.9}%
+\contentsline {subsection}{\numberline {3.9.10}Game Options}{10}{subsection.3.9.10}%
+\contentsline {subsection}{\numberline {3.9.11}Constraints due to the pedagogical objectives}{11}{subsection.3.9.11}%
+\contentsline {section}{\numberline {3.10}Story, Setting and Character}{11}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Story and Narrative}{11}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Game progression}{11}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}License considerations}{11}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Game World}{11}{subsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.10.5}Characters}{11}{subsection.3.10.5}%
+\contentsline {subsection}{\numberline {3.10.6}Levels}{11}{subsection.3.10.6}%
+\contentsline {subsection}{\numberline {3.10.7}Training levels}{12}{subsection.3.10.7}%
+\contentsline {subsection}{\numberline {3.10.8}Assessment}{12}{subsection.3.10.8}%
+\contentsline {section}{\numberline {3.11}Interface}{12}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Visual System}{12}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Control System}{12}{subsection.3.11.2}%
+\contentsline {subsection}{\numberline {3.11.3}Audio, music, sound effects}{12}{subsection.3.11.3}%
+\contentsline {subsection}{\numberline {3.11.4}Help System}{12}{subsection.3.11.4}%
+\contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design Changes}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementation Challenges}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Formative User Testing Observations}{13}{section.4.3}%
+\contentsline {chapter}{\numberline {5}METHODOLOGY}{14}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Research Design}{14}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Data Collection}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Data Analysis}{14}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ethical Considerations}{14}{section.5.4}%
+\contentsline {chapter}{REFERENCES}{15}{chapter*.3}%
