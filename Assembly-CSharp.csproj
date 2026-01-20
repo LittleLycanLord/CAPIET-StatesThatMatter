@@ -147,6 +147,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ParallaxBackground.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingColorTweening.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
+    <Compile Include="Assets\Scripts\Puzzle\Tilemap To GameObjects.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing243.cs" />
     <Compile Include="Assets\Scripts\Platforming\Platformer Movement.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
