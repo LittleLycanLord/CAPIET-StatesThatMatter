@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Matter
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Minigame
   - Water
   - UI
   - 

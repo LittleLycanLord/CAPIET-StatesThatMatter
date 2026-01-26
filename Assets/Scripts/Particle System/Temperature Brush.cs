@@ -42,7 +42,7 @@ namespace LilLycanLord_Official
         void Awake() 
         {
             mainCamera = Camera.main;
-            latticeManager = FindObjectOfType<ParticleLatticeManager>();
+            latticeManager = FindAnyObjectByType<ParticleLatticeManager>();
             
             // Setup brush child
             if (brushChild != null)

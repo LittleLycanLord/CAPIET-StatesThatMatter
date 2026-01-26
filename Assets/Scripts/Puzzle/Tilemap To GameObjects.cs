@@ -12,6 +12,7 @@ namespace LilLycanLord_Official
         public Tilemap tilemap;
         public GameObject blockParentPrefab; // Empty prefab with Rigidbody2D + Collider
         public Transform container; // Optional parent
+        public GameObject interactionButton;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -122,12 +123,24 @@ namespace LilLycanLord_Official
                 poly.usedByComposite = true;
             }
 
-            // Resize collider to fit cluster
-            BoxCollider2D col = block.GetComponent<BoxCollider2D>();
-            Vector2 size = (Vector2)(Vector3)(max - min + Vector3Int.one);
-            size = Vector2.Scale(size, tilemap.cellSize);
-            col.size = size;
-            col.offset = Vector2.zero;
+            // Calculate actual bounds from all polygon colliders
+            PolygonCollider2D[] polygons = block.GetComponentsInChildren<PolygonCollider2D>();
+            if (polygons.Length > 0)
+            {
+                Bounds compositeBounds = polygons[0].bounds;
+                foreach (var poly in polygons)
+                {
+                    compositeBounds.Encapsulate(poly.bounds);
+                }
+
+                // Resize trigger collider to be 1.2x larger than the composite shape
+                BoxCollider2D col = block.GetComponent<BoxCollider2D>();
+                block.GetComponent<MatterBehaviour>().interactionButton = interactionButton;
+                
+                Vector2 size = compositeBounds.size * 1.2f;
+                col.size = size;
+                col.offset = block.transform.InverseTransformPoint(compositeBounds.center);
+            }
         }
 
         //* ╔════════════════════════════════╗

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecc7899d99a3054c8eea6f3d45e87fb, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleLatticePreset
+  particlePrefab: {fileID: 571705121515823847, guid: d2b682924f70b3a46a30d0bccfb8cea6, type: 3}
+  bondPrefab: {fileID: 9113864967085452539, guid: b19a6bb8aaa3659419cf7db36c2f190f, type: 3}
+  latticeRows: 4
+  latticeColumns: 4
+  createAsGas: 0
+  particleRadius: 1
+  particleMass: 1
+  particleColor: {r: 1, g: 1, b: 1, a: 1}
+  particleTemperature: 30
+  particleMinTemperature: -10
+  particleMaxTemperature: 110
+  bondLength: 1
+  bondWidth: 0.5
+  bondColor: {r: 1, g: 1, b: 1, a: 1}
+  bondStiffness: 0.5
+  maxBondLengthMultiplier: 2
+  bondMinTemperature: -10
+  bondMaxTemperature: 110
+  bondLiquidTemperature: 50
+  bondLiquidStiffness: 0.5
+  bondSolidTemperature: 0
+  bondSolidStiffness: 0.98
+  bondCanBreak: 1
+  bondBreakingTemperature: 110
+  dynamicBondLength: 1
+  dynamicBondWidth: 0.5
+  dynamicBondColor: {r: 0, g: 0, b: 1, a: 1}
+  dynamicBondStiffness: 0.5
+  dynamicMaxBondLengthMultiplier: 2
+  bondingProximity: 1.5
+  bondCheckInterval: 0.2
+  maxDynamicBondsCreated: 2

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9143079987023795124}
   - component: {fileID: 6695157192015348887}
   - component: {fileID: 758243802606478511}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Brush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2156923591110755546}
   - component: {fileID: 2847726666823331318}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 891451183873523468}
   - component: {fileID: 6582056446256147610}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Temperature Brush
   m_TagString: Untagged
   m_Icon: {fileID: 0}

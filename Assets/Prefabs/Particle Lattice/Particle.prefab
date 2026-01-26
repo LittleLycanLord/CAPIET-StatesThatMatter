@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7142642779684551325}
   - component: {fileID: 3928563564647001841}
   - component: {fileID: 8777366569267362325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4948984050237533255}
   - component: {fileID: 4531025578182909304}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bonding Radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 947050738054503235}
   - component: {fileID: 2557521070406925217}
   - component: {fileID: 2494591655262248928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

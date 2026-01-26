@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6118798953483336466}
   - component: {fileID: 1417449141372455489}
   - component: {fileID: 7558662136610622031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3255e5d9fde376541b5d46093f4e8b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.BondBehaviour
+  currentTemperature: 30
   particleA: {fileID: 0}
   particleB: {fileID: 0}
   bondLength: 1
@@ -163,3 +164,11 @@ MonoBehaviour:
   bondColor: {r: 1, g: 1, b: 1, a: 1}
   stiffness: 0.5
   maxBondLengthMultiplier: 2
+  minTemperature: -10
+  maxTemperature: 110
+  liquidTemperature: 50
+  liquidStiffness: 0.5
+  solidTemperature: 0
+  solidStiffness: 0.98
+  canBreak: 1
+  breakingTemperature: 110

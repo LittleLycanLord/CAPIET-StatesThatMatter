@@ -2,6 +2,9 @@ using LilLycanLord_Official;
 using UnityEngine;
 using UnityEngine.Assertions;
 using System.Collections.Generic;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace LilLycanLord_Official
 {
@@ -20,6 +23,10 @@ namespace LilLycanLord_Official
         //* ╔════════╗
         //* ║ Fields ║
         //* ╚════════╝
+        [Space(10)]
+        [Header("Preset")]
+        [SerializeField] private ParticleLatticePreset preset;
+        
         [Space(10)]
         [Header("Prefabs")]
         [SerializeField] private GameObject particlePrefab;
@@ -94,7 +101,7 @@ namespace LilLycanLord_Official
         //* ╚═══════════════╝
         void Awake() 
         {
-            temperatureBrush = FindObjectOfType<TemperatureBrush>();
+            temperatureBrush = FindAnyObjectByType<TemperatureBrush>();
         }
 
         void Start() { }
@@ -723,6 +730,190 @@ namespace LilLycanLord_Official
         {
             bondingMode = false;
         }
+        
+        /// <summary>
+        /// Load settings from a preset
+        /// </summary>
+        public void LoadFromPreset(ParticleLatticePreset preset)
+        {
+            if (preset == null)
+            {
+                Debug.LogWarning("Cannot load from null preset");
+                return;
+            }
+            
+            // Prefabs
+            particlePrefab = preset.particlePrefab;
+            bondPrefab = preset.bondPrefab;
+            
+            // Lattice Configuration
+            latticeRows = preset.latticeRows;
+            latticeColumns = preset.latticeColumns;
+            createAsGas = preset.createAsGas;
+            
+            // Particle Attributes
+            particleRadius = preset.particleRadius;
+            particleMass = preset.particleMass;
+            particleColor = preset.particleColor;
+            
+            // Particle Temperature Settings
+            particleTemperature = preset.particleTemperature;
+            particleMinTemperature = preset.particleMinTemperature;
+            particleMaxTemperature = preset.particleMaxTemperature;
+            
+            // Bond Attributes
+            bondLength = preset.bondLength;
+            bondWidth = preset.bondWidth;
+            bondColor = preset.bondColor;
+            bondStiffness = preset.bondStiffness;
+            maxBondLengthMultiplier = preset.maxBondLengthMultiplier;
+            
+            // Bond Temperature Settings
+            bondMinTemperature = preset.bondMinTemperature;
+            bondMaxTemperature = preset.bondMaxTemperature;
+            bondLiquidTemperature = preset.bondLiquidTemperature;
+            bondLiquidStiffness = preset.bondLiquidStiffness;
+            bondSolidTemperature = preset.bondSolidTemperature;
+            bondSolidStiffness = preset.bondSolidStiffness;
+            bondCanBreak = preset.bondCanBreak;
+            bondBreakingTemperature = preset.bondBreakingTemperature;
+            
+            // Dynamic Bond Attributes
+            dynamicBondLength = preset.dynamicBondLength;
+            dynamicBondWidth = preset.dynamicBondWidth;
+            dynamicBondColor = preset.dynamicBondColor;
+            dynamicBondStiffness = preset.dynamicBondStiffness;
+            dynamicMaxBondLengthMultiplier = preset.dynamicMaxBondLengthMultiplier;
+            
+            // Dynamic Bonding
+            bondingProximity = preset.bondingProximity;
+            bondCheckInterval = preset.bondCheckInterval;
+            maxDynamicBondsCreated = preset.maxDynamicBondsCreated;
+            
+            Debug.Log($"Loaded settings from preset: {preset.name}");
+        }
+        
+        /// <summary>
+        /// Export current settings to a preset (requires manual asset creation)
+        /// </summary>
+        public ParticleLatticePreset ExportToPreset()
+        {
+            ParticleLatticePreset newPreset = ScriptableObject.CreateInstance<ParticleLatticePreset>();
+            
+            // Prefabs
+            newPreset.particlePrefab = particlePrefab;
+            newPreset.bondPrefab = bondPrefab;
+            
+            // Lattice Configuration
+            newPreset.latticeRows = latticeRows;
+            newPreset.latticeColumns = latticeColumns;
+            newPreset.createAsGas = createAsGas;
+            
+            // Particle Attributes
+            newPreset.particleRadius = particleRadius;
+            newPreset.particleMass = particleMass;
+            newPreset.particleColor = particleColor;
+            
+            // Particle Temperature Settings
+            newPreset.particleTemperature = particleTemperature;
+            newPreset.particleMinTemperature = particleMinTemperature;
+            newPreset.particleMaxTemperature = particleMaxTemperature;
+            
+            // Bond Attributes
+            newPreset.bondLength = bondLength;
+            newPreset.bondWidth = bondWidth;
+            newPreset.bondColor = bondColor;
+            newPreset.bondStiffness = bondStiffness;
+            newPreset.maxBondLengthMultiplier = maxBondLengthMultiplier;
+            
+            // Bond Temperature Settings
+            newPreset.bondMinTemperature = bondMinTemperature;
+            newPreset.bondMaxTemperature = bondMaxTemperature;
+            newPreset.bondLiquidTemperature = bondLiquidTemperature;
+            newPreset.bondLiquidStiffness = bondLiquidStiffness;
+            newPreset.bondSolidTemperature = bondSolidTemperature;
+            newPreset.bondSolidStiffness = bondSolidStiffness;
+            newPreset.bondCanBreak = bondCanBreak;
+            newPreset.bondBreakingTemperature = bondBreakingTemperature;
+            
+            // Dynamic Bond Attributes
+            newPreset.dynamicBondLength = dynamicBondLength;
+            newPreset.dynamicBondWidth = dynamicBondWidth;
+            newPreset.dynamicBondColor = dynamicBondColor;
+            newPreset.dynamicBondStiffness = dynamicBondStiffness;
+            newPreset.dynamicMaxBondLengthMultiplier = dynamicMaxBondLengthMultiplier;
+            
+            // Dynamic Bonding
+            newPreset.bondingProximity = bondingProximity;
+            newPreset.bondCheckInterval = bondCheckInterval;
+            newPreset.maxDynamicBondsCreated = maxDynamicBondsCreated;
+            
+            Debug.Log("Exported current settings to new preset (use AssetDatabase.CreateAsset to save)");
+            return newPreset;
+        }
+        
+        /// <summary>
+        /// Generate lattice using the assigned preset
+        /// </summary>
+        [ContextMenu("Generate Lattice From Preset")]
+        public void GenerateLatticeFromPreset()
+        {
+            if (preset == null)
+            {
+                Debug.LogWarning("No preset assigned. Using current settings.");
+                GenerateLattice();
+                return;
+            }
+            
+            LoadFromPreset(preset);
+            GenerateLattice();
+        }
+        
+#if UNITY_EDITOR
+        /// <summary>
+        /// Create and save a preset asset from current manager settings
+        /// </summary>
+        [ContextMenu("Create Preset Asset From Current Settings")]
+        public void CreatePresetAsset()
+        {
+            CreatePresetAsset("New Particle Lattice Preset");
+        }
+        
+        /// <summary>
+        /// Create and save a preset asset from current manager settings with a custom name
+        /// </summary>
+        public void CreatePresetAsset(string presetName)
+        {
+            // Export current settings to a new preset
+            ParticleLatticePreset newPreset = ExportToPreset();
+            
+            // Ensure the presets folder exists
+            string folderPath = "Assets/ScriptableObjects/Particle Lattice Presets";
+            if (!AssetDatabase.IsValidFolder(folderPath))
+            {
+                // Create folder structure
+                if (!AssetDatabase.IsValidFolder("Assets/ScriptableObjects"))
+                {
+                    AssetDatabase.CreateFolder("Assets", "ScriptableObjects");
+                }
+                AssetDatabase.CreateFolder("Assets/ScriptableObjects", "Particle Lattice Presets");
+            }
+            
+            // Generate unique asset path
+            string assetPath = AssetDatabase.GenerateUniqueAssetPath($"{folderPath}/{presetName}.asset");
+            
+            // Create the asset
+            AssetDatabase.CreateAsset(newPreset, assetPath);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+            
+            // Select the newly created asset
+            EditorGUIUtility.PingObject(newPreset);
+            Selection.activeObject = newPreset;
+            
+            Debug.Log($"Created preset asset at: {assetPath}");
+        }
+#endif
         
         /// <summary>
         /// Get the list of pending bond targets for a particle

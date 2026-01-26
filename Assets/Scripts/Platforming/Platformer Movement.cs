@@ -76,8 +76,10 @@ namespace LilLycanLord_Official
 
         void Start() { }
 
-        void Update() 
+        void Update()
         {
+            if (GameState.InMinigame) return;
+
             // Dev mode keyboard controls
             if (inputEnabled && devmode && Keyboard.current != null)
             {
@@ -130,6 +132,8 @@ namespace LilLycanLord_Official
         
         void FixedUpdate()
         {
+            if (GameState.InMinigame) return;
+
             // Only apply player-controlled movement if input is enabled
             if (inputEnabled)
             {

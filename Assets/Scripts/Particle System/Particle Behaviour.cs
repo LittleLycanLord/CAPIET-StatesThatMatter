@@ -83,10 +83,10 @@ namespace LilLycanLord_Official
             }
             
             // Find the lattice manager in the scene
-            latticeManager = FindObjectOfType<ParticleLatticeManager>();
+            latticeManager = FindAnyObjectByType<ParticleLatticeManager>();
             
             // Find the temperature brush in the scene
-            temperatureBrush = FindObjectOfType<TemperatureBrush>();
+            temperatureBrush = FindAnyObjectByType<TemperatureBrush>();
             
             // Store original drag value
             if (rb != null)
