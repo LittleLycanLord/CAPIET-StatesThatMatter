@@ -179,3 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.MatterBehaviour
   interactionButton: {fileID: 0}
+  glowVisual: {fileID: 0}
+  outlineVisual: {fileID: 0}
+  highlightType: 2
+  phase: 0

@@ -220,5 +220,5 @@ MonoBehaviour:
   heatingMode: 0
   coolingMode: 0
   brushChild: {fileID: 436900829701290156}
-  temperatureChangeRate: 10
+  temperatureChangeRate: 40
   brushDistanceFromCamera: 10

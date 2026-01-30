@@ -24,6 +24,14 @@ namespace LilLycanLord_Official
         //* ╚════════╝
         [Space(10)]
         [Header("Fields")]
+        public ParticleLatticeMaterial material;
+        
+        [Space(10)]
+        [Header("Highlight Settings")]
+        [SerializeField] private Color glowColor = new Color(1f, 1f, 1f, 0.5f);
+        [SerializeField] private float glowScale = 1.15f;
+        [SerializeField] private Color outlineColor = Color.white;
+        [SerializeField] private float outlineThickness = 0.1f;
         
         //* ╔════════════╗
         //* ║ Attributes ║
@@ -103,15 +111,27 @@ namespace LilLycanLord_Official
 
             GameObject block = Instantiate(blockParentPrefab, centerWorld, Quaternion.identity, container);
 
+            // Create containers for highlight effects
+            GameObject glowLayer = new GameObject("GlowLayer");
+            glowLayer.transform.SetParent(block.transform);
+            glowLayer.transform.localPosition = Vector3.zero;
+            glowLayer.SetActive(false);
+            
+            GameObject outlineLayer = new GameObject("OutlineLayer");
+            outlineLayer.transform.SetParent(block.transform);
+            outlineLayer.transform.localPosition = Vector3.zero;
+            outlineLayer.SetActive(false);
+
             foreach (var cell in cluster)
             {
                 Sprite sprite = tilemap.GetSprite(cell);
                 if (!sprite) continue;
 
+                Vector3 worldPos = tilemap.CellToWorld(cell) + tilemap.cellSize / 2f;
+
+                // Create main sprite
                 GameObject child = new GameObject("TileSprite");
                 child.transform.SetParent(block.transform);
-
-                Vector3 worldPos = tilemap.CellToWorld(cell) + tilemap.cellSize / 2f;
                 child.transform.position = worldPos;
 
                 var sr = child.AddComponent<SpriteRenderer>();
@@ -121,6 +141,40 @@ namespace LilLycanLord_Official
 
                 var poly = child.AddComponent<PolygonCollider2D>();
                 poly.usedByComposite = true;
+                
+                // Create glow sprite (scaled, behind, tinted)
+                GameObject glowChild = new GameObject("GlowSprite");
+                glowChild.transform.SetParent(glowLayer.transform);
+                glowChild.transform.position = worldPos;
+                glowChild.transform.localScale = Vector3.one * glowScale;
+                
+                var glowSr = glowChild.AddComponent<SpriteRenderer>();
+                glowSr.sprite = sprite;
+                glowSr.color = glowColor;
+                glowSr.sortingLayerID = sr.sortingLayerID;
+                glowSr.sortingOrder = sr.sortingOrder - 1;
+                
+                // Create outline sprites (4 directional offsets)
+                Vector3[] outlineOffsets = new Vector3[]
+                {
+                    new Vector3(outlineThickness, 0, 0),
+                    new Vector3(-outlineThickness, 0, 0),
+                    new Vector3(0, outlineThickness, 0),
+                    new Vector3(0, -outlineThickness, 0)
+                };
+                
+                foreach (var offset in outlineOffsets)
+                {
+                    GameObject outlineChild = new GameObject("OutlineSprite");
+                    outlineChild.transform.SetParent(outlineLayer.transform);
+                    outlineChild.transform.position = worldPos + offset;
+                    
+                    var outlineSr = outlineChild.AddComponent<SpriteRenderer>();
+                    outlineSr.sprite = sprite;
+                    outlineSr.color = outlineColor;
+                    outlineSr.sortingLayerID = sr.sortingLayerID;
+                    outlineSr.sortingOrder = sr.sortingOrder - 1;
+                }
             }
 
             // Calculate actual bounds from all polygon colliders
@@ -135,7 +189,19 @@ namespace LilLycanLord_Official
 
                 // Resize trigger collider to be 1.2x larger than the composite shape
                 BoxCollider2D col = block.GetComponent<BoxCollider2D>();
-                block.GetComponent<MatterBehaviour>().interactionButton = interactionButton;
+                MatterBehaviour matterBehaviour = block.GetComponent<MatterBehaviour>();
+                matterBehaviour.interactionButton = interactionButton;
+                matterBehaviour.glowVisual = glowLayer;
+                matterBehaviour.outlineVisual = outlineLayer;
+                
+                // Assign material to the matter block
+                matterBehaviour.material = material;
+                
+                // Pass highlight settings from TilemapToGameObjects to MatterBehaviour
+                matterBehaviour.glowColor = glowColor;
+                matterBehaviour.glowScale = glowScale;
+                matterBehaviour.outlineColor = outlineColor;
+                matterBehaviour.outlineThickness = outlineThickness;
                 
                 Vector2 size = compositeBounds.size * 1.2f;
                 col.size = size;

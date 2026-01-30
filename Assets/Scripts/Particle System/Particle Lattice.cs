@@ -100,6 +100,25 @@ namespace LilLycanLord_Official
             allBonds.Remove(bond);
         }
         
+        /// <summary>
+        /// Get the current number of bonds in this lattice
+        /// </summary>
+        public int GetBondCount()
+        {
+            // Filter out any null bonds (destroyed but not removed)
+            allBonds.RemoveAll(bond => bond == null);
+            return allBonds.Count;
+        }
+        
+        /// <summary>
+        /// Get the current number of particles in this lattice
+        /// </summary>
+        public int GetParticleCount()
+        {
+            // Filter out any null particles (destroyed but not removed)
+            allParticles.RemoveAll(particle => particle == null);
+            return allParticles.Count;
+        }
         public List<GameObject> GetParticles() => allParticles;
         public List<GameObject> GetBonds() => allBonds;
         public int ParticleCount => allParticles.Count;

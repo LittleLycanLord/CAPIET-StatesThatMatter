@@ -170,6 +170,11 @@ MonoBehaviour:
   blockParentPrefab: {fileID: 3485828276816115324, guid: 7365bf21b488b8f4aa8728e961ba4285, type: 3}
   container: {fileID: 1020640388}
   interactionButton: {fileID: 1277472527}
+  material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
+  glowColor: {r: 1, g: 1, b: 1, a: 0.5}
+  glowScale: 1.15
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineThickness: 0.1
 --- !u!114 &53487800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +191,7 @@ MonoBehaviour:
   platformerEventSystem: {fileID: 1600525680}
   platformerUI: {fileID: 760753753}
   currentMatterBlock: {fileID: 0}
+  currentPhaseIdentifier: {fileID: 0}
   currentPhase: 0
   minigameSceneName: SAMPLE MELT
   currentMaterial: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}

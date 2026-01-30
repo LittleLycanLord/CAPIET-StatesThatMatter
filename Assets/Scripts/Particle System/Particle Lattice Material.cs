@@ -23,6 +23,10 @@ namespace LilLycanLord_Official
         public ParticleLatticePreset liquidPreset;
         public ParticleLatticePreset gasPreset;
         
+        [Space(10)]
+        [Header("Phase Change Behavior")]
+        public ParticleLatticeMaterialPhaseChangeEvents phaseChangeEvents;
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝

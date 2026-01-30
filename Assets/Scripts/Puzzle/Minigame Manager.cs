@@ -17,6 +17,7 @@ namespace LilLycanLord_Official
         //* ╚══════════╝
         [Header("Displays")]
         [SerializeField] private MatterBehaviour currentMatterBlock;
+        [SerializeField] private PhaseChangeIdentifier currentPhaseIdentifier;
         public MatterPhase currentPhase;
 
         //* ╔════════╗
@@ -25,7 +26,7 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Fields")]
         [SerializeField] private string minigameSceneName = "IceLatticeMinigame";
-        
+
         [Space(10)]
         [Header("Particle Lattice Material Presets")]
         [SerializeField] private ParticleLatticeMaterial currentMaterial;
@@ -39,8 +40,7 @@ namespace LilLycanLord_Official
         //* ╚═══════════════╝
         void Awake()
         {
-            if (Instance == null)
-            {
+            if (Instance == null) {
                 Instance = this;
             }
             else
@@ -68,6 +68,9 @@ namespace LilLycanLord_Official
             {
                 // Find the Particle Lattice Manager in the newly loaded scene
                 ParticleLatticeManager latticeManager = FindAnyObjectByType<ParticleLatticeManager>();
+                
+                // Find and store reference to Phase Change Identifier
+                currentPhaseIdentifier = FindAnyObjectByType<PhaseChangeIdentifier>();
                 
                 if (latticeManager != null)
                 {
@@ -126,14 +129,31 @@ namespace LilLycanLord_Official
             SceneManager.LoadSceneAsync(minigameSceneName, LoadSceneMode.Additive);
         }
 
-        public void CompleteMinigame()
+        public void CompleteMinigame(bool playerSucceeded = true)
         {
-            // Destroy the ice block
-            if (currentMatterBlock != null)
+            // Extract phase change data before unloading scene
+            if (playerSucceeded && currentPhaseIdentifier != null)
             {
-                Destroy(currentMatterBlock.gameObject);
-                currentMatterBlock = null;
+                DetectedPhase initialPhase = currentPhaseIdentifier.GetInitialPhase();
+                DetectedPhase finalPhase = currentPhaseIdentifier.GetCurrentPhase();
+                string phaseChangeName = currentPhaseIdentifier.GetCurrentPhaseChangeName();
+                
+                Debug.Log($"Minigame completed! Phase change: {initialPhase} → {finalPhase} ({phaseChangeName})");
+                
+                // Update the matter block with the phase change result
+                if (currentMatterBlock != null)
+                {
+                    currentMatterBlock.OnPhaseChangeApplied(initialPhase, finalPhase, phaseChangeName);
+                }
             }
+            else if (!playerSucceeded)
+            {
+                Debug.Log("Minigame failed or cancelled.");
+            }
+            
+            // Clean up references
+            currentPhaseIdentifier = null;
+            currentMatterBlock = null;
 
             // Unload minigame scene
             SceneManager.UnloadSceneAsync(minigameSceneName);

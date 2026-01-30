@@ -64,6 +64,14 @@ namespace LilLycanLord_Official
         private ParticleBehaviour particleBBehaviour;
         private float baseStiffness; // Store the original stiffness value
         private float currentStiffness; // Current stiffness based on temperature
+        
+        /// <summary>
+        /// Get the current stiffness value of this bond
+        /// </summary>
+        public float GetCurrentStiffness()
+        {
+            return currentStiffness;
+        }
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -107,6 +115,16 @@ namespace LilLycanLord_Official
                 // Store base stiffness value
                 baseStiffness = stiffness;
                 currentStiffness = stiffness;
+            }
+        }
+        
+        void OnDestroy()
+        {
+            // Remove bond from lattice when destroyed
+            ParticleLattice lattice = GetComponentInParent<ParticleLattice>();
+            if (lattice != null)
+            {
+                lattice.RemoveBond(gameObject);
             }
         }
         

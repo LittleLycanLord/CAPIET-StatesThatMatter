@@ -48,6 +48,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.7f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Particle System\Particle Lattice Material Phase Change Events.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Scripts\Particle System\Screen Container Generator.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingDescr.cs" />
@@ -127,12 +128,14 @@
     <Compile Include="Assets\LeanTween\Testing\TestingSequencer.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\ScriptableObjects\Particle Lattice Presets\Phase Change Events\Water Events.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Player Interaction.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ComboCounter.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Dialogue Manager\DialogueUI.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitions\SampleTransition.cs" />
+    <Compile Include="Assets\Scripts\Puzzle\Minigame Complete Button.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\TypewriterText.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\Billboarding\Billboarding.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
@@ -154,6 +157,7 @@
     <Compile Include="Assets\LeanTween\Testing\TestingColorTweening.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Tilemap To GameObjects.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Phase Change Identifier.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing243.cs" />
     <Compile Include="Assets\Scripts\Platforming\Platformer Movement.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
@@ -178,11 +182,17 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-f-large.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Third Party\kenney_pixel-platformer\License.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\License.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\highlights-a-large.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-f-default.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-e-large.xml" />
     <None Include="Assets\LeanTween\ReadMe.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-c-large.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Third Party\kenney_pixel-platformer\Tilesheet (Tiles).txt" />
     <None Include="Assets\Third Party\kenney_pixel-platformer\Tilesheet (Characters).txt" />
@@ -192,31 +202,54 @@
     <None Include="Assets\LeanTween\License.txt" />
     <None Include="Assets\Third Party\Sprout Lands - UI Pack - Basic pack\read_me.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Third Party\kenney_game-icons\license.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-b-large.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\highlights-a-default.xml" />
     <None Include="Assets\Third Party\kenney_ui-pack-pixel-adventure\License.txt" />
     <None Include="Assets\Thesis Proper\CAPIET2 Thesis - Base (To be revised).txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\icons-default.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\icons-large.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-b-default.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-c-default.xml" />
+    <None Include="Assets\Third Party\kenney_game-icons\Spritesheet\sheet_black1x.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\Third Party\kenney_interface-sounds\License.txt" />
     <None Include="Assets\Third Party\kenney_ui-pack-pixel-adventure\Tilesheets\Small tiles\Tilesheet.txt" />
+    <None Include="Assets\Third Party\kenney_game-icons\Spritesheet\sheet_white1x.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Third Party\kenney_ui-pack-pixel-adventure\Tilesheets\Large tiles\Tilesheet.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-h-default.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Third Party\kenney_game-icons\Spritesheet\sheet_white2x.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-g-large.xml" />
     <None Include="Assets\StarterAssets\license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-e-default.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-d-default.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Third Party\kenney_pixel-platformer\Construct 3\Readme.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-h-large.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Thesis Proper\THESIS_CONTENT_CONSOLIDATED.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-a-large.xml" />
     <None Include="Assets\Thesis Proper\THESIS ITERATIONS\THESIS_CONTENT_CONSOLIDATED-ORIGINAL.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-g-default.xml" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\highlights-b-default.xml" />
+    <None Include="Assets\Third Party\kenney_game-icons\Spritesheet\sheet_black2x.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Thesis Proper\THESIS ITERATIONS\THESIS_CONTENT_CONSOLIDATED-01192026.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-d-large.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\highlights-b-large.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-a-default.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
