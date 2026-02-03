@@ -160,7 +160,7 @@ MonoBehaviour:
   particleB: {fileID: 0}
   bondLength: 1
   correctionIterations: 40
-  lineWidth: 0.05
+  maxStiffnessWidth: 1
   bondColor: {r: 1, g: 1, b: 1, a: 1}
   stiffness: 0.5
   maxBondLengthMultiplier: 2
@@ -171,4 +171,5 @@ MonoBehaviour:
   solidTemperature: 0
   solidStiffness: 0.98
   canBreak: 1
+  breakingTempWidth: 0
   breakingTemperature: 110

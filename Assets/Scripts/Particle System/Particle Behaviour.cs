@@ -50,6 +50,10 @@ namespace LilLycanLord_Official
         [Header("Temperature Settings")]
         [SerializeField] [Tooltip("Maximum temperature in Celsius")] private float maxTemperature = 110.0f;
         [SerializeField] [Tooltip("Minimum temperature in Celsius")] private float minTemperature = -10.0f;
+        [SerializeField] [Range(0f, 1f)] [Tooltip("Percentage of temperature range from minimum at which particle freezes (0.2 = 20%)")] 
+        private float freezeTemperaturePercentage = 0.2f;
+        [SerializeField] [Tooltip("Maximum drag applied when approaching freeze temperature")] 
+        private float maxTemperatureDrag = 50f;
         
         //* ╔════════════╗
         //* ║ Attributes ║
@@ -122,6 +126,12 @@ namespace LilLycanLord_Official
 
         void FixedUpdate()
         {
+            // Apply temperature-based drag and freezing
+            if (!isDragging)
+            {
+                ApplyTemperatureBasedDrag();
+            }
+            
             if (isDragging && rb != null)
             {
                 ApplyDragPhysics();
@@ -441,6 +451,46 @@ namespace LilLycanLord_Official
             }
             
             return true;
+        }
+        
+        /// <summary>
+        /// Apply drag based on current temperature
+        /// Particles move slower as temperature approaches minimum, freezing at freeze threshold
+        /// </summary>
+        private void ApplyTemperatureBasedDrag()
+        {
+            if (rb == null) return;
+            
+            // Calculate temperature range
+            float tempRange = maxTemperature - minTemperature;
+            if (tempRange <= 0f) return;
+            
+            // Calculate freeze temperature threshold
+            float freezeTemp = minTemperature + (tempRange * freezeTemperaturePercentage);
+            
+            // If at or below freeze temperature, completely stop the particle
+            if (currentTemperature <= freezeTemp)
+            {
+                rb.constraints = RigidbodyConstraints.FreezePosition;
+                rb.linearDamping = maxTemperatureDrag;
+                return;
+            }
+            
+            // Unfreeze constraints if above freeze temperature
+            if (rb.constraints != RigidbodyConstraints.None)
+            {
+                rb.constraints = RigidbodyConstraints.None;
+            }
+            
+            // Calculate normalized temperature (0 = freeze temp, 1 = max temp)
+            float normalizedTemp = (currentTemperature - freezeTemp) / (maxTemperature - freezeTemp);
+            normalizedTemp = Mathf.Clamp01(normalizedTemp);
+            
+            // Inverse the value so drag increases as temperature decreases
+            // At freeze temp: drag = maxTemperatureDrag
+            // At max temp: drag = originalDrag
+            float temperatureDrag = Mathf.Lerp(maxTemperatureDrag, originalDrag, normalizedTemp);
+            rb.linearDamping = temperatureDrag;
         }
 
         //* ╔════════════════════════════════╗

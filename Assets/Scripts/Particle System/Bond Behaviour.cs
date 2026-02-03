@@ -34,7 +34,8 @@ namespace LilLycanLord_Official
         [Header("Bond Settings")]
         [SerializeField] private float bondLength = 1f;
         [SerializeField] private int correctionIterations = 30;
-        [SerializeField] private float lineWidth = 0.05f;
+        [SerializeField] [Tooltip("Line width when stiffness is at maximum (1.0)")]
+        private float maxStiffnessWidth = 0.2f;
         [SerializeField] private Color bondColor = Color.white;
         [SerializeField] [Range(0f, 1f)] private float stiffness = 0.5f;
         [SerializeField] private float maxBondLengthMultiplier = 2f;
@@ -54,6 +55,7 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Breaking Settings")]
         [SerializeField] private bool canBreak = true;
+        [SerializeField] private float breakingTempWidth = 0.00f;
         [SerializeField] [Tooltip("Temperature at which bond breaks (in Celsius)")] private float breakingTemperature = 110f;
         
         //* ╔════════════╗
@@ -170,8 +172,8 @@ namespace LilLycanLord_Official
         private void InitializeLineRenderer()
         {
             lineRenderer.positionCount = 2;
-            lineRenderer.startWidth = lineWidth;
-            lineRenderer.endWidth = lineWidth;
+            lineRenderer.startWidth = breakingTempWidth;
+            lineRenderer.endWidth = breakingTempWidth;
             lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
             lineRenderer.startColor = bondColor;
             lineRenderer.endColor = bondColor;
@@ -183,8 +185,22 @@ namespace LilLycanLord_Official
             lineRenderer.SetPosition(1, particleB.transform.position);
             lineRenderer.startColor = bondColor;
             lineRenderer.endColor = bondColor;
-            lineRenderer.startWidth = lineWidth;
-            lineRenderer.endWidth = lineWidth;
+            
+            // Calculate width based on temperature directly for foolproof behavior
+            // coldest (minTemperature) → thickest (maxStiffnessWidth)
+            // hottest (breakingTemperature) → thinnest (breakingTempWidth)
+            float tempRange = breakingTemperature - minTemperature;
+            float normalizedTemp = 0f;
+            
+            if (tempRange > 0f)
+            {
+                normalizedTemp = Mathf.Clamp01((currentTemperature - minTemperature) / tempRange);
+            }
+            
+            // Invert: 0 (cold) = thick, 1 (hot) = thin
+            float dynamicWidth = Mathf.Lerp(maxStiffnessWidth, breakingTempWidth, normalizedTemp);
+            lineRenderer.startWidth = dynamicWidth;
+            lineRenderer.endWidth = dynamicWidth;
         }
         
         private void ApplyDistanceConstraint()
@@ -373,7 +389,7 @@ namespace LilLycanLord_Official
         /// </summary>
         public void SetBondWidth(float width)
         {
-            lineWidth = width;
+            breakingTempWidth = width;
             lineRenderer.startWidth = width;
             lineRenderer.endWidth = width;
         }

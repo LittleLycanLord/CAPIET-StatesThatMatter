@@ -302,6 +302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a665c860e3c4c1544a1ad6bd54e0d47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleColorPrototype
-  coldColor: {r: 0, g: 1, b: 1, a: 1}
+  coldColor: {r: 0.3160377, g: 0.85784334, b: 1, a: 1}
   midColor: {r: 1, g: 1, b: 1, a: 1}
-  hotColor: {r: 1, g: 0.5, b: 0, a: 1}
+  hotColor: {r: 1, g: 0.54260164, b: 0.25943398, a: 1}

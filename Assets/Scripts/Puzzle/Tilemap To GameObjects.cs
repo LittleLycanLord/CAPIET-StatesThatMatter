@@ -27,6 +27,11 @@ namespace LilLycanLord_Official
         public ParticleLatticeMaterial material;
         
         [Space(10)]
+        [Header("Collider Settings")]
+        [SerializeField] [Range(0f, 0.5f)] [Tooltip("Shrink colliders by this percentage (0 = no shrink, 0.5 = 50% smaller)")]
+        private float colliderShrinkPercentage = 0.05f;
+        
+        [Space(10)]
         [Header("Highlight Settings")]
         [SerializeField] private Color glowColor = new Color(1f, 1f, 1f, 0.5f);
         [SerializeField] private float glowScale = 1.15f;
@@ -141,6 +146,32 @@ namespace LilLycanLord_Official
 
                 var poly = child.AddComponent<PolygonCollider2D>();
                 poly.usedByComposite = true;
+                
+                // Shrink the polygon collider if needed
+                if (colliderShrinkPercentage > 0f)
+                {
+                    for (int pathIndex = 0; pathIndex < poly.pathCount; pathIndex++)
+                    {
+                        Vector2[] points = poly.GetPath(pathIndex);
+                        
+                        // Calculate centroid of the polygon
+                        Vector2 centroid = Vector2.zero;
+                        foreach (var point in points)
+                        {
+                            centroid += point;
+                        }
+                        centroid /= points.Length;
+                        
+                        // Scale points toward centroid
+                        float scale = 1f - colliderShrinkPercentage;
+                        for (int i = 0; i < points.Length; i++)
+                        {
+                            points[i] = centroid + (points[i] - centroid) * scale;
+                        }
+                        
+                        poly.SetPath(pathIndex, points);
+                    }
+                }
                 
                 // Create glow sprite (scaled, behind, tinted)
                 GameObject glowChild = new GameObject("GlowSprite");

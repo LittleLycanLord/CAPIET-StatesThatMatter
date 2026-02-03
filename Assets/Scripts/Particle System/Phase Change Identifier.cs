@@ -180,7 +180,6 @@ namespace LilLycanLord_Official
             // Gather metrics from lattice
             int currentBondCount = GetCurrentBondCount();
             float avgStiffness = GetAverageBondStiffness();
-            float avgSpeed = GetAverageParticleSpeed();
 
             // Calculate bond percentage
             float bondPercentage = totalPossibleBonds > 0
@@ -193,14 +192,14 @@ namespace LilLycanLord_Official
             if (debugMode)
             {
                 Debug.Log($"Detection - Bonds: {currentBondCount}/{totalPossibleBonds} ({bondPercentage:P0}), " +
-                         $"Stiffness: {avgStiffness:F2}, Speed: {avgSpeed:F2}");
+                         $"Stiffness: {avgStiffness:F2}");
             }
 
-            // Detection logic
+            // Detection logic (speed disregarded)
             if (bondPercentage < gasBondThreshold)
                 return DetectedPhase.Gas;
 
-            if (avgStiffness > solidStiffnessThreshold && avgSpeed < solidMotionThreshold)
+            if (avgStiffness > solidStiffnessThreshold)
                 return DetectedPhase.Solid;
 
             return DetectedPhase.Liquid;
