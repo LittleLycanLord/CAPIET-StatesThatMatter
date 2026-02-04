@@ -171,6 +171,7 @@ MonoBehaviour:
   container: {fileID: 1020640388}
   interactionButton: {fileID: 1277472527}
   material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
+  colliderShrinkPercentage: 0.05
   glowColor: {r: 1, g: 1, b: 1, a: 0.5}
   glowScale: 1.15
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3713,8 +3714,8 @@ Transform:
   m_GameObject: {fileID: 731878315}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.267, y: 0.57, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalPosition: {x: 0.000000029802322, y: 0.57, z: 0}
+  m_LocalScale: {x: 1.3612499, y: 1.3612499, z: 1.3612499}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 961344954}
@@ -3766,7 +3767,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1575973206, guid: 6451d5247e07f4c4c89c68c2faffa683, type: 3}
+  m_Sprite: {fileID: 2134941735, guid: f6d3810f7775d1a4892c4af862e7b4c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
