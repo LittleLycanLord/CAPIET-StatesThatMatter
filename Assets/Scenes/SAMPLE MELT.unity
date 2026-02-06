@@ -1322,7 +1322,7 @@ MonoBehaviour:
   previousPhase: 3
   currentPhaseChangeName: "\u2014"
   detectionInterval: 0.25
-  solidStiffnessThreshold: 0.3
+  solidStiffnessThreshold: 0.6
   solidMotionThreshold: 0.5
   gasBondThreshold: 0.1
   onPhaseChanged:
