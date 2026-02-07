@@ -99,6 +99,7 @@
     <Compile Include="Assets\LeanTween\Testing\Scripts\LeanPool.cs" />
     <Compile Include="Assets\LeanTween\Testing\PerformanceTests.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Bool Based Inspector Field\BoolBasedInspectorField.cs" />
+    <Compile Include="Assets\Scripts\Level Select.cs" />
     <Compile Include="Assets\Scripts\UI\Button Behaviour.cs" />
     <Compile Include="Assets\Scripts\Particle System\Particle Lattice Manager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ColorShifter.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\Billboarding\Billboarding.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\Scripts\Particle System\Particle Behaviour.cs" />
+    <Compile Include="Assets\Scripts\Main Menu And Level Select.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\PopUpObject.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Debugging Manager\DebuggingManager.cs" />
@@ -148,6 +150,7 @@
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\HealthBar.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingIssue.cs" />
+    <Compile Include="Assets\Scripts\Level Details.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingOptionalCancel.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
