@@ -71,6 +71,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitions\Crossfade.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Progression Manager\GameProgressionManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
+    <Compile Include="Assets\Scripts\Pause Menu.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ScoreCounter.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
