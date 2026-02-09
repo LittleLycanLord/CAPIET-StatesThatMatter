@@ -12,6 +12,9 @@ namespace LilLycanLord_Official
         //* ╚════════════╝
         private Camera mainCamera;
         private ParticleLatticeManager latticeManager;
+        [SerializeField] private GameObject parkingPoint;
+        [SerializeField] private GameObject coldParticles;
+        [SerializeField] private GameObject hotParticles;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -55,15 +58,17 @@ namespace LilLycanLord_Official
                 
                 // Ensure it's a trigger
                 brushCollider.isTrigger = true;
-                
+
                 // Add helper component for trigger events
                 if (brushChild.GetComponent<TemperatureBrushCollider>() == null)
                 {
                     brushChild.AddComponent<TemperatureBrushCollider>();
                 }
                 
-                // Initially hide the brush
-                brushChild.SetActive(false);
+                if (brushChild != null)
+                {
+                    brushChild.transform.position = parkingPoint != null ? parkingPoint.transform.position : Vector3.zero;
+                }
             }
         }
 
@@ -150,7 +155,8 @@ namespace LilLycanLord_Official
             if (brushChild == null || mainCamera == null) return;
             
             isActive = true;
-            brushChild.SetActive(true);
+            hotParticles.SetActive(heatingMode);
+            coldParticles.SetActive(coolingMode);
             UpdateBrushPosition(screenPosition);
         }
         
@@ -169,7 +175,7 @@ namespace LilLycanLord_Official
             
             if (brushChild != null)
             {
-                brushChild.SetActive(false);
+                brushChild.transform.position = parkingPoint != null ? parkingPoint.transform.position : Vector3.zero;
             }
             
             particlesInRange.Clear();

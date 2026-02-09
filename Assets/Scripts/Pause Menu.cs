@@ -11,7 +11,6 @@ namespace LilLycanLord_Official
         //* ╚════════════╝
         [Header("Components")]
         [SerializeField] private GameObject pauseMenu;
-        [SerializeField] private GameObject platformerControls;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -68,12 +67,6 @@ namespace LilLycanLord_Official
             isPaused = true;
             Time.timeScale = 0f;
             
-            // Disable player controls
-            if (platformerControls != null)
-            {
-                platformerControls.SetActive(false);
-            }
-            
             // Animate pause menu growing from center
             if (pauseMenu != null)
             {
@@ -100,24 +93,12 @@ namespace LilLycanLord_Official
                     .setOnComplete(() => {
                         Time.timeScale = 1f;
                         isPaused = false;
-                        
-                        // Re-enable player controls
-                        if (platformerControls != null)
-                        {
-                            platformerControls.SetActive(true);
-                        }
                     });
             }
             else
             {
                 Time.timeScale = 1f;
                 isPaused = false;
-                
-                // Re-enable player controls
-                if (platformerControls != null)
-                {
-                    platformerControls.SetActive(true);
-                }
             }
         }
         
