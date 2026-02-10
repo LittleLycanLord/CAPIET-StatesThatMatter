@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8aab16f260d964e95bd48d5f05d531, type: 3}
+  m_Name: Title
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.Sound
+  displayName: Title
+  category: BGM
+  tags: []
+  audioClip: {fileID: 8300000, guid: 6b8af857c392a544d82fb4778a6725a4, type: 3}
+  BPM: 0
+  customDuration: 0
+  loop: 1
+  pitch: 1
+  volume: 1
+  spatialBlend: 0
+  priority: 128
+  dopplerLevel: 1
+  reverbZoneMix: 1
+  enableFadeIn: 1
+  fadeInDuration: 0.5
+  enableFadeOut: 0
+  fadeOutDuration: 0.5

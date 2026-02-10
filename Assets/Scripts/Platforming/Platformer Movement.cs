@@ -14,6 +14,7 @@ namespace LilLycanLord_Official
         //* ╚════════════╝
         private Rigidbody2D rb;
         private CapsuleCollider2D capsuleCollider;
+        private PlatformerSFX platformerSFX;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -59,6 +60,7 @@ namespace LilLycanLord_Official
         {
             rb = GetComponent<Rigidbody2D>();
             capsuleCollider = GetComponent<CapsuleCollider2D>();
+            platformerSFX = GetComponent<PlatformerSFX>();
             
             if (animatorObject != null)
             {
@@ -249,6 +251,12 @@ namespace LilLycanLord_Official
             if (inputEnabled && isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
+                
+                // Play jump sound effect
+                if (platformerSFX != null)
+                {
+                    platformerSFX.PlayJumpSFX();
+                }
             }
         }
 

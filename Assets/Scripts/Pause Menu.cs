@@ -11,6 +11,7 @@ namespace LilLycanLord_Official
         //* ╚════════════╝
         [Header("Components")]
         [SerializeField] private GameObject pauseMenu;
+        [SerializeField] private GameObject controls;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -74,6 +75,7 @@ namespace LilLycanLord_Official
                 LeanTween.scale(pauseMenu, pauseMenuStartScale, growDuration)
                     .setEase(easeType)
                     .setIgnoreTimeScale(true); // Critical: allows animation during pause
+                controls.SetActive(false);
             }
         }
         
@@ -90,10 +92,12 @@ namespace LilLycanLord_Official
                 LeanTween.scale(pauseMenu, Vector3.zero, shrinkDuration)
                     .setEase(LeanTweenType.easeInBack)
                     .setIgnoreTimeScale(true) // Critical: allows animation during pause
-                    .setOnComplete(() => {
+                    .setOnComplete(() =>
+                    {
                         Time.timeScale = 1f;
                         isPaused = false;
                     });
+                controls.SetActive(true);
             }
             else
             {

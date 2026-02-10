@@ -15,4 +15,4 @@ MonoBehaviour:
   levelPreview: {fileID: 2800000, guid: 7832dd4635f6b28459cf9396087c569d, type: 3}
   levelName: Tutorial 1
   description: Why am I here again..?
-  sceneName: SAMPLE PLATFORMER + PROTOTYPE PUZZLE
+  sceneName: TUTORIAL_1

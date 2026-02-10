@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Particle System\Particle Lattice Material Phase Change Events.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Platformer SFX.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
     <Compile Include="Assets\Scripts\Particle System\Screen Container Generator.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingDescr.cs" />
@@ -81,7 +82,9 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Beat Manager\Sample\BeatManagerSample.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Audio Manager\Sample\SampleSoundPlayer.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Minigame Manager.cs" />
+    <Compile Include="Assets\Scripts\SFX Player.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
+    <Compile Include="Assets\Scripts\BGM Player.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Dialogue Manager\DialogueManager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEvents.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingIssue2.cs" />

@@ -314,12 +314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79d7e978c181e84b98ac0aca6ab38c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ButtonBehaviour
-  bobTarget: {fileID: 9191648191334705858}
   blinkTarget: {fileID: 7562030756781269655}
-  bobHeight: 1
-  bobRate: 0.5
   blinkDuration: 2
   blinkRate: 2
+  sfxName: Level Start
 --- !u!114 &4700981694689383380
 MonoBehaviour:
   m_ObjectHideFlags: 0
