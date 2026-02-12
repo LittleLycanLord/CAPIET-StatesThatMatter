@@ -61,12 +61,12 @@ namespace LilLycanLord_Official
         /// <summary>
         /// Pauses the game and shows the pause menu with animation
         /// </summary>
-        public void Pause()
+        public void Pause(bool pauseTime = false)
         {
             if (isPaused) return;
             
             isPaused = true;
-            Time.timeScale = 0f;
+            if (pauseTime) Time.timeScale = 0f;
             
             // Animate pause menu growing from center
             if (pauseMenu != null)

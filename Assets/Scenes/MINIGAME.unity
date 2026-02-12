@@ -341,9 +341,9 @@ GameObject:
   - component: {fileID: 238027160}
   - component: {fileID: 238027165}
   - component: {fileID: 238027164}
-  - component: {fileID: 238027163}
   - component: {fileID: 238027162}
   - component: {fileID: 238027161}
+  - component: {fileID: 238027166}
   m_Layer: 3
   m_Name: Complete Minigame Button
   m_TagString: Untagged
@@ -413,25 +413,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 238027166}
+        m_TargetAssemblyTypeName: LilLycanLord_Official.SFXPlayer, Assembly-CSharp
+        m_MethodName: PlaySFXOnAudioManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clickDelay: 0
---- !u!114 &238027163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238027159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e79d7e978c181e84b98ac0aca6ab38c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ButtonBehaviour
-  bobTarget: {fileID: 657739210}
-  blinkTarget: {fileID: 1041874727}
-  bobHeight: 1
-  bobRate: 0.5
-  blinkDuration: 2
-  blinkRate: 2
 --- !u!114 &238027164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,7 +445,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -476,7 +470,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 238027163}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LilLycanLord_Official.ButtonBehaviour, Assembly-CSharp
         m_MethodName: OnButtonPressed
         m_Mode: 1
@@ -496,6 +490,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238027159}
   m_CullTransparentMesh: 1
+--- !u!114 &238027166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238027159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016d959440aefc9468b7af49a732acba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.SFXPlayer
+  sfxName: Confirm
 --- !u!1 &243884754
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,9 +787,9 @@ GameObject:
   - component: {fileID: 369198497}
   - component: {fileID: 369198502}
   - component: {fileID: 369198501}
-  - component: {fileID: 369198500}
   - component: {fileID: 369198499}
   - component: {fileID: 369198498}
+  - component: {fileID: 369198503}
   m_Layer: 3
   m_Name: Cancel Minigame Button
   m_TagString: Untagged
@@ -852,25 +859,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 369198503}
+        m_TargetAssemblyTypeName: LilLycanLord_Official.SFXPlayer, Assembly-CSharp
+        m_MethodName: PlaySFXOnAudioManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clickDelay: 0
---- !u!114 &369198500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369198496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e79d7e978c181e84b98ac0aca6ab38c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ButtonBehaviour
-  bobTarget: {fileID: 926707860}
-  blinkTarget: {fileID: 125616583}
-  bobHeight: 1
-  bobRate: 0.5
-  blinkDuration: 2
-  blinkRate: 2
 --- !u!114 &369198501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +891,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -915,7 +916,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 369198500}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LilLycanLord_Official.ButtonBehaviour, Assembly-CSharp
         m_MethodName: OnButtonPressed
         m_Mode: 1
@@ -935,6 +936,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369198496}
   m_CullTransparentMesh: 1
+--- !u!114 &369198503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369198496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016d959440aefc9468b7af49a732acba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.SFXPlayer
+  sfxName: Cancel
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,7 +3597,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3608,7 +3622,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6952612036987243883}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LilLycanLord_Official.ButtonBehaviour, Assembly-CSharp
         m_MethodName: OnButtonPressed
         m_Mode: 1
@@ -3702,6 +3716,14 @@ PrefabInstance:
       propertyPath: parkingPoint
       value: 
       objectReference: {fileID: 481692758}
+    - target: {fileID: 6582056446256147610, guid: 5f6285a03fcb5d14f8c8a910c84fc95c, type: 3}
+      propertyPath: coolingLoopSFXName
+      value: Cooling
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582056446256147610, guid: 5f6285a03fcb5d14f8c8a910c84fc95c, type: 3}
+      propertyPath: heatingLoopSFXName
+      value: Heating
+      objectReference: {fileID: 0}
     - target: {fileID: 7506326928302998802, guid: 5f6285a03fcb5d14f8c8a910c84fc95c, type: 3}
       propertyPath: m_Name
       value: Temperature Brush
@@ -4232,6 +4254,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8885994848919842367}
+        m_TargetAssemblyTypeName: LilLycanLord_Official.SFXPlayer, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clickDelay: 0
 --- !u!224 &5513829252598338163
 RectTransform:
@@ -4567,24 +4601,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6952612036987243883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8885994848919842366}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e79d7e978c181e84b98ac0aca6ab38c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ButtonBehaviour
-  bobTarget: {fileID: 4508099553738539215}
-  blinkTarget: {fileID: 2793754902710305158}
-  bobHeight: 1
-  bobRate: 0.5
-  blinkDuration: 2
-  blinkRate: 2
 --- !u!1 &7115164702983057092
 GameObject:
   m_ObjectHideFlags: 0
@@ -5011,8 +5027,8 @@ GameObject:
   - component: {fileID: 191284956849797194}
   - component: {fileID: 1705187962623076020}
   - component: {fileID: 1463736727787530111}
-  - component: {fileID: 6952612036987243883}
   - component: {fileID: 5270368913039012151}
+  - component: {fileID: 8885994848919842367}
   m_Layer: 3
   m_Name: Reset Lattice Button
   m_TagString: Untagged
@@ -5020,6 +5036,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8885994848919842367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885994848919842366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016d959440aefc9468b7af49a732acba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.SFXPlayer
+  sfxName: Reset
 --- !u!224 &9122367293910325260
 RectTransform:
   m_ObjectHideFlags: 0

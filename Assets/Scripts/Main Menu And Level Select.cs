@@ -8,7 +8,7 @@ namespace LilLycanLord_Official
         //* ║ Components ║
         //* ╚════════════╝
         [Header("Components")]
-        [SerializeField] private UnityEngine.UI.CanvasScaler mainMenu;
+        [SerializeField] private GameObject mainMenu;
         [SerializeField] private GameObject levelSelect;
         [SerializeField] private GameObject portal;
 
@@ -33,17 +33,17 @@ namespace LilLycanLord_Official
         private Vector3 levelSelectStartPos;
         private Vector3 portalStartPos;
         
-        private float mainMenuStartScaleFactor;
+        private Vector3 mainMenuStartScale;
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
         //* ╚═══════════════╝
         void Awake() 
         {
-            // Store initial positions and scale factor
+            // Store initial positions and scale
             if (mainMenu != null)
             {
-                mainMenuStartScaleFactor = mainMenu.scaleFactor;
+                mainMenuStartScale = mainMenu.transform.localScale;
             }
             
             if (levelSelect != null)
@@ -59,15 +59,12 @@ namespace LilLycanLord_Official
 
         void Start() 
         {
-            // Animate mainMenu growing from zero scale factor
+            // Animate mainMenu growing from zero scale
             if (mainMenu != null)
             {
-                mainMenu.scaleFactor = 0f;
-                LeanTween.value(mainMenu.gameObject, 0f, mainMenuStartScaleFactor, growDuration)
-                    .setEase(easeType)
-                    .setOnUpdate((float val) => {
-                        if (mainMenu != null) mainMenu.scaleFactor = val;
-                    });
+                mainMenu.transform.localScale = Vector3.zero;
+                LeanTween.scale(mainMenu, mainMenuStartScale, growDuration)
+                    .setEase(easeType);
             }
             
             // Position level select off-screen at bottom initially
@@ -92,14 +89,11 @@ namespace LilLycanLord_Official
         /// </summary>
         public void GoToLevelSelect()
         {
-            // Shrink mainMenu by animating scaleFactor to zero
+            // Shrink mainMenu to zero scale
             if (mainMenu != null)
             {
-                LeanTween.value(mainMenu.gameObject, mainMenu.scaleFactor, 0f, shrinkDuration)
-                    .setEase(LeanTweenType.easeInBack)
-                    .setOnUpdate((float val) => {
-                        if (mainMenu != null) mainMenu.scaleFactor = val;
-                    });
+                LeanTween.scale(mainMenu, Vector3.zero, shrinkDuration)
+                    .setEase(LeanTweenType.easeInBack);
             }
             
             // Slide portal to the right (off screen)
@@ -142,15 +136,12 @@ namespace LilLycanLord_Official
                     .setEase(easeType);
             }
             
-            // Grow mainMenu back by animating scaleFactor
+            // Grow mainMenu back to original scale
             if (mainMenu != null)
             {
-                LeanTween.value(mainMenu.gameObject, 0f, mainMenuStartScaleFactor, growDuration)
+                LeanTween.scale(mainMenu, mainMenuStartScale, growDuration)
                     .setEase(easeType)
-                    .setDelay(slideDuration)
-                    .setOnUpdate((float val) => {
-                        if (mainMenu != null) mainMenu.scaleFactor = val;
-                    });
+                    .setDelay(slideDuration);
             }
         }
 

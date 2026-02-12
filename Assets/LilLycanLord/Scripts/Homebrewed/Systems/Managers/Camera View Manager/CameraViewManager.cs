@@ -14,7 +14,6 @@ namespace LilLycanLord_Official
     {
         public CinemachineCamera cinemachineCamera;
 
-        [Range(0.0f, 10.0f)]
         public float cinematicEffect;
         public CinemachineBlendDefinition blendMode;
     }
@@ -409,9 +408,34 @@ namespace LilLycanLord_Official
             //* Initialize cinematic bars
             InitializeCinematicBars();
 
-            //* Set default values
+            //* Set default values and apply starting view's cinematic effect
             viewChangeSpeed = defaultViewChangeSpeed;
-            targetCinematicEffect = cinematicEffect;
+            
+            // Find the starting view's cinematic effect and set bars immediately
+            View startingViewData = FindViewByCamera(startingView);
+            if (startingViewData != null)
+            {
+                cinematicEffect = startingViewData.cinematicEffect;
+                targetCinematicEffect = startingViewData.cinematicEffect;
+                
+                // Immediately set the cinematic bar sizes
+                if (topCinematicBar != null && bottomCinematicBar != null)
+                {
+                    float barSize = cinematicEffect * 10.0f;
+                    topCinematicBar.rectTransform.sizeDelta = new Vector2(
+                        topCinematicBar.rectTransform.sizeDelta.x,
+                        barSize
+                    );
+                    bottomCinematicBar.rectTransform.sizeDelta = new Vector2(
+                        bottomCinematicBar.rectTransform.sizeDelta.x,
+                        barSize
+                    );
+                }
+            }
+            else
+            {
+                targetCinematicEffect = cinematicEffect;
+            }
 
             Debug.Log(
                 $"CameraViewManager: Initialized with {views.Count} views, starting with '{currentView.name}'"

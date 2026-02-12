@@ -1,9 +1,10 @@
 using LilLycanLord_Official;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace LilLycanLord_Official
 {
-    public class SFXPlayer : MonoBehaviour
+    public class NextLevelBehaviour : MonoBehaviour
     {
         //* ╔════════════╗
         //* ║ Components ║
@@ -18,9 +19,10 @@ namespace LilLycanLord_Official
         //* ║ Fields ║
         //* ╚════════╝
         [Space(10)]
-        [Header("SFX Settings")]
-        [Tooltip("Name of the sound effect to play from AudioManager")]
-        [SerializeField] private string sfxName = "";
+        [Header("Fields")]
+        LevelDetails nextLevel;
+        [Header("Settings")]
+        [SerializeField] private string transitionType = "Crossfade";
         
         //* ╔════════════╗
         //* ║ Attributes ║
@@ -38,45 +40,21 @@ namespace LilLycanLord_Official
         //* ╔═════════════════════╗
         //* ║ Non - Monobehaviour ║
         //* ╚═════════════════════╝
-        
-        /// <summary>
-        /// Plays the configured sound effect - can be called from UnityEvents
-        /// </summary>
-        public void PlaySFX()
+        public void GoToNextLevel()
         {
-            if (AudioManager.Instance == null)
+            if (nextLevel == null)
             {
-                Debug.LogWarning("[SFXPlayer] AudioManager instance not found!");
+                Debug.LogWarning("[NextLevelBehaviour] Next level details not set!");
                 return;
             }
             
-            if (string.IsNullOrEmpty(sfxName))
+            if (string.IsNullOrEmpty(nextLevel.sceneName))
             {
-                Debug.LogWarning("[SFXPlayer] SFX name is empty!");
+                Debug.LogWarning("[NextLevelBehaviour] Next level scene name is empty!");
                 return;
             }
             
-            AudioManager.Instance.Play(sfxName, gameObject);
-        }
-        
-        /// <summary>
-        /// Plays the sound effect on AudioManager itself - prevents cutoff if this GameObject is destroyed
-        /// </summary>
-        public void PlaySFXOnAudioManager()
-        {
-            if (AudioManager.Instance == null)
-            {
-                Debug.LogWarning("[SFXPlayer] AudioManager instance not found!");
-                return;
-            }
-            
-            if (string.IsNullOrEmpty(sfxName))
-            {
-                Debug.LogWarning("[SFXPlayer] SFX name is empty!");
-                return;
-            }
-            
-            AudioManager.Instance.Play(sfxName, AudioManager.Instance.gameObject);
+            SceneTransitionManager.Instance.LoadSceneWithTransition(nextLevel.sceneName, transitionType);
         }
 
         //* ╔════════════════════════════════╗

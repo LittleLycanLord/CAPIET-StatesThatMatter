@@ -32,12 +32,20 @@ namespace LilLycanLord_Official
         [SerializeField] private float temperatureChangeRate = 10f;
         [SerializeField] private float brushDistanceFromCamera = 10f;
         
+        [Space(10)]
+        [Header("Audio Settings")]
+        [SerializeField] private string heatingLoopSFXName = "HeatingLoop";
+        [SerializeField] private string coolingLoopSFXName = "CoolingLoop";
+        [SerializeField] private float audioFadeInDuration = 0.3f;
+        [SerializeField] private float audioFadeOutDuration = 0.2f;
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
         private bool isActive = false;
         private SphereCollider brushCollider;
         private HashSet<GameObject> particlesInRange = new HashSet<GameObject>();
+        private AudioSource currentLoopingAudio;
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -158,6 +166,9 @@ namespace LilLycanLord_Official
             hotParticles.SetActive(heatingMode);
             coldParticles.SetActive(coolingMode);
             UpdateBrushPosition(screenPosition);
+            
+            // Start playing the appropriate looping sound
+            PlayLoopingSound();
         }
         
         private void UpdateBrushPosition(Vector3 screenPosition)
@@ -172,6 +183,9 @@ namespace LilLycanLord_Official
         private void DeactivateBrush()
         {
             isActive = false;
+            
+            // Stop the looping sound with fade out
+            StopLoopingSound();
             
             if (brushChild != null)
             {
@@ -268,6 +282,37 @@ namespace LilLycanLord_Official
         public bool IsAnyModeActive()
         {
             return heatingMode || coolingMode;
+        }
+        
+        /// <summary>
+        /// Play the appropriate looping sound based on current mode
+        /// </summary>
+        private void PlayLoopingSound()
+        {
+            if (AudioManager.Instance == null) return;
+            
+            string soundToPlay = heatingMode ? heatingLoopSFXName : coolingMode ? coolingLoopSFXName : null;
+            
+            if (!string.IsNullOrEmpty(soundToPlay))
+            {
+                currentLoopingAudio = AudioManager.Instance.PlayWithFadeIn(
+                    soundToPlay,
+                    audioFadeInDuration,
+                    gameObject
+                );
+            }
+        }
+        
+        /// <summary>
+        /// Stop the currently playing looping sound with fade out
+        /// </summary>
+        private void StopLoopingSound()
+        {
+            if (AudioManager.Instance != null && currentLoopingAudio != null)
+            {
+                AudioManager.Instance.Stop(currentLoopingAudio, audioFadeOutDuration);
+                currentLoopingAudio = null;
+            }
         }
         
         public void OnChildTriggerEnter(Collider other)

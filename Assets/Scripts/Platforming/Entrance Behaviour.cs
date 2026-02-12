@@ -25,6 +25,12 @@ namespace LilLycanLord_Official
         [SerializeField] private Animator doorAnimator;
         [SerializeField] private Transform doorPosition;
         
+        [Space(10)]
+        [Header("Camera Settings")]
+        [SerializeField] private string entranceViewName = "Entrance View";
+        [SerializeField] private string platformerViewName = "Platformer View";
+        [SerializeField] private float cameraTransitionSpeed = 2f;
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
@@ -56,6 +62,17 @@ namespace LilLycanLord_Official
             {
                 Debug.LogWarning("[EntranceBehaviour] player or doorPosition not assigned!");
                 yield break;
+            }
+            
+            // Set camera to Entrance View at the start
+            if (CameraViewManager.Instance != null)
+            {
+                Debug.Log($"[EntranceBehaviour] Setting camera to {entranceViewName}");
+                CameraViewManager.Instance.SetView(entranceViewName, cameraTransitionSpeed);
+            }
+            else
+            {
+                Debug.LogWarning("[EntranceBehaviour] CameraViewManager instance not found!");
             }
             
             // Get player components
@@ -114,6 +131,13 @@ namespace LilLycanLord_Official
             {
                 Debug.Log("[EntranceBehaviour] Re-enabling player input");
                 playerMovement.SetInputEnabled(true);
+            }
+            
+            // Switch camera to Platformer View after entrance sequence
+            if (CameraViewManager.Instance != null)
+            {
+                Debug.Log($"[EntranceBehaviour] Switching camera to {platformerViewName}");
+                CameraViewManager.Instance.SetView(platformerViewName, cameraTransitionSpeed);
             }
             
             Debug.Log("[EntranceBehaviour] Entrance sequence complete!");

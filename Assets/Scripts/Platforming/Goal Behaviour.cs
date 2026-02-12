@@ -25,6 +25,12 @@ namespace LilLycanLord_Official
         [SerializeField] private Animator doorAnimator;
         [SerializeField] private BoxCollider2D triggerArea;
         [SerializeField] private Transform doorPosition;
+        [SerializeField] private PauseMenu levelComplete;
+        
+        [Space(10)]
+        [Header("Camera Settings")]
+        [SerializeField] private string goalViewName = "Goal View";
+        [SerializeField] private float cameraTransitionSpeed = 2f;
         
         [Space(10)]
         [Header("Movement Settings")]
@@ -78,6 +84,17 @@ namespace LilLycanLord_Official
         private IEnumerator EnterGoalSequence()
         {
             Debug.Log("[GoalBehaviour] EnterGoalSequence started");
+            
+            // Transition camera to Goal View
+            if (CameraViewManager.Instance != null)
+            {
+                Debug.Log($"[GoalBehaviour] Switching camera to {goalViewName}");
+                CameraViewManager.Instance.SetView(goalViewName, cameraTransitionSpeed);
+            }
+            else
+            {
+                Debug.LogWarning("[GoalBehaviour] CameraViewManager instance not found!");
+            }
             
             if (player == null || doorPosition == null)
             {
@@ -180,6 +197,17 @@ namespace LilLycanLord_Official
             }
             
             Debug.Log("[GoalBehaviour] Goal sequence complete!");
+            
+            // Show level complete menu
+            if (levelComplete != null)
+            {
+                Debug.Log("[GoalBehaviour] Showing level complete menu");
+                levelComplete.Pause();
+            }
+            else
+            {
+                Debug.LogWarning("[GoalBehaviour] levelComplete PauseMenu not assigned!");
+            }
         }
 
         //* ╔════════════════════════════════╗

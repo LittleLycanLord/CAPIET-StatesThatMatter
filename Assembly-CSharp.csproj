@@ -139,6 +139,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\ComboCounter.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Dialogue Manager\DialogueUI.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
+    <Compile Include="Assets\Scripts\Next Level Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitions\SampleTransition.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Minigame Complete Button.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\UI\TypewriterText.cs" />
