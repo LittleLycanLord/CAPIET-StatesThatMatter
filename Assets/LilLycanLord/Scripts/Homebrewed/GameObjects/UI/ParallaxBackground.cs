@@ -38,6 +38,7 @@ namespace LilLycanLord_Official
         //* ╔════════╗
         //* ║ Fields ║
         //* ╚════════╝
+        RectTransform rectTransform;
 
         GameObject layerPool;
         Canvas canvas;
@@ -77,6 +78,7 @@ namespace LilLycanLord_Official
         void Start()
         {
             GenerateParallaxBackground();
+            rectTransform = GetComponent<RectTransform>();
         }
 
         void LateUpdate()
@@ -84,6 +86,11 @@ namespace LilLycanLord_Official
             canvas.planeDistance = planeDistance;
             foreach (ParallaxLayer layer in layers)
                 UpdateLayer(layer);
+            rectTransform.localRotation = Quaternion.Euler(
+                0.0f,
+                -trackedCamera.transform.rotation.eulerAngles.y,
+                0.0f
+            );
         }
 
         //* ╔═══════════════════╗

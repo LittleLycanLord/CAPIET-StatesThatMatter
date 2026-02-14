@@ -20,7 +20,7 @@ MonoBehaviour:
   customDuration: 0
   loop: 0
   pitch: 1.37
-  volume: 0.224
+  volume: 0.1
   spatialBlend: 0
   priority: 128
   dopplerLevel: 1

@@ -49,6 +49,28 @@ MonoBehaviour:
     _serializedList: []
   gameObjectAudioSources:
     _serializedList: []
-  soundLibrary: []
+  soundLibrary:
+  - {fileID: 11400000, guid: 52abd3d41c734bf448ee2e96e417520a, type: 2}
+  - {fileID: 11400000, guid: 1128a7ef7eaba824ebc5e986d266ae33, type: 2}
+  - {fileID: 11400000, guid: 3719a5a81efaae3449687696d7587805, type: 2}
+  - {fileID: 11400000, guid: 30698034d2a2cb543b49aeb7c1a0bbe1, type: 2}
+  - {fileID: 11400000, guid: 64ccd2bcb37cd874fa5f12aa7c2a7cd7, type: 2}
+  - {fileID: 11400000, guid: 8eefb331cc27ce94495e2aa76c3e7e00, type: 2}
+  - {fileID: 11400000, guid: cb9e8105d8250a7428a4b97cd5a978d2, type: 2}
+  - {fileID: 11400000, guid: 9fbbba1d249660743a41498f3eb21adb, type: 2}
+  - {fileID: 11400000, guid: 40fe4ea7019a80440841432765b8e8f7, type: 2}
+  - {fileID: 11400000, guid: 1ced2904861d327469c9948444b5ce17, type: 2}
+  - {fileID: 11400000, guid: 1128a7ef7eaba824ebc5e986d266ae33, type: 2}
+  - {fileID: 11400000, guid: 6b7e7286fcb80464fb4ee88e6cbfe2d3, type: 2}
+  - {fileID: 11400000, guid: a1d82fecc3136cb40af0ae9b2fc775f5, type: 2}
+  - {fileID: 11400000, guid: 68ad506e8a318054aa1e31285b3d96a0, type: 2}
+  - {fileID: 11400000, guid: e60bf27b1e92124439f44bcc9f18ed7a, type: 2}
+  - {fileID: 11400000, guid: 7e29f98d782bd9b4dbf7d3284e20e5d5, type: 2}
+  - {fileID: 11400000, guid: d3ea1fbc429ec6d48b96f1cce52425dd, type: 2}
+  - {fileID: 11400000, guid: dc00097cbd89af14d96919cab7c3cffb, type: 2}
+  - {fileID: 11400000, guid: 2a49dfa8236217143a161ed69a3f5d1b, type: 2}
+  - {fileID: 11400000, guid: b283e220bc53e6f459a95a540c708a81, type: 2}
+  - {fileID: 11400000, guid: f24f6a8687514b6439c47ed73eafff7a, type: 2}
   persistAcrossScenes: 1
   transferDataOnReplace: 1
+  autoRecreateOnDestroy: 1

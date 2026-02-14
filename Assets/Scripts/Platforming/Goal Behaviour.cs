@@ -36,6 +36,11 @@ namespace LilLycanLord_Official
         [Header("Movement Settings")]
         [SerializeField] private float moveSpeed = 5f;
         
+        [Space(10)]
+        [Header("Progress Settings")]
+        [SerializeField, Tooltip("Level index for progress tracking (1-based)")] 
+        private int levelIndex = 1;
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
@@ -197,6 +202,17 @@ namespace LilLycanLord_Official
             }
             
             Debug.Log("[GoalBehaviour] Goal sequence complete!");
+            
+            // Mark level as completed
+            if (ProgressManager.Instance != null)
+            {
+                ProgressManager.Instance.CompleteLevel(levelIndex);
+                Debug.Log($"[GoalBehaviour] Level {levelIndex} marked as completed");
+            }
+            else
+            {
+                Debug.LogWarning("[GoalBehaviour] ProgressManager instance not found!");
+            }
             
             // Show level complete menu
             if (levelComplete != null)

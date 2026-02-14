@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c8aab16f260d964e95bd48d5f05d531, type: 3}
-  m_Name: Footsteps Snow 3
+  m_Name: Pit
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.Sound
-  displayName: Footsteps Snow 3
+  displayName: Pit
   category: SFX
   tags: []
-  audioClip: {fileID: 8300000, guid: ba508192e1edeed4e882c965de105f4f, type: 3}
+  audioClip: {fileID: 8300000, guid: a03cb0a7e8c218449a50063ff2588668, type: 3}
   BPM: 0
   customDuration: 0
   loop: 0
-  pitch: 1.33
-  volume: 0.3
+  pitch: 1
+  volume: 0.565
   spatialBlend: 0
   priority: 128
   dopplerLevel: 1
   reverbZoneMix: 1
   enableFadeIn: 0
   fadeInDuration: 0.5
-  enableFadeOut: 0
-  fadeOutDuration: 0.5
+  enableFadeOut: 1
+  fadeOutDuration: 8

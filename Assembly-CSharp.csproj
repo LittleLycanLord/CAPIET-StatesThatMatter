@@ -173,9 +173,11 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Colored Hierarchy\ColoredHierarchy.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Interaction Scripts\GeneralPlayerInteraction.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\PixelViewMaker.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Pit Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Custom Editor\Usage Examples\BoolBasedSerializedFieldDocumentation.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Beat Manager\BeatManager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEventMigrationTool.cs" />
+    <Compile Include="Assets\Scripts\Progress Manager.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing246.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\General Controls\GeneralControls.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Movement Scripts\General3DMovementAnimator.cs" />

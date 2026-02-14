@@ -1571,6 +1571,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 230992a8a43b5f24ebe9c81c2346a6a2, type: 3}
+--- !u!1 &277298991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 277298992}
+  - component: {fileID: 277298993}
+  m_Layer: 0
+  m_Name: Progress Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &277298992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277298991}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &277298993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277298991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cab34e15ab055840bbf8863b4191364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ProgressManager
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1814,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 5, y: 10}
+  m_Spacing: {x: 20, y: 40}
   m_Constraint: 1
   m_ConstraintCount: 3
 --- !u!1 &769879999
@@ -1884,92 +1928,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
       propertyPath: soundLibrary.Array.size
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[0]'
+      propertyPath: 'soundLibrary.Array.data[21]'
       value: 
-      objectReference: {fileID: 11400000, guid: 52abd3d41c734bf448ee2e96e417520a, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 1128a7ef7eaba824ebc5e986d266ae33, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 3719a5a81efaae3449687696d7587805, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[3]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 30698034d2a2cb543b49aeb7c1a0bbe1, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[4]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 64ccd2bcb37cd874fa5f12aa7c2a7cd7, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[5]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 8eefb331cc27ce94495e2aa76c3e7e00, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[6]'
-      value: 
-      objectReference: {fileID: 11400000, guid: cb9e8105d8250a7428a4b97cd5a978d2, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[7]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 9fbbba1d249660743a41498f3eb21adb, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[8]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 40fe4ea7019a80440841432765b8e8f7, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[9]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 1ced2904861d327469c9948444b5ce17, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[10]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 1128a7ef7eaba824ebc5e986d266ae33, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[11]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 6b7e7286fcb80464fb4ee88e6cbfe2d3, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[12]'
-      value: 
-      objectReference: {fileID: 11400000, guid: a1d82fecc3136cb40af0ae9b2fc775f5, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[13]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 68ad506e8a318054aa1e31285b3d96a0, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[14]'
-      value: 
-      objectReference: {fileID: 11400000, guid: e60bf27b1e92124439f44bcc9f18ed7a, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[15]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 7e29f98d782bd9b4dbf7d3284e20e5d5, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[16]'
-      value: 
-      objectReference: {fileID: 11400000, guid: d3ea1fbc429ec6d48b96f1cce52425dd, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[17]'
-      value: 
-      objectReference: {fileID: 11400000, guid: dc00097cbd89af14d96919cab7c3cffb, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[18]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 2a49dfa8236217143a161ed69a3f5d1b, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[19]'
-      value: 
-      objectReference: {fileID: 11400000, guid: b283e220bc53e6f459a95a540c708a81, type: 2}
-    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
-      propertyPath: 'soundLibrary.Array.data[20]'
-      value: 
-      objectReference: {fileID: 11400000, guid: f24f6a8687514b6439c47ed73eafff7a, type: 2}
+      objectReference: {fileID: 11400000, guid: 06c495a398d264d45a5b65ecc4096503, type: 2}
     - target: {fileID: 6960161659976827747, guid: 90506403840082847a67b0b2fa351e33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2760,7 +2724,14 @@ MonoBehaviour:
   levelButtonPrefab: {fileID: 2449042005043963096, guid: a8fa054061a5e784bb6ba69eff33cd78, type: 3}
   levelDetails:
   - {fileID: 11400000, guid: 841767d9e457afb4fb77dd9f548c1b94, type: 2}
+  - {fileID: 11400000, guid: 65cf6f5fd0c3bbb43aa591aefab8661d, type: 2}
+  - {fileID: 11400000, guid: 504e2d492e85ecb43b2b1f803e5a5b5c, type: 2}
+  - {fileID: 11400000, guid: 87a362879d92f234d99ab43f37fe9042, type: 2}
+  - {fileID: 11400000, guid: 91208e5d95300b944a41e36b7f986078, type: 2}
   transitionType: Crossfade
+  lockedButtonColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  unlockedButtonColor: {r: 1, g: 1, b: 1, a: 1}
+  completedButtonColor: {r: 0.5, g: 1, b: 0.5, a: 1}
 --- !u!1 &1431528333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,8 +2767,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -215.67355}
-  m_SizeDelta: {x: 0, y: 169.42896}
+  m_AnchoredPosition: {x: 0, y: -227.9}
+  m_SizeDelta: {x: 100, y: 169.42896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431528335
 MonoBehaviour:
@@ -2878,7 +2849,7 @@ MonoBehaviour:
   m_fontSizeMax: 25.5
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3105,8 +3076,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -343.1347}
-  m_SizeDelta: {x: 0, y: 169.42896}
+  m_AnchoredPosition: {x: 0, y: -378.1}
+  m_SizeDelta: {x: 100, y: 169.42896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1547495030
 MonoBehaviour:
@@ -3187,7 +3158,7 @@ MonoBehaviour:
   m_fontSizeMax: 25.5
   m_fontStyle: 2
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4108,6 +4079,7 @@ MonoBehaviour:
   goalViewName: Goal View
   cameraTransitionSpeed: 2
   moveSpeed: 1
+  levelIndex: 1
 --- !u!61 &1648746773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6557,3 +6529,4 @@ SceneRoots:
   - {fileID: 1828035262}
   - {fileID: 859129341}
   - {fileID: 769880001}
+  - {fileID: 277298992}

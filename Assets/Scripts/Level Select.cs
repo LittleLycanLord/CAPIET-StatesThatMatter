@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LilLycanLord_Official
 {
@@ -33,10 +34,21 @@ namespace LilLycanLord_Official
         [Header("Settings")]
         [SerializeField] private string transitionType = "Crossfade";
         
+        [Header("Visual Feedback")]
+        [SerializeField, Tooltip("Color for locked level buttons")] 
+        private Color lockedButtonColor = new Color(0.5f, 0.5f, 0.5f, 1f);
+        
+        [SerializeField, Tooltip("Color for unlocked level buttons")] 
+        private Color unlockedButtonColor = Color.white;
+        
+        [SerializeField, Tooltip("Color for completed level buttons")] 
+        private Color completedButtonColor = new Color(0.5f, 1f, 0.5f, 1f);
+        
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
         private LevelDetails lastPreviewedLevel;
+        private Dictionary<LevelDetails, GameObject> levelButtonMap = new Dictionary<LevelDetails, GameObject>();
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -54,6 +66,8 @@ namespace LilLycanLord_Official
                     if (level != null)
                     {
                         GameObject buttonObj = Instantiate(levelButtonPrefab, buttonList.transform);
+                        levelButtonMap[level] = buttonObj;
+                        
                         UIVirtualButton virtualButton = buttonObj.GetComponent<UIVirtualButton>();
                         
                         if (virtualButton != null)
@@ -76,14 +90,23 @@ namespace LilLycanLord_Official
                                 }
                             }
                         }
+                        
+                        // Update button state based on progress
+                        UpdateButtonState(level, buttonObj);
                     }
                 }
                 
-                // Preview the first level by default
-                if (levelDetails.Count > 0 && levelDetails[0] != null)
+                // Preview the first unlocked or first level by default
+                LevelDetails defaultPreview = levelDetails.FirstOrDefault(l => l != null && IsLevelUnlocked(l));
+                if (defaultPreview == null && levelDetails.Count > 0)
                 {
-                    PreviewLevel(levelDetails[0]);
-                    lastPreviewedLevel = levelDetails[0];
+                    defaultPreview = levelDetails[0];
+                }
+                
+                if (defaultPreview != null)
+                {
+                    PreviewLevel(defaultPreview);
+                    lastPreviewedLevel = defaultPreview;
                 }
             }
         }
@@ -101,6 +124,13 @@ namespace LilLycanLord_Official
         {
             if (level == null) return;
             
+            // Check if level is unlocked
+            if (!IsLevelUnlocked(level))
+            {
+                Debug.Log($"[LevelSelect] Level {level.levelIndex} ({level.levelName}) is locked");
+                return;
+            }
+            
             // Check if this is the same level that was just previewed
             if (lastPreviewedLevel == level)
             {
@@ -115,6 +145,79 @@ namespace LilLycanLord_Official
                 // First tap - preview the level
                 PreviewLevel(level);
                 lastPreviewedLevel = level;
+            }
+        }
+        
+        /// <summary>
+        /// Checks if a level is unlocked
+        /// </summary>
+        private bool IsLevelUnlocked(LevelDetails level)
+        {
+            if (level == null || ProgressManager.Instance == null) return false;
+            return ProgressManager.Instance.IsLevelUnlocked(level.levelIndex);
+        }
+        
+        /// <summary>
+        /// Checks if a level is completed
+        /// </summary>
+        private bool IsLevelCompleted(LevelDetails level)
+        {
+            if (level == null || ProgressManager.Instance == null) return false;
+            return ProgressManager.Instance.IsLevelCompleted(level.levelIndex);
+        }
+        
+        /// <summary>
+        /// Updates the visual state of a level button based on unlock/completion status
+        /// </summary>
+        private void UpdateButtonState(LevelDetails level, GameObject buttonObj)
+        {
+            if (level == null || buttonObj == null) return;
+            
+            bool isUnlocked = IsLevelUnlocked(level);
+            bool isCompleted = IsLevelCompleted(level);
+            
+            // Get the button component
+            UIVirtualButton virtualButton = buttonObj.GetComponent<UIVirtualButton>();
+            Button button = buttonObj.GetComponent<Button>();
+            if (virtualButton != null)
+            {
+                // Enable/disable based on unlock status
+                virtualButton.enabled = isUnlocked;
+                button.interactable = isUnlocked;
+            }
+            
+            // Get the visuals to update color
+            Transform visualsTransform = buttonObj.transform.Find("Visuals");
+            if (visualsTransform != null)
+            {
+                Image visualsImage = visualsTransform.GetComponent<Image>();
+                if (visualsImage != null)
+                {
+                    // Set color based on state
+                    if (!isUnlocked)
+                    {
+                        visualsImage.color = lockedButtonColor;
+                    }
+                    else if (isCompleted)
+                    {
+                        visualsImage.color = completedButtonColor;
+                    }
+                    else
+                    {
+                        visualsImage.color = unlockedButtonColor;
+                    }
+                }
+                
+                // Optionally dim the text for locked levels
+                Transform textTransform = visualsTransform.Find("Text (TMP)");
+                if (textTransform != null)
+                {
+                    TMP_Text textComponent = textTransform.GetComponent<TMP_Text>();
+                    if (textComponent != null)
+                    {
+                        textComponent.alpha = isUnlocked ? 1f : 0.5f;
+                    }
+                }
             }
         }
         

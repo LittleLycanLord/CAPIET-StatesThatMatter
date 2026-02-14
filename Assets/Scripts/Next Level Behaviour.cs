@@ -20,8 +20,10 @@ namespace LilLycanLord_Official
         //* ╚════════╝
         [Space(10)]
         [Header("Fields")]
-        LevelDetails nextLevel;
+        [SerializeField] LevelDetails nextLevel;
         [Header("Settings")]
+         [Header("Scene Settings")]
+        [SerializeField] private string levelSelectSceneName = "MAIN_MENU";
         [SerializeField] private string transitionType = "Crossfade";
         
         //* ╔════════════╗
@@ -43,17 +45,20 @@ namespace LilLycanLord_Official
         public void GoToNextLevel()
         {
             if (nextLevel == null)
-            {
-                Debug.LogWarning("[NextLevelBehaviour] Next level details not set!");
+            {                
+                if (!string.IsNullOrEmpty(levelSelectSceneName))
+                {
+                    SceneTransitionManager.Instance.LoadSceneWithTransition(levelSelectSceneName, transitionType);
+                }
                 return;
             }
-            
+
             if (string.IsNullOrEmpty(nextLevel.sceneName))
             {
                 Debug.LogWarning("[NextLevelBehaviour] Next level scene name is empty!");
                 return;
             }
-            
+
             SceneTransitionManager.Instance.LoadSceneWithTransition(nextLevel.sceneName, transitionType);
         }
 

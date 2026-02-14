@@ -64,6 +64,8 @@ namespace LilLycanLord_Official
                 List<Vector3Int> cluster = FloodFill(cell);
                 CreateBlockFromCluster(cluster);
             }
+            if (interactionButton != null)
+                interactionButton.SetActive(false);
 
             tilemap.gameObject.SetActive(false);
         }

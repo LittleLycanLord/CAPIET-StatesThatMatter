@@ -19,6 +19,9 @@ namespace LilLycanLord_Official
         //* ╚════════╝
         [Space(10)]
         [Header("Level Information")]
+        [Tooltip("Level index/number (1-based, used for progress tracking)")]
+        public int levelIndex = 1;
+        
         [Tooltip("Visual preview/thumbnail of the level")]
         public Texture2D levelPreview;
         

@@ -694,6 +694,88 @@ namespace LilLycanLord_Official
 
             targetSceneName = "";
         }
+        
+        /// <summary>
+        /// Plays a transition effect (fade in/out) without loading a new scene.
+        /// Useful for visual transitions like teleporting, respawning, etc.
+        /// </summary>
+        /// <param name="transitionName">Name of the transition to play</param>
+        /// <param name="onMidpoint">Optional callback to execute when fully faded in (at midpoint)</param>
+        public void PlayTransitionEffect(string transitionName, System.Action onMidpoint = null)
+        {
+            if (isTransitioning)
+            {
+                Debug.LogWarning("SceneTransitionManager: Cannot play transition effect while already transitioning");
+                return;
+            }
+            
+            SceneTransition transition = FindTransition(transitionName);
+            if (transition == null)
+            {
+                Debug.LogError($"SceneTransitionManager: Cannot play transition effect - transition '{transitionName}' not found");
+                return;
+            }
+            
+            // Store current transition
+            selectedTransition = transition;
+            selectedTransitionName = transitionName;
+            
+            // Start the effect coroutine
+            StartCoroutine(PlayTransitionEffectCoroutine(onMidpoint));
+        }
+        
+        /// <summary>
+        /// Coroutine that handles the transition effect sequence
+        /// </summary>
+        private System.Collections.IEnumerator PlayTransitionEffectCoroutine(System.Action onMidpoint)
+        {
+            Debug.Log($"SceneTransitionManager: Playing transition effect '{selectedTransitionName}'");
+            
+            // Mark as transitioning
+            FlagTransition(true);
+            
+            // Phase 1: Prime transition (fade in)
+            selectedTransition.PrimeTransition();
+            
+            // Wait for fade in duration
+            float fadeInDuration = exitingDuration > 0 ? exitingDuration : 1f;
+            
+            // Try to get duration from Crossfade if it's the selected transition
+            Crossfade crossfade = selectedTransition as Crossfade;
+            if (crossfade != null)
+            {
+                // Access private field via reflection or use a reasonable default
+                // Since we can't access private fields directly, use the exitingDuration from manager
+                fadeInDuration = exitingDuration > 0 ? exitingDuration : 1f;
+            }
+            
+            Debug.Log($"SceneTransitionManager: Waiting {fadeInDuration}s for fade in");
+            yield return new WaitForSeconds(fadeInDuration);
+            
+            // Phase 2: Execute midpoint callback
+            if (onMidpoint != null)
+            {
+                Debug.Log("SceneTransitionManager: Executing midpoint callback");
+                try
+                {
+                    onMidpoint.Invoke();
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError($"SceneTransitionManager: Error in midpoint callback - {e.Message}");
+                }
+            }
+            
+            // Phase 3: Clean up transition (fade out)
+            selectedTransition.CleanUpTransition();
+            
+            // Wait for fade out duration (CleanUpTransition will call EndTransition when done)
+            float fadeOutDuration = enteringDuration > 0 ? enteringDuration : 1f;
+            Debug.Log($"SceneTransitionManager: Transition effect will complete in {fadeOutDuration}s");
+            
+            // Note: CleanUpTransition internally waits and calls EndTransition,
+            // so we don't need to call it here
+        }
 
         /// <param name="transitionName">Name of the transition to find</param>
         /// <returns>SceneTransition if found, null otherwise</returns>
