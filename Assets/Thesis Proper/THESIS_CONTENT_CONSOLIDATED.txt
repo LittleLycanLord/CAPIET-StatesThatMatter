@@ -243,6 +243,115 @@ The platformer structure naturally supports the experiential cycle:
 
 Through repeated cycles, learners internalize abstract chemical principles.
 
+--- Subsection: Outcome-Based Teaching and Learning ---
+
+Outcome-Based Teaching and Learning (OBTL), as articulated by Kalra (2015), emphasizes that educational design should begin with clearly defined learning outcomes, which then determine instructional strategies and assessment methods. Rather than focusing on content delivery alone, OBTL ensures constructive alignment among learning objectives, teaching activities, and assessment practices.
+
+Central principles of OBTL include:
+
+1. Clearly articulated measurable learning outcomes
+2. Alignment between outcomes and instructional activities
+3. Assessment strategies that directly measure intended competencies
+
+The MATATAG Curriculum of the Department of Education adopts an outcomes-based orientation, emphasizing competency development, conceptual understanding, and application of knowledge.
+
+The developed educational platformer aligns with OBTL principles by:
+
+- Designing gameplay mechanics around specific Grade 6 science competencies
+- Embedding phase-change manipulation directly into learning objectives
+- Structuring levels to require demonstration of conceptual understanding
+
+Rather than treating the game as supplementary enrichment, the design ensures that progression through levels requires demonstration of intended learning outcomes.
+
+Thus, the game's structure reflects constructive alignment consistent with OBTL principles.
+
+--- Subsection: Bloom's Taxonomy Framework ---
+
+Bloom's Taxonomy (Bloom et al., 1956), later revised by Anderson and Krathwohl (2001), categorizes cognitive processes into hierarchical levels:
+
+1. Remember
+2. Understand
+3. Apply
+4. Analyze
+5. Evaluate
+6. Create
+
+The revised taxonomy emphasizes cognitive processes over static knowledge categories.
+
+In the context of Grade 6 chemistry learning, MATATAG competencies require students not only to recall definitions of phase changes but to understand mechanisms, apply concepts, and distinguish physical from chemical changes.
+
+The developed game supports multiple cognitive levels:
+
+- Remembering: Identifying terms such as melting, freezing, evaporation
+- Understanding: Explaining particle movement during state changes
+- Applying: Using phase changes to solve in-game obstacles
+- Analyzing: Distinguishing physical changes from chemical changes
+
+By embedding conceptual problem-solving into gameplay, the platformer moves beyond rote memorization toward higher-order cognitive engagement.
+
+Table 2.4 presents the alignment between Bloom's cognitive levels, MATATAG competencies, and the developed game mechanics.
+
+[NOTE: Table 2.4 - Alignment of Bloom's Taxonomy, MATATAG Competencies, and Game Mechanics - To be populated during LaTeX implementation phase]
+
+--- Section: Theoretical Framework ---
+
+This study is grounded in established learning theories that explain how learners construct, revise, and apply scientific knowledge. The development of the educational platformer game is primarily anchored in Conceptual Change Theory, Constructivist Learning Theory, and Multimedia Learning Theory, with support from Game-Based Learning Theory, Experiential Learning Theory, and Outcome-Based Teaching and Learning principles aligned with Bloom's Taxonomy. These theoretical foundations collectively inform the instructional design, mechanics, and intended learning outcomes of the intervention.
+
+Conceptual Change Theory posits that learners enter the classroom with pre-existing conceptions about scientific phenomena, many of which are misconceptions resistant to change. For conceptual change to occur, learners must experience dissatisfaction with their existing understanding and encounter intelligible, plausible, and fruitful alternative explanations.
+
+In the context of phase changes, learners often hold misconceptions regarding particle motion, energy transfer, and state transitions. The platformer game is designed to confront these misconceptions by allowing learners to manipulate molecular structures directly and observe changes in lattice spacing, particle movement, and energy conditions. By visually and interactively modeling these transitions, the intervention aims to facilitate the restructuring of inaccurate mental models.
+
+Conceptual Change Theory therefore serves as the primary explanatory framework guiding the study's instructional mechanics.
+
+Constructivism asserts that learners actively construct knowledge through interaction with their environment rather than passively receiving information. Learning occurs when individuals engage with tasks, test ideas, and refine understanding through experience.
+
+The game-based intervention reflects constructivist principles by requiring learners to manipulate particle arrangements, experiment with freezing and evaporating mechanics, and solve level-based challenges. Knowledge is not merely presented; instead, learners actively build understanding through interaction and problem-solving.
+
+This theoretical lens justifies the design choice of discovery-based level progression and scaffolded challenges embedded within the platformer environment.
+
+Multimedia Learning Theory suggests that learning improves when information is presented through coordinated visual and verbal channels, provided cognitive processing remains meaningful. Effective multimedia environments integrate text, visuals, and interactive elements to promote deeper understanding.
+
+The platformer incorporates:
+
+- Visual representations of particle movement
+- Explicit textual labels (e.g., "Solid → Liquid: Melting")
+- Dynamic changes in structure and spacing
+
+These elements are intentionally aligned to reinforce scientific terminology while simultaneously illustrating microscopic processes. The integration of visual simulation and textual labeling supports dual-channel processing and promotes coherent mental model construction.
+
+Game-Based Learning Theory emphasizes motivation, engagement, and structured challenges as mechanisms for promoting learning. The intervention integrates goal-oriented tasks, progressive difficulty, and interactive feedback to sustain learner engagement while targeting specific science competencies.
+
+Experiential Learning Theory proposes that learning occurs through concrete experience, reflective observation, conceptualization, and experimentation. The game enables learners to experience simulated molecular changes, reflect on outcomes, and apply understanding in subsequent levels requiring strategic manipulation of states of matter.
+
+Outcome-Based Teaching and Learning emphasizes alignment between instructional activities and clearly defined learning outcomes. This study aligns game mechanics with competencies specified in the MATATAG Curriculum for Grade 6 Science.
+
+Bloom's Taxonomy further informs the cognitive demands of the game, ensuring that learners move beyond recall toward application and analysis as they manipulate states of matter to solve environmental challenges within the platformer.
+
+Collectively, these theoretical foundations provide the pedagogical justification for the intervention and explain the mechanisms through which conceptual understanding is expected to improve.
+
+--- Section: Conceptual Framework ---
+
+This study adopts an Input–Process–Output (IPO) model to illustrate the relationship between theoretical foundations, the game-based intervention, and the intended learning outcomes.
+
+The conceptual framework synthesizes the theories discussed in the previous section and operationalizes them within the context of an educational platformer game designed to teach phase changes of matter.
+
+[NOTE: Figure X. Conceptual Framework of the Study - Insert ConceptualFrameworkDiagram.png here]
+
+As illustrated in the figure, the Input component consists of the theoretical and curricular foundations guiding the study. These include Conceptual Change Theory, Constructivism, Multimedia Learning Theory, Game-Based Learning Theory, Experiential Learning Theory, Outcome-Based Teaching and Learning principles, Bloom's Taxonomy, and the MATATAG Curriculum competencies for Grade 6 Science.
+
+These inputs inform the design of the Process component, which is the educational platformer game. The intervention operationalizes theoretical principles through interactive particle manipulation, phase change simulation mechanics, scaffolded level progression, and explicit labeling of state transitions. Learners actively engage with microscopic representations of matter and apply understanding to overcome in-game challenges.
+
+The Output component represents the intended learning outcomes of the study. These include:
+
+- Improved conceptual understanding of phase changes
+- Reduction of misconceptions regarding particle behavior
+- Enhanced ability to apply knowledge in problem-solving contexts
+- Alignment with targeted MATATAG Grade 6 Science competencies
+
+The arrows connecting the components signify that theoretical and curricular foundations directly shape the instructional design of the intervention, which in turn influences measurable learning outcomes.
+
+This framework guides the development of research instruments and informs the methodology described in Chapter 3.
+
 --- Section: International Literature and Studies ---
 
 --- Subsection: Digital Game-Based Learning in Science Education ---
