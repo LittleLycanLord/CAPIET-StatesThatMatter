@@ -3059,30 +3059,8 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Saputri2025</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">Bridges2015</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">Blyznyuk2024</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">Treagust2018</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Ren2024</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Putri2022</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">DepEd2024</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Barrot2021</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">DepEd2024</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">DepEd2024</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Kilag2024a</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Barrot2021</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Diquito2024</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Vallespin2024</bcf:citekey>
-    <bcf:citekey order="14" intorder="2">Vega2024</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Ren2024</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Sison2018</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Byusa2022</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Putri2022</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Hu2022</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Janah2024</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Maung2015</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">DataTab2025</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Hecker2025</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">DataTab2025</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Hecker2025</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

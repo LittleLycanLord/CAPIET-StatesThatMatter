@@ -1,0 +1,315 @@
+﻿# THESIS CONTENT - CONSOLIDATED TEXT FILE
+
+# Edit this file with any AI, then tell GitHub Copilot to update the LaTeX files
+
+# Format: Each section is marked with === CHAPTER === and --- Section ---
+
+================================================================================
+=== ABSTRACT (ENGLISH) ===
+==========================
+
+Chemistry education contains foundational concepts that are often perceived as difficult for students to understand, particularly in terms of their application to real-world situations. This difficulty may lead to cognitive overload, especially when instruction lacks opportunities for practical engagement. Interactive learning approaches allow students to actively apply and develop their analytical skills while discovering how chemistry concepts relate to everyday experiences.
+
+This study explores the use of Game-Based Learning (GBL) through the development of [GAME NAME HERE], an educational serious game designed as a learning material for Grade 6 students under the MATATAG curriculum in the Philippines. The game focuses on physical and chemical changes of matter, expanding students’ understanding beyond the three common states of matter. Through interactive gameplay, students engage with concepts such as phase changes and heat transfer while learning to distinguish physical changes from chemical changes.
+
+The primary goal of this study is to improve students’ conceptual understanding, motivation, and emotional engagement by reinforcing hands-on learning and real-world applications of chemistry concepts. This project aims to provide both students and teachers with an accessible and engaging instructional resource that supports visualization, experimentation, and the development of analytical skills in basic chemistry education.
+
+Keywords: physical and chemical changes, game-based learning, educational serious game
+
+Sustainable Development Goals: 4: Quality Education, 11: Sustainable Cities and Communities, 12: Responsible Consumption and Production
+
+================================================================================
+=== ABSTRAK (FILIPINO) ===
+==========================
+
+Ang pag-aaral ng kimika ay naglalaman ng mga pundamental na konsepto na kadalasang itinuturing na mahirap unawain ng mga mag-aaral, lalo na pagdating sa aplikasyon nito sa totoong buhay. Ang ganitong kahirapan ay maaaring magdulot ng cognitive overload, partikular kung kulang ang mga aralin sa praktikal at interaktibong gawain. Sa pamamagitan ng interaktibong pagkatuto, aktibong nahahasa ng mga mag-aaral ang kanilang kasanayan sa pagsusuri at mas nauunawaan nila kung paano nagagamit ang mga konsepto ng kimika sa pang-araw-araw na buhay.
+
+Sinisiyasat ng pag-aaral na ito ang paggamit ng Game-Based Learning (GBL) sa pamamagitan ng pagbuo ng [GAME NAME HERE], isang pang-edukasyong seryosong laro na idinisenyo bilang pantulong na materyal sa pagkatuto para sa mga mag-aaral sa Baitang 6 sa ilalim ng MATATAG kurikulum sa Pilipinas. Nakatuon ang laro sa pisikal at kemikal na pagbabago ng materyal, na nagpapalawak sa kaalaman ng mga mag-aaral lampas sa tatlong karaniwang kaanyuan ng matter. Sa pamamagitan ng interaktibong gameplay, natututuhan ng mga mag-aaral ang mga konsepto tulad ng pagbabago ng estado at paglipat ng init, habang malinaw na natutukoy ang kaibahan ng pisikal at kemikal na pagbabago.
+
+Layunin ng pag-aaral na ito na mapabuti ang pag-unawa, motibasyon, at emosyonal na pakikipag-ugnayan ng mga mag-aaral sa pamamagitan ng hands-on na pagkatuto at aplikasyon ng mga konsepto ng kimika sa mga sitwasyong hango sa totoong buhay. Nilalayon din ng proyektong ito na magsilbing kapaki-pakinabang na materyal para sa mga guro at mag-aaral upang mas mapadali ang pagkatuto ng kimika sa isang biswal, interaktibo, at makabuluhang paraan.
+
+Mga susing salita: pisikal at kemikal na pagbabago, game-based learning, pang-edukasyon na laro
+
+================================================================================
+=== CHAPTER 1: INTRODUCTION ===
+
+--- Section: Background of the Study ---
+
+Science education at the elementary level serves as a foundational stage in developing scientific literacy, conceptual reasoning, and problem-solving skills. Within the MATATAG Curriculum of the Department of Education (DepEd), Grade 6 Science introduces learners to fundamental concepts related to materials, including the description of changes of state for solids, liquids, and gases—specifically melting, evaporation, freezing, and condensation—using diagrams and flowcharts. These competencies aim to help learners understand observable phenomena through scientific representations and structured reasoning.
+
+Despite the importance of these competencies, research has consistently shown that students experience difficulty in understanding the particulate nature of matter and the mechanisms underlying phase changes. Learners often memorize definitions of melting or evaporation without fully comprehending the particle-level interactions that explain these transformations. Misconceptions frequently arise regarding particle spacing, motion, and the role of heat transfer in altering states of matter (Adadan, 2013; Paik, Kim, Cho, & Park, 2004). These challenges are compounded by the abstract nature of microscopic representations, which are not directly observable.
+
+In many classroom settings, demonstrations of phase change are limited to water-based experiments, such as melting ice or boiling water. While these activities provide observable macroscopic changes, they often lack explicit integration with particle-level models, resulting in fragmented conceptual understanding. Furthermore, access to laboratory materials for demonstrating processes such as sublimation or deposition is limited at the elementary level, restricting exposure to diverse examples of state change.
+
+Game-Based Learning (GBL) has emerged as a promising instructional approach that integrates interactive systems with curricular objectives. Educational games can provide dynamic visualizations, immediate feedback, and experiential learning opportunities that reduce cognitive overload and promote conceptual change (Plass, Homer, & Kinzer, 2015). When designed with explicit learning outcomes and aligned assessments, digital games may enhance engagement and deepen understanding, particularly in abstract scientific domains.
+
+This study introduces [GAME NAME HERE], a 2D educational platformer developed as a supplementary and enrichment learning tool aligned with the MATATAG Grade 6 Science competency on changes of state. The game integrates explicit terminology (e.g., “Solid → Liquid: Melting”) while allowing learners to discover appropriate phase changes through environmental problem-solving. Central to its design is an interactive particle-lattice minigame in which learners manipulate bonds and particle spacing to simulate state transitions. By directly engaging with representations similar to those used in classroom diagrams, learners repeatedly encounter visual models of particle behavior in a contextualized, goal-driven environment.
+
+Given the increasing emphasis on learner-centered instruction under the MATATAG framework, there is a need to explore innovative digital tools that complement formal instruction without replacing it. This study examines whether a platformer-based educational game can support conceptual understanding, engagement, and reinforcement of curriculum-aligned competencies related to phase changes of matter.
+
+--- Section: Statement of the Problem ---
+
+This study seeks to investigate the potential of a platformer-based educational game as a supplementary instructional tool for teaching changes of state in Grade 6 Science.
+
+Specifically, the study aims to answer the following questions:
+
+To what extent does the use of [GAME NAME HERE] improve learners’ conceptual understanding of changes of state (melting, evaporation, freezing, and condensation) at the particle level?
+
+How does interaction with the particle-lattice minigame influence students’ ability to relate macroscopic phase changes to microscopic particle behavior?
+
+What are the perceptions of students and parents regarding engagement, usability, and perceived learning value of the game?
+
+How feasible is the implementation of a discovery-based yet explicitly labeled digital game in a supplementary learning context?
+
+--- Section: Objectives of the Study ---
+
+The general objective of this study is to design and evaluate a curriculum-aligned educational platformer that reinforces Grade 6 competencies on changes of state.
+
+Specifically, the study aims to:
+
+Develop [GAME NAME HERE] as a supplementary digital learning tool aligned with the MATATAG Grade 6 Science competency on describing changes of state using diagrams and flowcharts.
+
+Integrate an interactive particle-level simulation that visually represents solids, liquids, and gases and their transitions.
+
+Assess learners’ conceptual understanding before and after gameplay using structured instruments.
+
+Measure student engagement and perceived motivation through survey responses.
+
+Collect qualitative insights from students and parents regarding usability and learning reinforcement.
+
+--- Section: Scope and Delimitations ---
+
+This study focuses exclusively on the development and evaluation of [GAME NAME HERE], a 2D platformer designed to reinforce the Grade 6 Science competency on changes of state of matter. The game addresses physical changes only and does not include instruction on chemical reactions or chemical change.
+
+The participant pool may include Grade 6 learners as well as students from adjacent grade levels who have previously completed instruction on changes of state. Sampling will follow a convenience-based recruitment model due to logistical constraints. The study adopts a quasi-experimental single-group design incorporating pre- and post-assessments, engagement surveys, and qualitative interviews with students and parents.
+
+The study does not measure long-term retention or academic performance beyond the duration of the intervention. Additionally, the research evaluates the game as a supplementary enrichment tool and does not compare it directly with traditional instruction through a control group.
+
+--- Section: Significance of the Study ---
+
+This study contributes to elementary science education by examining the integration of interactive digital modeling within a platformer game environment. For learners, the game provides repeated exposure to particle representations within meaningful problem-solving contexts, potentially strengthening conceptual connections between diagrams and observable phenomena.
+
+For educators, the study offers insights into how educational games may complement MATATAG-aligned instruction without replacing formal teaching. The findings may inform future curriculum integration strategies and digital resource development.
+
+For researchers, the study adds to the growing body of literature on game-based learning in science education, particularly within the Philippine educational context. By examining discovery-based mechanics combined with explicit labeling, the study contributes to ongoing discussions on balancing constructivist learning with guided instruction in digital environments.
+
+--- Section: Definition of Terms ---
+
+Changes of State – Physical transformations between solid, liquid, and gas phases, including melting, evaporation, freezing, and condensation.
+
+Particle-Level Representation – Visual models depicting spacing, motion, and bonding of particles to represent different states of matter.
+
+Game-Based Learning – An instructional approach that integrates educational objectives within interactive digital game environments.
+
+Supplementary Learning Tool – An instructional resource designed to reinforce and enrich formal classroom instruction without replacing it.
+
+================================================================================
+=== CHAPTER 2: REVIEW OF RELATED LITERATURE AND STUDIES ===
+===========================================================
+
+--- Section: Introduction ---
+
+The K–12 program, which is the current educational framework in the Philippines, has faced multiple challenges, particularly curriculum congestion. The large volume of topics and activities required within limited instructional time places significant pressure on both teachers and students. Educators often struggle to cover all mandated competencies effectively, while students experience increased academic load and stress. Additional challenges include limited instructional resources and shortages of adequately trained teachers.
+
+In response to these concerns, the Department of Education introduced the MATATAG Curriculum, which aims to address curriculum congestion and better respond to learners’ needs. The MATATAG Curriculum emphasizes critical thinking, digital literacy, and global competence. However, as the curriculum is still in its early stages of implementation, continuous evaluation is necessary to assess its effectiveness and identify areas for improvement.
+
+Despite the easing of pandemic restrictions, many schools continue to employ hybrid learning approaches. Research indicates that students’ experiences with online and blended learning vary depending on factors such as access to resources, quality of teacher interaction, and socioeconomic conditions. Studies have shown that challenges in online learning environments are more commonly associated with home learning conditions rather than technological literacy, highlighting the need for accessible and flexible instructional tools.
+
+In science education, curriculum reform has been driven by issues such as mismatched prerequisite knowledge and consistently low performance in national and international assessments. Under the MATATAG framework, science education aims to strengthen students’ technological and scientific literacy to meet the demands of the 21st century and emerging industries. Studies on chemistry instruction indicate that student performance and engagement improve when instructional approaches incorporate interactive strategies such as computer simulations, inquiry-based learning, cooperative learning, and project-based e-learning.
+
+--- Section: Literature Review on Educational Serious Games ---
+
+Existing literature distinguishes serious games from gamification. Gamification refers to the integration of game design elements into non-game contexts, while serious games are complete digital games designed with both educational and entertainment goals. Research suggests that both approaches can positively influence learning outcomes, though they affect motivation differently. Gamification tends to enhance extrinsic motivation, whereas serious games are more strongly associated with intrinsic motivation.
+
+For serious games, outcome-based development methodologies are commonly recommended. In such approaches, learning objectives serve as the foundation for designing gameplay mechanics, narratives, and feedback systems. This alignment ensures that educational goals remain central to the player experience and that gameplay directly supports learning outcomes.
+
+--- Section: Literature Review on Chemistry Game-Based Learning and Existing Chemistry Games ---
+
+Game-Based Learning (GBL) promotes both hands-on and minds-on learning, leading to deeper conceptual understanding. Research has shown that digital educational games can improve critical thinking skills, learning retention, and student motivation by presenting content in an engaging and interactive manner.
+
+Many existing chemistry educational games are puzzle-based, such as Sokobond Express and Element Solitaire (Elementeo), while others adopt role-playing or simulation-based formats. Studies also highlight that difficult chemistry topics, such as stoichiometry, often benefit from game-based approaches due to their ability to increase motivation and reduce cognitive barriers. Even non-digital educational games, such as board games modeled after snakes and ladders, have demonstrated positive effects on students’ motivation and learning outcomes in chemistry-related topics.
+
+--- Section: Literature Review on Bubble Shooter Games for Learning ---
+
+Bubble shooter games have been found to support memorization and visualization due to their repetitive and pattern-based mechanics. Research-oriented bubble shooter games such as Bias Blaster and Chemistry Pop, though not commercially published, demonstrate the potential of this genre as an educational tool. These games show that bubble shooter mechanics can effectively support learning by reinforcing repetition, visual association, and strategic thinking.
+
+================================================================================
+=== CHAPTER 3: GAME DESIGN ===
+==============================
+
+--- Section: Game Name ---
+
+The title of the game is [GAME NAME HERE]. The name reflects the game’s overarching narrative, which centers on a neighborhood chemist helping community members with everyday challenges. It also incorporates wordplay, as the term “bubbly” refers both to the character’s personality and to the game’s bubble-shooter mechanics.
+
+--- Section: Game Overview ---
+
+[GAME NAME HERE] is a 2D bubble-shooter educational game designed to teach Grade 6 chemistry concepts through interactive gameplay. Players create and transform materials using five action orbs, each representing a specific physical or chemical process. In addition to bubble-shooter levels, players can explore a village environment and assist characters through a sorting minigame focused on identifying salvageable and unsalvageable materials.
+
+--- Section: Game-Concept ---
+
+[GAME NAME HERE] is a 2D stylized educational game set in a brightly colored neighborhood and follows a chemist as she assists the community with daily tasks. The challenges focus on core chemistry topics such as states of matter and, more importantly, distinguishing between physical and chemical changes in everyday life. In early levels, particularly those set in a café, players use action orbs on ingredients to observe changes in properties and achieve goals defined by a recipe system.
+
+Progress is communicated through a traffic-light feedback system, where red indicates no progress, yellow indicates partial progress, and green indicates completion. Players must strategically use action orbs such as cooling, heating, mixing, slicing, crushing, and swapping to achieve correct outcomes for each level.
+
+--- Section: Genre ---
+
+The game combines educational gaming with puzzle and simulation elements. The bubble-shooter mechanics place it within the puzzle genre, emphasizing logic, accuracy, and planning. The neighborhood exploration component functions as a light simulation, reinforcing learning through contextual storytelling and interaction. This hybrid genre approach supports both active recall and contextual understanding.
+
+--- Section: Target Audience ---
+
+The primary target audience of [GAME NAME HERE] is Grade 6 students aligned with the MATATAG curriculum. At this stage, learners are introduced to foundational chemistry concepts such as states of matter, physical and chemical changes, and mixtures. The game’s visual style, feedback systems, and mobile-first design make it accessible to a wide range of learners who benefit from interactive and gamified instruction.
+
+--- Section: Game Flow Summary ---
+
+The game progresses through increasingly challenging levels, beginning in the café location. As players advance, new ingredients, action orbs, and mechanics are introduced. Bubble-shooter levels demonstrate various physical transformations such as melting, freezing, cutting, and crushing. Sorting minigame levels also increase in complexity by introducing a greater variety of materials.
+
+--- Section: Look and Feel ---
+
+The game adopts a cartoon-inspired visual style influenced by titles such as Animal Crossing: New Horizons, Kirby’s Dream Buffet, and Hello Kitty Island Adventure. Design inspiration is also drawn from PopMart blind box figures, aligning with the game’s whimsical and approachable aesthetic. All assets are 2D, stylized, and rounded to emphasize the game’s bubbly theme.
+
+--- Section: How does the game insert itself in a pedagogical scenario? ---
+
+[GAME NAME HERE] integrates into pedagogical scenarios by aligning gameplay mechanics with core chemistry learning competencies. It functions as a supplementary instructional tool that reinforces classroom learning through interactive engagement. Teachers may use the game to introduce or review concepts related to physical and chemical changes without the constraints of a physical laboratory. Each level functions as a short lesson paired with a problem-solving activity, providing objectives, challenges, and immediate feedback.
+
+Beyond the bubble-shooter mechanics, the village environment enables contextual application of learned concepts. Players interact with characters, explore locations, and encounter progressively challenging scenarios that connect chemistry concepts to familiar situations. This narrative-driven exploration promotes curiosity and reinforces understanding through storytelling.
+
+The game is designed around two learning objectives aligned with Bloom’s Taxonomy.
+
+LO1 (Lower-Order): Classify physical changes and chemical changes by identifying states of matter and recognizing whether an action results in a physical or chemical transformation, including examples of uniform and non-uniform mixtures.
+
+LO2 (Higher-Order): Explain and justify whether a change is physical or chemical by applying evidence from simulated real-world scenarios, such as predicting outcomes of heating or cooling materials and selecting appropriate actions to achieve desired results.
+
+Through the Village and Bubble Shooter Lab components, [GAME NAME HERE] supports inquiry, experimentation, and critical thinking. Immediate feedback mechanisms, including character reactions and post-level explanations, help correct misconceptions and reinforce accurate understanding.
+
+--- Section: Gameplay and Mechanics - Gameplay ---
+
+Core gameplay takes place in a café setting where players complete chemistry-based challenges focused on changes in states of matter, physical and chemical changes, and the effects of heat on materials. Players launch action orbs such as Heat, Cool, Crush, and Cut toward target materials to trigger appropriate reactions. Incorrect actions result in penalties accompanied by visual and auditory feedback. As players progress, challenges increase in complexity through multi-step reactions and environmental modifiers, with guidance provided to support understanding.
+
+--- Section: Gameplay and Mechanics - Mechanics ---
+
+Set within a narrative-driven environment, players complete tasks inspired by everyday situations, such as food preparation and material sorting. Action orbs simulate scientific processes in an accessible arcade-style format. Progress is visualized through a traffic-light system and a three-star scoring mechanic, enabling players to easily assess their performance.
+
+--- Section: Gameplay and Mechanics - Physics ---
+
+The game employs basic bubble-shooter physics to simulate predictable trajectories and collisions. These mechanics support intuitive gameplay while reinforcing timing and spatial reasoning skills.
+
+--- Section: Gameplay and Mechanics - Movement ---
+
+[GAME NAME HERE] uses a top-down perspective for both gameplay and exploration. A virtual joystick enables movement and aiming, allowing seamless control across mobile and desktop platforms.
+
+--- Section: Gameplay and Mechanics - Objects ---
+
+Interactive objects include action orbs, reaction tiles, collectible tokens, compound-forming elements, and village features such as character kiosks and informational displays. Each object supports learning, progression, or narrative development.
+
+--- Section: Gameplay and Mechanics - Actions ---
+
+Player actions include aiming and shooting action orbs, switching between available orbs, interacting with characters, unlocking new areas, and viewing educational information within the village.
+
+--- Section: Gameplay and Mechanics - Combat ---
+
+The game does not include traditional combat. Instead, challenges are presented as puzzles involving resource management, timing, and condition-based problem solving.
+
+--- Section: Gameplay and Mechanics - Economy ---
+
+Gameplay emphasizes resource management. Players must efficiently use limited material orbs to complete level objectives, encouraging critical thinking and strategic planning.
+
+--- Section: Gameplay and Mechanics - Game Options ---
+
+[GAME NAME HERE] includes adjustable sound and control sensitivity settings, a contextual help menu, and a pause menu. These options enhance usability and player comfort without interfering with educational objectives.
+
+--- Section: Gameplay and Mechanics - Constraints due to the pedagogical objectives ---
+
+To maintain pedagogical integrity, gameplay mechanics are intentionally simplified and scaffolded. All reactions align with Grade 6 learning outcomes, and pacing is designed to minimize stress while reinforcing understanding.
+
+--- Section: Story, Setting and Character - Story and Narrative ---
+
+The narrative follows a chemist assisting in the opening of a neighborhood café. Through completing recipes and tasks, the player observes how ingredients undergo physical and chemical changes. Later challenges introduce irreversible chemical changes, reinforcing key distinctions between transformation types and encouraging reflection on real-world applications.
+
+--- Section: Story, Setting and Character - Game progression ---
+
+Progression is structured to introduce new concepts gradually, allowing players time to practice and internalize information before advancing. Narrative and gameplay progression are designed to support continuous learning without cognitive overload.
+
+--- Section: Story, Setting and Character - License considerations ---
+
+All third-party and open-source assets will be properly licensed and credited. In-house code will follow MIT licensing, while creative assets will use Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0).
+
+--- Section: Story, Setting and Character - Game World ---
+
+The game world centers on a chemistry-themed café presented in a stylized 2D environment. The setting blends cozy design with experimental elements, providing a playful space for discovery, experimentation, and problem solving.
+
+--- Section: Story, Setting and Character - Characters ---
+
+Players assume the role of a research assistant guided by the Local Bubble Chemist. Through completing tasks and experiments, players unlock new mechanics and increasingly complex challenges.
+
+--- Section: Story, Setting and Character - Levels ---
+
+Levels follow a classic bubble-shooter structure inspired by games such as Zuma, combined with exploration and interaction reminiscent of life-simulation games. Friendly guidance and narrative context support learning progression.
+
+--- Section: Story, Setting and Character - Training levels ---
+
+The training level introduces the game’s mechanics and educational goals in a low-pressure environment. Visual cues, simple prompts, and immediate feedback build player confidence and prepare learners for more complex challenges.
+
+--- Section: Story, Setting and Character - Assessment ---
+
+Player analytics will be integrated to track engagement and learning-related metrics such as playtime and level completion. These data will support analysis of learning progress and engagement.
+
+--- Section: Interface - Visual System ---
+
+A top-down view ensures clear visibility of the play area. Interface elements are minimal and designed to present essential information without obstructing gameplay.
+
+--- Section: Interface - Control System ---
+
+The game uses screen-based controls optimized for both mouse and touchscreen input, ensuring accessibility across platforms.
+
+--- Section: Interface - Audio, music, sound effects ---
+
+Audio assets will be sourced from in-house production, open-source libraries, and licensed third-party resources, with proper attribution provided.
+
+--- Section: Interface - Help System ---
+
+The in-game help system provides tutorials, definitions, and visual examples accessible from the main menu and pause screen, allowing learners to review concepts at their own pace.
+
+================================================================================
+=== CHAPTER 4: DESIGN AND IMPLEMENTATION ===
+============================================
+
+--- Section: Design Changes ---
+
+[TODO: Add content for design changes section]
+
+--- Section: Implementation Challenges ---
+
+[TODO: Add content for implementation challenges section]
+
+--- Section: Formative User Testing Observations ---
+
+Formative user testing was conducted with Grade 6 students from Inchican Elementary School using a playable prototype that included the Tutorial Level, Bubble Shooter Level 1, and the Sorting Mini Game. Testing was conducted face-to-face, allowing direct observation of player behavior, engagement, and comprehension. Students demonstrated an overall understanding of gameplay mechanics and responded positively to visual cues and immediate feedback, despite their current science curriculum focusing on topics outside states of matter.
+
+Feedback indicated that some levels were perceived as too easy and quickly memorized, suggesting a need for increased challenge variety. Students also commented on improving visual consistency in the sorting minigame and adding more objects to extend engagement. Language accessibility emerged as a key consideration, with requests for Filipino or Tagalog text. Overall, students expressed enjoyment of the game experience and interest in playing a completed version. These observations will inform future refinements to difficulty balancing, visual design, and language support.
+
+================================================================================
+=== CHAPTER 5: METHODOLOGY ===
+==============================
+
+--- Section: Research Design ---
+
+This study employs a mixed-methods research approach. Qualitative data will be collected through one-on-one interviews conducted during and after game development to identify student preferences and evaluate enjoyment. Quantitative data will be gathered through pretests and posttests administered over one month to assess learning gains related to changes in the state of matter.
+
+--- Section: Data Collection ---
+
+Primary data will be collected from interviews and pretest and posttest results involving 20 Grade 6 students in a face-to-face setting. Each researcher will interview five students, with interviews audio-recorded for transcription and analysis. Pretests will assess baseline knowledge through a 25-item quiz administered prior to gameplay. Posttests of equal length will be administered following gameplay sessions monitored weekly by the research team.
+
+Secondary data will include in-game analytics designed to track engagement and progression. These data will be collected ethically, stored securely, and used to supplement findings from tests and interviews.
+
+--- Section: Data Analysis ---
+
+Repeated measures analysis of variance (ANOVA) will be used to compare pretest and posttest scores. Qualitative interview data will be analyzed using thematic analysis, involving transcription, coding, theme identification, and interpretation to synthesize findings.
+
+--- Section: Ethical Considerations ---
+
+Informed consent will be obtained from all participants and their parents or guardians. Participant anonymity will be maintained, and students may withdraw at any time without penalty. Potential risks, such as content misalignment with classroom instruction, will be mitigated through collaboration with teachers and iterative playtesting. All participant data will be securely disposed of upon completion of the study.
+
+================================================================================
+=== END OF CONTENT ===
+======================
+

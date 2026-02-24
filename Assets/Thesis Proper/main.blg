@@ -1,21 +1,21 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[147] biber-MSWIN64:340> INFO - === 
-[197] Biber.pm:419> INFO - Reading 'main.bcf'
-[388] Biber.pm:979> INFO - Found 19 citekeys in bib section 0
-[418] Biber.pm:4419> INFO - Processing section 0
-[434] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
-[494] bibtex.pm:1713> INFO - LaTeX decoding ...
-[537] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[749] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[750] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[750] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[750] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[808] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[808] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[808] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[809] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[843] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[875] bbl.pm:763> INFO - Output to main.bbl
-[876] Biber.pm:131> WARN - legacy month field 'February' in entry 'Hecker2025' is not an integer - this will probably not sort properly.
-[876] Biber.pm:133> INFO - WARNINGS: 1
+[1] Config.pm:310> INFO - Logfile is 'main.blg'
+[390] biber-MSWIN64:340> INFO - === 
+[532] Biber.pm:419> INFO - Reading 'main.bcf'
+[780] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
+[822] Biber.pm:4419> INFO - Processing section 0
+[882] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[975] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1080] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1240] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1240] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1240] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1240] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1258] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1258] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1326] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1329] bbl.pm:763> INFO - Output to main.bbl
+[1330] Biber.pm:131> WARN - legacy month field 'February' in entry 'Hecker2025' is not an integer - this will probably not sort properly.
+[1330] Biber.pm:133> INFO - WARNINGS: 1
