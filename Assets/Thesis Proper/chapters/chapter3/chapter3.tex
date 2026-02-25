@@ -2,25 +2,71 @@
 
 \section{Research Design}
 
-This study employed an experimental research design focusing on the evaluation of usability and engagement of an educational 2D platformer game developed to teach phase changes of matter. Rather than measuring formal learning gains through pre-test and post-test comparison, the study aimed to determine the game's effectiveness in terms of user experience, engagement, and perceived instructional value.
+This study employed a developmental experimental research design integrating iterative game development practices with structured usability and engagement evaluation. The research was conducted in two major phases: (1) Iterative Development and Testing, and (2) Final Structured Evaluation.
 
-A one-group post-test design was utilized, wherein participants interacted with the finalized beta version of the game and subsequently completed evaluation instruments. This design was deemed appropriate given the study's undergraduate scope, timeline constraints, and focus on usability and engagement rather than controlled instructional efficacy.
+The first phase focused on refining the educational platformer through multiple campaign and regression testing cycles. The second phase involved evaluating the finalized build using standardized usability and engagement instruments.
+
+This design was selected to align with user-centered game development methodologies while maintaining academic rigor in assessing the educational game's usability and engagement potential.
+
+\section{Development Framework}
+
+The development of the educational platformer followed an iterative design approach grounded in user-centered development principles.
+
+\subsection{Iterative Development Cycles}
+
+The game underwent multiple structured development cycles consisting of:
+
+\begin{enumerate}
+    \item \textbf{Build Implementation} -- Addition or refinement of gameplay mechanics.
+    \item \textbf{Campaign Testing} -- Structured playthrough sessions to identify usability issues, progression bottlenecks, gameplay friction, and feature clarity.
+    \item \textbf{Regression Testing} -- Verification that newly implemented changes did not reintroduce previously resolved issues.
+    \item \textbf{Feedback Integration} -- Refinement of mechanics, level design, UI clarity, and performance stability.
+\end{enumerate}
+
+Each iteration was documented using testing logs detailing:
+
+\begin{itemize}
+    \item Identified bugs
+    \item Gameplay balancing concerns
+    \item Player confusion points
+    \item Feature stability issues
+    \item Suggested improvements
+\end{itemize}
+
+Data from this phase were analyzed descriptively to track improvement trends across builds.
 
 \section{Participants}
 
-Participants were selected using convenience sampling. A total of approximately 20--30 individuals were recruited through personal networks, academic peers, and referrals.
+Participants were selected using convenience sampling. Approximately 20--30 individuals were recruited through personal networks, academic peers, and referrals.
 
-While the intended target audience of the game is Grade 6 students aligned with the MATATAG Curriculum, participants in this study were not restricted to a specific age group. Instead, respondents were considered representative users capable of evaluating the game's usability, clarity, and engagement potential.
+Participants were not restricted to Grade 6 students due to timeline and accessibility constraints. However, respondents were considered representative users capable of evaluating usability, engagement, and clarity of the educational mechanics.
 
-If minors participated, parental consent was secured prior to data collection.
+Where participants were minors, parental consent was secured prior to participation.
+
+Different participants may have participated across iterative testing cycles. However, the final structured evaluation phase was conducted using a stable release candidate build.
 
 \section{Research Instruments}
 
-The study utilized the following instruments:
+The study utilized both developmental testing tools and structured evaluation instruments.
 
-\subsection{MEEGA+KIDS Evaluation Instrument}
+\subsection{Campaign and Regression Testing Logs}
 
-The MEEGA+KIDS model was employed to assess engagement and usability in educational games. The instrument evaluates dimensions such as:
+Structured testing logs were used to document:
+
+\begin{itemize}
+    \item Bug occurrence frequency
+    \item Severity classification (minor, moderate, critical)
+    \item Gameplay progression issues
+    \item UI clarity concerns
+    \item Player navigation difficulties
+    \item Performance stability
+\end{itemize}
+
+These logs enabled systematic tracking of improvements across development cycles.
+
+\subsection{MEEGA+KIDS Usability and Engagement Instrument}
+
+The finalized version of the game was evaluated using the MEEGA+KIDS model. This instrument measures:
 
 \begin{itemize}
     \item Fun
@@ -33,50 +79,52 @@ The MEEGA+KIDS model was employed to assess engagement and usability in educatio
 
 Participants responded using a Likert-scale format.
 
-\subsection{Perceived Conceptual Clarity Survey}
+\subsection{Qualitative Feedback Questionnaire}
 
-A short researcher-developed questionnaire assessed participants' perceptions regarding:
-
-\begin{itemize}
-    \item Clarity of phase change explanations
-    \item Effectiveness of visual molecular simulations
-    \item Comprehensibility of in-game labels
-    \item Perceived educational usefulness
-\end{itemize}
-
-\subsection{Open-Ended Feedback}
-
-Participants were asked to provide qualitative feedback regarding:
+Participants provided open-ended responses regarding:
 
 \begin{itemize}
     \item Strengths of the game
-    \item Areas for improvement
-    \item Suggestions for enhancement
+    \item Areas requiring improvement
+    \item Suggestions for refinement
+    \item Perceived clarity of phase change concepts
 \end{itemize}
-
-\section{Description of the Intervention}
-
-The intervention consisted of a 2D educational platformer game designed to simulate phase changes of matter at the molecular level. Players manipulate particle arrangements to achieve solid, liquid, and gaseous states, with explicit textual labeling (e.g., ``Solid $\rightarrow$ Liquid: Melting'') reinforcing conceptual understanding.
-
-The game incorporates scaffolded levels, interactive molecular mechanics, and environment-based problem-solving challenges aligned with Grade 6 Science competencies under the MATATAG Curriculum.
-
-The finalized beta version of the game was used for formal data collection.
 
 \section{Data Collection Procedure}
 
+The research was conducted in two phases:
+
+\subsection{Phase 1: Iterative Development Testing}
+
 \begin{enumerate}
-    \item Participants were briefed on the purpose of the study.
-    \item Consent was obtained prior to participation.
-    \item Participants were given 20--30 minutes to interact with the game.
-    \item Upon completion, participants answered the MEEGA+KIDS instrument and additional survey questions.
-    \item Responses were collected electronically via Google Forms.
+    \item A development build was deployed.
+    \item Participants conducted structured play sessions.
+    \item Campaign testing logs documented usability and gameplay issues.
+    \item Regression testing verified stability after modifications.
+    \item Revisions were implemented before the next cycle.
+\end{enumerate}
+
+This phase continued until a stable release candidate was achieved.
+
+\subsection{Phase 2: Final Structured Evaluation}
+
+\begin{enumerate}
+    \item Participants were briefed on the study purpose.
+    \item Consent was obtained.
+    \item Participants were given 20--30 minutes to interact with the finalized build.
+    \item Upon completion, participants completed:
+    \begin{itemize}
+        \item MEEGA+KIDS instrument
+        \item Qualitative feedback questionnaire
+    \end{itemize}
+    \item Responses were collected via Google Forms.
 \end{enumerate}
 
 \section{Data Analysis}
 
-Collected data were tabulated and analyzed using Google Sheets.
+Quantitative data from the MEEGA+KIDS instrument were tabulated and analyzed using Google Sheets.
 
-Descriptive statistical measures were computed, including:
+The following descriptive statistics were computed:
 
 \begin{itemize}
     \item Mean
@@ -85,10 +133,24 @@ Descriptive statistical measures were computed, including:
     \item Percentage scores
 \end{itemize}
 
-Results were interpreted to determine overall engagement levels, usability performance, and perceived instructional value.
+Results were interpreted to determine overall engagement and usability levels of the finalized build.
 
-Qualitative responses were grouped into thematic categories to identify recurring suggestions and improvement areas.
+Data from campaign and regression testing logs were analyzed descriptively to identify:
+
+\begin{itemize}
+    \item Reduction in bug frequency across iterations
+    \item Improvement in gameplay stability
+    \item Decrease in recurring usability issues
+\end{itemize}
+
+Qualitative responses were grouped into thematic categories to identify common patterns in player feedback.
+
+No inferential statistical comparisons between builds were conducted, as iterative development phases involved varying participant groups.
 
 \section{Ethical Considerations}
 
-Participation was voluntary. Participants were informed of their right to withdraw at any time without penalty. No personally identifiable information was included in the final analysis. For minor participants, parental consent was secured prior to participation.
+Participation in the study was voluntary. Participants were informed of the study's purpose and their right to withdraw at any time without penalty.
+
+No personally identifiable information was included in the analysis. For participants under the age of 18, parental consent was secured prior to participation.
+
+All collected data were used solely for academic research purposes.

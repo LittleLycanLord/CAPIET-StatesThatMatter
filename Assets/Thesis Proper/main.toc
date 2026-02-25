@@ -27,22 +27,25 @@
 \contentsline {subsection}{\numberline {2.5.1}Explanation of the Framework}{8}{subsection.2.5.1}%
 \contentsline {chapter}{\numberline {3}RESEARCH METHODOLOGY}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Research Design}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Participants}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Research Instruments}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}MEEGA+KIDS Evaluation Instrument}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Perceived Conceptual Clarity Survey}{11}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Open-Ended Feedback}{11}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Description of the Intervention}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Data Collection Procedure}{11}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Data Analysis}{12}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Ethical Considerations}{12}{section.3.7}%
-\contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Design Changes}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Implementation Challenges}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Formative User Testing Observations}{13}{section.4.3}%
-\contentsline {chapter}{\numberline {5}METHODOLOGY}{14}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Research Design}{14}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Data Collection}{14}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Data Analysis}{14}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ethical Considerations}{14}{section.5.4}%
-\contentsline {chapter}{REFERENCES}{15}{chapter*.5}%
+\contentsline {section}{\numberline {3.2}Development Framework}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Iterative Development Cycles}{10}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Participants}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Research Instruments}{11}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Campaign and Regression Testing Logs}{11}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}MEEGA+KIDS Usability and Engagement Instrument}{11}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Qualitative Feedback Questionnaire}{12}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Data Collection Procedure}{12}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Phase 1: Iterative Development Testing}{12}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Phase 2: Final Structured Evaluation}{13}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Data Analysis}{13}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Ethical Considerations}{14}{section.3.7}%
+\contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Design Changes}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Implementation Challenges}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Formative User Testing Observations}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}METHODOLOGY}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Research Design}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Data Collection}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Data Analysis}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ethical Considerations}{16}{section.5.4}%
+\contentsline {chapter}{REFERENCES}{17}{chapter*.5}%
