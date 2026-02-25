@@ -468,3 +468,91 @@ Despite strong evidence supporting digital game-based learning in science educat
 
 This study addresses these gaps by developing and evaluating a curriculum-aligned educational platformer embedding conceptual change mechanisms within gameplay.
 
+================================================================================
+=== CHAPTER 3: RESEARCH METHODOLOGY ===
+========================================
+
+--- Section: Research Design ---
+
+This study employed an experimental research design focusing on the evaluation of usability and engagement of an educational 2D platformer game developed to teach phase changes of matter. Rather than measuring formal learning gains through pre-test and post-test comparison, the study aimed to determine the game's effectiveness in terms of user experience, engagement, and perceived instructional value.
+
+A one-group post-test design was utilized, wherein participants interacted with the finalized beta version of the game and subsequently completed evaluation instruments. This design was deemed appropriate given the study's undergraduate scope, timeline constraints, and focus on usability and engagement rather than controlled instructional efficacy.
+
+--- Section: Participants ---
+
+Participants were selected using convenience sampling. A total of approximately 20–30 individuals were recruited through personal networks, academic peers, and referrals.
+
+While the intended target audience of the game is Grade 6 students aligned with the MATATAG Curriculum, participants in this study were not restricted to a specific age group. Instead, respondents were considered representative users capable of evaluating the game's usability, clarity, and engagement potential.
+
+If minors participated, parental consent was secured prior to data collection.
+
+--- Section: Research Instruments ---
+
+The study utilized the following instruments:
+
+--- Subsection: MEEGA+KIDS Evaluation Instrument ---
+
+The MEEGA+KIDS model was employed to assess engagement and usability in educational games. The instrument evaluates dimensions such as:
+
+- Fun
+- Focused attention
+- Perceived learning
+- Usability
+- Challenge
+- Satisfaction
+
+Participants responded using a Likert-scale format.
+
+--- Subsection: Perceived Conceptual Clarity Survey ---
+
+A short researcher-developed questionnaire assessed participants' perceptions regarding:
+
+- Clarity of phase change explanations
+- Effectiveness of visual molecular simulations
+- Comprehensibility of in-game labels
+- Perceived educational usefulness
+
+--- Subsection: Open-Ended Feedback ---
+
+Participants were asked to provide qualitative feedback regarding:
+
+- Strengths of the game
+- Areas for improvement
+- Suggestions for enhancement
+
+--- Section: Description of the Intervention ---
+
+The intervention consisted of a 2D educational platformer game designed to simulate phase changes of matter at the molecular level. Players manipulate particle arrangements to achieve solid, liquid, and gaseous states, with explicit textual labeling (e.g., "Solid → Liquid: Melting") reinforcing conceptual understanding.
+
+The game incorporates scaffolded levels, interactive molecular mechanics, and environment-based problem-solving challenges aligned with Grade 6 Science competencies under the MATATAG Curriculum.
+
+The finalized beta version of the game was used for formal data collection.
+
+--- Section: Data Collection Procedure ---
+
+1. Participants were briefed on the purpose of the study.
+2. Consent was obtained prior to participation.
+3. Participants were given 20–30 minutes to interact with the game.
+4. Upon completion, participants answered the MEEGA+KIDS instrument and additional survey questions.
+5. Responses were collected electronically via Google Forms.
+
+--- Section: Data Analysis ---
+
+Collected data were tabulated and analyzed using Google Sheets.
+
+Descriptive statistical measures were computed, including:
+
+- Mean
+- Standard deviation
+- Frequency distribution
+- Percentage scores
+
+Results were interpreted to determine overall engagement levels, usability performance, and perceived instructional value.
+
+Qualitative responses were grouped into thematic categories to identify recurring suggestions and improvement areas.
+
+--- Section: Ethical Considerations ---
+
+Participation was voluntary. Participants were informed of their right to withdraw at any time without penalty. No personally identifiable information was included in the final analysis. For minor participants, parental consent was secured prior to participation.
+
+================================================================================
