@@ -40,12 +40,6 @@
 \contentsline {section}{\numberline {3.6}Data Analysis}{13}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Ethical Considerations}{14}{section.3.7}%
 \contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Design Changes}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Implementation Challenges}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Formative User Testing Observations}{15}{section.4.3}%
-\contentsline {chapter}{\numberline {5}METHODOLOGY}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Research Design}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Data Collection}{16}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Data Analysis}{16}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ethical Considerations}{16}{section.5.4}%
-\contentsline {chapter}{REFERENCES}{17}{chapter*.5}%
+\contentsline {chapter}{\numberline {5}CONCLUSION AND DISCUSSION}{16}{chapter.5}%
+\contentsline {chapter}{\numberline {6}RECOMMENDATIONS}{17}{chapter.6}%
+\contentsline {chapter}{REFERENCES}{18}{chapter*.5}%
