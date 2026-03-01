@@ -41,6 +41,13 @@ namespace LilLycanLord_Official
         [SerializeField] private float maxBondLengthMultiplier = 2f;
         
         [Space(10)]
+        [Header("Stretchy Behavior")]
+        [SerializeField] [Tooltip("Enable dynamic bond stretching based on stiffness")]
+        private bool stretchyBehaviour = true;
+        [SerializeField] [Tooltip("Maximum stretch multiplier - bond breaks when it exceeds this length")]
+        private float maxStretch = 2.0f;
+        
+        [Space(10)]
         [Header("Temperature Settings")]
         [SerializeField] [Tooltip("Minimum temperature in Celsius")] private float minTemperature = -10.0f;
         [SerializeField] [Tooltip("Maximum temperature in Celsius")] private float maxTemperature = 110.0f;
@@ -213,10 +220,38 @@ namespace LilLycanLord_Official
             
             if (currentDistance < 0.0001f) return;
             
-            // Calculate maximum allowed distance based on stiffness
+            // Calculate radii
             float radiusA = colliderA != null ? colliderA.radius * particleA.transform.localScale.x : 0f;
             float radiusB = colliderB != null ? colliderB.radius * particleB.transform.localScale.x : 0f;
-            float maxAllowedDistance = radiusA + (bondLength * maxBondLengthMultiplier) + radiusB;
+            
+            // Calculate dynamic stretch based on stiffness if stretchy behavior is enabled
+            float stretchMultiplier = 1.0f;
+            if (stretchyBehaviour)
+            {
+                // Lower stiffness = more stretch (approaching maxStretch)
+                // Higher stiffness = less stretch (approaching 1.0)
+                stretchMultiplier = Mathf.Lerp(maxStretch, 1.0f, currentStiffness);
+            }
+            else
+            {
+                // Use the old maxBondLengthMultiplier if stretchy behavior is disabled
+                stretchMultiplier = maxBondLengthMultiplier;
+            }
+            
+            // Calculate maximum allowed distance
+            float maxAllowedDistance = radiusA + (bondLength * stretchMultiplier) + radiusB;
+            
+            // Check if bond has exceeded max stretch and should break
+            if (stretchyBehaviour && canBreak)
+            {
+                float maxBreakDistance = radiusA + (bondLength * maxStretch) + radiusB;
+                if (currentDistance > maxBreakDistance)
+                {
+                    Debug.Log($"Bond breaking due to excessive stretch: {currentDistance} > {maxBreakDistance}");
+                    BreakBond();
+                    return;
+                }
+            }
             
             // Determine constraint iterations based on current dynamic stiffness
             // Low stiffness: 1 iteration, High stiffness: up to 50 iterations for very rigid constraints
@@ -250,8 +285,19 @@ namespace LilLycanLord_Official
                 }
                 else
                 {
-                    // Normal stiffness: blend between stretchy and rigid
-                    targetDistance = fixedBondDistance;
+                    // Calculate target distance based on stretchy behavior
+                    if (stretchyBehaviour)
+                    {
+                        // Dynamic target: stretches with lower stiffness
+                        float dynamicStretch = Mathf.Lerp(maxStretch, 1.0f, currentStiffness);
+                        targetDistance = radiusA + (bondLength * dynamicStretch) + radiusB;
+                    }
+                    else
+                    {
+                        // Fixed target distance
+                        targetDistance = fixedBondDistance;
+                    }
+                    
                     // Higher stiffness = stronger correction per iteration
                     correctionStrength = Mathf.Lerp(0.3f, 1.0f, currentStiffness);
                 }

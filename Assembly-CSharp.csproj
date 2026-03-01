@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Particle System\Particle Lattice Material.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Scriptable Objects\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\MiniDialogueStartScript.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSceneSwitching.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Scriptable Objects\Sound.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\Scripts\Puzzle\Minigame Manager.cs" />
     <Compile Include="Assets\Scripts\SFX Player.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
+    <Compile Include="Assets\Scripts\MiniDialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\BGM Player.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Dialogue Manager\DialogueManager.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEvents.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="Assets\Scripts\Particle System\Particle Lattice.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\General Controls\GeneralInputManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
+    <Compile Include="Assets\Scripts\MiniDialogueSystem.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\PlayerIsInTrigger.cs" />
     <Compile Include="Assets\Scripts\Platforming\Goal Behaviour.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Event Manager\GameEventManagerSimplified.cs" />
