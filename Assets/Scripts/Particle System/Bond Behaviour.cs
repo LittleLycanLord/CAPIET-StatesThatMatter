@@ -242,16 +242,16 @@ namespace LilLycanLord_Official
             float maxAllowedDistance = radiusA + (bondLength * stretchMultiplier) + radiusB;
             
             // Check if bond has exceeded max stretch and should break
-            if (stretchyBehaviour && canBreak)
-            {
-                float maxBreakDistance = radiusA + (bondLength * maxStretch) + radiusB;
-                if (currentDistance > maxBreakDistance)
-                {
-                    Debug.Log($"Bond breaking due to excessive stretch: {currentDistance} > {maxBreakDistance}");
-                    BreakBond();
-                    return;
-                }
-            }
+            // if (stretchyBehaviour && canBreak)
+            // {
+            //     float maxBreakDistance = radiusA + (bondLength * maxStretch) + radiusB;
+            //     if (currentDistance > maxBreakDistance)
+            //     {
+            //         Debug.Log($"Bond breaking due to excessive stretch: {currentDistance} > {maxBreakDistance}");
+            //         BreakBond();
+            //         return;
+            //     }
+            // }
             
             // Determine constraint iterations based on current dynamic stiffness
             // Low stiffness: 1 iteration, High stiffness: up to 50 iterations for very rigid constraints

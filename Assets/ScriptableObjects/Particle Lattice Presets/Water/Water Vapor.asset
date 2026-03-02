@@ -24,7 +24,7 @@ MonoBehaviour:
   particleMinTemperature: -10
   particleMaxTemperature: 110
   bondLength: 1
-  bondWidth: 0.5
+  bondWidth: 0.25
   bondColor: {r: 1, g: 1, b: 1, a: 1}
   bondStiffness: 0.98
   maxBondLengthMultiplier: 2
@@ -37,7 +37,7 @@ MonoBehaviour:
   bondCanBreak: 1
   bondBreakingTemperature: 110
   dynamicBondLength: 1
-  dynamicBondWidth: 0.5
+  dynamicBondWidth: 0.25
   dynamicBondColor: {r: 0, g: 0, b: 1, a: 1}
   dynamicBondStiffness: 0.98
   dynamicMaxBondLengthMultiplier: 2

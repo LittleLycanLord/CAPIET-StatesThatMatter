@@ -304,9 +304,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a665c860e3c4c1544a1ad6bd54e0d47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleColorPrototype
+  enableColorChange: 1
   coldColor: {r: 0.3160377, g: 0.85784334, b: 1, a: 1}
   midColor: {r: 1, g: 1, b: 1, a: 1}
   hotColor: {r: 1, g: 0.54260164, b: 0.25943398, a: 1}
+  enableShaking: 1
+  shakeAtMinTemp: 0
+  shakeAtMaxTemp: 0.15
+  shakeSpeed: 10
 --- !u!1 &8536547044966986838
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,11 +411,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8536547044966986838}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a665c860e3c4c1544a1ad6bd54e0d47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleColorPrototype
+  enableColorChange: 0
   coldColor: {r: 0.3160377, g: 0.85784334, b: 1, a: 1}
   midColor: {r: 1, g: 1, b: 1, a: 1}
   hotColor: {r: 1, g: 0.54260164, b: 0.25943398, a: 1}
+  enableShaking: 1
+  shakeAtMinTemp: 0
+  shakeAtMaxTemp: 0.15
+  shakeSpeed: 10

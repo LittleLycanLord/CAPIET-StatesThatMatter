@@ -24,7 +24,7 @@ MonoBehaviour:
   particleMinTemperature: -10
   particleMaxTemperature: 110
   bondLength: 1
-  bondWidth: 0.5
+  bondWidth: 0.25
   bondColor: {r: 1, g: 1, b: 1, a: 1}
   bondStiffness: 0.5
   maxBondLengthMultiplier: 2

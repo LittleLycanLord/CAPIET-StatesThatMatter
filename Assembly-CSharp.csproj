@@ -98,7 +98,6 @@
     <Compile Include="Assets\LeanTween\Testing\TestingRotate.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Input Actions\Dialogue Controls\DialogueControls.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Camera View Manager\CameraViewManager.cs" />
-    <Compile Include="Assets\Scripts\Particle System\Particle Color Prototype.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Scriptable Objects\Character.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitionManager.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing240.cs" />
@@ -168,6 +167,7 @@
     <Compile Include="Assets\LeanTween\Testing\TestingColorTweening.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Tilemap To GameObjects.cs" />
+    <Compile Include="Assets\Scripts\Particle System\Particle Appearance Behaviour.cs" />
     <Compile Include="Assets\Scripts\Particle System\Phase Change Identifier.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing243.cs" />
     <Compile Include="Assets\Scripts\Platforming\Platformer Movement.cs" />
