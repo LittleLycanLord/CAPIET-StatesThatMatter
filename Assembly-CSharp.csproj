@@ -113,6 +113,7 @@
     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerController.cs" />
+    <Compile Include="Assets\Scripts\ItemPickUp.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\GeneralPlayerMovementSetup.cs" />
     <Compile Include="Assets\Scripts\Puzzle\Matter Behaviour.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingMaxTweens.cs" />
