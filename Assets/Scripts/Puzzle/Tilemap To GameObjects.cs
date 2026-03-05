@@ -28,6 +28,8 @@ namespace LilLycanLord_Official
         
         [Space(10)]
         [Header("Collider Settings")]
+        [SerializeField] private bool isGround = true;
+        [SerializeField] private LayerMask groundLayer;
         [SerializeField] [Range(0f, 0.5f)] [Tooltip("Shrink colliders by this percentage (0 = no shrink, 0.5 = 50% smaller)")]
         private float colliderShrinkPercentage = 0.05f;
         
@@ -138,6 +140,7 @@ namespace LilLycanLord_Official
 
                 // Create main sprite
                 GameObject child = new GameObject("TileSprite");
+                child.layer = isGround ? LayerMask.NameToLayer("Ground") : LayerMask.NameToLayer("Default");
                 child.transform.SetParent(block.transform);
                 child.transform.position = worldPos;
 
