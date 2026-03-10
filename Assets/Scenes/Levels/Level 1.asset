@@ -15,5 +15,5 @@ MonoBehaviour:
   levelIndex: 1
   levelPreview: {fileID: 2800000, guid: 7832dd4635f6b28459cf9396087c569d, type: 3}
   levelName: Blue Portal..?
-  description: I think I should  go there...
+  description: I think I should go there...
   sceneName: TUTORIAL_1

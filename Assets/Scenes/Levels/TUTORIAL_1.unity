@@ -171,6 +171,10 @@ MonoBehaviour:
   container: {fileID: 1020640388}
   interactionButton: {fileID: 1277472527}
   material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
+  isGround: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   colliderShrinkPercentage: 0.05
   glowColor: {r: 1, g: 1, b: 1, a: 0.5}
   glowScale: 1.15
@@ -19244,6 +19248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd330f46b8bef84092592df12a5df53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.PlayerInteraction
+  interactionButton: {fileID: 0}
   currentMatterBehaviour: {fileID: 0}
   matterTag: Matter
 --- !u!114 &1830283963
@@ -26588,6 +26593,34 @@ PrefabInstance:
     - target: {fileID: 4968919682027364813, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1830283960}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LilLycanLord_Official.PlatformerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059961597944023327, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5191331862659465642, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: togglePlatformerControls

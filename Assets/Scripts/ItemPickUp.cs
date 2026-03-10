@@ -46,6 +46,7 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Trigger Settings")]
         [SerializeField] private string triggerTag = "Player";
+        [SerializeField] private PlatformerMovement player;
         [SerializeField] private bool requireButtonPress = false;
         [SerializeField] private KeyCode interactionKey = KeyCode.E;
         
@@ -133,6 +134,9 @@ namespace LilLycanLord_Official
         private IEnumerator PickupSequence()
         {
             // 1. Store previous camera view
+            player.SetMovingLeft(false);
+            player.SetMovingRight(false);
+
             if (CameraViewManager.Instance != null)
             {
                 previousCameraView = CameraViewManager.Instance.GetCurrentViewName();

@@ -412,9 +412,13 @@ MonoBehaviour:
   container: {fileID: 1020640388}
   interactionButton: {fileID: 1277472527}
   material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
+  isGround: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   colliderShrinkPercentage: 0.05
-  glowColor: {r: 1, g: 1, b: 1, a: 0.5}
-  glowScale: 1.15
+  glowColor: {r: 0.98039216, g: 0.74509805, b: 0.1254902, a: 0.5019608}
+  glowScale: 1.3
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineThickness: 0.1
 --- !u!114 &53487800
@@ -11670,7 +11674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed988508bb4a53744bb1660f6bd8dd97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.NextLevelBehaviour
-  nextLevel: {fileID: 11400000, guid: 504e2d492e85ecb43b2b1f803e5a5b5c, type: 2}
+  nextLevel: {fileID: 11400000, guid: 91208e5d95300b944a41e36b7f986078, type: 2}
   levelSelectSceneName: MAIN_MENU
   transitionType: Crossfade
 --- !u!1 &641938512
@@ -14445,7 +14449,7 @@ MonoBehaviour:
   goalViewName: Goal View
   cameraTransitionSpeed: 2
   moveSpeed: 1
-  levelIndex: 2
+  levelIndex: 4
 --- !u!1001 &1182360692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23691,6 +23695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd330f46b8bef84092592df12a5df53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.PlayerInteraction
+  interactionButton: {fileID: 1277472527}
   currentMatterBehaviour: {fileID: 0}
   matterTag: Matter
 --- !u!114 &1830283963
@@ -24769,7 +24774,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 1549796201, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: -1232614375, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1067088319, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
@@ -24777,15 +24782,15 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -2033701548, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -383338505, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: 1965268218, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2030440205, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: 198059126, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1569826394, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: 1785916157, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -619558937, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: -1413776416, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1377946066, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: -527654876, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
     m_Data:

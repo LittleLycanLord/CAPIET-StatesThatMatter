@@ -43,13 +43,14 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Dev Settings")]
         [SerializeField] private bool devmode = true;
-        
+
         //* ╔════════════╗
         //* ║ Attributes ║
         //* ╚════════════╝
         private Animator animator;
         private bool movingLeft = false;
-        private bool movingRight = false;
+        [HideInInspector]
+        public bool movingRight = false;
         private float moveDirection = 0f;
         private bool inputEnabled = true; // Control input without disabling the script
 

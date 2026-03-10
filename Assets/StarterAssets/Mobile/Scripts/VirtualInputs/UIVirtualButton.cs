@@ -18,6 +18,14 @@ public class UIVirtualButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (clickDelay > 0f)
+        {
+            Invoke(nameof(OutputButtonClickEvent), clickDelay);
+        }
+        else
+        {
+            OutputButtonClickEvent();
+        }
         OutputButtonStateValue(true);
     }
 
@@ -28,14 +36,14 @@ public class UIVirtualButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (clickDelay > 0f)
-        {
-            Invoke(nameof(OutputButtonClickEvent), clickDelay);
-        }
-        else
-        {
-            OutputButtonClickEvent();
-        }
+        // if (clickDelay > 0f)
+        // {
+        //     Invoke(nameof(OutputButtonClickEvent), clickDelay);
+        // }
+        // else
+        // {
+        //     OutputButtonClickEvent();
+        // }
     }
 
     void OutputButtonStateValue(bool buttonState)

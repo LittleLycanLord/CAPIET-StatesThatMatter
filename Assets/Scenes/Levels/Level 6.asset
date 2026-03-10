@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0de8ed14d937863438db0c0654e7916e, type: 3}
-  m_Name: Level 3
+  m_Name: Level 6
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
-  levelIndex: 3
-  levelPreview: {fileID: 2800000, guid: bfde42696f525ea4a8fc366e792ed70e, type: 3}
-  levelName: THE BOOK OF FIRE
-  description: What is this artifact?
-  sceneName: TUTORIAL_3 (DISCOVER HEAT)
+  levelIndex: 6
+  levelPreview: {fileID: 2800000, guid: 792c9dcbbe1074b47bfb1ec871e8333b, type: 3}
+  levelName: Bridge Time
+  description: I didn't know ice had a use sometimes...
+  sceneName: TUTORIAL_6

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0de8ed14d937863438db0c0654e7916e, type: 3}
-  m_Name: Level 3
+  m_Name: Level 7
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
-  levelIndex: 3
-  levelPreview: {fileID: 2800000, guid: bfde42696f525ea4a8fc366e792ed70e, type: 3}
-  levelName: THE BOOK OF FIRE
-  description: What is this artifact?
-  sceneName: TUTORIAL_3 (DISCOVER HEAT)
+  levelIndex: 7
+  levelPreview: {fileID: 2800000, guid: a08ded873d7ed4242be5954d251d7d0d, type: 3}
+  levelName: Avalanche
+  description: Why is there so much Ice here?
+  sceneName: TUTORIAL_7

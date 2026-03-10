@@ -171,6 +171,10 @@ MonoBehaviour:
   container: {fileID: 1020640388}
   interactionButton: {fileID: 1277472527}
   material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
+  isGround: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   colliderShrinkPercentage: 0.05
   glowColor: {r: 1, g: 1, b: 1, a: 0.5}
   glowScale: 1.15
@@ -11078,8 +11082,9 @@ MonoBehaviour:
   riseDuration: 1.5
   riseEase: 2
   particleSystemPrefab: {fileID: 6545899602379007338, guid: 72494878a603fee498e3cce765b91e34, type: 3}
-  pickupSFXName: BookDiscovery
+  pickupSFXName: Book Discovery
   triggerTag: Player
+  player: {fileID: 1830283960}
   requireButtonPress: 0
   interactionKey: 101
 --- !u!212 &446496837
@@ -12365,7 +12370,7 @@ MonoBehaviour:
   goalViewName: Goal View
   cameraTransitionSpeed: 2
   moveSpeed: 1
-  levelIndex: 1
+  levelIndex: 3
 --- !u!1001 &1182360692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12376,7 +12381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
       propertyPath: soundLibrary.Array.size
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
       propertyPath: 'soundLibrary.Array.data[0]'
@@ -12462,6 +12467,10 @@ PrefabInstance:
       propertyPath: 'soundLibrary.Array.data[20]'
       value: 
       objectReference: {fileID: 11400000, guid: f24f6a8687514b6439c47ed73eafff7a, type: 2}
+    - target: {fileID: 2739314478793378361, guid: 90506403840082847a67b0b2fa351e33, type: 3}
+      propertyPath: 'soundLibrary.Array.data[21]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c6469fd9287f25444b63aa607ac6cea7, type: 2}
     - target: {fileID: 6960161659976827747, guid: 90506403840082847a67b0b2fa351e33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -24254,7 +24263,7 @@ Transform:
   m_GameObject: {fileID: 1639975269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.5, y: 2, z: 0}
+  m_LocalPosition: {x: 31.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 5.3483, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24936,6 +24945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd330f46b8bef84092592df12a5df53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.PlayerInteraction
+  interactionButton: {fileID: 0}
   currentMatterBehaviour: {fileID: 0}
   matterTag: Matter
 --- !u!114 &1830283963
@@ -32245,6 +32255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platformer Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3807469682314630456, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: nextLevel
+      value: 
+      objectReference: {fileID: 11400000, guid: 87a362879d92f234d99ab43f37fe9042, type: 2}
     - target: {fileID: 3818025221116646154, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonStateOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

@@ -59,30 +59,7 @@ namespace LilLycanLord_Official
         //* ╚═══════════════╝
         void Start()
         {
-            if (interactionButton != null)
-                interactionButton.SetActive(false);
-        }
-
-        void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                if (interactionButton != null)
-                    interactionButton.SetActive(true);
-                    
-                ShowHighlight();
-            }
-        }
-
-        void OnTriggerExit2D(Collider2D other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                if (interactionButton != null)
-                    interactionButton.SetActive(false);
-                    
-                HideHighlight();
-            }
+            // Button management now handled by PlayerInteraction
         }
 
         //* ╔═════════════════════╗
@@ -131,7 +108,11 @@ namespace LilLycanLord_Official
                 Debug.LogWarning("No material or phase change events assigned to this matter block!");
             }
         }
-        void ShowHighlight()
+        
+        /// <summary>
+        /// Shows the highlight visual based on highlightType setting
+        /// </summary>
+        public void ShowHighlight()
         {
             switch (highlightType)
             {
@@ -154,7 +135,10 @@ namespace LilLycanLord_Official
             }
         }
         
-        void HideHighlight()
+        /// <summary>
+        /// Hides all highlight visuals
+        /// </summary>
+        public void HideHighlight()
         {
             if (glowVisual != null) glowVisual.SetActive(false);
             if (outlineVisual != null) outlineVisual.SetActive(false);

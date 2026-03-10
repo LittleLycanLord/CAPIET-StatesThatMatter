@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 4
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
   levelIndex: 4
-  levelPreview: {fileID: 2800000, guid: 7832dd4635f6b28459cf9396087c569d, type: 3}
-  levelName: Bridges
-  description: Is that an ice bridge?
+  levelPreview: {fileID: 2800000, guid: c1a68a649875a57448bfc764befdeda5, type: 3}
+  levelName: There's Ice in the Way
+  description: Time to use the book I found...
   sceneName: TUTORIAL_4

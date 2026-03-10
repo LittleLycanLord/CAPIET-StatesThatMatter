@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 2
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
   levelIndex: 2
-  levelPreview: {fileID: 2800000, guid: 7832dd4635f6b28459cf9396087c569d, type: 3}
-  levelName: ICE
-  description: Use the book of fire to melt!
+  levelPreview: {fileID: 2800000, guid: 03b4446019be3214da17ed1aac37a601, type: 3}
+  levelName: Ice Everywhere
+  description: It's been so cold...
   sceneName: TUTORIAL_2

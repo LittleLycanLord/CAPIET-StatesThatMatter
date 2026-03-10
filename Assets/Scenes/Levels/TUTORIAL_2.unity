@@ -171,6 +171,10 @@ MonoBehaviour:
   container: {fileID: 1020640388}
   interactionButton: {fileID: 1277472527}
   material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
+  isGround: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   colliderShrinkPercentage: 0.05
   glowColor: {r: 1, g: 1, b: 1, a: 0.5}
   glowScale: 1.15
@@ -920,28 +924,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd3892492bfbe0944b261aec57fe5d7e, type: 3}
---- !u!1 &225469800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2029911773131731580, guid: 840958867d708a64597fce0e9defebf3, type: 3}
-  m_PrefabInstance: {fileID: 9063208584549647357}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &225469803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225469800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85489c492416a634fa9c2e3f2237847e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.MiniDialogueStartScript
-  textLinesToShow:
-  - Press the buttons on the lower left to move!
-  - Press the button on the right to jump!
-  delayBeforeShow: 3
-  showOnStart: 1
 --- !u!1 &231547596
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,7 +10027,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10055,7 +10037,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 9
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10095,7 +10077,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10105,7 +10087,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 9
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10125,7 +10107,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10225,7 +10207,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10235,7 +10217,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10245,7 +10227,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10266,24 +10248,24 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 1965268218, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: 1785916157, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -359014525, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 956771710, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: 1377987068, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: -383338505, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -359014525, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -2033701548, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1067088319, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 2
-    m_Data: {fileID: -1569826394, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
+    m_Data: {fileID: -1383476761, guid: 7846abe9ae26519499e1123f5e30bdf8, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1221659178, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
   - m_RefCount: 1
@@ -11987,7 +11969,7 @@ MonoBehaviour:
   goalViewName: Goal View
   cameraTransitionSpeed: 2
   moveSpeed: 1
-  levelIndex: 1
+  levelIndex: 2
 --- !u!1001 &1182360692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18899,7 +18881,7 @@ Transform:
   m_GameObject: {fileID: 1639975269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.5, y: 2, z: 0}
+  m_LocalPosition: {x: 24.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 5.3483, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19549,6 +19531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd330f46b8bef84092592df12a5df53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.PlayerInteraction
+  interactionButton: {fileID: 0}
   currentMatterBehaviour: {fileID: 0}
   matterTag: Matter
 --- !u!114 &1830283963
@@ -27018,6 +27001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platformer Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3807469682314630456, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: nextLevel
+      value: 
+      objectReference: {fileID: 11400000, guid: 504e2d492e85ecb43b2b1f803e5a5b5c, type: 2}
     - target: {fileID: 3818025221116646154, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonStateOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -27056,7 +27043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5191331862659465642, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: togglePlatformerControls
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5371136095046900676, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonClickOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -27085,17 +27072,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2029911773131731580, guid: 840958867d708a64597fce0e9defebf3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 225469803}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840958867d708a64597fce0e9defebf3, type: 3}
 --- !u!114 &9063208584549647358 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5191331862659465642, guid: 840958867d708a64597fce0e9defebf3, type: 3}
   m_PrefabInstance: {fileID: 9063208584549647357}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225469800}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae6ed9fc41525bf41b3ef78d1a166fff, type: 3}
