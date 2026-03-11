@@ -34,38 +34,89 @@ namespace LilLycanLord_Official
         
         public override void OnMelt(GameObject matterBlock)
         {
-            Debug.Log($"Water: Ice melted! Destroying {matterBlock.name}");
-            Object.Destroy(matterBlock);
+            Debug.Log($"Water: Ice melted! Transforming {matterBlock.name} to liquid");
+            
+            if (liquidStatePrefab != null)
+            {
+                TransformMatterBlock(matterBlock, liquidStatePrefab);
+            }
+            else
+            {
+                Debug.LogWarning("Water: No liquid state prefab assigned! Destroying instead.");
+                Object.Destroy(matterBlock);
+            }
         }
         
         public override void OnFreeze(GameObject matterBlock)
         {
-            Debug.Log($"Water: Water froze! {matterBlock.name} is now ice");
-            // TODO: Implement freeze behavior (e.g., change sprite, play sound)
+            Debug.Log($"Water: Water froze! Transforming {matterBlock.name} to solid ice");
+            
+            if (solidStatePrefab != null)
+            {
+                TransformMatterBlock(matterBlock, solidStatePrefab);
+            }
+            else
+            {
+                Debug.LogWarning("Water: No solid state prefab assigned!");
+            }
         }
         
         public override void OnEvaporate(GameObject matterBlock)
         {
-            Debug.Log($"Water: Water evaporated! Destroying {matterBlock.name}");
-            Object.Destroy(matterBlock);
+            Debug.Log($"Water: Water evaporated! Transforming {matterBlock.name} to gas");
+            
+            if (gasStatePrefab != null)
+            {
+                TransformMatterBlock(matterBlock, gasStatePrefab);
+            }
+            else
+            {
+                Debug.LogWarning("Water: No gas state prefab assigned! Destroying instead.");
+                Object.Destroy(matterBlock);
+            }
         }
         
         public override void OnCondense(GameObject matterBlock)
         {
-            Debug.Log($"Water: Steam condensed! {matterBlock.name} is now water");
-            // TODO: Implement condensation behavior
+            Debug.Log($"Water: Steam condensed! Transforming {matterBlock.name} to liquid water");
+            
+            if (liquidStatePrefab != null)
+            {
+                TransformMatterBlock(matterBlock, liquidStatePrefab);
+            }
+            else
+            {
+                Debug.LogWarning("Water: No liquid state prefab assigned!");
+            }
         }
         
         public override void OnSublimate(GameObject matterBlock)
         {
-            Debug.Log($"Water: Ice sublimated! Destroying {matterBlock.name}");
-            Object.Destroy(matterBlock);
+            Debug.Log($"Water: Ice sublimated! Transforming {matterBlock.name} to gas");
+            
+            if (gasStatePrefab != null)
+            {
+                TransformMatterBlock(matterBlock, gasStatePrefab);
+            }
+            else
+            {
+                Debug.LogWarning("Water: No gas state prefab assigned! Destroying instead.");
+                Object.Destroy(matterBlock);
+            }
         }
         
         public override void OnDeposition(GameObject matterBlock)
         {
-            Debug.Log($"Water: Steam deposited! {matterBlock.name} is now ice");
-            // TODO: Implement deposition behavior
+            Debug.Log($"Water: Steam deposited! Transforming {matterBlock.name} to solid ice");
+            
+            if (solidStatePrefab != null)
+            {
+                TransformMatterBlock(matterBlock, solidStatePrefab);
+            }
+            else
+            {
+                Debug.LogWarning("Water: No solid state prefab assigned!");
+            }
         }
 
         //* ╔════════════════════════════════╗

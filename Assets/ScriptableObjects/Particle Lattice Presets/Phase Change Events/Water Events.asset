@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab11320a213ebc74aa286bc70bb1e81e, type: 3}
   m_Name: Water Events
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.WaterEvents
+  solidStatePrefab: {fileID: 3485828276816115324, guid: 7365bf21b488b8f4aa8728e961ba4285, type: 3}
+  liquidStatePrefab: {fileID: 3485828276816115324, guid: 1cc416a22a082824c8b154f0d3ed7420, type: 3}
+  gasStatePrefab: {fileID: 0}

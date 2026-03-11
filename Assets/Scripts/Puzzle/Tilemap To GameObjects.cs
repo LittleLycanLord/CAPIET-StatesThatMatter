@@ -13,6 +13,9 @@ namespace LilLycanLord_Official
         public GameObject blockParentPrefab; // Empty prefab with Rigidbody2D + Collider
         public Transform container; // Optional parent
         public GameObject interactionButton;
+        
+        // Static reference for phase change system to access
+        public static GameObject blockParentPrefabReference;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -58,6 +61,12 @@ namespace LilLycanLord_Official
         //* ╚═══════════════╝
         void Start()
         {
+            // Set static reference for phase change system
+            if (blockParentPrefab != null)
+            {
+                blockParentPrefabReference = blockParentPrefab;
+            }
+            
             foreach (var cell in tilemap.cellBounds.allPositionsWithin)
             {
                 if (!tilemap.HasTile(cell) || visited.Contains(cell))
@@ -244,9 +253,178 @@ namespace LilLycanLord_Official
                 col.offset = block.transform.InverseTransformPoint(compositeBounds.center);
             }
         }
+        
+        /// <summary>
+        /// Rebuilds a matter block from scratch using new sprite while preserving structure
+        /// </summary>
+        /// <param name="tilePositions">World positions of all tiles</param>
+        /// <param name="newSprite">The sprite to use for the new state</param>
+        /// <param name="blockParentPrefab">Parent prefab with Rigidbody2D and colliders</param>
+        /// <param name="material">Material data</param>
+        /// <param name="interactionButton">Interaction button reference</param>
+        /// <param name="container">Optional parent transform</param>
+        /// <param name="settings">Block settings (collider, highlight, etc.)</param>
+        /// <returns>The newly created matter block</returns>
+        public static GameObject RebuildMatterBlock(
+            List<Vector3> tilePositions,
+            Sprite newSprite,
+            GameObject blockParentPrefab,
+            ParticleLatticeMaterial material,
+            GameObject interactionButton,
+            Transform container,
+            MatterBlockSettings settings)
+        {
+            if (tilePositions == null || tilePositions.Count == 0)
+            {
+                Debug.LogError("RebuildMatterBlock: No tile positions provided!");
+                return null;
+            }
+            
+            if (newSprite == null)
+            {
+                Debug.LogError("RebuildMatterBlock: No sprite provided!");
+                return null;
+            }
+            
+            // Calculate center position
+            Vector3 centerPos = Vector3.zero;
+            foreach (var pos in tilePositions)
+            {
+                centerPos += pos;
+            }
+            centerPos /= tilePositions.Count;
+            
+            // Create new block
+            GameObject block = Instantiate(blockParentPrefab, centerPos, Quaternion.identity, container);
+            
+            // Create highlight layers
+            GameObject glowLayer = new GameObject("GlowLayer");
+            glowLayer.transform.SetParent(block.transform);
+            glowLayer.transform.localPosition = Vector3.zero;
+            glowLayer.SetActive(false);
+            
+            GameObject outlineLayer = new GameObject("OutlineLayer");
+            outlineLayer.transform.SetParent(block.transform);
+            outlineLayer.transform.localPosition = Vector3.zero;
+            outlineLayer.SetActive(false);
+            
+            // Create tiles at each position
+            foreach (var worldPos in tilePositions)
+            {
+                // Main sprite
+                GameObject child = new GameObject("TileSprite");
+                child.layer = settings.isGround ? LayerMask.NameToLayer("Ground") : LayerMask.NameToLayer("Default");
+                child.transform.SetParent(block.transform);
+                child.transform.position = worldPos;
+                
+                var sr = child.AddComponent<SpriteRenderer>();
+                sr.sprite = newSprite;
+                sr.sortingLayerID = settings.sortingLayerID;
+                sr.sortingOrder = settings.sortingOrder;
+                
+                var poly = child.AddComponent<PolygonCollider2D>();
+                poly.usedByComposite = true;
+                
+                // Shrink collider if needed
+                if (settings.colliderShrinkPercentage > 0f)
+                {
+                    for (int pathIndex = 0; pathIndex < poly.pathCount; pathIndex++)
+                    {
+                        Vector2[] points = poly.GetPath(pathIndex);
+                        Vector2 centroid = Vector2.zero;
+                        foreach (var point in points)
+                            centroid += point;
+                        centroid /= points.Length;
+                        
+                        float scale = 1f - settings.colliderShrinkPercentage;
+                        for (int i = 0; i < points.Length; i++)
+                            points[i] = centroid + (points[i] - centroid) * scale;
+                        
+                        poly.SetPath(pathIndex, points);
+                    }
+                }
+                
+                // Glow sprite
+                GameObject glowChild = new GameObject("GlowSprite");
+                glowChild.transform.SetParent(glowLayer.transform);
+                glowChild.transform.position = worldPos;
+                glowChild.transform.localScale = Vector3.one * settings.glowScale;
+                
+                var glowSr = glowChild.AddComponent<SpriteRenderer>();
+                glowSr.sprite = newSprite;
+                glowSr.color = settings.glowColor;
+                glowSr.sortingLayerID = settings.sortingLayerID;
+                glowSr.sortingOrder = settings.sortingOrder - 1;
+                
+                // Outline sprites
+                Vector3[] outlineOffsets = new Vector3[]
+                {
+                    new Vector3(settings.outlineThickness, 0, 0),
+                    new Vector3(-settings.outlineThickness, 0, 0),
+                    new Vector3(0, settings.outlineThickness, 0),
+                    new Vector3(0, -settings.outlineThickness, 0)
+                };
+                
+                foreach (var offset in outlineOffsets)
+                {
+                    GameObject outlineChild = new GameObject("OutlineSprite");
+                    outlineChild.transform.SetParent(outlineLayer.transform);
+                    outlineChild.transform.position = worldPos + offset;
+                    
+                    var outlineSr = outlineChild.AddComponent<SpriteRenderer>();
+                    outlineSr.sprite = newSprite;
+                    outlineSr.color = settings.outlineColor;
+                    outlineSr.sortingLayerID = settings.sortingLayerID;
+                    outlineSr.sortingOrder = settings.sortingOrder - 1;
+                }
+            }
+            
+            // Setup trigger collider
+            PolygonCollider2D[] polygons = block.GetComponentsInChildren<PolygonCollider2D>();
+            if (polygons.Length > 0)
+            {
+                Bounds compositeBounds = polygons[0].bounds;
+                foreach (var poly in polygons)
+                    compositeBounds.Encapsulate(poly.bounds);
+                
+                BoxCollider2D col = block.GetComponent<BoxCollider2D>();
+                MatterBehaviour matterBehaviour = block.GetComponent<MatterBehaviour>();
+                
+                matterBehaviour.interactionButton = interactionButton;
+                matterBehaviour.glowVisual = glowLayer;
+                matterBehaviour.outlineVisual = outlineLayer;
+                matterBehaviour.material = material;
+                matterBehaviour.glowColor = settings.glowColor;
+                matterBehaviour.glowScale = settings.glowScale;
+                matterBehaviour.outlineColor = settings.outlineColor;
+                matterBehaviour.outlineThickness = settings.outlineThickness;
+                
+                Vector2 size = compositeBounds.size * 1.2f;
+                col.size = size;
+                col.offset = block.transform.InverseTransformPoint(compositeBounds.center);
+            }
+            
+            return block;
+        }
 
         //* ╔════════════════════════════════╗
         //* ║ Virtual / Overridden Functions ║
         //* ╚════════════════════════════════╝
+    }
+    
+    /// <summary>
+    /// Settings bundle for rebuilding matter blocks
+    /// </summary>
+    [System.Serializable]
+    public struct MatterBlockSettings
+    {
+        public bool isGround;
+        public int sortingLayerID;
+        public int sortingOrder;
+        public float colliderShrinkPercentage;
+        public Color glowColor;
+        public float glowScale;
+        public Color outlineColor;
+        public float outlineThickness;
     }
 }
