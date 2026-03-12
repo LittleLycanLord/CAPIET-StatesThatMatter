@@ -61,6 +61,7 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2d.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Scene Transition Manager\SceneTransitionManagerSample.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\GameObjects\HoverableSample.cs" />
+    <Compile Include="Assets\Scripts\Platforming\Tilemap State Synchronizer.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Systems\Managers\Game Progression Manager\GameProgressionSaverSample.cs" />
     <Compile Include="Assets\Scripts\Particle System\Particle Lattice Material.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />

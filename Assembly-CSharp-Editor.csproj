@@ -51,6 +51,7 @@
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Players\Offline\3D\Editor\GeneralPlayerMovementSetupEditor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\TilemapStateSynchronizerEditor.cs" />
     <Compile Include="Assets\LilLycanLord\Scripts\Homebrewed\Non - Monobehaviour Scripts\Editor\PixelViewMakerEditor.cs" />
   </ItemGroup>
   <ItemGroup>

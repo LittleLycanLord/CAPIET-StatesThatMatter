@@ -181,7 +181,7 @@ MonoBehaviour:
   interactionButton: {fileID: 0}
   glowVisual: {fileID: 0}
   outlineVisual: {fileID: 0}
-  material: {fileID: 0}
+  material: {fileID: 11400000, guid: 21e2fee8c190b584996c26d190482c0d, type: 2}
   highlightType: 1
   glowColor: {r: 1, g: 0, b: 0, a: 0.5}
   glowScale: 1.2

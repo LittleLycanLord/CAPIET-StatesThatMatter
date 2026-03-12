@@ -120,8 +120,7 @@ namespace LilLycanLord_Official
             currentPhase = matterBlock.phase;
 
             // Pause platformer physics
-            platformerCamera.enabled = false;
-            platformerEventSystem.SetActive(false);
+            platformerCamera.enabled = false;            platformerEventSystem.SetActive(false);
             platformerUI.SetActive(false);
             GameState.InMinigame = true;
 

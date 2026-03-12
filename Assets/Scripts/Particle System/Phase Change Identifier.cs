@@ -108,8 +108,20 @@ namespace LilLycanLord_Official
             // Calculate initial total possible bonds based on lattice
             CalculateInitialBondCapacity();
 
-            // Detect initial phase
-            initialPhase = DetectPhase();
+            // Get initial phase from MinigameManager's currentMatterBlock instead of detecting
+            if (MinigameManager.Instance != null)
+            {
+                // Convert MatterPhase to DetectedPhase
+                initialPhase = ConvertMatterPhaseToDetectedPhase(MinigameManager.Instance.currentPhase);
+                Debug.Log($"Initial phase set from MinigameManager's currentMatterBlock: {initialPhase}");
+            }
+            else
+            {
+                // Fallback: detect from bonds if no MinigameManager reference
+                initialPhase = DetectPhase();
+                Debug.LogWarning($"MinigameManager not found. Detected initial phase: {initialPhase}");
+            }
+            
             currentPhase = initialPhase;
             previousPhase = initialPhase;
 
@@ -119,6 +131,21 @@ namespace LilLycanLord_Official
             UpdateUI();
 
             Debug.Log($"Phase Change Identifier initialized. Initial phase: {initialPhase}");
+        }
+        
+        DetectedPhase ConvertMatterPhaseToDetectedPhase(MatterPhase matterPhase)
+        {
+            switch (matterPhase)
+            {
+                case MatterPhase.Solid:
+                    return DetectedPhase.Solid;
+                case MatterPhase.Liquid:
+                    return DetectedPhase.Liquid;
+                case MatterPhase.Gas:
+                    return DetectedPhase.Gas;
+                default:
+                    return DetectedPhase.Unknown;
+            }
         }
 
         void CalculateInitialBondCapacity()

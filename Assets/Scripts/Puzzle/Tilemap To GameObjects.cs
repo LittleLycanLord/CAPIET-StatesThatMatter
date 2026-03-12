@@ -14,8 +14,16 @@ namespace LilLycanLord_Official
         public Transform container; // Optional parent
         public GameObject interactionButton;
         
-        // Static reference for phase change system to access
+        // Static references for phase change system to access
         public static GameObject blockParentPrefabReference;
+        public static GameObject interactionButtonReference;
+        public static float colliderShrinkReference = 0.05f;
+        public static Color glowColorReference = new Color(1f, 1f, 1f, 0.5f);
+        public static float glowScaleReference = 1.15f;
+        public static Color outlineColorReference = Color.white;
+        public static float outlineThicknessReference = 0.1f;
+        public static int sortingLayerReference = 0;
+        public static int sortingOrderReference = 0;
 
         //* ╔══════════╗
         //* ║ Displays ║
@@ -28,6 +36,8 @@ namespace LilLycanLord_Official
         [Space(10)]
         [Header("Fields")]
         public ParticleLatticeMaterial material;
+        public LayerMask sortingLayerID = 0;
+        public int sortingOrder = 0;
         
         [Space(10)]
         [Header("Collider Settings")]
@@ -61,11 +71,21 @@ namespace LilLycanLord_Official
         //* ╚═══════════════╝
         void Start()
         {
-            // Set static reference for phase change system
+            // Set static references for phase change system
             if (blockParentPrefab != null)
             {
                 blockParentPrefabReference = blockParentPrefab;
+                interactionButtonReference = interactionButton;
+                colliderShrinkReference = colliderShrinkPercentage;
+                glowColorReference = glowColor;
+                glowScaleReference = glowScale;
+                outlineColorReference = outlineColor;
+                outlineThicknessReference = outlineThickness;
+                sortingLayerReference = sortingLayerID;
+                sortingOrderReference = sortingOrder;
             }
+            
+            int clusterCount = 0;
             
             foreach (var cell in tilemap.cellBounds.allPositionsWithin)
             {
@@ -74,11 +94,13 @@ namespace LilLycanLord_Official
 
                 List<Vector3Int> cluster = FloodFill(cell);
                 CreateBlockFromCluster(cluster);
+                clusterCount++;
             }
+            
             if (interactionButton != null)
                 interactionButton.SetActive(false);
 
-            tilemap.gameObject.SetActive(false);
+            Debug.Log($"TilemapToGameObjects: Spawned {clusterCount} matter block clusters from {tilemap.gameObject.name}.");
         }
 
         //* ╔═════════════════════╗
@@ -155,8 +177,8 @@ namespace LilLycanLord_Official
 
                 var sr = child.AddComponent<SpriteRenderer>();
                 sr.sprite = sprite;
-                sr.sortingLayerID = tilemap.GetComponent<TilemapRenderer>().sortingLayerID;
-                sr.sortingOrder = tilemap.GetComponent<TilemapRenderer>().sortingOrder;
+                sr.sortingLayerID = sortingLayerID;
+                sr.sortingOrder = sortingOrder;
 
                 var poly = child.AddComponent<PolygonCollider2D>();
                 poly.usedByComposite = true;

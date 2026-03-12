@@ -38,7 +38,7 @@ namespace LilLycanLord_Official
             
             if (liquidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, liquidStatePrefab);
+                TransformMatterBlock(matterBlock, liquidStatePrefab, TilemapStateSynchronizer.liquidSpriteReference);
             }
             else
             {
@@ -53,7 +53,7 @@ namespace LilLycanLord_Official
             
             if (solidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, solidStatePrefab);
+                TransformMatterBlock(matterBlock, solidStatePrefab, TilemapStateSynchronizer.solidSpriteReference);
             }
             else
             {
@@ -67,7 +67,7 @@ namespace LilLycanLord_Official
             
             if (gasStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, gasStatePrefab);
+                TransformMatterBlock(matterBlock, gasStatePrefab, TilemapStateSynchronizer.gasSpriteReference);
             }
             else
             {
@@ -82,7 +82,7 @@ namespace LilLycanLord_Official
             
             if (liquidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, liquidStatePrefab);
+                TransformMatterBlock(matterBlock, liquidStatePrefab, TilemapStateSynchronizer.liquidSpriteReference);
             }
             else
             {
@@ -96,7 +96,7 @@ namespace LilLycanLord_Official
             
             if (gasStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, gasStatePrefab);
+                TransformMatterBlock(matterBlock, gasStatePrefab, TilemapStateSynchronizer.gasSpriteReference);
             }
             else
             {
@@ -111,7 +111,7 @@ namespace LilLycanLord_Official
             
             if (solidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, solidStatePrefab);
+                TransformMatterBlock(matterBlock, solidStatePrefab, TilemapStateSynchronizer.solidSpriteReference);
             }
             else
             {
