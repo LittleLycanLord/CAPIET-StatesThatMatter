@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6818989061057630871}
   - component: {fileID: 5543942114106096959}
   - component: {fileID: 3684019728602311822}
-  m_Layer: 0
+  - component: {fileID: -1237941446819339847}
+  m_Layer: 10
   m_Name: Water
   m_TagString: Matter
   m_Icon: {fileID: 0}
@@ -37,6 +38,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8166322348724159400
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -82,6 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -91,7 +94,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &6818989061057630871
 Rigidbody2D:
@@ -188,3 +190,21 @@ MonoBehaviour:
   outlineColor: {r: 1, g: 0, b: 0, a: 1}
   outlineThickness: 5
   phase: 1
+--- !u!114 &-1237941446819339847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3485828276816115324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dead020816dbdb74b87f7fb31ca9bbd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaterBehaviour
+  playerInWater: 0
+  playerTag: Player
+  bubbleMask: {fileID: 21300000, guid: 608aa89dd95fe3b4c923ed0b03086da7, type: 3}
+  buoyancyForce: 40
+  waterLinearDamping: 5
+  surfaceTrim: 0
