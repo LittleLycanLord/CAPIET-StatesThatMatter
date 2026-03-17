@@ -2,6 +2,7 @@ using LilLycanLord_Official;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 namespace LilLycanLord_Official
 {
@@ -13,7 +14,6 @@ namespace LilLycanLord_Official
         //* ║ Components ║
         //* ╚════════════╝
         private Rigidbody2D rb;
-        private CapsuleCollider2D capsuleCollider;
         private PlatformerSFX platformerSFX;
 
         //* ╔══════════╗
@@ -37,6 +37,7 @@ namespace LilLycanLord_Official
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private float jumpHeight = 10f;
         [SerializeField] private float deceleration = 10f;
+        [SerializeField] private List<Transform> feet;
         [SerializeField] private float groundCheckDistance = 0.1f;
         [SerializeField] private LayerMask groundLayer;
         
@@ -60,7 +61,6 @@ namespace LilLycanLord_Official
         void Awake() 
         {
             rb = GetComponent<Rigidbody2D>();
-            capsuleCollider = GetComponent<CapsuleCollider2D>();
             platformerSFX = GetComponent<PlatformerSFX>();
             
             if (animatorObject != null)
@@ -168,15 +168,18 @@ namespace LilLycanLord_Official
         /// </summary>
         private void CheckGrounded()
         {
-            // Cast a ray downward from the bottom of the capsule collider
-            Vector2 origin = new Vector2(transform.position.x, transform.position.y);
-            float rayDistance = (capsuleCollider.size.y / 2f) + groundCheckDistance;
-            
-            RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, rayDistance, groundLayer);
-            isGrounded = hit.collider != null;
-            
-            // Debug visualization
-            Debug.DrawRay(origin, Vector2.down * rayDistance, isGrounded ? Color.green : Color.red);
+            isGrounded = false;
+            foreach (Transform foot in feet)
+            {
+                if (foot == null) continue;
+                RaycastHit2D hit = Physics2D.Raycast(foot.position, Vector2.down, groundCheckDistance, groundLayer);
+                Debug.DrawRay(foot.position, Vector2.down * groundCheckDistance, hit.collider != null ? Color.green : Color.red);
+                if (hit.collider != null)
+                {
+                    isGrounded = true;
+                    break;
+                }
+            }
         }
         
         /// <summary>

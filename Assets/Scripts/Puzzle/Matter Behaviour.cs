@@ -48,6 +48,10 @@ namespace LilLycanLord_Official
         [Header("Outline Settings")]
         public Color outlineColor = Color.white;
         public float outlineThickness = 0.1f;
+
+        [Space(10)]
+        [Header("Alternate Maps")]
+        public bool useAlternateMap = false;
         
         //* ╔════════════╗
         //* ║ Attributes ║

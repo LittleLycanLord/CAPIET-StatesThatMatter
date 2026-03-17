@@ -35,10 +35,12 @@ namespace LilLycanLord_Official
         public override void OnMelt(GameObject matterBlock)
         {
             Debug.Log($"Water: Ice melted! Transforming {matterBlock.name} to liquid");
-            
+
             if (liquidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, liquidStatePrefab, TilemapStateSynchronizer.liquidSpriteReference);
+                TransformMatterBlock(matterBlock, liquidStatePrefab,
+                    TilemapStateSynchronizer.liquidSpriteReference,
+                    TilemapStateSynchronizer.liquidSpriteReferenceAlt);
             }
             else
             {
@@ -50,10 +52,12 @@ namespace LilLycanLord_Official
         public override void OnFreeze(GameObject matterBlock)
         {
             Debug.Log($"Water: Water froze! Transforming {matterBlock.name} to solid ice");
-            
+
             if (solidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, solidStatePrefab, TilemapStateSynchronizer.solidSpriteReference);
+                TransformMatterBlock(matterBlock, solidStatePrefab,
+                    TilemapStateSynchronizer.solidSpriteReference,
+                    TilemapStateSynchronizer.solidSpriteReferenceAlt);
             }
             else
             {
@@ -64,10 +68,12 @@ namespace LilLycanLord_Official
         public override void OnEvaporate(GameObject matterBlock)
         {
             Debug.Log($"Water: Water evaporated! Transforming {matterBlock.name} to gas");
-            
+
             if (gasStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, gasStatePrefab, TilemapStateSynchronizer.gasSpriteReference);
+                TransformMatterBlock(matterBlock, gasStatePrefab,
+                    TilemapStateSynchronizer.gasSpriteReference,
+                    TilemapStateSynchronizer.gasSpriteReferenceAlt);
             }
             else
             {
@@ -79,10 +85,12 @@ namespace LilLycanLord_Official
         public override void OnCondense(GameObject matterBlock)
         {
             Debug.Log($"Water: Steam condensed! Transforming {matterBlock.name} to liquid water");
-            
+
             if (liquidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, liquidStatePrefab, TilemapStateSynchronizer.liquidSpriteReference);
+                TransformMatterBlock(matterBlock, liquidStatePrefab,
+                    TilemapStateSynchronizer.liquidSpriteReference,
+                    TilemapStateSynchronizer.liquidSpriteReferenceAlt);
             }
             else
             {
@@ -93,10 +101,12 @@ namespace LilLycanLord_Official
         public override void OnSublimate(GameObject matterBlock)
         {
             Debug.Log($"Water: Ice sublimated! Transforming {matterBlock.name} to gas");
-            
+
             if (gasStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, gasStatePrefab, TilemapStateSynchronizer.gasSpriteReference);
+                TransformMatterBlock(matterBlock, gasStatePrefab,
+                    TilemapStateSynchronizer.gasSpriteReference,
+                    TilemapStateSynchronizer.gasSpriteReferenceAlt);
             }
             else
             {
@@ -108,10 +118,12 @@ namespace LilLycanLord_Official
         public override void OnDeposition(GameObject matterBlock)
         {
             Debug.Log($"Water: Steam deposited! Transforming {matterBlock.name} to solid ice");
-            
+
             if (solidStatePrefab != null)
             {
-                TransformMatterBlock(matterBlock, solidStatePrefab, TilemapStateSynchronizer.solidSpriteReference);
+                TransformMatterBlock(matterBlock, solidStatePrefab,
+                    TilemapStateSynchronizer.solidSpriteReference,
+                    TilemapStateSynchronizer.solidSpriteReferenceAlt);
             }
             else
             {

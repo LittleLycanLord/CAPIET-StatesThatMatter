@@ -52,6 +52,10 @@ namespace LilLycanLord_Official
         [SerializeField] private float glowScale = 1.15f;
         [SerializeField] private Color outlineColor = Color.white;
         [SerializeField] private float outlineThickness = 0.1f;
+
+        [Space(10)]
+        [Header("Alternate Maps")]
+        public bool useAlternateMap = false;
         
         //* ╔════════════╗
         //* ║ Attributes ║
@@ -171,8 +175,8 @@ namespace LilLycanLord_Official
 
                 // Create main sprite
                 GameObject child = new GameObject("TileSprite");
-                child.tag = blockParentPrefab.tag; // Assign the same tag as the prefab for consistency
-                child.layer = blockParentPrefab.layer; // Assign the same layer as the prefab for
+                child.tag = block.tag; // Assign the same tag as the prefab for consistency
+                child.layer = block.layer; // Assign the same layer as the prefab for
                 child.transform.SetParent(block.transform);
                 child.transform.position = worldPos;
 
@@ -269,11 +273,14 @@ namespace LilLycanLord_Official
                 matterBehaviour.glowScale = glowScale;
                 matterBehaviour.outlineColor = outlineColor;
                 matterBehaviour.outlineThickness = outlineThickness;
+                matterBehaviour.useAlternateMap = useAlternateMap;
                 
                 Vector2 size = compositeBounds.size * 1.2f;
                 col.size = size;
                 col.offset = block.transform.InverseTransformPoint(compositeBounds.center);
             }
+
+            block.layer = LayerMask.NameToLayer("Default");
         }
         
         /// <summary>
@@ -421,12 +428,13 @@ namespace LilLycanLord_Official
                 matterBehaviour.glowScale = settings.glowScale;
                 matterBehaviour.outlineColor = settings.outlineColor;
                 matterBehaviour.outlineThickness = settings.outlineThickness;
+                matterBehaviour.useAlternateMap = settings.useAlternateMap;
                 
                 Vector2 size = compositeBounds.size * 1.2f;
                 col.size = size;
                 col.offset = block.transform.InverseTransformPoint(compositeBounds.center);
             }
-            
+            block.layer = LayerMask.NameToLayer("Default");
             return block;
         }
 
@@ -449,5 +457,6 @@ namespace LilLycanLord_Official
         public float glowScale;
         public Color outlineColor;
         public float outlineThickness;
+        public bool useAlternateMap;
     }
 }

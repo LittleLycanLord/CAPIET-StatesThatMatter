@@ -82,19 +82,38 @@ namespace LilLycanLord_Official
         /// </summary>
         /// <param name="matterBlock">The matter block to transform</param>
         /// <param name="newStatePrefab">The prefab to instantiate for the new state</param>
-        /// <param name="spriteTilemap">The sprite reference tilemap to look up sprites from (from TilemapStateSynchronizer)</param>
-        protected void TransformMatterBlock(GameObject matterBlock, GameObject newStatePrefab, Tilemap spriteTilemap)
+        /// <param name="mainSpriteTilemap">The main sprite reference tilemap to look up sprites from</param>
+        /// <param name="altSpriteTilemap">The alternate sprite reference tilemap to look up sprites from</param>
+        protected void TransformMatterBlock(GameObject matterBlock, GameObject newStatePrefab, Tilemap mainSpriteTilemap, Tilemap altSpriteTilemap)
         {
             if (newStatePrefab == null)
             {
                 Debug.LogWarning("TransformMatterBlock: newStatePrefab is null!");
                 return;
             }
-            
+
+            if (mainSpriteTilemap == null)
+            {
+                Debug.LogWarning("TransformMatterBlock: mainSpriteTilemap is null!");
+                return;
+            }
+
+            // Determine which sprite tilemap to use based on the block's useAlternateMap setting
+            MatterBehaviour matterBehaviour = matterBlock.GetComponent<MatterBehaviour>();
+            bool useAlternateMap = matterBehaviour != null && matterBehaviour.useAlternateMap;
+            Tilemap spriteTilemap = useAlternateMap ? altSpriteTilemap : mainSpriteTilemap;
+
             if (spriteTilemap == null)
             {
-                Debug.LogWarning("TransformMatterBlock: spriteTilemap is null!");
-                return;
+                Debug.LogWarning($"TransformMatterBlock: {(useAlternateMap ? "alternate" : "main")} spriteTilemap is null! Falling back to {(useAlternateMap ? "main" : "alternate")} map.");
+                spriteTilemap = useAlternateMap ? mainSpriteTilemap : altSpriteTilemap;
+                useAlternateMap = !useAlternateMap; // Update flag to reflect fallback
+
+                if (spriteTilemap == null)
+                {
+                    Debug.LogError("TransformMatterBlock: Both sprite tilemaps are null!");
+                    return;
+                }
             }
             
             // 1. Extract tile positions and their corresponding sprites from current block
@@ -270,21 +289,26 @@ namespace LilLycanLord_Official
                 }
                 
                 // Set up MatterBehaviour references
-                MatterBehaviour matterBehaviour = newBlock.GetComponent<MatterBehaviour>();
-                if (matterBehaviour != null)
+                MatterBehaviour newMatterBehaviour = newBlock.GetComponent<MatterBehaviour>();
+                if (newMatterBehaviour != null)
                 {
-                    matterBehaviour.interactionButton = TilemapToGameObjects.interactionButtonReference;
-                    matterBehaviour.glowVisual = glowLayer;
-                    matterBehaviour.outlineVisual = outlineLayer;
+                    newMatterBehaviour.interactionButton = TilemapToGameObjects.interactionButtonReference;
+                    newMatterBehaviour.glowVisual = glowLayer;
+                    newMatterBehaviour.outlineVisual = outlineLayer;
                     
                     // Pass highlight settings
-                    matterBehaviour.glowColor = TilemapToGameObjects.glowColorReference;
-                    matterBehaviour.glowScale = TilemapToGameObjects.glowScaleReference;
-                    matterBehaviour.outlineColor = TilemapToGameObjects.outlineColorReference;
-                    matterBehaviour.outlineThickness = TilemapToGameObjects.outlineThicknessReference;
+                    newMatterBehaviour.glowColor = TilemapToGameObjects.glowColorReference;
+                    newMatterBehaviour.glowScale = TilemapToGameObjects.glowScaleReference;
+                    newMatterBehaviour.outlineColor = TilemapToGameObjects.outlineColorReference;
+                    newMatterBehaviour.outlineThickness = TilemapToGameObjects.outlineThicknessReference;
+
+                    // Set the alternate map flag based on what we determined above
+                    newMatterBehaviour.useAlternateMap = useAlternateMap;
                 }
             }
             
+            newBlock.layer = LayerMask.NameToLayer("Default");
+
             Debug.Log($"Transformed block to {newStatePrefab.name} with {tilePositions.Count} tiles using sprite lookups from tilemap");
         }
 
