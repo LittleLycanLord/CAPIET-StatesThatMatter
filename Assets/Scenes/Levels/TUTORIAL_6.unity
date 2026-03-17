@@ -7469,6 +7469,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741069318886583366, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
+      propertyPath: minigameSceneName
+      value: HEATING
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741069318886583366, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: platformerEventSystem
       value: 
       objectReference: {fileID: 1600525680}

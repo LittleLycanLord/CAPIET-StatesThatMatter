@@ -5599,9 +5599,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741069318886583366, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
+      propertyPath: minigameSceneName
+      value: HEATING
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741069318886583366, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: platformerEventSystem
       value: 
       objectReference: {fileID: 1600525680}
+    - target: {fileID: 5837450465829139570, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
+      propertyPath: sortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6099862399645706528, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: levelIndex
       value: 4
@@ -5945,6 +5953,10 @@ PrefabInstance:
     - target: {fileID: 8261336942089590015, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: m_Tiles.Array.data[10].second.m_TileSpriteIndex
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375136923336330538, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
+      propertyPath: sortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8550868544105645817, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: m_AnchorMax.y

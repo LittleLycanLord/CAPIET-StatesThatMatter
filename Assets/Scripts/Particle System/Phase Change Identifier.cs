@@ -47,13 +47,18 @@ namespace LilLycanLord_Official
         [SerializeField] private float detectionInterval = 0.25f;
 
         [Space(10)]
-        [Header("Thresholds")]
-        [Tooltip("Minimum bond stiffness to be considered solid")]
-        [SerializeField][Range(0f, 1f)] private float solidStiffnessThreshold = 0.8f;
-        [Tooltip("Maximum average particle speed to be considered solid")]
-        [SerializeField] private float solidMotionThreshold = 0.5f;
-        [Tooltip("Minimum bond percentage to be considered not gas (0-1)")]
-        [SerializeField][Range(0f, 1f)] private float gasBondThreshold = 0.1f;
+        [Header("Thresholds (0–2 combined normalized distance)")]
+        [SerializeField][Range(0f, 2f)] private float meltingThreshold = 0.3f;       // Solid → Liquid
+        [SerializeField][Range(0f, 2f)] private float freezingThreshold = 0.3f;      // Liquid → Solid
+        [SerializeField][Range(0f, 1f)] private float evaporationThreshold = 0.3f;   // Liquid → Gas (bond % only)
+        [SerializeField][Range(0f, 2f)] private float condensationThreshold = 0.3f;  // Gas → Liquid
+        [SerializeField][Range(0f, 1f)] private float sublimationThreshold = 0.3f;   // Solid → Gas (bond % only)
+        [SerializeField][Range(0f, 2f)] private float depositionThreshold = 0.3f;    // Gas → Solid
+
+        [Space(10)]
+        [Header("Gas Detection")]
+        [Tooltip("Fraction (0–1) of the target preset's bond count that must form before Condensation/Deposition stiffness check is considered. e.g. 0.5 = 50% of target preset's bonds must exist first.")]
+        [SerializeField][Range(0f, 1f)] private float minimumFromGasThreshold = 0.3f;
 
         [Space(10)]
         [Header("Events")]
@@ -63,8 +68,9 @@ namespace LilLycanLord_Official
         //* ║ Attributes ║
         //* ╚════════════╝
         private float detectionTimer;
-        private int totalPossibleBonds; // Based on initial lattice configuration
+        private int totalPossibleBonds;
         private bool isInitialized = false;
+        private ParticleLatticeMaterial currentMaterial;
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -108,18 +114,17 @@ namespace LilLycanLord_Official
             // Calculate initial total possible bonds based on lattice
             CalculateInitialBondCapacity();
 
-            // Get initial phase from MinigameManager's currentMatterBlock instead of detecting
+            // Get initial phase and material from MinigameManager
             if (MinigameManager.Instance != null)
             {
-                // Convert MatterPhase to DetectedPhase
+                currentMaterial = MinigameManager.Instance.GetCurrentMaterial();
                 initialPhase = ConvertMatterPhaseToDetectedPhase(MinigameManager.Instance.currentPhase);
-                Debug.Log($"Initial phase set from MinigameManager's currentMatterBlock: {initialPhase}");
+                Debug.Log($"Initial phase set from MinigameManager: {initialPhase}");
             }
             else
             {
-                // Fallback: detect from bonds if no MinigameManager reference
-                initialPhase = DetectPhase();
-                Debug.LogWarning($"MinigameManager not found. Detected initial phase: {initialPhase}");
+                Debug.LogWarning("MinigameManager not found. Phase detection disabled.");
+                initialPhase = DetectedPhase.Unknown;
             }
             
             currentPhase = initialPhase;
@@ -204,32 +209,75 @@ namespace LilLycanLord_Official
 
         DetectedPhase DetectPhase()
         {
-            // Gather metrics from lattice
-            int currentBondCount = GetCurrentBondCount();
-            float avgStiffness = GetAverageBondStiffness();
+            if (currentMaterial == null) return initialPhase;
 
-            // Calculate bond percentage
-            float bondPercentage = totalPossibleBonds > 0
-                ? (float)currentBondCount / totalPossibleBonds
+            // Gather current lattice metrics
+            int currentBondCount = GetCurrentBondCount();
+            float currentBondPct = totalPossibleBonds > 0
+                ? Mathf.Clamp01((float)currentBondCount / totalPossibleBonds)
                 : 0f;
-            
-            // Clamp to prevent issues with dynamic bonding creating > 100%
-            bondPercentage = Mathf.Clamp01(bondPercentage);
-            
-            if (debugMode)
+            float currentStiffness = GetAverageBondStiffness();
+
+            // Gas transitions: purely bond % based — if enough bonds have broken, call it immediately
+            if (initialPhase == DetectedPhase.Solid  && currentBondPct < sublimationThreshold)  return DetectedPhase.Gas;
+            if (initialPhase == DetectedPhase.Liquid && currentBondPct < evaporationThreshold)  return DetectedPhase.Gas;
+
+            // Compare against each non-initial, non-gas preset to find the closest
+            MatterPhase[] phases = { MatterPhase.Solid, MatterPhase.Liquid, MatterPhase.Gas };
+            float closestDistance = float.MaxValue;
+            DetectedPhase closestPhase = initialPhase;
+
+            foreach (MatterPhase phase in phases)
             {
-                Debug.Log($"Detection - Bonds: {currentBondCount}/{totalPossibleBonds} ({bondPercentage:P0}), " +
-                         $"Stiffness: {avgStiffness:F2}");
+                DetectedPhase detectedPhase = ConvertMatterPhaseToDetectedPhase(phase);
+                if (detectedPhase == initialPhase) continue;
+
+                ParticleLatticePreset preset = currentMaterial.GetPresetForPhase(phase);
+                if (preset == null) continue;
+
+                // Gas preset is handled above — skip it in the distance loop
+                if (preset.createAsGas) continue;
+
+                // From-gas transitions require minimum bond % before stiffness is considered
+                if (initialPhase == DetectedPhase.Gas)
+                {
+                    int expectedBondCount = preset.latticeRows * (preset.latticeColumns - 1)
+                                         + (preset.latticeRows - 1) * preset.latticeColumns;
+                    if (currentBondCount < minimumFromGasThreshold * expectedBondCount) continue;
+                }
+
+                float expectedBondPct = preset.createAsGas ? 0f : 1f;
+                float expectedStiffness = preset.bondStiffness;
+                float distance = Mathf.Abs(currentBondPct - expectedBondPct)
+                               + Mathf.Abs(currentStiffness - expectedStiffness);
+
+                if (debugMode)
+                    Debug.Log($"[PhaseDetection] Distance to {phase}: {distance:F3} " +
+                              $"(bondPct {currentBondPct:F2} vs {expectedBondPct:F2}, " +
+                              $"stiffness {currentStiffness:F2} vs {expectedStiffness:F2})");
+
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestPhase = detectedPhase;
+                }
             }
 
-            // Detection logic (speed disregarded)
-            if (bondPercentage < gasBondThreshold)
-                return DetectedPhase.Gas;
+            if (closestDistance < GetThresholdForChange(initialPhase, closestPhase))
+                return closestPhase;
 
-            if (avgStiffness > solidStiffnessThreshold)
-                return DetectedPhase.Solid;
+            return initialPhase;
+        }
 
-            return DetectedPhase.Liquid;
+        float GetThresholdForChange(DetectedPhase from, DetectedPhase to)
+        {
+            if (from == DetectedPhase.Solid  && to == DetectedPhase.Liquid) return meltingThreshold;
+            if (from == DetectedPhase.Liquid && to == DetectedPhase.Solid)  return freezingThreshold;
+            if (from == DetectedPhase.Liquid && to == DetectedPhase.Gas)    return evaporationThreshold;
+            if (from == DetectedPhase.Gas    && to == DetectedPhase.Liquid) return condensationThreshold;
+            if (from == DetectedPhase.Solid  && to == DetectedPhase.Gas)    return sublimationThreshold;
+            if (from == DetectedPhase.Gas    && to == DetectedPhase.Solid)  return depositionThreshold;
+            return 0f;
         }
 
         int GetCurrentBondCount()

@@ -359,7 +359,7 @@ namespace LilLycanLord_Official
             if (bondingRadiusSprite == null || latticeManager == null || sphereCollider == null) return;
                       
             // Scale the bonding radius sprite
-            bondingRadiusSprite.localScale = Vector3.one * (sphereCollider.radius * latticeManager.bondingProximity) * 2f;
+            bondingRadiusSprite.localScale = Vector3.one * latticeManager.bondingProximity;
         }
         
         /// <summary>

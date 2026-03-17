@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ec58c1368c507842bf796d15fbafa42, type: 3}
-  m_Name: Water
+  m_Name: Water Material
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.ParticleLatticeMaterial
   solidPreset: {fileID: 11400000, guid: 9d16d58d6a455df478a3752a2f94f6f3, type: 2}
   liquidPreset: {fileID: 11400000, guid: c93a698e85c5c9f4a841c33bd5aadb85, type: 2}

@@ -114,6 +114,8 @@ namespace LilLycanLord_Official
             }
         }
         
+        public ParticleLatticeMaterial GetCurrentMaterial() => currentMaterial;
+
         public void StartMinigame(MatterBehaviour matterBlock)
         {
             currentMatterBlock = matterBlock;

@@ -2679,7 +2679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d97c42ce3b46e44b32c60403dbc845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.SurveyTrigger
-  surveyURL: https://forms.gle/XQZbHiHwFywy8nS58
+  surveyURL: https://forms.gle/4KwJ1YbL2mRCdfwNA
 --- !u!1 &1155099659
 GameObject:
   m_ObjectHideFlags: 0
