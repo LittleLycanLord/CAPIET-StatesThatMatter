@@ -176,6 +176,8 @@ namespace LilLycanLord_Official
                 
                 // Create main sprite
                 GameObject tileSprite = new GameObject("TileSprite");
+                tileSprite.tag = newStatePrefab.tag; // Assign the same tag as the prefab for consistency
+                tileSprite.layer = newStatePrefab.layer; // Assign the same layer as the prefab for
                 tileSprite.transform.SetParent(newBlock.transform);
                 tileSprite.transform.position = worldPos;
                 

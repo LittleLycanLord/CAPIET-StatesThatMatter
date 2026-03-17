@@ -38,10 +38,10 @@ namespace LilLycanLord_Official
         public ParticleLatticeMaterial material;
         public LayerMask sortingLayerID = 0;
         public int sortingOrder = 0;
+        public string matterTag = "Matter";
         
         [Space(10)]
         [Header("Collider Settings")]
-        [SerializeField] private bool isGround = true;
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] [Range(0f, 0.5f)] [Tooltip("Shrink colliders by this percentage (0 = no shrink, 0.5 = 50% smaller)")]
         private float colliderShrinkPercentage = 0.05f;
@@ -171,13 +171,13 @@ namespace LilLycanLord_Official
 
                 // Create main sprite
                 GameObject child = new GameObject("TileSprite");
-                child.layer = isGround ? LayerMask.NameToLayer("Ground") : LayerMask.NameToLayer("Default");
+                child.tag = blockParentPrefab.tag; // Assign the same tag as the prefab for consistency
+                child.layer = blockParentPrefab.layer; // Assign the same layer as the prefab for
                 child.transform.SetParent(block.transform);
                 child.transform.position = worldPos;
 
                 var sr = child.AddComponent<SpriteRenderer>();
                 sr.sprite = sprite;
-                sr.sortingLayerID = sortingLayerID;
                 sr.sortingOrder = sortingOrder;
 
                 var poly = child.AddComponent<PolygonCollider2D>();
@@ -335,7 +335,8 @@ namespace LilLycanLord_Official
             {
                 // Main sprite
                 GameObject child = new GameObject("TileSprite");
-                child.layer = settings.isGround ? LayerMask.NameToLayer("Ground") : LayerMask.NameToLayer("Default");
+                child.tag = blockParentPrefab.tag; // Assign the same tag as the prefab for consistency
+                child.layer = blockParentPrefab.layer; // Assign the same layer as the prefab for
                 child.transform.SetParent(block.transform);
                 child.transform.position = worldPos;
                 

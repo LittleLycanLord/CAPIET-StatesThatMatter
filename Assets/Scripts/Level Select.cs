@@ -96,12 +96,8 @@ namespace LilLycanLord_Official
                     }
                 }
                 
-                // Preview the first unlocked or first level by default
-                LevelDetails defaultPreview = levelDetails.FirstOrDefault(l => l != null && IsLevelUnlocked(l));
-                if (defaultPreview == null && levelDetails.Count > 0)
-                {
-                    defaultPreview = levelDetails[0];
-                }
+                // Preview the first level by default
+                LevelDetails defaultPreview = levelDetails.Count > 0 ? levelDetails[0] : null;
                 
                 if (defaultPreview != null)
                 {
@@ -117,6 +113,18 @@ namespace LilLycanLord_Official
         //* ║ Non - Monobehaviour ║
         //* ╚═════════════════════╝
         
+        /// <summary>
+        /// Loads the currently previewed level — equivalent to pressing the level button a second time
+        /// </summary>
+        public void LoadSelectedLevel()
+        {
+            if (lastPreviewedLevel == null || !IsLevelUnlocked(lastPreviewedLevel)) return;
+            if (!string.IsNullOrEmpty(lastPreviewedLevel.sceneName))
+            {
+                SceneTransitionManager.Instance.LoadSceneWithTransition(lastPreviewedLevel.sceneName, transitionType);
+            }
+        }
+
         /// <summary>
         /// Handles level button clicks - first click previews, second click loads the level
         /// </summary>

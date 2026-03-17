@@ -21,6 +21,7 @@ public class VaporBehaviour : MonoBehaviour
     [SerializeField] private string[] passThroughTags = { "Player" };
     [SerializeField] private Sprite vaporMask;
     [SerializeField] private int frontSortingOrder = 6;
+    [SerializeField] private int spriteSortingOrder = 2;
 
     //* ╔════════════╗
     //* ║ Attributes ║
@@ -44,6 +45,15 @@ public class VaporBehaviour : MonoBehaviour
 
         foreach (var tile in tileColliders){
             SpriteMask mask = tile.gameObject.AddComponent<SpriteMask>();
+            SpriteRenderer spriteRenderer = tile.gameObject.GetComponent<SpriteRenderer>();
+                if(spriteRenderer != null)
+                {
+                    spriteRenderer.sortingOrder = spriteSortingOrder; // Set the sorting order for the tile sprite
+                }
+                else
+                {
+                    Debug.LogWarning("No SpriteRenderer found on tile: " + tile.gameObject.name);
+                }
             mask.sprite = vaporMask;
             mask.isCustomRangeActive = true;
             mask.frontSortingOrder = frontSortingOrder;

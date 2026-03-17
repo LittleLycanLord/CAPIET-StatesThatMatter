@@ -32,8 +32,9 @@ namespace LilLycanLord_Official
         //* ╚════════════╝
         private Vector3 levelSelectStartPos;
         private Vector3 portalStartPos;
-        
+
         private Vector3 mainMenuStartScale;
+        private float levelSelectOffScreenY;
 
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
@@ -70,11 +71,13 @@ namespace LilLycanLord_Official
             // Position level select off-screen at bottom initially
             if (levelSelect != null)
             {
+                Canvas.ForceUpdateCanvases();
                 RectTransform rt = levelSelect.GetComponent<RectTransform>();
                 if (rt != null)
                 {
+                    levelSelectOffScreenY = -rt.rect.height;
                     Vector3 offScreenPos = levelSelectStartPos;
-                    offScreenPos.y = -Screen.height;
+                    offScreenPos.y = levelSelectOffScreenY;
                     levelSelect.transform.localPosition = offScreenPos;
                 }
             }
@@ -124,7 +127,7 @@ namespace LilLycanLord_Official
             if (levelSelect != null)
             {
                 Vector3 offScreenBottom = levelSelectStartPos;
-                offScreenBottom.y = -Screen.height;
+                offScreenBottom.y = levelSelectOffScreenY;
                 LeanTween.moveLocal(levelSelect, offScreenBottom, slideDuration)
                     .setEase(LeanTweenType.easeInBack);
             }
