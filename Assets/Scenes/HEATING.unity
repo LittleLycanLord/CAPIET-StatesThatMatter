@@ -3253,6 +3253,14 @@ PrefabInstance:
       propertyPath: latticeManager
       value: 
       objectReference: {fileID: 509455998}
+    - target: {fileID: 2040293396436378030, guid: fcec7432c91fd24438ac605bb72c5437, type: 3}
+      propertyPath: m_text
+      value: ---
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340217032568173069, guid: fcec7432c91fd24438ac605bb72c5437, type: 3}
+      propertyPath: m_text
+      value: ---
+      objectReference: {fileID: 0}
     - target: {fileID: 5468738462346916616, guid: fcec7432c91fd24438ac605bb72c5437, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

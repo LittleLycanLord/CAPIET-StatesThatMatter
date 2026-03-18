@@ -15851,7 +15851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3159556942085310303, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: 'textLinesToShow.Array.data[0]'
-      value: That's the last BOOK of BONDING!
+      value: That's the last book, the BOOK of BONDING!
       objectReference: {fileID: 0}
     - target: {fileID: 3159556942085310303, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: 'textLinesToShow.Array.data[1]'
