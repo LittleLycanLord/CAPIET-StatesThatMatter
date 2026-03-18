@@ -16,7 +16,7 @@ MonoBehaviour:
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_MaskType: 1
-  m_Random: 0
+  m_Random: 1
   m_PhysicsShapeCheck: 0
   m_AutoTileDictionary:
     keyData: 3f000000360000001800000030000000b001000038000000bf010000b6010000f80100001b000000d8000000db0000000000000010000000ff000000ff010000
@@ -85,7 +85,13 @@ MonoBehaviour:
       - {fileID: 2800000, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
     - spriteList:
       - {fileID: 863398653, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
+      - {fileID: -2033248081, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
+      - {fileID: -680981978, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
+      - {fileID: 1851035726, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
       textureList:
+      - {fileID: 2800000, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
+      - {fileID: 2800000, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
+      - {fileID: 2800000, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
       - {fileID: 2800000, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
   m_TextureList:
   - {fileID: 2800000, guid: b82e2e81045566c4c95d4f0ebd7bf699, type: 3}
