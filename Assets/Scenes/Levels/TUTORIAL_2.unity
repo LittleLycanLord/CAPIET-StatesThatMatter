@@ -9854,6 +9854,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 269845899404965125, guid: e078fd40da5487d42bbabcc883ccb575, type: 3}
   m_PrefabInstance: {fileID: 2102904486}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2102904488 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7826602643767549280, guid: e078fd40da5487d42bbabcc883ccb575, type: 3}
+  m_PrefabInstance: {fileID: 2102904486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a462b3c53c899794abf598486e17d3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.PlatformerMovement
+--- !u!114 &2102904489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7098083265685719651, guid: e078fd40da5487d42bbabcc883ccb575, type: 3}
+  m_PrefabInstance: {fileID: 2102904486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd330f46b8bef84092592df12a5df53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.PlayerInteraction
 --- !u!1 &2109410737
 GameObject:
   m_ObjectHideFlags: 0
@@ -11371,11 +11393,15 @@ PrefabInstance:
     - target: {fileID: 1858506409533560467, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonClickOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2102904489}
     - target: {fileID: 1858506409533560467, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonClickOutputEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1951192731}
+    - target: {fileID: 1858506409533560467, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: buttonClickOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Interact
+      objectReference: {fileID: 0}
     - target: {fileID: 3161087925204414626, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11483,6 +11509,10 @@ PrefabInstance:
     - target: {fileID: 3818025221116646154, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonStateOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 2102904488}
+    - target: {fileID: 3818025221116646154, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: buttonStateOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMovingLeft
       objectReference: {fileID: 0}
     - target: {fileID: 4406265068584816720, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11523,10 +11553,18 @@ PrefabInstance:
     - target: {fileID: 5371136095046900676, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonClickOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 2102904488}
+    - target: {fileID: 5371136095046900676, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: buttonClickOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Jump
       objectReference: {fileID: 0}
     - target: {fileID: 8169663101533772509, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: buttonStateOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 2102904488}
+    - target: {fileID: 8169663101533772509, guid: 840958867d708a64597fce0e9defebf3, type: 3}
+      propertyPath: buttonStateOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMovingRight
       objectReference: {fileID: 0}
     - target: {fileID: 8447699934523303154, guid: 840958867d708a64597fce0e9defebf3, type: 3}
       propertyPath: m_AnchorMax.y

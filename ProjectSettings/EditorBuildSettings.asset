@@ -60,11 +60,11 @@ EditorBuildSettings:
     path: Assets/Scenes/HEATING.unity
     guid: 0b176685e42383d4d9b104b755c46180
   - enabled: 1
-    path: Assets/Scenes/BONDING.unity
-    guid: 4a042a39fe616d34785d4ba8ba8717ee
-  - enabled: 1
     path: Assets/Scenes/COOLING.unity
     guid: 93a7bc0b7701ed74e9402934495e4fdd
+  - enabled: 1
+    path: Assets/Scenes/BONDING.unity
+    guid: 4a042a39fe616d34785d4ba8ba8717ee
   - enabled: 0
     path: Assets/Scenes/Levels/TUTORIAL_6_old.unity
     guid: 8f8dbffd4d4fba04185d5852bf23d7ba

@@ -8138,7 +8138,7 @@ MonoBehaviour:
   hasTriggered: 0
   textLines:
   - Last, but not the least..
-  - Use the BLUE BOOK to CONDENSE this VAPOR...
+  - Use the GREEN BOOK to CONDENSE this VAPOR...
   - Into a WATERFALL!!!
   triggerTag: Player
   triggerOnce: 1

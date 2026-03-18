@@ -51049,6 +51049,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9087551318681384230, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
+      propertyPath: m_text
+      value: LEVEL 13 COMPLETE!
+      objectReference: {fileID: 0}
     - target: {fileID: 9121671021816401320, guid: f035b447f48d5b64aae910924a09f84f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -18,6 +18,9 @@ namespace LilLycanLord_Official
         [SerializeField] private GameObject platformerControls;
         [SerializeField] private bool togglePlatformerControls = true;
 
+        // Cached reference to player's platformer movement component
+        private PlatformerMovement playerMovement;
+
         //* ╔══════════╗
         //* ║ Displays ║
         //* ╚══════════╝
@@ -52,7 +55,7 @@ namespace LilLycanLord_Official
         //* ╔═══════════════╗
         //* ║ Monobehaviour ║
         //* ╚═══════════════╝
-        void Awake() 
+        void Awake()
         {
             // Singleton pattern
             if (Instance == null)
@@ -65,21 +68,28 @@ namespace LilLycanLord_Official
                 Destroy(gameObject);
                 return;
             }
-            
+
+            // Find the player's PlatformerMovement component
+            playerMovement = FindObjectOfType<PlatformerMovement>();
+            if (playerMovement == null)
+            {
+                Debug.LogWarning("MiniDialogueSystem: No PlatformerMovement component found in scene!");
+            }
+
             if (dialoguePanel == null)
             {
                 Debug.LogError("MiniDialogueSystem: Dialogue Panel not assigned!");
                 return;
             }
-            
+
             // Store positions
             visiblePosition = dialoguePanel.anchoredPosition;
             hiddenPosition = new Vector2(visiblePosition.x, visiblePosition.y + hiddenYOffset);
-            
+
             // Start hidden
             dialoguePanel.anchoredPosition = hiddenPosition;
             dialoguePanel.gameObject.SetActive(false);
-            
+
             // Setup button
             if (progressButton != null)
             {
@@ -131,16 +141,32 @@ namespace LilLycanLord_Official
 
             // Setup text lines
             textLines.Clear();
-            if(togglePlatformerControls) platformerControls.SetActive(false);
+
+            // Stop player movement when dialogue starts
+            if (togglePlatformerControls)
+            {
+                if (playerMovement != null)
+                {
+                    playerMovement.Stop();
+                    playerMovement.SetInputEnabled(false);
+                }
+
+                // Also disable the platformer controls GameObject as fallback
+                if (platformerControls != null)
+                {
+                    platformerControls.SetActive(false);
+                }
+            }
+
             textLines.AddRange(texts);
             currentLineIndex = 0;
-            
+
             // Display first line
             if (textLines.Count > 0)
             {
                 dialogueText.text = textLines[0];
             }
-            
+
             // Show panel
             if (!isShowing)
             {
@@ -188,10 +214,24 @@ namespace LilLycanLord_Official
             {
                 SlideOut();
             }
-            
+
             textLines.Clear();
             currentLineIndex = 0;
-            if(togglePlatformerControls) platformerControls.SetActive(true);
+
+            // Re-enable player movement when dialogue ends
+            if (togglePlatformerControls)
+            {
+                if (playerMovement != null)
+                {
+                    playerMovement.SetInputEnabled(true);
+                }
+
+                // Also re-enable the platformer controls GameObject as fallback
+                if (platformerControls != null)
+                {
+                    platformerControls.SetActive(true);
+                }
+            }
         }
         
         /// <summary>
