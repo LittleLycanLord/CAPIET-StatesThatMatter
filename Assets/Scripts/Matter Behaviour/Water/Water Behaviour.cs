@@ -111,6 +111,11 @@ public class WaterBehaviour : MonoBehaviour
         playerMovement = null;
     }
 
+    void OnDestroy() {
+        if (playerRb != null)
+            playerRb.linearDamping = originalLinearDamping;
+    }
+
     //* ╔═════════════════════╗
     //* ║ Non - Monobehaviour ║
     //* ╚═════════════════════╝
