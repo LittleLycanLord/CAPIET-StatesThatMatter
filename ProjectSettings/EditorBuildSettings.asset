@@ -33,14 +33,38 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/TUTORIAL_7.unity
     guid: e73078eab841e1e428eec3be08f42b06
   - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_8.unity
+    guid: 4077d81b93079d34c802dc5491a63c37
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_9 (DISCOVER COOL).unity
+    guid: 4513637f8c939ba4ea693740a68e2bf9
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_10.unity
+    guid: 3876a29dd02be0d43a098efadd24f810
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_11 (DISCOVER BOND).unity
+    guid: 177c55a5085fdba4ead04aed1938b9d6
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_12.unity
+    guid: 95f86d26b2ff9d24093e28c480e8fd58
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_13.unity
+    guid: 50614d338d6ce754580f94001246dc8b
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_14.unity
+    guid: f8956f80396c8644492d6a98fcd23e94
+  - enabled: 1
+    path: Assets/Scenes/Levels/LEVEL_15.unity
+    guid: 945d0981b1ca4374c9ef9ee5f4dc9c99
+  - enabled: 1
     path: Assets/Scenes/HEATING.unity
-    guid: 0d3b7127e1013ed4cb4f3b7b99d1772d
+    guid: 0b176685e42383d4d9b104b755c46180
   - enabled: 1
     path: Assets/Scenes/BONDING.unity
     guid: 4a042a39fe616d34785d4ba8ba8717ee
   - enabled: 1
     path: Assets/Scenes/COOLING.unity
-    guid: 820cf13a0bd8cf646acea29a961bdbdb
+    guid: 93a7bc0b7701ed74e9402934495e4fdd
   - enabled: 0
     path: Assets/Scenes/Levels/TUTORIAL_6_old.unity
     guid: 8f8dbffd4d4fba04185d5852bf23d7ba
