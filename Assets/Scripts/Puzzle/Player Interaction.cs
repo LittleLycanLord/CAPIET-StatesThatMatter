@@ -126,8 +126,7 @@ namespace LilLycanLord_Official
         {
             if(platformerMovement == null)
                 platformerMovement = GetComponent<PlatformerMovement>();
-            platformerMovement.SetMovingLeft(false);
-            platformerMovement.SetMovingRight(false);
+            platformerMovement.Stop();
             if (currentMatterBehaviour != null)
             {
                 currentMatterBehaviour.OnInteractionButtonPressed();

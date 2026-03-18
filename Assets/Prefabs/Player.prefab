@@ -475,7 +475,7 @@ MonoBehaviour:
   currentYVelocity: 0
   animatorObject: {fileID: 2061305568025131446}
   visuals: {fileID: 4340814217430240124}
-  moveSpeed: 5
+  moveSpeed: 4.5
   jumpHeight: 7
   deceleration: 10
   feet:

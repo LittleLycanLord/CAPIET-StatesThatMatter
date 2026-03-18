@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 12
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
   levelIndex: 12
-  levelPreview: {fileID: 2800000, guid: a08ded873d7ed4242be5954d251d7d0d, type: 3}
-  levelName: Avalanche
-  description: Why is there so much Ice here?
+  levelPreview: {fileID: 2800000, guid: 7faedc657622e27459b43b7ea8db6b62, type: 3}
+  levelName: Into the Temple
+  description: Head... stuck...
   sceneName: LEVEL_12

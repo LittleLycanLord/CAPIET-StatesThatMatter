@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 9
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
   levelIndex: 9
-  levelPreview: {fileID: 2800000, guid: a08ded873d7ed4242be5954d251d7d0d, type: 3}
-  levelName: Avalanche
-  description: Why is there so much Ice here?
+  levelPreview: {fileID: 2800000, guid: 7c6d772889260074fbdaa794578d561f, type: 3}
+  levelName: THE BOOK OF ICE
+  description: The second book... it's blue now.
   sceneName: LEVEL_9 (DISCOVER COOL)

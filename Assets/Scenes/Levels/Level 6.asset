@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LilLycanLord_Official.LevelDetails
   levelIndex: 6
   levelPreview: {fileID: 2800000, guid: 792c9dcbbe1074b47bfb1ec871e8333b, type: 3}
-  levelName: Bridge Time
-  description: I didn't know ice had a use sometimes...
+  levelName: Ice Bridge
+  description: I didn't know ice can look so nice...
   sceneName: TUTORIAL_6

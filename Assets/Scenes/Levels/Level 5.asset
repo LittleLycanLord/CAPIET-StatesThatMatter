@@ -15,5 +15,5 @@ MonoBehaviour:
   levelIndex: 5
   levelPreview: {fileID: 2800000, guid: 04e799a013e3bc742a389e5052c9d84c, type: 3}
   levelName: Falling Hazard
-  description: I can make that jump...
+  description: That's a huge jump!
   sceneName: TUTORIAL_5

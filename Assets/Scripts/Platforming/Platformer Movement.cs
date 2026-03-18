@@ -214,13 +214,16 @@ namespace LilLycanLord_Official
         public void SetInputEnabled(bool enabled)
         {
             inputEnabled = enabled;
-            if (!enabled)
-            {
-                // Clear input flags when disabling
-                movingLeft = false;
-                movingRight = false;
-                moveDirection = 0f;
-            }
+            if (!enabled) Stop();
+        }
+
+        public void Stop()
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.linearDamping = 0f;
+            movingLeft = false;
+            movingRight = false;
+            moveDirection = 0f;
         }
         
         /// <summary>
