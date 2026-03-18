@@ -1,5 +1,6 @@
 using LilLycanLord_Official;
 using UnityEngine;
+using Unity.Cinemachine;
 using UnityEngine.Assertions;
 using System.Collections;
 
@@ -88,7 +89,7 @@ namespace LilLycanLord_Official
         private IEnumerator PitFallSequence()
         {
             Debug.Log("[PitBehaviour] Pit fall sequence started");
-            
+            Camera.main.GetComponent<CinemachineBrain>().enabled = false;
             // Play fall sound effect
             if (sfxPlayer != null)
             {
@@ -139,6 +140,7 @@ namespace LilLycanLord_Official
                 Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
                 if (playerRb != null)
                 {
+                    Camera.main.GetComponent<CinemachineBrain>().enabled = true;
                     playerRb.linearVelocity = Vector2.zero;
                     playerRb.angularVelocity = 0f;
                 }
