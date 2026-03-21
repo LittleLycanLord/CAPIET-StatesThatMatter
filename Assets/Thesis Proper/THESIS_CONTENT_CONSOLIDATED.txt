@@ -1,558 +1,257 @@
-﻿# THESIS CONTENT - CONSOLIDATED TEXT FILE
-
-# Edit this file with any AI, then tell GitHub Copilot to update the LaTeX files
-
-# Format: Each section is marked with === CHAPTER === and --- Section ---
-
 ================================================================================
-=== ABSTRACT (ENGLISH) ===
-==========================
-
-Chemistry education contains foundational concepts that are often perceived as difficult for students to understand, particularly in terms of their application to real-world situations. This difficulty may lead to cognitive overload, especially when instruction lacks opportunities for practical engagement. Interactive learning approaches allow students to actively apply and develop their analytical skills while discovering how chemistry concepts relate to everyday experiences.
-
-This study explores the use of Game-Based Learning (GBL) through the development of [GAME NAME HERE], an educational serious game designed as a learning material for Grade 6 students under the MATATAG curriculum in the Philippines. The game focuses on physical and chemical changes of matter, expanding students’ understanding beyond the three common states of matter. Through interactive gameplay, students engage with concepts such as phase changes and heat transfer while learning to distinguish physical changes from chemical changes.
-
-The primary goal of this study is to improve students’ conceptual understanding, motivation, and emotional engagement by reinforcing hands-on learning and real-world applications of chemistry concepts. This project aims to provide both students and teachers with an accessible and engaging instructional resource that supports visualization, experimentation, and the development of analytical skills in basic chemistry education.
-
-Keywords: physical and chemical changes, game-based learning, educational serious game
-
-Sustainable Development Goals: 4: Quality Education, 11: Sustainable Cities and Communities, 12: Responsible Consumption and Production
-
+THESIS CONTENT CONSOLIDATED - NEW STRUCTURE
 ================================================================================
-=== ABSTRAK (FILIPINO) ===
-==========================
-
-Ang pag-aaral ng kimika ay naglalaman ng mga pundamental na konsepto na kadalasang itinuturing na mahirap unawain ng mga mag-aaral, lalo na pagdating sa aplikasyon nito sa totoong buhay. Ang ganitong kahirapan ay maaaring magdulot ng cognitive overload, partikular kung kulang ang mga aralin sa praktikal at interaktibong gawain. Sa pamamagitan ng interaktibong pagkatuto, aktibong nahahasa ng mga mag-aaral ang kanilang kasanayan sa pagsusuri at mas nauunawaan nila kung paano nagagamit ang mga konsepto ng kimika sa pang-araw-araw na buhay.
-
-Sinisiyasat ng pag-aaral na ito ang paggamit ng Game-Based Learning (GBL) sa pamamagitan ng pagbuo ng [GAME NAME HERE], isang pang-edukasyong seryosong laro na idinisenyo bilang pantulong na materyal sa pagkatuto para sa mga mag-aaral sa Baitang 6 sa ilalim ng MATATAG kurikulum sa Pilipinas. Nakatuon ang laro sa pisikal at kemikal na pagbabago ng materyal, na nagpapalawak sa kaalaman ng mga mag-aaral lampas sa tatlong karaniwang kaanyuan ng matter. Sa pamamagitan ng interaktibong gameplay, natututuhan ng mga mag-aaral ang mga konsepto tulad ng pagbabago ng estado at paglipat ng init, habang malinaw na natutukoy ang kaibahan ng pisikal at kemikal na pagbabago.
-
-Layunin ng pag-aaral na ito na mapabuti ang pag-unawa, motibasyon, at emosyonal na pakikipag-ugnayan ng mga mag-aaral sa pamamagitan ng hands-on na pagkatuto at aplikasyon ng mga konsepto ng kimika sa mga sitwasyong hango sa totoong buhay. Nilalayon din ng proyektong ito na magsilbing kapaki-pakinabang na materyal para sa mga guro at mag-aaral upang mas mapadali ang pagkatuto ng kimika sa isang biswal, interaktibo, at makabuluhang paraan.
-
-Mga susing salita: pisikal at kemikal na pagbabago, game-based learning, pang-edukasyon na laro
+Format: === CHAPTER === for chapters, --- SECTION --- for sections
+        +++ SUBSECTION +++ for subsections
+All content between headers belongs to that section.
+Edit here, then tell Copilot to sync to LaTeX chapter files.
 
 ================================================================================
 === CHAPTER 1: INTRODUCTION ===
+================================================================================
 
---- Section: Background of the Study ---
+--- SECTION 1.1: Background of the Study ---
 
-Science education at the elementary level serves as a foundational stage in developing scientific literacy, conceptual reasoning, and problem-solving skills. Within the MATATAG Curriculum of the Department of Education (DepEd), Grade 6 Science introduces learners to fundamental concepts related to materials, including the description of changes of state for solids, liquids, and gases—specifically melting, evaporation, freezing, and condensation—using diagrams and flowcharts. These competencies aim to help learners understand observable phenomena through scientific representations and structured reasoning.
+[TODO: Content goes here]
 
-Despite the importance of these competencies, research has consistently shown that students experience difficulty in understanding the particulate nature of matter and the mechanisms underlying phase changes. Learners often memorize definitions of melting or evaporation without fully comprehending the particle-level interactions that explain these transformations. Misconceptions frequently arise regarding particle spacing, motion, and the role of heat transfer in altering states of matter (Adadan, 2013; Paik, Kim, Cho, & Park, 2004). These challenges are compounded by the abstract nature of microscopic representations, which are not directly observable.
+--- SECTION 1.2: Objectives ---
 
-In many classroom settings, demonstrations of phase change are limited to water-based experiments, such as melting ice or boiling water. While these activities provide observable macroscopic changes, they often lack explicit integration with particle-level models, resulting in fragmented conceptual understanding. Furthermore, access to laboratory materials for demonstrating processes such as sublimation or deposition is limited at the elementary level, restricting exposure to diverse examples of state change.
++++ SUBSECTION 1.2.1: General Objective +++
 
-Game-Based Learning (GBL) has emerged as a promising instructional approach that integrates interactive systems with curricular objectives. Educational games can provide dynamic visualizations, immediate feedback, and experiential learning opportunities that reduce cognitive overload and promote conceptual change (Plass, Homer, & Kinzer, 2015). When designed with explicit learning outcomes and aligned assessments, digital games may enhance engagement and deepen understanding, particularly in abstract scientific domains.
+[TODO: Content goes here]
 
-This study introduces [GAME NAME HERE], a 2D educational platformer developed as a supplementary and enrichment learning tool aligned with the MATATAG Grade 6 Science competency on changes of state. The game integrates explicit terminology (e.g., “Solid → Liquid: Melting”) while allowing learners to discover appropriate phase changes through environmental problem-solving. Central to its design is an interactive particle-lattice minigame in which learners manipulate bonds and particle spacing to simulate state transitions. By directly engaging with representations similar to those used in classroom diagrams, learners repeatedly encounter visual models of particle behavior in a contextualized, goal-driven environment.
++++ SUBSECTION 1.2.2: Specific Objectives +++
 
-Given the increasing emphasis on learner-centered instruction under the MATATAG framework, there is a need to explore innovative digital tools that complement formal instruction without replacing it. This study examines whether a platformer-based educational game can support conceptual understanding, engagement, and reinforcement of curriculum-aligned competencies related to phase changes of matter.
+[TODO: Content goes here]
 
---- Section: Statement of the Problem ---
+--- SECTION 1.3: Scope and Limitations of the Study ---
 
-This study seeks to investigate the potential of a platformer-based educational game as a supplementary instructional tool for teaching changes of state in Grade 6 Science.
+[TODO: Content goes here]
 
-Specifically, the study aims to answer the following questions:
+--- SECTION 1.4: Significance of the Study ---
 
-To what extent does the use of [GAME NAME HERE] improve learners’ conceptual understanding of changes of state (melting, evaporation, freezing, and condensation) at the particle level?
+[TODO: Content goes here]
 
-How does interaction with the particle-lattice minigame influence students’ ability to relate macroscopic phase changes to microscopic particle behavior?
-
-What are the perceptions of students and parents regarding engagement, usability, and perceived learning value of the game?
-
-How feasible is the implementation of a discovery-based yet explicitly labeled digital game in a supplementary learning context?
-
---- Section: Objectives of the Study ---
-
-The general objective of this study is to design and evaluate a curriculum-aligned educational platformer that reinforces Grade 6 competencies on changes of state.
-
-Specifically, the study aims to:
-
-Develop [GAME NAME HERE] as a supplementary digital learning tool aligned with the MATATAG Grade 6 Science competency on describing changes of state using diagrams and flowcharts.
-
-Integrate an interactive particle-level simulation that visually represents solids, liquids, and gases and their transitions.
-
-Assess learners’ conceptual understanding before and after gameplay using structured instruments.
-
-Measure student engagement and perceived motivation through survey responses.
-
-Collect qualitative insights from students and parents regarding usability and learning reinforcement.
-
---- Section: Scope and Delimitations ---
-
-This study focuses exclusively on the development and evaluation of [GAME NAME HERE], a 2D platformer designed to reinforce the Grade 6 Science competency on changes of state of matter. The game addresses physical changes only and does not include instruction on chemical reactions or chemical change.
-
-The participant pool may include Grade 6 learners as well as students from adjacent grade levels who have previously completed instruction on changes of state. Sampling will follow a convenience-based recruitment model due to logistical constraints. The study adopts a quasi-experimental single-group design incorporating pre- and post-assessments, engagement surveys, and qualitative interviews with students and parents.
-
-The study does not measure long-term retention or academic performance beyond the duration of the intervention. Additionally, the research evaluates the game as a supplementary enrichment tool and does not compare it directly with traditional instruction through a control group.
-
---- Section: Significance of the Study ---
-
-This study contributes to elementary science education by examining the integration of interactive digital modeling within a platformer game environment. For learners, the game provides repeated exposure to particle representations within meaningful problem-solving contexts, potentially strengthening conceptual connections between diagrams and observable phenomena.
-
-For educators, the study offers insights into how educational games may complement MATATAG-aligned instruction without replacing formal teaching. The findings may inform future curriculum integration strategies and digital resource development.
-
-For researchers, the study adds to the growing body of literature on game-based learning in science education, particularly within the Philippine educational context. By examining discovery-based mechanics combined with explicit labeling, the study contributes to ongoing discussions on balancing constructivist learning with guided instruction in digital environments.
-
---- Section: Definition of Terms ---
-
-Changes of State – Physical transformations between solid, liquid, and gas phases, including melting, evaporation, freezing, and condensation.
-
-Particle-Level Representation – Visual models depicting spacing, motion, and bonding of particles to represent different states of matter.
-
-Game-Based Learning – An instructional approach that integrates educational objectives within interactive digital game environments.
-
-Supplementary Learning Tool – An instructional resource designed to reinforce and enrich formal classroom instruction without replacing it.
 
 ================================================================================
-=== CHAPTER 2: REVIEW OF RELATED LITERATURE AND STUDIES ===
-===========================================================
+=== CHAPTER 2: RELATED WORKS ===
+================================================================================
 
---- Section: Introduction ---
+--- SECTION 2.1: Philippine Education Curriculum ---
 
-This chapter presents the theoretical and empirical foundations relevant to the development of a 2D educational platformer game designed to teach Grade 6 students the concepts of phase changes, heat transfer, and the distinction between physical and chemical changes. The review integrates major learning theories, international research on game-based science education, chemistry-specific digital interventions, and Philippine studies related to educational technology and curriculum alignment.
++++ SUBSECTION 2.1.1: Current Curriculum of Philippines Education +++
 
-The chapter is structured into four major sections:
+[TODO: Content goes here]
 
-1. Theoretical Foundations
-2. International Literature and Studies
-3. Local (Philippine) Literature and Studies
-4. Synthesis and Research Gap
++++ SUBSECTION 2.1.2: Status of the Philippine Education +++
 
-This review establishes the pedagogical legitimacy and scholarly grounding of the developed educational game.
+[TODO: Content goes here]
 
---- Section: Theoretical Foundations ---
++++ SUBSECTION 2.1.3: Challenges of Resource Poor Schools +++
 
---- Subsection: Conceptual Change Theory ---
+[TODO: Content goes here]
 
-Conceptual Change Theory (Posner et al., 1982) argues that students enter science classrooms with pre-existing mental models that may conflict with scientifically accepted explanations. Learning, therefore, involves restructuring existing conceptions rather than simply adding new information.
+--- SECTION 2.2: Chemistry/Science Education in the Philippines ---
 
-For conceptual change to occur, learners must experience:
++++ SUBSECTION 2.2.1: Chemistry/Science Education Study #1 +++
 
-1. Dissatisfaction with prior conceptions
-2. Intelligibility of the new concept
-3. Plausibility of the new concept
-4. Fruitfulness of the new concept
+[TODO: Content goes here]
 
-Research has consistently shown that misconceptions about phase changes are widespread among elementary and middle school students (Driver et al., 1994; Osborne & Cosgrove, 1983). Common misconceptions include:
++++ SUBSECTION 2.2.2: Chemistry/Science Education Study #2 +++
 
-- Belief that melting alters the substance's identity
-- Confusion between evaporation and boiling
-- Misunderstanding of energy transfer during state changes
-- Belief that physical changes are equivalent to chemical reactions
+[TODO: Content goes here]
 
-Interactive visual representations have been found to support conceptual restructuring by explicitly modeling particle behavior during phase transitions (Harrison & Treagust, 2000).
++++ SUBSECTION 2.2.3: Chemistry/Science Education Study #3 +++
 
-The developed platformer incorporates particle-level manipulation during gameplay. When a player melts an ice block, the lattice structure visually loosens while maintaining particle identity. This directly challenges the misconception that melting changes the substance itself.
+[TODO: Content goes here]
 
-Thus, the game design aligns with conceptual change conditions by:
++++ SUBSECTION 2.2.4: Chemistry/Science Education Study #4 +++
 
-- Creating cognitive conflict (blocked path requiring phase change)
-- Providing intelligible visual models (particle rearrangement)
-- Demonstrating plausibility (consistent particle identity)
-- Reinforcing fruitfulness (applying knowledge across levels)
+[TODO: Content goes here]
 
---- Subsection: Constructivism ---
+--- SECTION 2.3: Game-Based Learning ---
 
-Constructivist theory (Piaget, 1970; Bruner, 1966) posits that knowledge is actively constructed through interaction with the environment. Learning is not transmission but transformation.
++++ SUBSECTION 2.3.1: Developmental Strategies of Edugames +++
 
-In science education, constructivist approaches emphasize:
+[TODO: Content goes here]
 
-- Active engagement
-- Inquiry-based exploration
-- Manipulation of representations
-- Iterative hypothesis testing
++++ SUBSECTION 2.3.2: Effectiveness of games in education +++
 
-Digital environments provide rich opportunities for constructivist learning when learners manipulate variables and observe consequences (Jonassen, 1999).
+[TODO: Content goes here]
 
-The developed game functions as a constructivist learning space. Players:
++++ SUBSECTION 2.3.3: Game-Based Learning in the Philippines +++
 
-- Encounter environmental challenges
-- Experiment with phase transitions
-- Observe the effects of temperature changes
-- Apply learned principles in new contexts
+[TODO: Content goes here]
 
-Rather than presenting static diagrams of molecular motion, the game requires learners to actively reorganize particle systems, aligning with constructivist principles of knowledge construction through experience.
-
---- Subsection: Multimedia Learning Theory ---
-
-Mayer's Cognitive Theory of Multimedia Learning (Mayer, 2001; Mayer, 2009) proposes that learning is enhanced when information is presented through coordinated visual and verbal channels.
-
-The theory is based on three assumptions:
-
-1. Dual-channel processing
-2. Limited working memory
-3. Active processing
-
-Key multimedia principles relevant to the developed game include:
-
-- Spatial contiguity principle
-- Temporal contiguity principle
-- Coherence principle
-- Signaling principle
-
-Research indicates that animation combined with explanatory text improves understanding of dynamic scientific processes compared to text alone (Mayer & Moreno, 2002).
-
-In the developed game:
-
-- Particle animations are synchronized with labels (e.g., "Solid → Liquid: Melting")
-- Visual transformations are immediately tied to terminology
-- Irrelevant visual elements are minimized during minigames
-
-These design features align with multimedia learning principles and strengthen conceptual integration of scientific language with visual representation.
-
---- Subsection: Game-Based Learning Theory ---
-
-Game-Based Learning (GBL) research emphasizes that games enhance learning when mechanics are directly aligned with instructional objectives (Gee, 2003; Prensky, 2001).
-
-Meta-analyses suggest that digital game-based learning produces moderate positive effects on achievement and motivation in STEM disciplines (Clark et al., 2016; Wouters et al., 2013).
-
-Effective educational games include:
-
-- Clear goals
-- Immediate feedback
-- Scaffolding
-- Incremental difficulty
-- Meaningful player agency
-
-The developed platformer integrates:
-
-- Goal-driven progression (reach level endpoint)
-- Mechanic-embedded learning (phase change manipulation required to progress)
-- Immediate feedback (particle rearrangement animation)
-- Increasing complexity across levels
-
-Unlike superficial quiz-based games, the chemical concept is embedded within the core mechanic of progression.
-
---- Subsection: Experiential Learning Theory ---
-
-Kolb's Experiential Learning Theory (Kolb, 1984) conceptualizes learning as a cycle involving:
-
-1. Concrete experience
-2. Reflective observation
-3. Abstract conceptualization
-4. Active experimentation
-
-Game environments are particularly suited to experiential learning because they allow repeated experimentation with immediate consequences (Squire, 2006).
-
-The platformer structure naturally supports the experiential cycle:
-
-- Concrete experience: Encountering a blocked path
-- Reflection: Observing failure or transformation
-- Conceptualization: Understanding phase change principles
-- Experimentation: Applying knowledge in subsequent levels
-
-Through repeated cycles, learners internalize abstract chemical principles.
-
---- Subsection: Outcome-Based Teaching and Learning ---
-
-Outcome-Based Teaching and Learning (OBTL), as articulated by Kalra (2015), emphasizes that educational design should begin with clearly defined learning outcomes, which then determine instructional strategies and assessment methods. Rather than focusing on content delivery alone, OBTL ensures constructive alignment among learning objectives, teaching activities, and assessment practices.
-
-Central principles of OBTL include:
-
-1. Clearly articulated measurable learning outcomes
-2. Alignment between outcomes and instructional activities
-3. Assessment strategies that directly measure intended competencies
-
-The MATATAG Curriculum of the Department of Education adopts an outcomes-based orientation, emphasizing competency development, conceptual understanding, and application of knowledge.
-
-The developed educational platformer aligns with OBTL principles by:
-
-- Designing gameplay mechanics around specific Grade 6 science competencies
-- Embedding phase-change manipulation directly into learning objectives
-- Structuring levels to require demonstration of conceptual understanding
-
-Rather than treating the game as supplementary enrichment, the design ensures that progression through levels requires demonstration of intended learning outcomes.
-
-Thus, the game's structure reflects constructive alignment consistent with OBTL principles.
-
---- Subsection: Bloom's Taxonomy Framework ---
-
-Bloom's Taxonomy (Bloom et al., 1956), later revised by Anderson and Krathwohl (2001), categorizes cognitive processes into hierarchical levels:
-
-1. Remember
-2. Understand
-3. Apply
-4. Analyze
-5. Evaluate
-6. Create
-
-The revised taxonomy emphasizes cognitive processes over static knowledge categories.
-
-In the context of Grade 6 chemistry learning, MATATAG competencies require students not only to recall definitions of phase changes but to understand mechanisms, apply concepts, and distinguish physical from chemical changes.
-
-The developed game supports multiple cognitive levels:
-
-- Remembering: Identifying terms such as melting, freezing, evaporation
-- Understanding: Explaining particle movement during state changes
-- Applying: Using phase changes to solve in-game obstacles
-- Analyzing: Distinguishing physical changes from chemical changes
-
-By embedding conceptual problem-solving into gameplay, the platformer moves beyond rote memorization toward higher-order cognitive engagement.
-
-Table 2.4 presents the alignment between Bloom's cognitive levels, MATATAG competencies, and the developed game mechanics.
-
-[NOTE: Table 2.4 - Alignment of Bloom's Taxonomy, MATATAG Competencies, and Game Mechanics - To be populated during LaTeX implementation phase]
-
---- Section: Theoretical Framework ---
-
-This study is grounded in established learning theories that explain how learners construct, revise, and apply scientific knowledge. The development of the educational platformer game is primarily anchored in Conceptual Change Theory, Constructivist Learning Theory, and Multimedia Learning Theory, with support from Game-Based Learning Theory, Experiential Learning Theory, and Outcome-Based Teaching and Learning principles aligned with Bloom's Taxonomy. These theoretical foundations collectively inform the instructional design, mechanics, and intended learning outcomes of the intervention.
-
-Conceptual Change Theory posits that learners enter the classroom with pre-existing conceptions about scientific phenomena, many of which are misconceptions resistant to change. For conceptual change to occur, learners must experience dissatisfaction with their existing understanding and encounter intelligible, plausible, and fruitful alternative explanations.
-
-In the context of phase changes, learners often hold misconceptions regarding particle motion, energy transfer, and state transitions. The platformer game is designed to confront these misconceptions by allowing learners to manipulate molecular structures directly and observe changes in lattice spacing, particle movement, and energy conditions. By visually and interactively modeling these transitions, the intervention aims to facilitate the restructuring of inaccurate mental models.
-
-Conceptual Change Theory therefore serves as the primary explanatory framework guiding the study's instructional mechanics.
-
-Constructivism asserts that learners actively construct knowledge through interaction with their environment rather than passively receiving information. Learning occurs when individuals engage with tasks, test ideas, and refine understanding through experience.
-
-The game-based intervention reflects constructivist principles by requiring learners to manipulate particle arrangements, experiment with freezing and evaporating mechanics, and solve level-based challenges. Knowledge is not merely presented; instead, learners actively build understanding through interaction and problem-solving.
-
-This theoretical lens justifies the design choice of discovery-based level progression and scaffolded challenges embedded within the platformer environment.
-
-Multimedia Learning Theory suggests that learning improves when information is presented through coordinated visual and verbal channels, provided cognitive processing remains meaningful. Effective multimedia environments integrate text, visuals, and interactive elements to promote deeper understanding.
-
-The platformer incorporates:
-
-- Visual representations of particle movement
-- Explicit textual labels (e.g., "Solid → Liquid: Melting")
-- Dynamic changes in structure and spacing
-
-These elements are intentionally aligned to reinforce scientific terminology while simultaneously illustrating microscopic processes. The integration of visual simulation and textual labeling supports dual-channel processing and promotes coherent mental model construction.
-
-Game-Based Learning Theory emphasizes motivation, engagement, and structured challenges as mechanisms for promoting learning. The intervention integrates goal-oriented tasks, progressive difficulty, and interactive feedback to sustain learner engagement while targeting specific science competencies.
-
-Experiential Learning Theory proposes that learning occurs through concrete experience, reflective observation, conceptualization, and experimentation. The game enables learners to experience simulated molecular changes, reflect on outcomes, and apply understanding in subsequent levels requiring strategic manipulation of states of matter.
-
-Outcome-Based Teaching and Learning emphasizes alignment between instructional activities and clearly defined learning outcomes. This study aligns game mechanics with competencies specified in the MATATAG Curriculum for Grade 6 Science.
-
-Bloom's Taxonomy further informs the cognitive demands of the game, ensuring that learners move beyond recall toward application and analysis as they manipulate states of matter to solve environmental challenges within the platformer.
-
-Collectively, these theoretical foundations provide the pedagogical justification for the intervention and explain the mechanisms through which conceptual understanding is expected to improve.
-
---- Section: Conceptual Framework ---
-
-This study adopts an Input–Process–Output (IPO) model to illustrate the relationship between theoretical foundations, the game-based intervention, and the intended learning outcomes.
-
-The conceptual framework synthesizes the theories discussed in the previous section and operationalizes them within the context of an educational platformer game designed to teach phase changes of matter.
-
-[NOTE: Figure X. Conceptual Framework of the Study - Insert ConceptualFrameworkDiagram.png here]
-
-As illustrated in the figure, the Input component consists of the theoretical and curricular foundations guiding the study. These include Conceptual Change Theory, Constructivism, Multimedia Learning Theory, Game-Based Learning Theory, Experiential Learning Theory, Outcome-Based Teaching and Learning principles, Bloom's Taxonomy, and the MATATAG Curriculum competencies for Grade 6 Science.
-
-These inputs inform the design of the Process component, which is the educational platformer game. The intervention operationalizes theoretical principles through interactive particle manipulation, phase change simulation mechanics, scaffolded level progression, and explicit labeling of state transitions. Learners actively engage with microscopic representations of matter and apply understanding to overcome in-game challenges.
-
-The Output component represents the intended learning outcomes of the study. These include:
-
-- Improved conceptual understanding of phase changes
-- Reduction of misconceptions regarding particle behavior
-- Enhanced ability to apply knowledge in problem-solving contexts
-- Alignment with targeted MATATAG Grade 6 Science competencies
-
-The arrows connecting the components signify that theoretical and curricular foundations directly shape the instructional design of the intervention, which in turn influences measurable learning outcomes.
-
-This framework guides the development of research instruments and informs the methodology described in Chapter 3.
-
---- Section: International Literature and Studies ---
-
---- Subsection: Digital Game-Based Learning in Science Education ---
-
-International studies have documented positive impacts of digital games on science achievement, engagement, and conceptual understanding (Vogel et al., 2006; Wouters et al., 2013).
-
-A meta-analysis by Clark et al. (2016) found that digital game-based learning had a significant positive effect on cognitive outcomes compared to traditional instruction.
-
-Key findings include:
-
-- Simulation-based games improve understanding of abstract processes
-- Interactive environments promote deeper engagement
-- Embedded feedback enhances conceptual correction
-
-[NOTE: Table 2.1 - Summary of Selected International Studies on Game-Based Science Learning - To be populated during reference integration phase]
-
---- Subsection: Educational Games in Chemistry ---
-
-Research specific to chemistry education emphasizes the importance of connecting macroscopic phenomena with submicroscopic particlemodels (Johnstone, 1991; Treagust et al., 2003).
-
-Studies show that students struggle to transition between:
-
-- Observable phenomena
-- Particle representations
-- Symbolic notation
-
-Interactive simulations that allow manipulation of particle systems have been shown to improve conceptual coherence (Harrison & Treagust, 2000).
-
-Games that incorporate submicroscopic modeling are particularly effective in addressing misconceptions about phase transitions and intermolecular forces.
-
-The developed game explicitly integrates particle-level manipulation within a platformer mechanic, thereby linking macro-level environmental change (melting wall) with micro-level representation (lattice loosening).
-
---- Subsection: Misconceptions in Phase Changes and Heat Transfer ---
-
-Extensive research documents misconceptions related to:
-
-- Conservation of matter during state change
-- Role of energy in phase transitions
-- Distinction between physical and chemical change
-
-Students frequently believe that:
-
-- Boiling destroys matter
-- Melting alters chemical composition
-- Gas particles disappear
-
-Interactive digital tools have been recommended to address these misconceptions through dynamic visualization (Driver et al., 1994).
-
-The developed platformer directly addresses these documented conceptual difficulties.
-
---- Section: Local (Philippine) Literature and Studies ---
-
---- Subsection: Educational Technology in Philippine Science Education ---
-
-Philippine studies on ICT integration report improved student engagement when interactive tools are incorporated into science instruction (Marcelo, 2012; Caballes, 2016).
-
-However, many implementations involve:
-
-- Multimedia presentations
-- Computer-assisted drills
-- Video-based instruction
-
-Fewer studies examine immersive digital game environments aligned with curriculum competencies.
-
---- Subsection: Game-Based Learning in the Philippine Context ---
-
-Local research indicates:
-
-- Positive student attitudes toward educational games
-- Increased motivation
-- Improved short-term retention
-
-Yet gaps remain in:
-
-- Chemistry-specific educational game research
-- Particle-level interactive simulations
-- Curriculum-aligned digital platformer games
-
-[NOTE: Table 2.2 - Summary of Selected Philippine Studies on Game-Based Learning - To be populated during reference integration phase]
-
---- Subsection: Alignment with MATATAG Curriculum ---
-
-The MATATAG Curriculum emphasizes conceptual understanding and scientific literacy in Grade 6 Science.
-
-Competencies include:
-
-- Explaining changes in state of matter
-- Identifying heat transfer in phase transitions
-- Distinguishing physical from chemical change
-
-The developed game aligns with these competencies by embedding conceptual application within interactive gameplay.
-
-[NOTE: Table 2.3 - Alignment of Game Features with MATATAG Learning Competencies - To be populated during implementation documentation phase]
-
---- Section: Synthesis of Literature ---
-
-The reviewed literature reveals several consistent findings:
-
-1. Students possess persistent misconceptions regarding phase changes.
-2. Particle-level visualization improves conceptual understanding.
-3. Game-based learning enhances engagement and cognitive outcomes.
-4. Alignment between mechanics and learning objectives is critical.
-5. Philippine research lacks immersive chemistry-focused platformer interventions.
-
-Collectively, these findings support the pedagogical rationale for developing an interactive educational platformer grounded in conceptual change and constructivist principles.
-
---- Section: Research Gap ---
-
-Despite strong evidence supporting digital game-based learning in science education, the following gaps remain:
-
-- Limited research integrating submicroscopic particle modeling into platformer mechanics.
-- Few curriculum-aligned chemistry educational games designed for Grade 6 learners in the Philippine context.
-- Insufficient research examining the impact of interactive lattice manipulation on correcting misconceptions regarding physical versus chemical change.
-
-This study addresses these gaps by developing and evaluating a curriculum-aligned educational platformer embedding conceptual change mechanisms within gameplay.
 
 ================================================================================
-=== CHAPTER 3: RESEARCH METHODOLOGY ===
-========================================
+=== CHAPTER 3: THEORETICAL FRAMEWORK ===
+================================================================================
 
---- Section: Research Design ---
+--- SECTION 3.1: Math Education Challenges in the Philippines ---
 
-This study employed an experimental research design focusing on the evaluation of usability and engagement of an educational 2D platformer game developed to teach phase changes of matter. Rather than measuring formal learning gains through pre-test and post-test comparison, the study aimed to determine the game's effectiveness in terms of user experience, engagement, and perceived instructional value.
+[TODO: Content goes here]
+[NOTE: Consider renaming to "Science Education Challenges" if appropriate]
 
-A one-group post-test design was utilized, wherein participants interacted with the finalized beta version of the game and subsequently completed evaluation instruments. This design was deemed appropriate given the study's undergraduate scope, timeline constraints, and focus on usability and engagement rather than controlled instructional efficacy.
+--- SECTION 3.2: Pedagogical Strategies ---
 
---- Section: Participants ---
++++ SUBSECTION 3.2.1: Concrete-Pictorial-Abstract Approach +++
 
-Participants were selected using convenience sampling. A total of approximately 20–30 individuals were recruited through personal networks, academic peers, and referrals.
+[TODO: Content goes here]
 
-While the intended target audience of the game is Grade 6 students aligned with the MATATAG Curriculum, participants in this study were not restricted to a specific age group. Instead, respondents were considered representative users capable of evaluating the game's usability, clarity, and engagement potential.
+--- SECTION 3.3: Game Based Learning Environment ---
 
-If minors participated, parental consent was secured prior to data collection.
+[TODO: Content goes here]
 
---- Section: Research Instruments ---
+--- SECTION 3.4: Outcome-Based Game-Based Learning Environment Development Framework ---
 
-The study utilized the following instruments:
+[TODO: Content goes here]
 
---- Subsection: MEEGA+KIDS Evaluation Instrument ---
+--- SECTION 3.5: Evaluation of Game-Based Learning Environment ---
 
-The MEEGA+KIDS model was employed to assess engagement and usability in educational games. The instrument evaluates dimensions such as:
++++ SUBSECTION 3.5.1: MEEGA+KIDS Model +++
 
-- Fun
-- Focused attention
-- Perceived learning
-- Usability
-- Challenge
-- Satisfaction
+[TODO: Content goes here]
 
-Participants responded using a Likert-scale format.
 
---- Subsection: Perceived Conceptual Clarity Survey ---
+================================================================================
+=== CHAPTER 4: METHODOLOGY ===
+================================================================================
 
-A short researcher-developed questionnaire assessed participants' perceptions regarding:
+--- SECTION 4.1: Research Activities ---
 
-- Clarity of phase change explanations
-- Effectiveness of visual molecular simulations
-- Comprehensibility of in-game labels
-- Perceived educational usefulness
++++ SUBSECTION 4.1.1: Research of Learning outcomes and Pedagogical Approaches +++
 
---- Subsection: Open-Ended Feedback ---
+[TODO: Content goes here]
 
-Participants were asked to provide qualitative feedback regarding:
+--- SECTION 4.2: Game Design Process ---
 
-- Strengths of the game
-- Areas for improvement
-- Suggestions for enhancement
+[TODO: Content goes here]
 
---- Section: Description of the Intervention ---
++++ SUBSECTION 4.2.1: Game-Based Learning Environment Evaluation +++
 
-The intervention consisted of a 2D educational platformer game designed to simulate phase changes of matter at the molecular level. Players manipulate particle arrangements to achieve solid, liquid, and gaseous states, with explicit textual labeling (e.g., "Solid → Liquid: Melting") reinforcing conceptual understanding.
+[TODO: Content goes here]
 
-The game incorporates scaffolded levels, interactive molecular mechanics, and environment-based problem-solving challenges aligned with Grade 6 Science competencies under the MATATAG Curriculum.
++++ SUBSECTION 4.2.2: Consent for Participation +++
 
-The finalized beta version of the game was used for formal data collection.
+[TODO: Content goes here]
 
---- Section: Data Collection Procedure ---
++++ SUBSECTION 4.2.3: Timeline of the Game-Based Learning Environment Production +++
 
-1. Participants were briefed on the purpose of the study.
-2. Consent was obtained prior to participation.
-3. Participants were given 20–30 minutes to interact with the game.
-4. Upon completion, participants answered the MEEGA+KIDS instrument and additional survey questions.
-5. Responses were collected electronically via Google Forms.
+[TODO: Content goes here]
 
---- Section: Data Analysis ---
 
-Collected data were tabulated and analyzed using Google Sheets.
+================================================================================
+=== CHAPTER 5: GAME SYSTEM ===
+================================================================================
 
-Descriptive statistical measures were computed, including:
+--- SECTION 5.1: Software Overview ---
 
-- Mean
-- Standard deviation
-- Frequency distribution
-- Percentage scores
+[TODO: Content goes here]
 
-Results were interpreted to determine overall engagement levels, usability performance, and perceived instructional value.
+--- SECTION 5.2: Software Objectives ---
 
-Qualitative responses were grouped into thematic categories to identify recurring suggestions and improvement areas.
++++ SUBSECTION 5.2.1: General Objectives +++
 
---- Section: Ethical Considerations ---
+[TODO: Content goes here]
 
-Participation was voluntary. Participants were informed of their right to withdraw at any time without penalty. No personally identifiable information was included in the final analysis. For minor participants, parental consent was secured prior to participation.
++++ SUBSECTION 5.2.2: Specific Objectives +++
 
+[TODO: Content goes here]
+
+--- SECTION 5.3: Scope and Limitations ---
+
+[TODO: Content goes here]
+
+--- SECTION 5.4: Architectural Design ---
+
+[TODO: Content goes here]
+
++++ SUBSECTION 5.4.1: Lower Order Game +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 5.4.2: Higher Order Game +++
+
+[TODO: Content goes here]
+
+--- SECTION 5.5: Game Aesthetics ---
+
+[TODO: Content goes here]
+
+--- SECTION 5.6: Other Systems ---
+
++++ SUBSECTION 5.6.1: Particle Lattice System +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 5.6.2: Mini Dialogue System +++
+
+[TODO: Content goes here]
+
+
+================================================================================
+=== CHAPTER 6: DESIGN AND IMPLEMENTATION ISSUES ===
+================================================================================
+
+--- SECTION 6.1: Lower Order Mechanics ---
+
+[TODO: Content goes here]
+
+--- SECTION 6.2: Higher Order Mechanics ---
+
+[TODO: Content goes here]
+
+--- SECTION 6.3: Issues Upon Deployment ---
+
+[TODO: Content goes here]
+
+--- SECTION 6.4: Teachers' Recommendation ---
+
++++ SUBSECTION 6.4.1: Lower Order +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 6.4.2: Higher Order +++
+
+[TODO: Content goes here]
+
+
+================================================================================
+=== CHAPTER 7: RESULTS AND DISCUSSION ===
+================================================================================
+
+--- SECTION 7.1: Inchican Elementary School In-Person Playtest ---
+
++++ SUBSECTION 7.1.1: Test Score Statistical Analysis +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 7.1.2: MEEGA+ Kids Results +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 7.1.3: In-Game Analysis +++
+
+[TODO: Content goes here]
+
+--- SECTION 7.2: Thematic Analysis ---
+
+[TODO: Content goes here]
+
+--- SECTION 7.3: Discussion of Findings ---
+
+[TODO: Content goes here]
+
+--- SECTION 7.4: Conclusion ---
+
+[TODO: Content goes here]
+
+--- SECTION 7.5: Recommendations ---
+
+[TODO: Content goes here]
+
+
+================================================================================
+END OF DOCUMENT
 ================================================================================
