@@ -1,0 +1,8 @@
+@article{VonWangenheim2020,
+  author = {von Wangenheim, C. G. and Petri, G. and Borgatto, A. F.},
+  title = {{MEEGA+KIDS}: A model for the evaluation of games for computing education in secondary school},
+  journal = {Revista Novas Tecnologias na Educa\c{c}\~{a}o},
+  year = {2020},
+  volume = {18},
+  number = {1}
+}

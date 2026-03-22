@@ -8,38 +8,46 @@
 \contentsline {section}{\numberline {1.3}Scope and Limitations of the Study}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Significance of the Study}{4}{section.1.4}%
 \contentsline {chapter}{\numberline {2}REVIEW OF RELATED LITERATURE AND STUDIES}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Review of Related Literature}{6}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Conceptual Change in Science Education}{6}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Constructivism and Interactive Learning}{6}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Multimedia Learning in Science Education}{7}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Game-Based Learning and Engagement}{7}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Experiential Learning and Simulation}{7}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Outcome-Based Education, Bloom's Taxonomy, and MATATAG Curriculum}{7}{subsection.2.1.6}%
-\contentsline {subsection}{\numberline {2.1.7}Iterative Design and User-Centered Game Development}{8}{subsection.2.1.7}%
-\contentsline {section}{\numberline {2.2}Review of Related Studies}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}International Studies}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Local Studies}{8}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Review of Related Studies}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}International Studies}{9}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Local Studies}{9}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Theoretical Framework}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Conceptual Framework}{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Explanation of the Framework}{10}{subsection.2.5.1}%
-\contentsline {chapter}{\numberline {3}RESEARCH METHODOLOGY}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Research Design}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Development Framework}{12}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Iterative Development Cycles}{12}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Participants}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Research Instruments}{13}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Campaign and Regression Testing Logs}{13}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}MEEGA+KIDS Usability and Engagement Instrument}{14}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Qualitative Feedback Questionnaire}{14}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Data Collection Procedure}{15}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Phase 1: Iterative Development Testing}{15}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Phase 2: Final Structured Evaluation}{15}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Data Analysis}{15}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Ethical Considerations}{16}{section.3.7}%
-\contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}GAME SYSTEM}{18}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Software Overview}{18}{section.5.1}%
-\contentsline {chapter}{\numberline {6}RECOMMENDATIONS}{20}{chapter.6}%
+\contentsline {section}{\numberline {2.1}Philippine Education Curriculum}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Current Curriculum of Philippines Education}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Status of the Philippine Education}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Challenges of Resource Poor Schools}{7}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Chemistry and Science Education}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Particle Models and Phase Transitions in Elementary Learning}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Misconceptions in Melting and Freezing Cycles}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Remediation of Matter Misconceptions Through Knowledge Revision}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Middle School Misconceptions About Matter Cycles and Conservation}{9}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Game-Based Learning}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Developmental Strategies of Edugames}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Effectiveness of games in education}{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Game-Based Learning in the Philippines}{11}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Theoretical Framework}{11}{section.2.4}%
+\contentsline {subsubsection}{Tier 1: Primary Theoretical Anchors}{12}{subsubsection*.4}%
+\contentsline {subsubsection}{Tier 2: Supporting Theories}{12}{subsubsection*.5}%
+\contentsline {subsubsection}{Tier 3: Operational Frameworks}{13}{subsubsection*.6}%
+\contentsline {section}{\numberline {2.5}Conceptual Framework}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Input Component}{14}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Process Component}{15}{subsection.2.5.2}%
+\contentsline {subsubsection}{Iterative Development Phase (Internal Refinement)}{15}{subsubsection*.8}%
+\contentsline {subsubsection}{Final Evaluation Phase (Summative Assessment)}{15}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {2.5.3}Output Component}{16}{subsection.2.5.3}%
+\contentsline {subsubsection}{Developmental Outputs}{16}{subsubsection*.10}%
+\contentsline {subsubsection}{Evaluative Outputs}{16}{subsubsection*.11}%
+\contentsline {chapter}{\numberline {3}RESEARCH METHODOLOGY}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Research Design}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Development Framework}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Iterative Development Cycles}{17}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Participants}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Research Instruments}{18}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Campaign and Regression Testing Logs}{18}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}MEEGA+KIDS Usability and Engagement Instrument}{19}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Qualitative Feedback Questionnaire}{19}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Data Collection Procedure}{20}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Phase 1: Iterative Development Testing}{20}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Phase 2: Final Structured Evaluation}{20}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Data Analysis}{20}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Ethical Considerations}{21}{section.3.7}%
+\contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{22}{chapter.4}%
+\contentsline {chapter}{\numberline {5}GAME SYSTEM}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Software Overview}{23}{section.5.1}%
+\contentsline {chapter}{\numberline {6}RECOMMENDATIONS}{25}{chapter.6}%
