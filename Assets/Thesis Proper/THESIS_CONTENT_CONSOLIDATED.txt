@@ -38,17 +38,33 @@ Mga susing salita: pisikal at kemikal na pagbabago, game-based learning, pang-ed
 
 --- SECTION 1.1: Background of the Study ---
 
-[TODO: Content goes here]
+Science education at the elementary level serves as a foundational stage in developing scientific literacy, conceptual reasoning, and problem-solving skills. Within the MATATAG Curriculum of the Department of Education (DepEd), Grade 6 Science introduces learners to fundamental concepts related to materials, including the description of changes of state for solids, liquids, and gases—specifically melting, evaporation, freezing, and condensation—using diagrams and flowcharts. These competencies aim to help learners understand observable phenomena through scientific representations and structured reasoning.
+
+Despite the importance of these competencies, research has consistently shown that students experience difficulty in understanding the particulate nature of matter and the mechanisms underlying phase changes. Learners often memorize definitions of melting or evaporation without fully comprehending the particle-level interactions that explain these transformations. Misconceptions frequently arise regarding particle spacing, motion, and the role of heat transfer in altering states of matter (Adadan, 2013; Paik, Kim, Cho, & Park, 2004). These challenges are compounded by the abstract nature of microscopic representations, which are not directly observable.
+
+In many classroom settings, demonstrations of phase change are limited to water-based experiments, such as melting ice or boiling water. While these activities provide observable macroscopic changes, they often lack explicit integration with particle-level models, resulting in fragmented conceptual understanding. Furthermore, access to laboratory materials for demonstrating processes such as sublimation or deposition is limited at the elementary level, restricting exposure to diverse examples of state change.
+
+[FIGURE: Examples of Phase Change Diagrams Used in Science Education - Including PhaseChangeDiagram.jpg, KhanAcademyPhaseChanges.png, and 88GuruPhaseChanges.png as subfigures showing different representations of states of matter and phase transitions]
+
+Game-Based Learning (GBL) has emerged as a promising instructional approach that integrates interactive systems with curricular objectives. Educational games can provide dynamic visualizations, immediate feedback, and experiential learning opportunities that reduce cognitive overload and promote conceptual change (Plass, Homer, & Kinzer, 2015). When designed with explicit learning outcomes and aligned assessments, digital games may enhance engagement and deepen understanding, particularly in abstract scientific domains.
+
+This study introduces Wiz's Journey: Mastering the States of Matter, a 2D educational platformer developed as a supplementary and enrichment learning tool aligned with the MATATAG Grade 6 Science competency on changes of state. The game integrates explicit terminology (e.g., "Solid → Liquid: Melting") while allowing learners to discover appropriate phase changes through environmental problem-solving. Central to its design is an interactive particle-lattice minigame—a core mechanic—in which learners manipulate bonds and particle spacing to simulate state transitions. By directly engaging with representations similar to those used in classroom diagrams, learners repeatedly encounter visual models of particle behavior in a contextualized, goal-driven environment.
+
+Given the increasing emphasis on learner-centered instruction under the MATATAG framework, there is a need to explore innovative digital tools that complement formal instruction without replacing it. This study examines whether a platformer-based educational game can support conceptual understanding, engagement, and reinforcement of curriculum-aligned competencies related to phase changes of matter.
 
 --- SECTION 1.2: Objectives ---
 
 +++ SUBSECTION 1.2.1: General Objective +++
 
-[TODO: Content goes here]
+This study aims to design, develop, and evaluate an educational platformer game that rapidly operationalizes a selected learning competency from the first quarter of the Grade 6 MATATAG Science curriculum. The game will be developed with established pedagogical and assessment strategies in mind to ensure alignment with curriculum standards and learning outcomes. Learner performance and engagement will be evaluated through pretest and posttest analyses to determine the effectiveness of the intervention.
 
 +++ SUBSECTION 1.2.2: Specific Objectives +++
 
-[TODO: Content goes here]
+1. Design learning outcome mechanics (LOMs) that strategically target both lower-order and higher-order cognitive learning outcomes aligned with the MATATAG Grade 6 Science competency on changes of state.
+
+2. Develop a functional 2D educational platformer game that incorporates the designed LOMs and integrates interactive particle-level simulations to visually represent state transitions.
+
+3. Evaluate the game's efficacy in teaching the selected learning outcomes to Grade 6 learners through structured pre- and post-assessment instruments, engagement surveys, and qualitative feedback from students regarding usability and perceived learning value.
 
 --- SECTION 1.3: Scope and Limitations of the Study ---
 
@@ -56,7 +72,11 @@ Mga susing salita: pisikal at kemikal na pagbabago, game-based learning, pang-ed
 
 --- SECTION 1.4: Significance of the Study ---
 
-[TODO: Content goes here]
+This study contributes to elementary science education in the Philippines by examining the integration of interactive digital modeling within a platformer game environment. For learners, Wiz's Journey: Mastering the States of Matter provides repeated exposure to particle-level representations within meaningful problem-solving contexts, strengthening conceptual connections between diagrams and observable phenomena related to phase changes. By aligning the game with the MATATAG Grade 6 Science competency, the study demonstrates how educational games can reinforce curriculum-aligned learning objectives in accessible, engaging ways.
+
+For educators and school administrators, this study offers insights into how educational games may complement MATATAG-aligned instruction without replacing formal teaching. The findings may inform future curriculum integration strategies, digital resource development, and professional development initiatives for teachers adopting game-based learning approaches. Given the resource constraints faced by many Philippine schools, this game's availability on multiple platforms (web and mobile) addresses accessibility barriers and demonstrates feasibility of deploying educational technology in resource-limited contexts.
+
+For researchers and the broader educational community, this study adds to the growing body of literature on game-based learning in science education, particularly within the Philippine educational context and addressing the K-12 curriculum transition. By examining a discovery-based yet explicitly labeled game design combined with systematic evaluation using pre-post assessments and engagement surveys, the study contributes to ongoing discussions on balancing constructivist learning principles with guided instruction in digital environments. The qualitative feedback from student participants and actual implementation challenges encountered (such as participant recruitment constraints) provide realistic insights into deploying educational games in authentic school settings.
 
 
 ================================================================================
@@ -173,7 +193,13 @@ Mga susing salita: pisikal at kemikal na pagbabago, game-based learning, pang-ed
 
 --- SECTION 5.1: Software Overview ---
 
-[TODO: Content goes here]
+Wiz's Journey: Mastering the States of Matter is developed using Unity 2022 LTS, a cross-platform game engine selected for its extensive capabilities in 2D game development, robust documentation, and the development team's prior expertise. The game is designed as a 2D platformer that integrates educational content with interactive gameplay mechanics, allowing students to progress through levels while encountering learning outcomes related to phase changes of matter.
+
+The game is deployed across multiple platforms to ensure widespread accessibility and reach diverse student populations. The primary deployment target is Android mobile devices, distributed through Itch.io, a popular game distribution platform that allows easy access without requiring app store approval processes. A secondary web-based version is deployed via Unity Play, allowing students to play directly in web browsers on computers and tablets without installation requirements. This multi-platform approach reflects the varying technological infrastructure available to schools and students in the Philippines and aligns with the goal of making the educational game accessible regardless of device availability.
+
+The development timeline began in December 2025 at the conclusion of the first trimester and extended through March 2026, spanning the academic term break and into the second trimester. This timeline was established to accommodate the academic calendar constraints and allowed the development team to complete the game while managing other coursework obligations. By the time development concluded in March 2026, the target Grade 6 students had already completed their first quarter instruction on phase changes under the MATATAG curriculum, positioning the game as a supplementary learning reinforcement tool rather than a primary instructional resource.
+
+The game architecture incorporates both lower-order and higher-order mechanics aligned with the selected learning outcomes. Lower-order mechanics focus on foundational understanding of the four phase changes—melting, freezing, evaporation, and condensation—using visual representations and simple interactions. Higher-order mechanics build upon this foundation to address more complex concepts such as the relationship between heat transfer and state changes, the particulate nature of matter during phase transitions, and critical thinking about real-world applications of phase changes. The system integrates a particle lattice visualization system to support students' conceptualization of microscopic-level processes underlying macroscopic observations, addressing a common misconception identified in science education research.
 
 --- SECTION 5.2: Software Objectives ---
 
