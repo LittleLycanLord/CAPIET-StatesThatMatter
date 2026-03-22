@@ -42,4 +42,3 @@
 \contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{15}{chapter.4}%
 \contentsline {chapter}{\numberline {5}CONCLUSION AND DISCUSSION}{16}{chapter.5}%
 \contentsline {chapter}{\numberline {6}RECOMMENDATIONS}{17}{chapter.6}%
-\contentsline {chapter}{REFERENCES}{18}{chapter*.5}%
