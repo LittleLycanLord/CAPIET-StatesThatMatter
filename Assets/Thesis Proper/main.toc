@@ -58,7 +58,24 @@
 \contentsline {subsection}{\numberline {3.4.2}Qualitative Analysis of Observations and Feedback}{28}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Iterative Development Improvement Analysis}{28}{subsection.3.4.3}%
 \contentsline {section}{\numberline {3.5}Ethical Considerations}{29}{section.3.5}%
-\contentsline {chapter}{\numberline {4}DESIGN AND IMPLEMENTATION}{30}{chapter.4}%
-\contentsline {chapter}{\numberline {5}GAME SYSTEM}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Software Overview}{31}{section.5.1}%
-\contentsline {chapter}{\numberline {6}RECOMMENDATIONS}{33}{chapter.6}%
+\contentsline {chapter}{\numberline {4}GAME SYSTEM}{30}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Software Overview}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Software Objectives}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}General Objectives}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Specific Objectives}{30}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Scope and Limitations}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Architectural Design}{32}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Lower Order Game}{32}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Higher Order Game}{34}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Synthesis of Lower and Higher Order Games}{40}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Game Aesthetics}{42}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Other Systems}{43}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Mini Dialogue System}{43}{subsection.4.6.1}%
+\contentsline {chapter}{\numberline {5}DESIGN AND IMPLEMENTATION ISSUES}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Lower Order Mechanics}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Higher Order Mechanics}{46}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Visual Clarity}{46}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Controls}{47}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Coupling of Lower and Higher-Order Systems}{47}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Issues Upon Deployment}{48}{section.5.3}%
+\contentsline {chapter}{\numberline {6}RECOMMENDATIONS}{49}{chapter.6}%

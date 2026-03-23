@@ -43,7 +43,6 @@
     <UnityVersion>6000.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\vanil\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.2.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -258,6 +257,8 @@
     <None Include="Assets\Third Party\kenney_pixel-platformer\Construct 3\Readme.txt" />
     <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-h-large.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Thesis Proper\THESIS_CONTENT_CONSOLIDATED-OLD.txt" />
+    <None Include="Assets\Thesis Proper\references_meega_entry.txt" />
     <None Include="Assets\Thesis Proper\THESIS_CONTENT_CONSOLIDATED.txt" />
     <None Include="Assets\Third Party\mobile-controls-1\Spritesheets\style-a-large.xml" />
     <None Include="Assets\Thesis Proper\THESIS ITERATIONS\THESIS_CONTENT_CONSOLIDATED-ORIGINAL.txt" />

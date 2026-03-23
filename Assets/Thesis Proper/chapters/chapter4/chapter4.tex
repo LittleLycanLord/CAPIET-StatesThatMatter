@@ -1,1 +1,391 @@
-\chapter{DESIGN AND IMPLEMENTATION}
+\chapter{GAME SYSTEM}
+
+% ============================================================================
+% Section 4.1: Software Overview
+% ============================================================================
+\section{Software Overview}
+
+\textit{Wiz's Journey: Mastering the States of Matter} is a mobile-based Game-Based Learning Environment (GBLE) designed to reinforce the targeted learning competency from the MATATAG Grade 6 Science curriculum: ``describe changes of state for solids, liquids, and gases as melting, evaporation, freezing, and condensation using diagrams and flowcharts.'' The design leverages intrinsic motivation through gameplay progression mechanics rather than relying exclusively on external incentive structures. Players advance through the game by successfully applying conceptual knowledge of phase transitions to overcome in-game challenges, creating a direct link between pedagogical mastery and game-based progression.
+
+% ============================================================================
+% Section 4.2: Software Objectives
+% ============================================================================
+\section{Software Objectives}
+
+% ============================================================================
+% Subsection 4.2.1: General Objectives
+% ============================================================================
+\subsection{General Objectives}
+
+This section directly parallels the content presented in Chapter 1, Section 1.2.1 (General Objective). The framing has been adjusted to emphasize game development considerations and technical implementation rather than purely instructional design. The game aims to operationalize the selected learning competency through interactive gameplay mechanics aligned with the MATATAG curriculum while maintaining rigorous pedagogical standards.
+
+% ============================================================================
+% Subsection 4.2.2: Specific Objectives
+% ============================================================================
+\subsection{Specific Objectives}
+
+This section directly parallels the content presented in Chapter 1, Section 1.2.2 (Specific Objectives), reframed from a game development perspective. The specific objectives emphasize the technical and mechanical aspects of achieving the learning outcomes through game-based interaction, including the design of learning outcome mechanics, implementation of interactive systems, and evaluation of gameplay effectiveness.
+
+% ============================================================================
+% Section 4.3: Scope and Limitations
+% ============================================================================
+\section{Scope and Limitations}
+
+This section directly parallels the content presented in Chapter 1, Section 1.3 (Scope and Limitations of the Study). The scope and limitations remain consistent with the original description; however, the emphasis here focuses on the game development and technical constraints that shaped the final product, including platform selection, deployment considerations, and technical feasibility within the development timeline.
+
+% ============================================================================
+% Section 4.4: Architectural Design
+% ============================================================================
+\section{Architectural Design}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{ArchitecturalDesign.png}
+\caption{Overall architectural design structure of Wiz's Journey}
+\label{fig:architectural_design}
+\end{figure}
+
+% ============================================================================
+% Subsection 4.4.1: Lower Order Game
+% ============================================================================
+\subsection{Lower Order Game}
+
+The lower-order game mechanics encompass the platformer-based navigation subsystem. Following the Outcomes-Based Edugame Design framework (Sison et al., 2018), the platformer serves as the narrative and mechanical premise, establishing a coherent game world that requires spatial navigation from an entry point to an exit objective. This design pattern is grounded in established game design principles exemplified by seminal titles such as \textit{Super Mario Bros}, wherein level progression follows a directional narrative structure---typically left-to-right progression culminating in a goal object or adversary encounter.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{MarioStart.png}
+\caption{The start of the classic 1-1 world of Super Mario Bros}
+\label{fig:mario_start}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{MarioEnd.png}
+\caption{The flagpole found at overworld levels of Super Mario Bros}
+\label{fig:mario_end}
+\end{subfigure}
+\caption{Directional navigation structure in established platformer design}
+\label{fig:mario_comparison}
+\end{figure}
+
+Within \textit{Wiz's Journey}, this navigation structure is instantiated through a thematically congruent mechanic: players begin at a green portal (entry point) and navigate the level environment to locate a blue portal (exit objective), establishing a magical narrative context consistent with the game's fantasy premise.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{GameStart.png}
+\caption{Green portal at the start}
+\label{fig:game_start}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{GameEnd.png}
+\caption{Blue portal as the end goal}
+\label{fig:game_end}
+\end{subfigure}
+\caption{Portal-based navigation structure in Wiz's Journey}
+\label{fig:game_navigation}
+\end{figure}
+
+Environmental hazards, specifically pit obstacles, are integrated into multiple levels to introduce challenge and risk progression. Pit encounters require players to either successfully traverse them or face consequence through level restart mechanics. These were designed as a way to excite the player as an introduction of risk and challenge as they progress through the level.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{ThatsAPit.png}
+\caption{First encounter with a Pit}
+\label{fig:pit_intro}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{YupThatsAPit.png}
+\caption{Player falling into a Pit}
+\label{fig:pit_consequence}
+\end{subfigure}
+\caption{Pit hazards as challenge and engagement mechanisms}
+\label{fig:pit_mechanics}
+\end{figure}
+
+These pits combined with the level layout also serve as challenges which call upon opportunities for the higher-order game to be played by the player as a way to provide a solution to them. Certain pits can only be safely traversed through strategic application of phase-transition mechanics---such as creating solid ice platforms or utilizing water-based buoyancy---demonstrating the integration of content mastery with gameplay progression.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Bridge.png}
+\caption{Player using Ice as a bridge}
+\label{fig:ice_bridge}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Waterfall.png}
+\caption{Player swimming up a waterfall}
+\label{fig:water_ascent}
+\end{subfigure}
+\caption{Phase-transition mechanics providing solutions to environmental challenges}
+\label{fig:phase_solutions}
+\end{figure}
+
+Levels were also designed to sometimes have multiple solutions to them allowing the player autonomy on how they would approach certain challenges, such as utilizing solid stairs made of Ice or Water that makes them float up for vertical movement. This design approach ensures that conceptual understanding of state changes can be operationalized through diverse gameplay strategies.
+
+% ============================================================================
+% Subsection 4.4.2: Higher Order Game
+% ============================================================================
+\subsection{Higher Order Game}
+
+The higher-order game mechanics are operationalized through the Particle Lattice System---an internally developed subsystem that generates particle configuration diagrams representing the microscopic structural arrangement of solids, liquids, and gases. This system was engineered with extensibility as a primary design principle to accommodate multiple phases, materials, and parameter presets configured by developers. This architecture enables potential implementations of diverse materials beyond water---the conventional exemplar in phase-change pedagogy---such as steel or clay. However, implementation scope was constrained by development timeline limitations.
+
+The system implements parametric configurability through developer-accessible parameters that can be set and persisted for material simulation. Key configurable properties include particle attributes (size, initial temperature, quantity, spatial arrangement) and intermolecular bond characteristics (length, stiffness, elasticity). This parametric foundation provides pedagogical extensibility while maintaining implementational efficiency.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{LatticeSettings.png}
+\caption{Particle Lattice System configurable parameters}
+\label{fig:lattice_settings}
+\end{figure}
+
+Within \textit{Wiz's Journey: Mastering the States of Matter}, the Particle Lattice System generates interactive minigame instances that players encounter repeatedly throughout level progression. When players encounter environmental obstacles that impede forward progress---such as pit hazards, ice blocks, or water barriers---an interaction affordance (visual button prompt) appears on-screen, enabling players to engage the minigame interface associated with that obstacle.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{InteractionButton.png}
+\caption{Interaction Button Appears}
+\label{fig:interaction_button}
+\end{figure}
+
+The specific minigame instantiation depends on the state of matter corresponding to the obstacle's material. States of matter are operationalized with distinct gameplay properties: solids exhibit collision properties and obstruct player movement; liquids permit player traversal but apply buoyant force opposing gravity; gases present no collision properties but enable novel interaction mechanics (Table 4.1).
+
+\begin{table}[H]
+\centering
+\caption{State of Matter Representation in Gameplay}
+\label{tab:matter_states}
+\begin{tabular}{ll}
+\toprule
+\textbf{State of Matter} & \textbf{In-Game Representation} \\
+\midrule
+Solid & Ice Block \\
+Liquid & Water Block \\
+Gas & Vapor Block \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Player interaction with material objects reveals particle lattice configurations. Players manipulate particles through direct interaction (dragging), experiencing firsthand the elastic, rigid, or compliant properties of different matter states through haptic feedback and visual responsivity. Lattice visualizations are designed to correspond with canonical pedagogical diagrams found in standard science curricula, ensuring cognitive alignment with existing mental models from classroom instruction. An on-screen hint provides explicit state-of-matter identification.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{SolidLattice.png}
+\caption{Solid Lattice Configuration}
+\label{fig:solid_lattice}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{LiquidLattice.png}
+\caption{Liquid Lattice Configuration}
+\label{fig:liquid_lattice}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{GasLattice.png}
+\caption{Gas Lattice Configuration}
+\label{fig:gas_lattice}
+\end{subfigure}
+\caption{Particle lattice visualizations across states of matter}
+\label{fig:lattice_configs}
+\end{figure}
+
+Gameplay progression unlocks three distinct interaction modalities, conceptually represented as \textit{Spellbooks}: the red Book of Heating, the blue Book of Cooling, and the green Book of Bonding. These modalities enable toggleable effects applied to particles through screen interaction, with visual and thematic design reinforcing the magical narrative premise of playing as Wiz. This design choice permits particle manipulation without invoking unrealistic scientific apparatus, maintaining narrative coherence.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{BookOfHeating.png}
+\caption{Book of Heating}
+\label{fig:book_heating}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{BookOfCooling.png}
+\caption{Book of Cooling}
+\label{fig:book_cooling}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{BookOfBonding.png}
+\caption{Book of Bonding}
+\label{fig:book_bonding}
+\end{subfigure}
+\caption{Spellbook interaction modalities}
+\label{fig:spellbooks}
+\end{figure}
+
+The Book of Heating is introduced in Level 3, enabling players to apply thermal energy to particles. Players are explicitly informed that this action unlocks the phase transitions of melting, sublimation, and evaporation. The mechanic is presented through discovery gameplay, allowing players to observe the effects of heating on particle lattice configuration.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{HeatingBook.png}
+\caption{Player finds the Heating Book}
+\label{fig:heating_discovery}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{HeatingEffects.png}
+\caption{Heating the Lattice}
+\label{fig:heating_effects}
+\end{subfigure}
+\caption{Book of Heating introduction and interaction}
+\label{fig:heating_mechanic}
+\end{figure}
+
+The Book of Cooling is introduced in Level 9, enabling players to extract thermal energy from particles, thereby unlocking the freezing phase transition. This mechanic extends player agency by providing thermodynamic bidirectionality.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{CoolingBook.png}
+\caption{Player finds the Cooling Book}
+\label{fig:cooling_discovery}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{CoolingEffects.png}
+\caption{Cooling the Lattice}
+\label{fig:cooling_effects}
+\end{subfigure}
+\caption{Book of Cooling introduction and interaction}
+\label{fig:cooling_mechanic}
+\end{figure}
+
+The Book of Bonding is the final interaction modality introduced, enabling players to establish intermolecular bonds between previously unbound particles. This mechanic operationalizes condensation and deposition phase transitions through particle proximity and bonding interactions.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{BondingBook.png}
+\caption{Player finds the Bonding Book}
+\label{fig:bonding_discovery}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\textwidth]{BondingEffects.png}
+\caption{Bonding Particles Together}
+\label{fig:bonding_effects}
+\end{subfigure}
+\caption{Book of Bonding introduction and interaction}
+\label{fig:bonding_mechanic}
+\end{figure}
+
+Progressive spellbook acquisition affords increasing player agency in level progression solutions. Players select strategies based on available modalities and previously encountered challenge patterns. Level 15 (final level) necessitates mastery of all six phase transitions, requiring players to orchestrate multiple spellbook interactions sequentially. The lower-order gameplay challenges and their corresponding higher-order game solutions are detailed in Table 4.2.
+
+\begin{table}[H]
+\centering
+\caption{Scenarios, Possible Solutions, and Outcomes}
+\label{tab:gameplay_solutions}
+\begin{tabularx}{\textwidth}{Xp{3cm}X}
+\toprule
+\textbf{Scenarios} & \textbf{Possible Solutions} & \textbf{Outcome} \\
+\midrule
+Ice Block is blocking the path & Melting / Evaporation / Sublimation & The player passes through \\
+Water Block results in the player being stuck & Evaporation & The player passes through \\
+Ice Block is blocking the path, but Melting will result in the previous scenario of the player being stuck & Sublimation & The player passes through \\
+Player is stuck swimming in Water & Freezing & The player is able to ``jump ashore'' \\
+The player needs to move upward & Melting / Condensation / The player is able to swim up the Water Block & \\
+The player needs ``stairs'' & Freezing / Deposition & The player is able to climb the stairs they made \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================================================
+% Subsection 4.4.3: Synthesis of Lower and Higher Order Games
+% ============================================================================
+\subsection{Synthesis of Lower and Higher Order Games}
+
+Challenge scenarios are introduced through explicit narrative dialogue that specifies the required phase transition but withholds procedural methodology. Players are left to independently discover the application mechanics of specified phase transitions, fostering autonomous problem-solving and reinforcing the causal relationship between higher-order game actions and lower-order environmental state changes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{ExplicitInstruction.png}
+\caption{Player being told to MELT the ice}
+\label{fig:explicit_instruction}
+\end{figure}
+
+This pedagogical coupling of lower and higher-order game systems positions players in continuous active experimentation cycles. The game environment facilitates iterative hypothesis testing regarding phase-transition mechanisms and effects. This cyclical gameplay pattern---characteristic of game-loop design (Cook, 2006)---enables players to internalize conceptual models through repeated experimentation and observation. The expectation is that through sustained gameplay iteration, players will develop robust mental models of matter state structures, thermodynamic mechanisms, and phase-transition flowcharts that transfer to real-world contexts.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{DanielCook.png}
+\caption{Daniel Cook's Game Loop Diagram}
+\label{fig:game_loop}
+\end{figure}
+
+User interface evolution involved iterative simplification to minimize cognitive load. Early prototypes employed color-coded particles, colored bond visualizations, dynamic object rotation, and extensive on-screen text---design choices that generated player confusion and decision paralysis. The final interface implementation prioritizes essential information through: (1) unadorned particle lattice with kinetic energy representation (particle oscillation intensity correlates with thermal energy; bond rigidity visually decreases with entropy), (2) spellbook sprite icons replacing descriptive text labels, (3) explicit phase-transition labels (e.g., ``Melting: Solid to Liquid''), and (4) confirmation/cancellation affordances enabling committed action.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{CurrentUI.png}
+\caption{Higher Order Game User Interface}
+\label{fig:higher_order_ui}
+\end{figure}
+
+% ============================================================================
+% Section 4.5: Game Aesthetics
+% ============================================================================
+\section{Game Aesthetics}
+
+Visual aesthetic design prioritizes accessibility and clarity appropriate to the target demographic (Grade 6 students, aged 11--12 years). The interface employs minimalist design principles, restricting interactive affordances to necessary control elements to minimize decision complexity. The snowy mountain environment and magical narrative premise provide thematic coherence for utilizing phase-transition materials (ice, water, vapor) throughout level design. Visual design incorporates bright, saturated colors and stylistically appealing elements to maintain affective engagement.
+
+Technical implementation leverages 2.5-dimensional visual presentation through parallax scrolling and Unity 6's Cinemachine camera system, achieving a distinctive aesthetic combining retro pixel-art styling with contemporary smooth animation. This approach provides visual novelty while maintaining accessibility through clear visual communication.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{PopUpBookAesthetic.png}
+\caption{Popup Book Appearance}
+\label{fig:aesthetic_popup}
+\end{figure}
+
+Visual and audio asset acquisition prioritized pragmatic efficiency. Assets were sourced from open-source repositories (Itch.io, Open Game Art) and premium asset markets (Unity Asset Store), with modifications applied where permitted by licensing agreements to ensure originality. This production approach was necessitated by limited development personnel. Asset categories include sprites, textures, sound effects, and in-game music, reflecting comprehensive multimedia integration.
+
+% ============================================================================
+% Section 4.6: Other Systems
+% ============================================================================
+\section{Other Systems}
+
+% ============================================================================
+% Subsection 4.6.1: Mini Dialogue System
+% ============================================================================
+\subsection{Mini Dialogue System}
+
+The Outcomes-Based Edugame Design framework specifies narrative contextualization as essential to meaningful gameplay. Effective narrative requires answering fundamental questions: Why is the player engaging this experience? Who does the player inhabit? What are the player's objectives within a relatable context? Balancing narrative immersion against player autonomy presented design tension: excessive exposition overwhelms players and undermines agency; insufficient context obscures purpose and reduces engagement.
+
+This design challenge yielded the Mini Dialogue System---a lightweight, unobtrusive narrative delivery mechanism. The nomenclature reflects both implementational parsimony (minimal code complexity) and experiential design (minimal screen real estate consumption). The system presents context-sensitive prompts accessible via screen-top interaction points. Prompts are triggered upon level initiation or upon entering specific spatial regions, delivering explicit gameplay instructions, critical information, or narrative dialogue without disrupting primary gameplay flow.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{DialogueSample.png}
+\caption{Sample Dialogue}
+\label{fig:dialogue_sample}
+\end{figure}
+
+Internationalization support was initially conceptualized to include Tagalog language options, anticipated to provide improved accessibility for target demographic members more fluent in the native Philippine language. Implementation was deferred due to development timeline constraints. Additionally, extensive terminology from the learning competency (``sublimation,'' ``deposition,'' ``bonding'') and platform-specific action vocabulary (``tap,'' ``swipe,'' ``toggle'') resisted direct translation without semantic loss, potentially impairing comprehension for Tagalog-preferring learners. These linguistic and practical constraints motivated deferral of localization to post-release development phases.
