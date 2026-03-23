@@ -20,6 +20,7 @@
 \usepackage{tabularx}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage{pdfpages}
 \usepackage[backend=biber,style=apa]{biblatex}
 
 % Bibliography
@@ -80,5 +81,60 @@
 
 % References
 \printbibliography[heading=bibintoc,title={REFERENCES}]
+
+% Appendices
+\appendix
+\chapter*{APPENDICES}
+\addcontentsline{toc}{chapter}{APPENDICES}
+
+% Appendix A: Field Notes
+\section*{Appendix A: Inchican Elementary School Field Notes}
+\addcontentsline{toc}{section}{Appendix A: Field Notes}
+\includepdf[pages=-]{appendices/FieldNotes.pdf}
+
+% Appendix B: Pre-Test Exam
+\section*{Appendix B: Summative Playtesting Pre-Test Exam}
+\addcontentsline{toc}{section}{Appendix B: Pre-Test Exam}
+\includepdf[pages=-]{appendices/SPPre-TestExam.pdf}
+
+% Appendix C: Post-Test Exam
+\section*{Appendix C: Summative Playtesting Post-Test Exam}
+\addcontentsline{toc}{section}{Appendix C: Post-Test Exam}
+\includepdf[pages=-]{appendices/SPPost-TestExam.pdf}
+
+% Appendix D: Parental Consent Form
+\section*{Appendix D: Parental Consent Form}
+\addcontentsline{toc}{section}{Appendix D: Parental Consent Form}
+\includepdf[pages=-]{appendices/OB-GaMe-Parental-Consent-Form-March-13-2026.pdf}
+
+% Appendix E: Student Assent Form
+\section*{Appendix E: Student Assent Form}
+\addcontentsline{toc}{section}{Appendix E: Student Assent Form}
+\includepdf[pages=-]{appendices/OB-GaMe-Student-Assent-Form-March-13-2026.pdf}
+
+% Appendix F: Formative Playtest v0.1 Responses
+\section*{Appendix F: Wiz's Journey PT v0.1 Responses}
+\addcontentsline{toc}{section}{Appendix F: PT v0.1 Responses}
+\includepdf[pages=-]{appendices/PTv0.1-Reponses.pdf}
+
+% Appendix G: Formative Playtest v0.2 Responses
+\section*{Appendix G: Wiz's Journey PT v0.2 Responses}
+\addcontentsline{toc}{section}{Appendix G: PT v0.2 Responses}
+\includepdf[pages=-]{appendices/PTv0.2-Responses.pdf}
+
+% Appendix H: Summative Playtest Google Forms
+\section*{Appendix H: Wiz's Journey Summative PT - Google Forms}
+\addcontentsline{toc}{section}{Appendix H: Summative PT - Google Forms}
+\includepdf[pages=-]{appendices/SP-GoogleForms.pdf}
+
+% Appendix I: Summative Playtest Data
+\section*{Appendix I: Wiz's Journey Summative Playtest Data}
+\addcontentsline{toc}{section}{Appendix I: Summative Playtest Data}
+\includepdf[pages=-]{appendices/SP-Data.pdf}
+
+% Appendix J: Facebook Page
+\section*{Appendix J: Facebook Page}
+\addcontentsline{toc}{section}{Appendix J: Facebook Page}
+\includepdf[pages=-]{appendices/FacebookPage.pdf}
 
 \end{document}
