@@ -131,13 +131,13 @@ At the middle school level, Arslan (2023) employed a word association test to in
 
 +++ SUBSECTION 2.3.1: Developmental Strategies of Edugames +++
 
-+++ SUBSECTION 2.3.1: Developmental Strategies of Edugames +++
+Constructivist Learning Theory asserts that knowledge is actively constructed through interaction and experience rather than passively received. Game-based environments embody constructivist principles by placing learners in active problem-solving roles. In platform-based game environments, players experiment, test strategies, and receive immediate feedback from system responses. This aligns with the constructivist view that learning occurs through engagement and reflection upon action (Kolb, 1984; Bruner, 1966).
 
-Constructivist Learning Theory asserts that knowledge is actively constructed through interaction and experience rather than passively received. Game-based environments embody constructivist principles by placing learners in active problem-solving roles. In platform-based game environments, players experiment, test strategies, and receive immediate feedback from system responses. This aligns with the constructivist view that learning occurs through engagement and reflection upon action.
+Outcome-based methodologies provide a structured framework for developing game-based learning environments aligned with explicit educational competencies. Sison and colleagues (2018) presented a formal Outcomes-Based Edugame Design methodology that operationalizes this alignment through a systematic process. This methodology begins by explicitly determining learning outcomes (LOs), selecting an appropriate game genre, and writing a game premise that contextualizes the learning objectives. Subsequently, the design phase proceeds incrementally through iterative "Build Game Learning Environment (GLE)" cycles, where each cycle focuses on designing a learning outcome mechanic, integrating related game elements, connecting with previously designed mechanics, and conducting playtesting and evaluation. This process repeats for each learning outcome before final integration of all elements and comprehensive evaluation (Sison et al., 2018). This approach ensures that gameplay mechanics directly support the achievement of specified educational outcomes, creating coherence between instructional goals and interactive gameplay.
 
-Outcome-based methodologies provide a structured framework for developing game-based learning environments aligned with explicit educational competencies. Sison and colleagues (2018) presented an outcome-based methodology for developing game-based learning environments, emphasizing the importance of clear learning objectives that guide both game design and assessment strategies. This approach ensures that gameplay mechanics directly support the achievement of specified educational outcomes, creating coherence between instructional goals and interactive gameplay.
+[FIGURE: Outcomes-Based Edugame Design Methodology flowchart - Determine LOs → Determine Genre → Write Premise → Build GLE Incrementally with playtesting cycles → Integrate all elements and final evaluation]
 
-In game development research, iterative design is a widely accepted approach for refining gameplay mechanics, usability, and user experience. Iterative development involves repeated cycles of testing, evaluation, modification, and regression validation. Campaign testing refers to structured playthrough sessions aimed at identifying usability issues, progression bottlenecks, and gameplay friction points. Engagement evaluation models assess multiple dimensions including focused attention, satisfaction, perceived learning, and intrinsic motivation. User-centered design principles emphasize incorporating player feedback into successive iterations to improve overall game quality. Educational game development should adopt a quasi-experimental assessment approach with pre- and post-gameplay measures to evaluate learning effectiveness, employing both quantitative metrics (test scores, learning gains) and qualitative methods (engagement surveys, observational feedback) to comprehensively evaluate user experience and educational impact.
+In game development research, iterative design is a widely accepted approach for refining gameplay mechanics, usability, and user experience (Gee, 2003). Iterative development involves repeated cycles of testing, evaluation, modification, and regression validation. Campaign testing refers to structured playthrough sessions aimed at identifying usability issues, progression bottlenecks, and gameplay friction points. Engagement evaluation models assess multiple dimensions including focused attention, satisfaction, perceived learning, and intrinsic motivation. User-centered design principles emphasize incorporating player feedback into successive iterations to improve overall game quality (Prensky, 2001). The Outcomes-Based Edugame Design methodology institutionalizes this iterative approach by embedding playtesting and evaluation at every stage of development (Sison et al., 2018), ensuring that pedagogical alignment is maintained throughout the design process rather than evaluated only at the end. Educational game development should adopt a quasi-experimental assessment approach with pre- and post-gameplay measures to evaluate learning effectiveness, employing both quantitative metrics (test scores, learning gains) and qualitative methods (engagement surveys, observational feedback) to comprehensively evaluate user experience and educational impact.
 
 +++ SUBSECTION 2.3.2: Effectiveness of games in education +++
 
@@ -171,7 +171,7 @@ Outcome-Based Teaching and Learning (OBTL) principles ensure alignment between p
 
 Bloom's Taxonomy guides cognitive level alignment (Anderson & Krathwohl, 2001). Lower-order objectives (remember, understand) are addressed through labeled particle representations and discovery mechanics; higher-order objectives (apply, analyze) are addressed through complex multi-phase challenges requiring strategic particle manipulation to solve environmental puzzles. This hierarchical alignment ensures the game scaffolds learning from foundational understanding to sophisticated application.
 
-Iterative Design Principles and User-Centered Development Frameworks justify the two-phase approach (Section 2.5). Rather than conducting summative evaluation immediately after development, the methodology incorporates repeated cycles of playtesting, feedback integration, and refinement (Gee, 2003; Prensky, 2001). This approach recognizes that pedagogical theory informs initial design, but actual player experiences reveal implementation gaps; iterative cycles resolve these gaps before formal evaluation, ensuring the final game genuinely embodies the theoretical principles that justify its use (Sison et al., 2018).
+Iterative Design Principles and User-Centered Development Frameworks justify the two-phase approach (Section 2.5). Rather than conducting summative evaluation immediately after development, the methodology incorporates repeated cycles of playtesting, feedback integration, and refinement (Gee, 2003; Prensky, 2001). This approach recognizes that pedagogical theory informs initial design, but actual player experiences reveal implementation gaps; iterative cycles resolve these gaps before formal evaluation, ensuring the final game genuinely embodies the theoretical principles that justify its use (Sison et al., 2018). The Outcomes-Based Edugame Design methodology (Sison et al., 2018) formalizes this iterative process by requiring playtesting and evaluation after each learning outcome mechanic is designed, creating multiple feedback loops that systematically align pedagogical theory with gameplay implementation.
 
 In synthesis, these frameworks operate hierarchically: Primary theories explain the deep pedagogical mechanisms (why games can facilitate conceptual change through constructivist interaction and multimedia learning); supporting theories specify motivational and experiential mechanisms (how games sustain engagement through challenge and experiential cycles); and operational frameworks translate these mechanisms into specific game features (which competencies to target and how to align gameplay to those targets). Iterative development ensures theoretical alignment, while structured evaluation validates achievement of alignment.
 
@@ -183,11 +183,11 @@ The study adopts an expanded Input--Process--Output (IPO) model integrating both
 
 The Input component comprises three integrated elements:
 
-1. **Theoretical Foundations**: Conceptual Change, Constructivism, Multimedia Learning, Game-Based Learning, and Experiential Learning theories (described in Section 2.4) provide the pedagogical justification for game-based intervention. These theories collectively explain why interactive gameplay can support understanding of abstract phase change phenomena when traditional instruction alone proves insufficient.
+1. **Theoretical Foundations**: Conceptual Change, Constructivism, Multimedia Learning, Game-Based Learning, and Experiential Learning theories (described in Section 2.4) provide the pedagogical justification for game-based intervention. These theories collectively explain why interactive gameplay can support understanding of abstract phase change phenomena when traditional instruction alone proves insufficient. The Outcomes-Based Edugame Design methodology (Sison et al., 2018) operationalizes these theoretical foundations by requiring explicit alignment of each learning outcome mechanic with underlying pedagogical principles.
 
-2. **Curricular Alignment**: The MATATAG Grade 6 Science competency on changes of state defines the content scope. Bloom's Taxonomy and Outcome-Based Teaching principles establish cognitive level expectations and learning outcome targets. This ensures the game reinforces competencies students are expected to master rather than tangential content.
+2. **Curricular Alignment**: The MATATAG Grade 6 Science competency on changes of state defines the content scope. Bloom's Taxonomy and Outcome-Based Teaching principles establish cognitive level expectations and learning outcome targets. This ensures the game reinforces competencies students are expected to master rather than tangential content. The Sison et al. (2018) methodology begins with explicit determination of learning outcomes, ensuring curricular alignment from the inception of design.
 
-3. **User-Centered Design Principles**: Iterative design, playtesting feedback loops, and engagement evaluation models (such as MEEGA+KIDS) guide the development process. These principles ensure the game is not only pedagogically sound in theory but also usable, engaging, and motivating in practice.
+3. **User-Centered Design Principles**: Iterative design, playtesting feedback loops, and engagement evaluation models (such as MEEGA+KIDS) guide the development process (von Wangenheim, Petri, & Borgatto, 2020). These principles ensure the game is not only pedagogically sound in theory but also usable, engaging, and motivating in practice. The Sison et al. (2018) methodology systematically embeds user testing through playtesting at every development stage, preventing theory-practice misalignment.
 
 +++ SUBSECTION 2.5.2: Process Component +++
 
@@ -199,11 +199,11 @@ The Process component is deliberately divided into two sequential phases, each w
 - Playtesting feedback integration: Incorporation of player observations, difficulty reports, and suggestions into game mechanics and usability improvements
 - Gameplay refinement: Iterative modification of particle mechanics, level difficulty curves, narrative elements, and UI design based on accumulated feedback
 
-This phase prioritizes alignment between pedagogical theory (Inputs) and actual player experience. For example, if Constructivist principles suggest players should discover phase relationships through experimentation, but playtesting reveals players are confused by ambiguous feedback mechanisms, refinements clarify feedback without resorting to explicit instruction, preserving the constructivist approach while improving comprehension.
+This phase prioritizes alignment between pedagogical theory (Inputs) and actual player experience. For example, if Constructivist principles suggest players should discover phase relationships through experimentation, but playtesting reveals players are confused by ambiguous feedback mechanisms, refinements clarify feedback without resorting to explicit instruction, preserving the constructivist approach while improving comprehension. The Outcomes-Based Edugame Design methodology (Sison et al., 2018) institutionalizes this alignment process through incremental game learning environment construction: each learning outcome mechanic is designed, integrated with related elements, connected to previously designed mechanics, and then immediately playtested and evaluated. This staged approach ensures that pedagogical alignment is validated at every step of development rather than only at the conclusion.
 
 **Final Evaluation Phase** (Summative Assessment):
 - Structured play session using finalized build: Controlled gameplay environment with Grade 6 participants
-- MEEGA+KIDS usability and engagement assessment: Quantitative measurement of focused attention, satisfaction, perceived learning, and intrinsic motivation dimensions
+- MEEGA+KIDS usability and engagement assessment: Quantitative measurement of focused attention, satisfaction, perceived learning, and intrinsic motivation dimensions (von Wangenheim, Petri, & Borgatto, 2020)
 - Qualitative feedback collection: Post-play interviews or surveys capturing student perceptions of learning value, difficulty appropriateness, and enjoyment
 
 This phase validates whether the refined game achieves its intended educational and motivational objectives.
@@ -226,60 +226,216 @@ The framework illustrates a systematic progression: theoretical foundations info
 
 
 ================================================================================
-=== CHAPTER 3: THEORETICAL FRAMEWORK ===
+=== CHAPTER 3: RESEARCH METHODOLOGY ===
 ================================================================================
 
---- SECTION 3.1: Math Education Challenges in the Philippines ---
+--- SECTION 3.1: Research Activities ---
 
-[TODO: Content goes here]
-[NOTE: Consider renaming to "Science Education Challenges" if appropriate]
+The development of the educational game was grounded in explicit research activities that informed the design direction and ensured pedagogical alignment throughout the development process.
 
---- SECTION 3.2: Pedagogical Strategies ---
++++ SUBSECTION 3.1.1: Research of Learning Outcomes and Pedagogical Approaches +++
 
-+++ SUBSECTION 3.2.1: Concrete-Pictorial-Abstract Approach +++
+Prior to commencing game design, a comprehensive research phase was undertaken to establish the pedagogical foundation for Wiz's Journey. This research comprised three complementary components:
 
-[TODO: Content goes here]
+COMPONENT 1: Curriculum Analysis and Learning Competency Clarification
 
---- SECTION 3.3: Game Based Learning Environment ---
+The MATATAG Grade 6 Science curriculum documents were reviewed to identify and clarify the specific learning competencies related to phase changes and states of matter. This analysis determined the precise learning outcomes (LOs) that would anchor the game design. The target competency—understanding phase transitions (melting, freezing, evaporation, condensation) and the relationship between heat transfer and state changes—was operationalized into explicit learning outcome mechanics (LOMs) that would structure both lower-order and higher-order gameplay challenges (Sison et al., 2018).
 
-[TODO: Content goes here]
+COMPONENT 2: Pedagogical Methodology Review
 
---- SECTION 3.4: Outcome-Based Game-Based Learning Environment Development Framework ---
+Existing pedagogical approaches to teaching phase changes were examined, encompassing traditional lecture-based instruction, hands-on laboratory experimentation, visual demonstrations, and conceptual change strategies. This review informed the selection of constructivist and experiential learning principles (Section 2.4) as the theoretical foundations guiding interactive gameplay design. The review identified that effective instruction on phase changes requires students to move beyond memorization toward active conceptualization of particulate-level mechanisms underlying macroscopic observations (Samarapungavan et al., 2023).
 
-[TODO: Content goes here]
+COMPONENT 3: Review of Existing Educational Resources and Games
 
---- SECTION 3.5: Evaluation of Game-Based Learning Environment ---
+Existing educational games, simulations, and learning aids designed to support phase change instruction were reviewed to identify design patterns, pedagogical strengths, and limitations. This comparative analysis ensured that Wiz's Journey would employ evidence-based design practices while offering novel approaches to addressing documented learning challenges in this domain.
 
-+++ SUBSECTION 3.5.1: MEEGA+KIDS Model +++
+--- SECTION 3.2: Game Design Process ---
 
-[TODO: Content goes here]
+The design and development of Wiz's Journey followed the Outcomes-Based Edugame Design methodology proposed by Sison et al. (2018), which operationalizes the alignment between learning outcomes, game mechanics, and iterative user feedback. The design process proceeded through three major stages, with development occurring from late November 2025 through March 2026.
 
++++ STAGE 1: Learning Outcome Mechanics Planning and Prototyping (Late November -- Mid-December 2025) +++
 
-================================================================================
-=== CHAPTER 4: METHODOLOGY ===
-================================================================================
+During this stage, the explicit learning outcomes derived from the curriculum analysis were translated into learning outcome mechanics—specific gameplay elements designed to support the achievement of each learning outcome (Sison et al., 2018). This stage involved:
 
---- SECTION 4.1: Research Activities ---
+- Definition of learning outcome mechanics aligned with the six primary phase changes (melting, freezing, evaporation, condensation, sublimation, deposition)
+- Prototyping of interactive mechanics allowing players to manipulate variables affecting phase transitions (temperature, particle count, bond stiffness, bond length)
+- Validation that each mechanic directly instantiates the underlying scientific principle it is designed to teach
+- Initial playtesting of prototype mechanics to assess feasibility and pedagogical potential
 
-+++ SUBSECTION 4.1.1: Research of Learning outcomes and Pedagogical Approaches +++
+This stage ensured that the foundational game mechanics were theoretically grounded before proceeding to genre and narrative development.
 
-[TODO: Content goes here]
++++ STAGE 2: Genre and Premise Development (December 2025 -- January 2026) +++
 
---- SECTION 4.2: Game Design Process ---
+Following validation of learning outcome mechanics, the game genre and narrative premise were established to contextualize the mechanics within engaging gameplay. Decisions during this stage included:
 
-[TODO: Content goes here]
+- Selection of the 2D platformer genre as appropriate for integrating phase change mechanics with navigation challenges
+- Development of the game premise: players assume the role of "Wiz," a young wizard apprentice solving environmental puzzles involving phase transitions
+- Narrative framing of each level's challenges as requiring players to manipulate phase states to progress
+- Integration of the narrative context with learning outcome mechanics to ensure mechanics served both gameplay and pedagogical objectives
 
-+++ SUBSECTION 4.2.1: Game-Based Learning Environment Evaluation +++
+This stage balanced entertainment value with pedagogical rigor, ensuring that gameplay progression was intrinsically motivated by learning objective achievement.
 
-[TODO: Content goes here]
++++ STAGE 3: Iterative Building and System Integration (Late January -- March 2026) +++
 
-+++ SUBSECTION 4.2.2: Consent for Participation +++
+The final stage involved incremental construction of the complete game learning environment (GLE) incorporating all designed systems, mechanics, and narrative elements. Following the Sison et al. (2018) framework, this stage proceeded through multiple iterative cycles, each consisting of:
 
-[TODO: Content goes here]
+1. Design LO Mechanic Implementation -- Addition or refinement of gameplay mechanics supporting specific learning outcomes
+2. Design Related Elements -- Development of supporting game systems (particle lattice visualization, level progression, UI, narrative scaffolding)
+3. Integrate with Previous Systems -- Connection of newly developed mechanics with previously completed systems to ensure coherent gameplay
+4. Playtesting and Evaluation -- Structured testing with participants to identify usability issues, gameplay friction, and pedagogical alignment
+5. Iteration and Refinement -- Modification based on accumulated feedback before advancing to the next learning outcome mechanic
 
-+++ SUBSECTION 4.2.3: Timeline of the Game-Based Learning Environment Production +++
+This iterative approach, as conceptualized in the Conceptual Framework (Section 2.5), embedded continuous user testing throughout development rather than conducting comprehensive evaluation only upon completion. The embedded playtesting cycles systematically validated alignment between pedagogical theory and actual player experience, resolving implementation gaps incrementally.
 
-[TODO: Content goes here]
+By March 2026, the iterative building process yielded a complete, tested game build incorporating all designed learning outcome mechanics and supporting systems, positioning the game for formal evaluation.
+
++++ SUBSECTION 3.2.1: Recruitment and Evaluation Challenges +++
+
+The iterative development and evaluation phases encountered significant recruitment challenges that shaped the scope and implementation of the study. Initial contact with Inchican Elementary School was made in December 2025 but received no response during that period. Subsequent attempts to recruit Grade 6 students from Seven Pillars Catholic School and Princeton Academy were made from mid to late February 2026, but neither school responded to communication attempts. Inchican Elementary School was finally confirmed as a partner in early March 2026, providing access to a limited number of Grade 6 students willing to participate. These recruitment constraints, attributed primarily to the graduation season when students in the target grade were transitioning to secondary education and unavailable for research participation, necessitated adaptation of the planned evaluation methodology.
+
+To address anticipated recruitment challenges, community outreach strategies were implemented preemptively during the formative evaluation phase, including public dissemination of the game through the Itch.io distribution platform and Facebook. While these platforms provided broader access to the game for feedback purposes, they did not substantially increase the number of consenting Grade 6 participants available for structured, in-person evaluation sessions.
+
+Despite these constraints, the data gathered during the limited formative playtesting (three participants) proved valuable in amplifying signals for actual adjustments that informed the summative evaluation design. The feedback from these three formative participants guided substantive refinements to gameplay mechanics, UI clarity, and overall user experience before the summative evaluation, ensuring that the final build represented an iteratively improved product. This adaptation demonstrated the critical value of even small-scale formative testing in validating pedagogical alignment and usability before formal evaluation.
+
++++ SUBSECTION 3.2.1: Game-Based Learning Environment Evaluation +++
+
+The evaluation of Wiz's Journey employed a mixed-methods approach combining quantitative usability and engagement measurement with qualitative player feedback. Evaluation occurred in two phases corresponding to the Process Component structure described in Section 2.5.2.
+
+FORMATIVE EVALUATION PHASE (Iterative Development)
+
+During the iterative building stage (Stage 3 above), formative evaluation data were collected to guide ongoing refinement:
+
+- Sample: Three (3) Grade 6 student participants recruited through convenience sampling and institutional partnerships with Inchican Elementary School. Community outreach was conducted concurrently through Facebook and the Itch.io game distribution platform to gather feedback from a broader audience and extend reach to additional schools, though these channels did not yield sufficient consenting Grade 6 participants for in-person evaluation
+- Procedure: Participants engaged in structured play sessions with development builds, followed by semi-structured interviews and MEEGA+KIDS-based survey feedback
+- Data Collection: Responses were gathered via Google Forms surveys and face-to-face interviews conducted after gameplay
+- Analysis: Feedback was qualitatively analyzed to identify usability barriers, confusion points, and suggestions for game refinement
+- Iteration: Identified issues were prioritized and addressed in subsequent development cycles before the next formative test session
+
+This formative phase directly informed the iterative refinement process, ensuring that the finalized build incorporated player-informed improvements.
+
+SUMMATIVE EVALUATION PHASE (Final Structured Evaluation)
+
+Upon completion of iterative development, a formal evaluation of the finalized game build was conducted:
+
+- Sample: Eighteen (18) Grade 6 student participants recruited through institutional partnership with Inchican Elementary School
+
+- Procedure and Data Collection: Participants completed a structured evaluation session consisting of three sequential components: (1) completion of a 25-question pretest (approximately 15 minutes) assessing baseline knowledge of phase changes, (2) gameplay with the finalized build (approximately 30 minutes), and (3) completion of a 25-question posttest (approximately 15 minutes) assessing post-intervention knowledge. The posttest employed different questions from the pretest but maintained equivalent content coverage and difficulty level. Due to time constraints within the school setting, participants were unable to complete the MEEGA+KIDS survey instrument following gameplay. However, extensive qualitative evidence was gathered through systematic visual observation of participant reactions, frustrations, body language, and gameplay behaviors during the evaluation session
+
+- Analysis: Quantitative analysis of learning gains employed statistical hypothesis testing. Shapiro-Wilk tests were conducted first to determine normality of the pretest-posttest difference scores. If the data were normally distributed, parametric paired t-tests were performed to assess statistically significant differences between pre- and post-intervention knowledge. If data violated normality assumptions (non-parametric distribution), Wilcoxon Signed-Rank tests were conducted instead. These tests provided statistical evidence regarding whether observed improvements between pretest and posttest represented statistically significant learning differences. Qualitative observational data were analyzed thematically to identify patterns in participant engagement, frustration points, and behavioral indicators of learning or confusion
+
+The summative phase provided empirical evidence regarding the game's achievement of the stated objectives related to usability, engagement, and learning outcomes.
+
++++ SUBSECTION 3.2.2: Consent for Participation +++
+
+Given that all participants were Grade 6 students (minors), rigorous informed consent procedures were implemented to ensure ethical compliance and participant protection:
+
+PARENTAL CONSENT AND STUDENT ASSENT: A written informed consent form was developed and reviewed collaboratively with concurrent research teams engaging the same participant population. The form clearly described the study's purpose, procedures, data collection methods, confidentiality safeguards, and participants' rights. Separate assent forms were provided to Grade 6 student participants, allowing them to provide informed agreement to participate independently of parental consent. Both the parental consent forms and student assent forms were distributed through children's teachers, requiring written signatures from both guardians and students prior to any participation.
+
+DATA CONFIDENTIALITY AND PARTICIPANT RIGHTS: All forms, surveys, and study materials explicitly stated that participants could withdraw from evaluation activities at any time without penalty, that their data would remain confidential, and that data could be deleted upon request. No personally identifiable information was included in subsequent data analysis or reporting.
+
+SAFEGUARDING MINORS: The requirement for both written parental consent and student assent served as primary safeguards for minor participants, respecting both parental authority and the child's own voice and autonomy in research participation. Additionally, all evaluation sessions were conducted in school settings with supervision by school personnel, and no data collection occurred without documented parental and student authorization.
+
+--- RESEARCH INSTRUMENTS AND DATA COLLECTION ---
+
++++ MEEGA+KIDS Usability and Engagement Instrument +++
+
+The MEEGA+KIDS instrument (von Wangenheim, Petri, & Borgatto, 2020) was designed to assess multiple dimensions of player experience:
+
+- Focused Attention: Concentration during gameplay and ability to maintain engagement
+- Perceived Learning: Participants' perception of learning value and knowledge gain
+- Satisfaction: Overall enjoyment and contentment with the gaming experience
+- Usability: Ease of understanding game mechanics and navigating game systems
+- Challenge: Appropriateness of difficulty and balance between accessibility and cognitive demand
+- Intrinsic Motivation: Engagement driven by enjoyment rather than external rewards
+
+Participants responded to Likert-scale statements (typically five-point scales: Strongly Disagree to Strongly Agree) assessing each dimension. This instrument provided quantifiable measures of engagement and usability suitable for characterizing player experience.
+
+For the purposes of this study, these six dimensions were conceptually consolidated into five primary categories to facilitate focused analysis of player experience:
+
+- Usability and Interface Design: Encompasses the "Usability" dimension, assessing whether participants could effectively navigate game menus, understand on-screen prompts, and operate game mechanics without excessive confusion or frustration
+
+- Engagement and Experience: Synthesizes "Focused Attention" and "Intrinsic Motivation" dimensions, measuring whether participants remained mentally engaged with the game and whether motivation was driven by inherent enjoyment rather than external pressures
+
+- Perceived Learning Support: Directly corresponds to "Perceived Learning" dimension, capturing participants' subjective assessment of whether gameplay supported their understanding of phase change concepts
+
+- Aesthetics and Challenge: Combines "Satisfaction" and "Challenge" dimensions, evaluating both the visual and interactive appeal of the game and the appropriateness of difficulty progression relative to player skill levels
+
+- Open-Ended Feedback: Captures participant suggestions, qualitative observations about strengths and weaknesses, and thematic patterns emerging from participant responses that the Likert-scale instrument may not capture
+
++++ Qualitative Feedback Collection +++
+
+In addition to the MEEGA+KIDS instrument, participants provided open-ended qualitative feedback through:
+
+- Semi-Structured Interviews: Face-to-face conversations during and immediately following gameplay sessions, with participants answering guiding questions about strengths, challenges, confusion points, and suggestions
+- Open-Ended Questionnaires: Written responses to prompts addressing perceived learning value, difficulty appropriateness, enjoyment factors, and recommendations for improvement
+
+Qualitative data provided rich contextual understanding of participant experience beyond numerical measurements, enabling identification of specific usability barriers and design opportunities.
+
++++ Visual Observation of Participant Behavior +++
+
+Beyond structured survey instruments and interviews, systematic visual observation of participant behavior during gameplay sessions provided rich qualitative evidence regarding engagement, frustration, and learning processes. Throughout evaluation sessions, researcher observations documented:
+
+- Engagement Indicators: Participant body language, facial expressions, and posture during gameplay (e.g., leaning forward during challenging moments, relaxed posture during familiar mechanics)
+- Frustration and Confusion Points: Observable reactions to difficulty spikes, unclear UI elements, or unintuitive mechanics, such as hesitation, repeated failed attempts, or verbal expressions of confusion
+- Interaction Patterns: How participants approached level challenges, whether they experimented with mechanics, sought hints, or made strategic decisions
+- Learning Indicators: Observable changes in approach between early and later gameplay, suggesting internalization of game concepts or learning from failure
+- Social Behavior: Interactions with researchers or peers during gameplay, including questions asked, comments made, and collaborative behaviors
+
+These observational data were documented through researcher field notes recorded during and immediately following evaluation sessions, providing contextual richness and non-verbal evidence of participant experience that complemented quantitative and structured qualitative measures.
+
++++ Researcher Field Notes and Observational Documentation +++
+
+Throughout the iterative building phase (Stage 3), the researcher maintained detailed field notes documenting observations during playtesting sessions:
+
+- Bug occurrence and severity observations (e.g., crashes, progression blocks, visual glitches)
+- Gameplay progression issues and bottlenecks observed during participant sessions
+- Player confusion points and mechanic clarity concerns noted from participant reactions
+- UI navigation difficulties observed or expressed by participants
+- Performance stability observations (e.g., frame rate drops, loading delays)
+- Reflective session notes and developer observations regarding the alignment between intended and actual gameplay experiences
+
+These field notes provided qualitative documentation of identified issues and observed resolutions across development iterations, enabling assessment of improvement trends and informing design refinements.
+
+--- DATA ANALYSIS METHODS ---
+
++++ Quantitative Analysis of Learning Outcomes +++
+
+Pretest-posttest score differences were analyzed using formal statistical hypothesis testing. First, a Shapiro-Wilk normality test was conducted to determine whether the distribution of pretest-posttest difference scores conformed to a normal distribution. Based on the results of this normality assessment:
+
+- If normally distributed: A paired-samples t-test was performed to assess whether mean posttest scores differed significantly from mean pretest scores, providing evidence of statistically significant learning gains
+- If non-parametric (non-normal distribution): A Wilcoxon Signed-Rank test was used as the non-parametric alternative to the t-test, assessing whether posttest scores were statistically significantly higher than pretest scores
+
+These statistical tests allowed inference regarding whether observed improvements between pretest and posttest represented genuine learning differences beyond what would be expected by random variation.
+
++++ Qualitative Analysis of Observations and Feedback +++
+
+Qualitative data from field notes, interviews, and open-ended questionnaire responses were analyzed using thematic coding:
+
+- Initial Coding: Observational and interview data were reviewed inductively to identify emergent themes and patterns without predetermined categories
+- Theme Development: Codes were organized into higher-order thematic categories representing distinct aspects of participant experience and identified usability concerns (e.g., "Mechanic Clarity," "Engagement Factors," "Difficulty Appropriateness," "Learning Perception," "Frustration Points")
+- Pattern Identification: Frequency of theme occurrence was documented to distinguish high-consensus observations from isolated concerns
+- Integration with Quantitative Data: Qualitative themes were integrated with quantitative findings to provide comprehensive characterization of player learning and experience
+
++++ Iterative Development Improvement Analysis +++
+
+Field notes from the iterative building phase (Stage 3) and formative evaluation were analyzed descriptively to assess systematic improvements across development cycles:
+
+- Reduction in bug frequency and severity of reported issues across iteration cycles
+- Improvement in gameplay stability observations (reduction in crashes, progression blocks)
+- Resolution of recurring usability concerns noted in player interactions
+- Comparison of early vs. late iteration observations regarding mechanic clarity and engagement
+
+These analyses provided evidence of systematic improvement driven by iterative user feedback and researcher observations, validating the effectiveness of the embedded evaluation and refinement approach.
+
+--- ETHICAL CONSIDERATIONS ---
+
+This study adhered to established ethical principles for research involving human participants, particularly minors:
+
+- Informed Consent: Written parental consent was obtained prior to any participant involvement, with clear disclosure of study procedures and participant rights
+- Voluntary Participation: Participants and parents were informed of the voluntary nature of participation and the right to withdraw without penalty
+- Confidentiality and Privacy: No personally identifiable information was retained in data analysis or reporting. Participant responses were treated as confidential, and individual data could be deleted upon request
+- Protection of Minors: The requirement for parental written consent, combined with evaluation in supervised school settings, provided safeguards appropriate to the minor status of participants
+- Appropriate Data Use: All collected data were used exclusively for academic research purposes related to this thesis study
 
 
 ================================================================================
