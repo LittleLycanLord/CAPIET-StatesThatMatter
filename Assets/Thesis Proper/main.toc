@@ -17,17 +17,17 @@
 \contentsline {subsection}{\numberline {2.2.2}Misconceptions in Melting and Freezing Cycles}{8}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Remediation of Matter Misconceptions Through Knowledge Revision}{9}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Middle School Misconceptions About Matter Cycles and Conservation}{9}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Game-Based Learning}{9}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Developmental Strategies of Edugames}{9}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.3}Game-Based Learning}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Developmental Strategies of Edugames}{10}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Effectiveness of games in education}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Game-Based Learning in the Philippines}{11}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Game-Based Learning in the Philippines}{12}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Theoretical Framework}{12}{section.2.4}%
 \contentsline {subsubsection}{Tier 1: Primary Theoretical Anchors}{12}{subsubsection*.5}%
 \contentsline {subsubsection}{Tier 2: Supporting Theories}{13}{subsubsection*.6}%
-\contentsline {subsubsection}{Tier 3: Operational Frameworks}{13}{subsubsection*.7}%
-\contentsline {section}{\numberline {2.5}Conceptual Framework}{14}{section.2.5}%
+\contentsline {subsubsection}{Tier 3: Operational Frameworks}{14}{subsubsection*.7}%
+\contentsline {section}{\numberline {2.5}Conceptual Framework}{15}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Input Component}{15}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Process Component}{15}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Process Component}{16}{subsection.2.5.2}%
 \contentsline {subsubsection}{Iterative Development Phase (Internal Refinement)}{16}{subsubsection*.9}%
 \contentsline {subsubsection}{Final Evaluation Phase (Summative Assessment)}{16}{subsubsection*.10}%
 \contentsline {subsection}{\numberline {2.5.3}Output Component}{17}{subsection.2.5.3}%
@@ -87,3 +87,4 @@
 \contentsline {section}{\numberline {6.3}Discussion of Findings}{59}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Conclusion}{61}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Recommendations}{63}{section.6.5}%
+\contentsline {chapter}{REFERENCES}{65}{chapter*.51}%
