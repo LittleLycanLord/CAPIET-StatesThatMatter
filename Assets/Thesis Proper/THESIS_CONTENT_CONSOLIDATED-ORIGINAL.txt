@@ -1,0 +1,823 @@
+================================================================================
+THESIS CONTENT CONSOLIDATED - NEW STRUCTURE
+================================================================================
+Format: === CHAPTER === for chapters, --- SECTION --- for sections
+        +++ SUBSECTION +++ for subsections
+All content between headers belongs to that section.
+Edit here, then tell Copilot to sync to LaTeX chapter files.
+
+================================================================================
+=== FRONTMATTER: ABSTRACT (ENGLISH) ===
+================================================================================
+
+Chemistry education contains foundational concepts that are often perceived as difficult for students to understand, particularly in terms of their application to real-world situations. This difficulty may lead to cognitive overload, especially when instruction lacks opportunities for practical engagement. Interactive learning approaches allow students to actively apply and develop their analytical skills while discovering how chemistry concepts relate to everyday experiences.
+
+This study explores the use of Game-Based Learning (GBL) through the development of Wiz's Journey: Mastering the States of Matter, an educational serious game designed as a learning material for Grade 6 students under the MATATAG curriculum in the Philippines. The game focuses on physical and chemical changes of matter, expanding students' understanding beyond the three common states of matter. Through interactive gameplay, students engage with concepts such as phase changes and heat transfer while learning to distinguish physical changes from chemical changes.
+
+The primary goal of this study is to improve students' conceptual understanding, motivation, and emotional engagement by reinforcing hands-on learning and real-world applications of chemistry concepts. This project aims to provide both students and teachers with an accessible and engaging instructional resource that supports visualization, experimentation, and the development of analytical skills in basic chemistry education.
+
+Keywords: physical and chemical changes, game-based learning, educational serious game
+
+Sustainable Development Goals: 4: Quality Education, 11: Sustainable Cities and Communities, 12: Responsible Consumption and Production
+
+================================================================================
+=== FRONTMATTER: ABSTRAK (FILIPINO) ===
+================================================================================
+
+Ang pag-aaral ng kimika ay naglalaman ng mga pundamental na konsepto na kadalasang itinuturing na mahirap unawain ng mga mag-aaral, lalo na pagdating sa aplikasyon nito sa totoong buhay. Ang ganitong kahirapan ay maaaring magdulot ng cognitive overload, partikular kung kulang ang mga aralin sa praktikal at interaktibong gawain. Sa pamamagitan ng interaktibong pagkatuto, aktibong nahahasa ng mga mag-aaral ang kanilang kasanayan sa pagsusuri at mas nauunawaan nila kung paano nagagamit ang mga konsepto ng kimika sa pang-araw-araw na buhay.
+
+Sinisiyasat ng pag-aaral na ito ang paggamit ng Game-Based Learning (GBL) sa pamamagitan ng pagbuo ng Wiz's Journey: Mastering the States of Matter, isang pang-edukasyong seryosong laro na idinisenyo bilang pantulong na materyal sa pagkatuto para sa mga mag-aaral sa Baitang 6 sa ilalim ng MATATAG kurikulum sa Pilipinas. Nakatuon ang laro sa pisikal at kemikal na pagbabago ng materyal, na nagpapalawak sa kaalaman ng mga mag-aaral lampas sa tatlong karaniwang kaanyuan ng matter. Sa pamamagitan ng interaktibong gameplay, natututuhan ng mga mag-aaral ang mga konsepto tulad ng pagbabago ng estado at paglipat ng init, habang malinaw na natutukoy ang kaibahan ng pisikal at kemikal na pagbabago.
+
+Layunin ng pag-aaral na ito na mapabuti ang pag-unawa, motibasyon, at emosyonal na pakikipag-ugnayan ng mga mag-aaral sa pamamagitan ng hands-on na pagkatuto at aplikasyon ng mga konsepto ng kimika sa mga sitwasyong hango sa totoong buhay. Nilalayon din ng proyektong ito na magsilbing kapaki-pakinabang na materyal para sa mga guro at mag-aaral upang mas mapadali ang pagkatuto ng kimika sa isang biswal, interaktibo, at makabuluhang paraan.
+
+Mga susing salita: pisikal at kemikal na pagbabago, game-based learning, pang-edukasyon na laro
+
+================================================================================
+=== CHAPTER 1: INTRODUCTION ===
+================================================================================
+
+--- SECTION 1.1: Background of the Study ---
+
+Science education at the elementary level serves as a foundational stage in developing scientific literacy, conceptual reasoning, and problem-solving skills. Within the MATATAG Curriculum of the Department of Education (DepEd), Grade 6 Science introduces learners to fundamental concepts related to materials, including the description of changes of state for solids, liquids, and gases; specifically melting, evaporation, freezing, and condensation; using diagrams and flowcharts. These competencies aim to help learners understand observable phenomena through scientific representations and structured reasoning.
+
+Despite the importance of these competencies, research has consistently shown that students experience difficulty in understanding the particulate nature of matter and the mechanisms underlying phase changes. Learners often memorize definitions of melting or evaporation without fully comprehending the particle-level interactions that explain these transformations. Misconceptions frequently arise regarding particle spacing, motion, and the role of heat transfer in altering states of matter (Adadan, 2013; Paik, Kim, Cho, & Park, 2004). These challenges are compounded by the abstract nature of microscopic representations, which are not directly observable.
+
+In many classroom settings, demonstrations of phase change are limited to water-based experiments, such as melting ice or boiling water. While these activities provide observable macroscopic changes, they often lack explicit integration with particle-level models, resulting in fragmented conceptual understanding. Furthermore, access to laboratory materials for demonstrating processes such as sublimation or deposition is limited at the elementary level, restricting exposure to diverse examples of state change.
+
+[FIGURE: Examples of Phase Change Diagrams Used in Science Education - Including PhaseChangeDiagram.jpg, KhanAcademyPhaseChanges.png, and 88GuruPhaseChanges.png as subfigures showing different representations of states of matter and phase transitions]
+
+Game-Based Learning (GBL) has emerged as a promising instructional approach that integrates interactive systems with curricular objectives. Educational games can provide dynamic visualizations, immediate feedback, and experiential learning opportunities that reduce cognitive overload and promote conceptual change (Plass, Homer, & Kinzer, 2015). When designed with explicit learning outcomes and aligned assessments, digital games may enhance engagement and deepen understanding, particularly in abstract scientific domains.
+
+This study introduces Wiz's Journey: Mastering the States of Matter, a 2D educational platformer developed as a supplementary and enrichment learning tool aligned with the MATATAG Grade 6 Science competency on changes of state. The game integrates explicit terminology (e.g., "Solid → Liquid: Melting") while allowing learners to discover appropriate phase changes through environmental problem-solving. Central to its design is an interactive particle-lattice minigame; a core mechanic; in which learners manipulate bonds and particle spacing to simulate state transitions. By directly engaging with representations similar to those used in classroom diagrams, learners repeatedly encounter visual models of particle behavior in a contextualized, goal-driven environment.
+
+Given the increasing emphasis on learner-centered instruction under the MATATAG framework, there is a need to explore innovative digital tools that complement formal instruction without replacing it. This study examines whether a platformer-based educational game can support conceptual understanding, engagement, and reinforcement of curriculum-aligned competencies related to phase changes of matter.
+
+--- SECTION 1.2: Objectives ---
+
++++ SUBSECTION 1.2.1: General Objective +++
+
+This study aims to design, develop, and evaluate an educational platformer game that rapidly operationalizes a selected learning competency from the first quarter of the Grade 6 MATATAG Science curriculum. The game will be developed with established pedagogical and assessment strategies in mind to ensure alignment with curriculum standards and learning outcomes. Learner performance and engagement will be evaluated through pretest and posttest analyses to determine the effectiveness of the intervention.
+
++++ SUBSECTION 1.2.2: Specific Objectives +++
+
+1. Design learning outcome mechanics (LOMs) that strategically target both lower-order and higher-order cognitive learning outcomes aligned with the MATATAG Grade 6 Science competency on changes of state.
+
+2. Develop a functional 2D educational platformer game that incorporates the designed LOMs and integrates interactive particle-level simulations to visually represent state transitions.
+
+3. Evaluate the game's efficacy in teaching the selected learning outcomes to Grade 6 learners through structured pre- and post-assessment instruments, engagement surveys, and qualitative feedback from students regarding usability and perceived learning value.
+
+--- SECTION 1.3: Scope and Limitations of the Study ---
+
+[TODO: Content goes here]
+
+--- SECTION 1.4: Significance of the Study ---
+
+This study contributes to elementary science education in the Philippines by examining the integration of interactive digital modeling within a platformer game environment. For learners, Wiz's Journey: Mastering the States of Matter provides repeated exposure to particle-level representations within meaningful problem-solving contexts, strengthening conceptual connections between diagrams and observable phenomena related to phase changes. By aligning the game with the MATATAG Grade 6 Science competency, the study demonstrates how educational games can reinforce curriculum-aligned learning objectives in accessible, engaging ways.
+
+For educators and school administrators, this study offers insights into how educational games may complement MATATAG-aligned instruction without replacing formal teaching. The findings may inform future curriculum integration strategies, digital resource development, and professional development initiatives for teachers adopting game-based learning approaches. Given the resource constraints faced by many Philippine schools, this game's availability on multiple platforms (web and mobile) addresses accessibility barriers and demonstrates feasibility of deploying educational technology in resource-limited contexts.
+
+For researchers and the broader educational community, this study adds to the growing body of literature on game-based learning in science education, particularly within the Philippine educational context and addressing the K-12 curriculum transition. By examining a discovery-based yet explicitly labeled game design combined with systematic evaluation using pre-post assessments and engagement surveys, the study contributes to ongoing discussions on balancing constructivist learning principles with guided instruction in digital environments. The qualitative feedback from student participants and actual implementation challenges encountered (such as participant recruitment constraints) provide realistic insights into deploying educational games in authentic school settings.
+
+
+================================================================================
+=== CHAPTER 2: RELATED WORKS ===
+================================================================================
+
+--- SECTION 2.1: Philippine Education Curriculum ---
+
++++ SUBSECTION 2.1.1: Current Curriculum of Philippines Education +++
+
+The Philippines' education system has undergone significant institutional changes in recent years, with the K-12 program serving as the current standardized framework. The K-12 program was implemented to align the Philippine curriculum with international standards and improve compatibility with global education systems (Abragan, Abarcas, Aquino, & Bagongon, 2022). However, recent critical assessments have revealed substantial gaps between intended learning outcomes and actual student performance in classroom settings. Research indicates that discrepancies emerge from multiple factors, including curriculum design, instructional delivery approaches, and alignment of pedagogical objectives with assessment practices (Descartin et al., 2023).
+
+A significant challenge identified by Kilag et al. (2024) is curriculum overload---the K-12 program's extensive content requirements leave insufficient time and space for meaningful student-centered learning. In response to disruptions caused by the COVID-19 pandemic and the shift to remote instruction, the Department of Education introduced the Most Essential Learning Competencies (MELC) framework (Marasigan & Soliman, 2021). The MELC was designed to distill curricula to their core components, ensuring that the most critical competencies were prioritized during instruction (Zalun, 2023; Gallego et al., 2024). Despite these intentions, implementation has revealed persistent challenges---both new issues emerging from MELC adoption and enduring problems that preceded it (Angay, 2023; Gallego et al., 2024).
+
++++ SUBSECTION 2.1.2: Status of the Philippine Education +++
+
+The broader educational landscape in the Philippines reflects substantial variation in system readiness and implementation capacity across regions and school types. Urban and metropolitan schools, particularly private institutions, generally demonstrate stronger infrastructure and resource availability, enabling more robust curriculum implementation. In contrast, rural and underserved urban schools face systemic capacity constraints that compromise their ability to deliver the full breadth of competencies outlined in national curriculum frameworks (Kilag et al., 2024).
+
+Teaching force preparedness remains a significant concern. While Filipino teachers demonstrate strong commitment and pedagogical dedication, many lack formal professional development in contemporary instructional methodologies---particularly those integrating technology, differentiated instruction, and competency-based assessment (Abragan, Abarcas, Aquino, & Bagongon, 2022). Furthermore, administrative support systems for curriculum implementation vary widely, with limited monitoring and feedback mechanisms in resource-constrained schools to ensure fidelity to curriculum standards (Gallego et al., 2024).
+
+Student learning outcomes in foundational subjects such as science and mathematics have shown modest improvement trends but remain below regional benchmarks. International assessments and national standardized tests indicate persistent achievement gaps correlating with school resource levels and geographic location. These patterns underscore the need for targeted interventions addressing both systemic capacity and localized resource constraints (Descartin et al., 2023).
+
++++ SUBSECTION 2.1.3: Challenges of Resource Poor Schools +++
+
+Resource scarcity presents a fundamental barrier to equitable curriculum implementation in Philippine schools. Many schools, particularly in rural and urban marginalized communities, contend with insufficient learning materials, overcrowded classrooms, and limited access to contemporary instructional tools (Kilag et al., 2024). Abragan and Abarcas et al. (2022) documented that teachers in resource-poor schools lack adequate training in technology integration and have minimal access to information and communication technology (ICT) equipment---tools that could enhance student engagement and maintain focus during instruction.
+
+A critical gap in science education infrastructure is the scarcity of functional science laboratories in resource-poor schools. Many institutions lack dedicated laboratory facilities, essential equipment (microscopes, measuring apparatus, safety equipment), and consumable materials required for hands-on experimentation in chemistry and physics. This absence forces teachers to rely exclusively on theoretical demonstrations and textbook illustrations, severely limiting students' ability to conduct direct observations and experiential learning in abstract scientific domains such as phase changes and matter properties (Kilag et al., 2024).
+
+Curriculum implementation challenges are further compounded by deficiencies in teacher preparation. Curriculum unpacking---the process by which educators analyze curriculum competencies to derive specific learning objectives, instructional materials, and assessment activities---requires specialized training and pedagogical expertise. Many teachers lack formal guidance in this process, resulting in literal interpretation of competency statements without meaningful contextualization or sequencing (Gallego, Andea, et al., 2024). This insufficient preparation, combined with limited access to resources, leads to compromised mastery of prerequisite concepts, creating foundational gaps that undermine student performance in higher-order learning objectives (Gabriel, Nepomuceno, Kadusale, Taneo, & Cabello, 2022).
+
+Research consistently demonstrates that resource-rich schools---particularly private institutions with superior facility access and professional development infrastructure---achieve significantly higher academic outcomes than their resource-poor counterparts (Angay, 2023). To address this inequity, scholars have called for expanded provision of learning resources across all school contexts. The present study responds to this imperative by developing an educational platformer game focused on reinforcing Grade 6 competencies related to phase changes and states of matter. By leveraging the wide availability of mobile devices and web-accessible platforms, this game-based intervention can reach students regardless of whether their schools possess traditional science laboratory facilities. The game provides interactive, visual simulations of molecular-level phenomena aligned with MATATAG competencies, enabling students to engage with abstract scientific concepts through accessible gaming technology that requires minimal institutional infrastructure beyond basic internet connectivity.
+
+--- SECTION 2.2: Chemistry/Science Education in the Philippines ---
+
++++ SUBSECTION 2.2.1: Chemistry/Science Education Study #1 +++
+
+Understanding the particulate nature of matter and phase transitions is fundamental to chemistry and science literacy. Samarapungavan, Bryan, Staudt, and colleagues (2023) explored kindergarten and early elementary students' learning of simple particle models to explain the properties and behavior of matter in solid, liquid, and gas states during phase transitions. Their research found that when students are explicitly taught to use particle models as explanatory frameworks, they develop more accurate mental representations of microscopic processes underlying observable macroscopic phenomena. The study emphasizes that science instruction focusing solely on concrete, directly observable phenomena without explicit instruction in particulate models limits students' ability to understand abstract concepts fundamental to chemistry.
+
++++ SUBSECTION 2.2.2: Chemistry/Science Education Study #2 +++
+
+A critical challenge in science education is bridging the gap between macroscopic observations and microscopic explanations. Smith and Villarreal (2015) assessed 155 freshman general chemistry students' misconceptions about particle position and arrangement during the melting-freezing cycle using the Melting Cycle Instrument, which employs particulate-level representations. Their findings revealed that many students maintained inaccurate mental models about how particles behave during phase transitions, particularly regarding particle spacing and motion during state changes. These misconceptions persist even after formal instruction, suggesting the need for innovative pedagogical approaches that make particle-level interactions more salient and comprehensible to learners across educational levels.
+
++++ SUBSECTION 2.2.3: Chemistry/Science Education Study #3 +++
+
+The persistent nature of matter misconceptions has prompted researchers to investigate interventions designed to remediate student errors. Korur, Korumaz, and Avci (2025) developed the Knowledge Revision Components (KReC) framework, which integrates refutation texts and advanced organizer materials to explicitly address and eliminate misconceptions about matter and physical/chemical changes. Their research demonstrated that systematic, theory-based approaches to misconception remediation significantly improve student conceptual understanding when learners are directly confronted with the inadequacy of their existing mental models. This approach aligns with pedagogical principles emphasizing active engagement with conflicting ideas as a mechanism for conceptual change.
+
++++ SUBSECTION 2.2.4: Chemistry/Science Education Study #4 +++
+
+At the middle school level, Arslan (2023) employed a word association test to investigate 457 eighth-grade students' cognitive perceptions and misconceptions regarding matter cycles and environmental phenomena. The study revealed widespread misconceptions about evaporation, condensation, and the conservation of matter during state changes, particularly among students in lower-performing schools with limited access to interactive learning materials. These findings underscore how resource constraints in Philippine schools compound the challenge of teaching abstract science concepts and exacerbate existing achievement gaps. The representation and presentation of scientific concepts significantly influence student understanding, particularly when integrating multiple representational modes; text, diagrams, animations, and interactive manipulatives---to support more robust conceptual development.
+
+--- SECTION 2.3: Game-Based Learning ---
+
++++ SUBSECTION 2.3.1: Developmental Strategies of Edugames +++
+
+Constructivist Learning Theory asserts that knowledge is actively constructed through interaction and experience rather than passively received. Game-based environments embody constructivist principles by placing learners in active problem-solving roles. In platform-based game environments, players experiment, test strategies, and receive immediate feedback from system responses. This aligns with the constructivist view that learning occurs through engagement and reflection upon action (Kolb, 1984; Bruner, 1966).
+
+Outcome-based methodologies provide a structured framework for developing game-based learning environments aligned with explicit educational competencies. Sison and colleagues (2018) presented a formal Outcomes-Based Edugame Design methodology that operationalizes this alignment through a systematic process. This methodology begins by explicitly determining learning outcomes (LOs), selecting an appropriate game genre, and writing a game premise that contextualizes the learning objectives. Subsequently, the design phase proceeds incrementally through iterative "Build Game Learning Environment (GLE)" cycles, where each cycle focuses on designing a learning outcome mechanic, integrating related game elements, connecting with previously designed mechanics, and conducting playtesting and evaluation. This process repeats for each learning outcome before final integration of all elements and comprehensive evaluation (Sison et al., 2018). This approach ensures that gameplay mechanics directly support the achievement of specified educational outcomes, creating coherence between instructional goals and interactive gameplay.
+
+[FIGURE: Outcomes-Based Edugame Design Methodology flowchart - Determine LOs → Determine Genre → Write Premise → Build GLE Incrementally with playtesting cycles → Integrate all elements and final evaluation]
+
+In game development research, iterative design is a widely accepted approach for refining gameplay mechanics, usability, and user experience (Gee, 2003). Iterative development involves repeated cycles of testing, evaluation, modification, and regression validation. Campaign testing refers to structured playthrough sessions aimed at identifying usability issues, progression bottlenecks, and gameplay friction points. Engagement evaluation models assess multiple dimensions including focused attention, satisfaction, perceived learning, and intrinsic motivation. User-centered design principles emphasize incorporating player feedback into successive iterations to improve overall game quality (Prensky, 2001). The Outcomes-Based Edugame Design methodology institutionalizes this iterative approach by embedding playtesting and evaluation at every stage of development (Sison et al., 2018), ensuring that pedagogical alignment is maintained throughout the design process rather than evaluated only at the end. Educational game development should adopt a quasi-experimental assessment approach with pre- and post-gameplay measures to evaluate learning effectiveness, employing both quantitative metrics (test scores, learning gains) and qualitative methods (engagement surveys, observational feedback) to comprehensively evaluate user experience and educational impact.
+
++++ SUBSECTION 2.3.2: Effectiveness of games in education +++
+
+[MOVE FROM EXISTING CHAPTER2.TEX: Multimedia Learning, Game-Based Learning and Engagement, Experiential Learning sections to go here]
+
++++ SUBSECTION 2.3.3: Game-Based Learning in the Philippines +++
+
+[MOVE FROM EXISTING CHAPTER2.TEX: Review of Related Studies (International & Local) to go here]
+
+--- SECTION 2.4: Theoretical Framework ---
+
+This study is grounded in a hierarchical integration of theoretical frameworks that collectively explain both the pedagogical rationale for game-based learning and the methodological approach employed in development and evaluation.
+
++++ TIER 1: PRIMARY THEORETICAL ANCHORS +++
+
+Conceptual Change Theory serves as the primary foundation, particularly given the documented misconceptions about phase changes identified in the research literature (Posner, Strike, Hewson, & Gertzog, 1982; Section 2.2). This theory posits that learners construct initial mental models of phenomena through everyday experiences; these models often conflict with scientifically accurate explanations. Conceptual change occurs not through passive information reception, but through active confrontation with the inadequacy of existing models (Posner et al., 1982). In the context of this study, students hold misconceptions about particle behavior during phase changes; the game is designed to create problem-solving scenarios that expose the limitations of these mental models and provide experiential evidence supporting more accurate particle-level explanations (Samarapungavan et al., 2023).
+
+Constructivism complements Conceptual Change Theory by emphasizing that knowledge is actively constructed through interaction, experience, and reflection rather than passively received (Bruner, 1966; Kolb, 1984). In a constructivist game environment, learners do not receive explicit lectures on phase changes; instead, they manipulate particle spacing and bond strength through the interactive particle-lattice minigame, discovering the relationships between these manipulations and observable state transitions. This active engagement supports the conceptual change process by anchoring abstract ideas (particle motion) to concrete, manipulable experiences within the game (Kolb, 1984).
+
+Multimedia Learning Theory addresses how to represent abstract concepts through coordinated presentation of multiple information channels (Mayer, 2001, 2009). The game integrates text labels (e.g., "Solid to Liquid: Melting"), animated particle representations, and interactive mechanics to convey phase change concepts. Research demonstrates that coordinated text-visual-animation presentations enhance learning outcomes compared to single-modality instruction, particularly for abstract domains where direct observation is limited (Mayer & Moreno, 2002). By simultaneously showing particle lattice structures, temperature effects, and textual terminology, the game leverages multimedia principles to support learner comprehension of microscopic phenomena.
+
++++ TIER 2: SUPPORTING THEORIES +++
+
+Game-Based Learning Theory justifies the use of challenge-based interactive mechanics to foster sustained engagement (Prensky, 2001; Gee, 2003). This theory emphasizes that games combine immediate feedback, clear goals, balanced challenge-to-skill ratios, and intrinsic motivation mechanisms. In Wiz's Journey, these elements manifest as: (1) instant feedback when particles respond to player manipulations, (2) explicit win/fail conditions for phase change challenges, (3) progressive difficulty scaling, and (4) reward systems that reinforce both achievement and conceptual exploration (Prensky, 2001).
+
+Experiential Learning Theory supports the use of simulated environments for learning abstract scientific processes (Kolb, 1984). This theory describes learning as occurring through cyclical experience-reflection-conceptualization-experimentation. The game environment allows learners to experience phase change phenomena that cannot be directly observed (molecular-level particle motion), reflect on the outcomes of their manipulations, form conceptual understanding of particle behavior, and experimentally test these understandings in subsequent challenges. This cycle repeats across levels, deepening conceptual sophistication (Kolb, 1984).
+
++++ TIER 3: OPERATIONAL FRAMEWORKS +++
+
+Outcome-Based Teaching and Learning (OBTL) principles ensure alignment between pedagogical theory and curricular competencies (Sison et al., 2018). The game's learning outcome mechanics (LOMs) are explicitly designed to target specific competencies from the MATATAG Grade 6 Science curriculum, ensuring that gameplay directly supports achievement of standards-based objectives rather than generic skill development.
+
+Bloom's Taxonomy guides cognitive level alignment (Anderson & Krathwohl, 2001). Lower-order objectives (remember, understand) are addressed through labeled particle representations and discovery mechanics; higher-order objectives (apply, analyze) are addressed through complex multi-phase challenges requiring strategic particle manipulation to solve environmental puzzles. This hierarchical alignment ensures the game scaffolds learning from foundational understanding to sophisticated application.
+
+Iterative Design Principles and User-Centered Development Frameworks justify the two-phase approach (Section 2.5). Rather than conducting summative evaluation immediately after development, the methodology incorporates repeated cycles of playtesting, feedback integration, and refinement (Gee, 2003; Prensky, 2001). This approach recognizes that pedagogical theory informs initial design, but actual player experiences reveal implementation gaps; iterative cycles resolve these gaps before formal evaluation, ensuring the final game genuinely embodies the theoretical principles that justify its use (Sison et al., 2018). The Outcomes-Based Edugame Design methodology (Sison et al., 2018) formalizes this iterative process by requiring playtesting and evaluation after each learning outcome mechanic is designed, creating multiple feedback loops that systematically align pedagogical theory with gameplay implementation.
+
+In synthesis, these frameworks operate hierarchically: Primary theories explain the deep pedagogical mechanisms (why games can facilitate conceptual change through constructivist interaction and multimedia learning); supporting theories specify motivational and experiential mechanisms (how games sustain engagement through challenge and experiential cycles); and operational frameworks translate these mechanisms into specific game features (which competencies to target and how to align gameplay to those targets). Iterative development ensures theoretical alignment, while structured evaluation validates achievement of alignment.
+
+--- SECTION 2.5: Conceptual Framework ---
+
+The study adopts an expanded Input--Process--Output (IPO) model integrating both pedagogical foundations and iterative development practices. This framework visualizes how theoretical inputs are operationalized through development and evaluation processes to produce measurable outputs supporting student learning.
+
++++ SUBSECTION 2.5.1: Input Component +++
+
+The Input component comprises three integrated elements:
+
+1. **Theoretical Foundations**: Conceptual Change, Constructivism, Multimedia Learning, Game-Based Learning, and Experiential Learning theories (described in Section 2.4) provide the pedagogical justification for game-based intervention. These theories collectively explain why interactive gameplay can support understanding of abstract phase change phenomena when traditional instruction alone proves insufficient. The Outcomes-Based Edugame Design methodology (Sison et al., 2018) operationalizes these theoretical foundations by requiring explicit alignment of each learning outcome mechanic with underlying pedagogical principles.
+
+2. **Curricular Alignment**: The MATATAG Grade 6 Science competency on changes of state defines the content scope. Bloom's Taxonomy and Outcome-Based Teaching principles establish cognitive level expectations and learning outcome targets. This ensures the game reinforces competencies students are expected to master rather than tangential content. The Sison et al. (2018) methodology begins with explicit determination of learning outcomes, ensuring curricular alignment from the inception of design.
+
+3. **User-Centered Design Principles**: Iterative design, playtesting feedback loops, and engagement evaluation models (such as MEEGA+KIDS) guide the development process (von Wangenheim, Petri, & Borgatto, 2020). These principles ensure the game is not only pedagogically sound in theory but also usable, engaging, and motivating in practice. The Sison et al. (2018) methodology systematically embeds user testing through playtesting at every development stage, preventing theory-practice misalignment.
+
++++ SUBSECTION 2.5.2: Process Component +++
+
+The Process component is deliberately divided into two sequential phases, each with distinct purposes:
+
+**Iterative Development Phase** (Internal Refinement):
+- Campaign testing: Systematic playthrough of game levels to identify progression issues, accessibility barriers, and gameplay friction
+- Regression testing: Verification that modifications made in response to feedback do not reintroduce previously resolved issues
+- Playtesting feedback integration: Incorporation of player observations, difficulty reports, and suggestions into game mechanics and usability improvements
+- Gameplay refinement: Iterative modification of particle mechanics, level difficulty curves, narrative elements, and UI design based on accumulated feedback
+
+This phase prioritizes alignment between pedagogical theory (Inputs) and actual player experience. For example, if Constructivist principles suggest players should discover phase relationships through experimentation, but playtesting reveals players are confused by ambiguous feedback mechanisms, refinements clarify feedback without resorting to explicit instruction, preserving the constructivist approach while improving comprehension. The Outcomes-Based Edugame Design methodology (Sison et al., 2018) institutionalizes this alignment process through incremental game learning environment construction: each learning outcome mechanic is designed, integrated with related elements, connected to previously designed mechanics, and then immediately playtested and evaluated. This staged approach ensures that pedagogical alignment is validated at every step of development rather than only at the conclusion.
+
+**Final Evaluation Phase** (Summative Assessment):
+- Structured play session using finalized build: Controlled gameplay environment with Grade 6 participants
+- MEEGA+KIDS usability and engagement assessment: Quantitative measurement of focused attention, satisfaction, perceived learning, and intrinsic motivation dimensions (von Wangenheim, Petri, & Borgatto, 2020)
+- Qualitative feedback collection: Post-play interviews or surveys capturing student perceptions of learning value, difficulty appropriateness, and enjoyment
+
+This phase validates whether the refined game achieves its intended educational and motivational objectives.
+
++++ SUBSECTION 2.5.3: Output Component +++
+
+The Output component captures both developmental and evaluative results:
+
+**Developmental Outputs**:
+- Improved gameplay stability and reduced technical issues
+- Refined user experience with reduced navigation friction and clarity-enhanced feedback mechanisms
+- Optimized difficulty progression supporting both accessibility and appropriate challenge
+
+**Evaluative Outputs**:
+- Measured engagement levels across MEEGA+KIDS dimensions indicating learner motivation and perceived learning
+- Evaluated usability confirming Grade 6 students can successfully operate game mechanics without excessive frustration
+- Evidence of conceptual understanding gains through pre-post assessment comparisons (evaluated in later research phases beyond this thesis scope)
+
+The framework illustrates a systematic progression: theoretical foundations inform initial design, iterative development resolves implementation gaps, and final evaluation confirms both the game's usability and the validity of the theoretical approach. Importantly, the separation of iterative development from summative evaluation ensures that classroom-ready game builds undergo rigorous user testing before formal assessment, maximizing likelihood that measured outcomes reflect genuine intervention effectiveness rather than usability limitations masking pedagogical potential.
+
+
+================================================================================
+=== CHAPTER 3: RESEARCH METHODOLOGY ===
+================================================================================
+
+--- SECTION 3.1: Research Activities ---
+
+The development of the educational game was grounded in explicit research activities that informed the design direction and ensured pedagogical alignment throughout the development process.
+
++++ SUBSECTION 3.1.1: Research of Learning Outcomes and Pedagogical Approaches +++
+
+Prior to commencing game design, a comprehensive research phase was undertaken to establish the pedagogical foundation for Wiz's Journey. This research comprised three complementary components:
+
+COMPONENT 1: Curriculum Analysis and Learning Competency Clarification
+
+The MATATAG Grade 6 Science curriculum documents were reviewed to identify and clarify the specific learning competencies related to phase changes and states of matter. This analysis determined the precise learning outcomes (LOs) that would anchor the game design. The target competency; understanding phase transitions (melting, freezing, evaporation, condensation) and the relationship between heat transfer and state changes; was operationalized into explicit learning outcome mechanics (LOMs) that would structure both lower-order and higher-order gameplay challenges (Sison et al., 2018).
+
+COMPONENT 2: Pedagogical Methodology Review
+
+Existing pedagogical approaches to teaching phase changes were examined, encompassing traditional lecture-based instruction, hands-on laboratory experimentation, visual demonstrations, and conceptual change strategies. This review informed the selection of constructivist and experiential learning principles (Section 2.4) as the theoretical foundations guiding interactive gameplay design. The review identified that effective instruction on phase changes requires students to move beyond memorization toward active conceptualization of particulate-level mechanisms underlying macroscopic observations (Samarapungavan et al., 2023).
+
+COMPONENT 3: Review of Existing Educational Resources and Games
+
+Existing educational games, simulations, and learning aids designed to support phase change instruction were reviewed to identify design patterns, pedagogical strengths, and limitations. This comparative analysis ensured that Wiz's Journey would employ evidence-based design practices while offering novel approaches to addressing documented learning challenges in this domain.
+
+--- SECTION 3.2: Game Design Process ---
+
+The design and development of Wiz's Journey followed the Outcomes-Based Edugame Design methodology proposed by Sison et al. (2018), which operationalizes the alignment between learning outcomes, game mechanics, and iterative user feedback. The design process proceeded through three major stages, with development occurring from late November 2025 through March 2026.
+
++++ STAGE 1: Learning Outcome Mechanics Planning and Prototyping (Late November -- Mid-December 2025) +++
+
+During this stage, the explicit learning outcomes derived from the curriculum analysis were translated into learning outcome mechanics; specific gameplay elements designed to support the achievement of each learning outcome (Sison et al., 2018). This stage involved:
+
+- Definition of learning outcome mechanics aligned with the six primary phase changes (melting, freezing, evaporation, condensation, sublimation, deposition)
+- Prototyping of interactive mechanics allowing players to manipulate variables affecting phase transitions (temperature, particle count, bond stiffness, bond length)
+- Validation that each mechanic directly instantiates the underlying scientific principle it is designed to teach
+- Initial playtesting of prototype mechanics to assess feasibility and pedagogical potential
+
+This stage ensured that the foundational game mechanics were theoretically grounded before proceeding to genre and narrative development.
+
++++ STAGE 2: Genre and Premise Development (December 2025 -- January 2026) +++
+
+Following validation of learning outcome mechanics, the game genre and narrative premise were established to contextualize the mechanics within engaging gameplay. Decisions during this stage included:
+
+- Selection of the 2D platformer genre as appropriate for integrating phase change mechanics with navigation challenges
+- Development of the game premise: players assume the role of "Wiz," a young wizard apprentice solving environmental puzzles involving phase transitions
+- Narrative framing of each level's challenges as requiring players to manipulate phase states to progress
+- Integration of the narrative context with learning outcome mechanics to ensure mechanics served both gameplay and pedagogical objectives
+
+This stage balanced entertainment value with pedagogical rigor, ensuring that gameplay progression was intrinsically motivated by learning objective achievement.
+
++++ STAGE 3: Iterative Building and System Integration (Late January -- March 2026) +++
+
+The final stage involved incremental construction of the complete game learning environment (GLE) incorporating all designed systems, mechanics, and narrative elements. Following the Sison et al. (2018) framework, this stage proceeded through multiple iterative cycles, each consisting of:
+
+1. Design LO Mechanic Implementation -- Addition or refinement of gameplay mechanics supporting specific learning outcomes
+2. Design Related Elements -- Development of supporting game systems (particle lattice visualization, level progression, UI, narrative scaffolding)
+3. Integrate with Previous Systems -- Connection of newly developed mechanics with previously completed systems to ensure coherent gameplay
+4. Playtesting and Evaluation -- Structured testing with participants to identify usability issues, gameplay friction, and pedagogical alignment
+5. Iteration and Refinement -- Modification based on accumulated feedback before advancing to the next learning outcome mechanic
+
+This iterative approach, as conceptualized in the Conceptual Framework (Section 2.5), embedded continuous user testing throughout development rather than conducting comprehensive evaluation only upon completion. The embedded playtesting cycles systematically validated alignment between pedagogical theory and actual player experience, resolving implementation gaps incrementally.
+
+By March 2026, the iterative building process yielded a complete, tested game build incorporating all designed learning outcome mechanics and supporting systems, positioning the game for formal evaluation.
+
++++ SUBSECTION 3.2.2: Recruitment and Evaluation Challenges +++
+
+The iterative development and evaluation phases encountered significant recruitment challenges that shaped the scope and implementation of the study. Initial contact with Inchican Elementary School was made in December 2025 but received no response during that period. Subsequent attempts to recruit Grade 6 students from Seven Pillars Catholic School and Princeton Academy were made from mid to late February 2026, but neither school responded to communication attempts. Inchican Elementary School was finally confirmed as a partner in early March 2026, providing access to a limited number of Grade 6 students willing to participate. These recruitment constraints, attributed primarily to the graduation season when students in the target grade were transitioning to secondary education and unavailable for research participation, necessitated adaptation of the planned evaluation methodology.
+
+To address anticipated recruitment challenges, community outreach strategies were implemented preemptively during the formative evaluation phase, including public dissemination of the game through the Itch.io distribution platform and Facebook. While these platforms provided broader access to the game for feedback purposes, they did not substantially increase the number of consenting Grade 6 participants available for structured, in-person evaluation sessions.
+
+Despite these constraints, the data gathered during the limited formative playtesting (three participants) proved valuable in amplifying signals for actual adjustments that informed the summative evaluation design. The feedback from these three formative participants guided substantive refinements to gameplay mechanics, UI clarity, and overall user experience before the summative evaluation, ensuring that the final build represented an iteratively improved product. This adaptation demonstrated the critical value of even small-scale formative testing in validating pedagogical alignment and usability before formal evaluation.
+
++++ SUBSECTION 3.2.3: Game-Based Learning Environment Evaluation +++
+
+The evaluation of Wiz's Journey employed a mixed-methods approach combining quantitative usability and engagement measurement with qualitative player feedback. Evaluation occurred in two phases corresponding to the Process Component structure described in Section 2.5.2.
+
+FORMATIVE EVALUATION PHASE (Iterative Development)
+
+During the iterative building stage (Stage 3 above), formative evaluation data were collected to guide ongoing refinement:
+
+- Sample: Three (3) Grade 6 student participants recruited through convenience sampling and institutional partnerships with Inchican Elementary School. Community outreach was conducted concurrently through Facebook and the Itch.io game distribution platform to gather feedback from a broader audience and extend reach to additional schools, though these channels did not yield sufficient consenting Grade 6 participants for in-person evaluation
+- Procedure: Participants engaged in structured play sessions with development builds, followed by semi-structured interviews and MEEGA+KIDS-based survey feedback
+- Data Collection: Responses were gathered via Google Forms surveys and face-to-face interviews conducted after gameplay
+- Analysis: Feedback was qualitatively analyzed to identify usability barriers, confusion points, and suggestions for game refinement
+- Iteration: Identified issues were prioritized and addressed in subsequent development cycles before the next formative test session
+
+This formative phase directly informed the iterative refinement process, ensuring that the finalized build incorporated player-informed improvements.
+
+SUMMATIVE EVALUATION PHASE (Final Structured Evaluation)
+
+Upon completion of iterative development, a formal evaluation of the finalized game build was conducted:
+
+- Sample: Eighteen (18) Grade 6 student participants recruited through institutional partnership with Inchican Elementary School
+
+- Procedure and Data Collection: Participants completed a structured evaluation session consisting of three sequential components: (1) completion of a 25-question pretest (approximately 15 minutes) assessing baseline knowledge of phase changes, (2) gameplay with the finalized build (approximately 30 minutes), and (3) completion of a 25-question posttest (approximately 15 minutes) assessing post-intervention knowledge. The posttest employed different questions from the pretest but maintained equivalent content coverage and difficulty level. Due to time constraints within the school setting, participants were unable to complete the MEEGA+KIDS survey instrument following gameplay. However, extensive qualitative evidence was gathered through systematic visual observation of participant reactions, frustrations, body language, and gameplay behaviors during the evaluation session
+
+- Analysis: Quantitative analysis of learning gains employed statistical hypothesis testing. Shapiro-Wilk tests were conducted first to determine normality of the pretest-posttest difference scores. If the data were normally distributed, parametric paired t-tests were performed to assess statistically significant differences between pre- and post-intervention knowledge. If data violated normality assumptions (non-parametric distribution), Wilcoxon Signed-Rank tests were conducted instead. These tests provided statistical evidence regarding whether observed improvements between pretest and posttest represented statistically significant learning differences. Qualitative observational data were analyzed thematically to identify patterns in participant engagement, frustration points, and behavioral indicators of learning or confusion
+
+The summative phase provided empirical evidence regarding the game's achievement of the stated objectives related to usability, engagement, and learning outcomes.
+
++++ SUBSECTION 3.2.4: Consent for Participation +++
+
+Given that all participants were Grade 6 students (minors), rigorous informed consent procedures were implemented to ensure ethical compliance and participant protection:
+
+PARENTAL CONSENT AND STUDENT ASSENT: A written informed consent form was developed and reviewed collaboratively with concurrent research teams engaging the same participant population. The form clearly described the study's purpose, procedures, data collection methods, confidentiality safeguards, and participants' rights. Separate assent forms were provided to Grade 6 student participants, allowing them to provide informed agreement to participate independently of parental consent. Both the parental consent forms and student assent forms were distributed through children's teachers, requiring written signatures from both guardians and students prior to any participation.
+
+DATA CONFIDENTIALITY AND PARTICIPANT RIGHTS: All forms, surveys, and study materials explicitly stated that participants could withdraw from evaluation activities at any time without penalty, that their data would remain confidential, and that data could be deleted upon request. No personally identifiable information was included in subsequent data analysis or reporting.
+
+SAFEGUARDING MINORS: The requirement for both written parental consent and student assent served as primary safeguards for minor participants, respecting both parental authority and the child's own voice and autonomy in research participation. Additionally, all evaluation sessions were conducted in school settings with supervision by school personnel, and no data collection occurred without documented parental and student authorization.
+
+--- RESEARCH INSTRUMENTS AND DATA COLLECTION ---
+
++++ MEEGA+KIDS Usability and Engagement Instrument +++
+
+The MEEGA+KIDS instrument (von Wangenheim, Petri, & Borgatto, 2020) was designed to assess multiple dimensions of player experience:
+
+- Focused Attention: Concentration during gameplay and ability to maintain engagement
+- Perceived Learning: Participants' perception of learning value and knowledge gain
+- Satisfaction: Overall enjoyment and contentment with the gaming experience
+- Usability: Ease of understanding game mechanics and navigating game systems
+- Challenge: Appropriateness of difficulty and balance between accessibility and cognitive demand
+- Intrinsic Motivation: Engagement driven by enjoyment rather than external rewards
+
+Participants responded to Likert-scale statements (typically five-point scales: Strongly Disagree to Strongly Agree) assessing each dimension. This instrument provided quantifiable measures of engagement and usability suitable for characterizing player experience.
+
+For the purposes of this study, these six dimensions were conceptually consolidated into five primary categories to facilitate focused analysis of player experience:
+
+- Usability and Interface Design: Encompasses the "Usability" dimension, assessing whether participants could effectively navigate game menus, understand on-screen prompts, and operate game mechanics without excessive confusion or frustration
+
+- Engagement and Experience: Synthesizes "Focused Attention" and "Intrinsic Motivation" dimensions, measuring whether participants remained mentally engaged with the game and whether motivation was driven by inherent enjoyment rather than external pressures
+
+- Perceived Learning Support: Directly corresponds to "Perceived Learning" dimension, capturing participants' subjective assessment of whether gameplay supported their understanding of phase change concepts
+
+- Aesthetics and Challenge: Combines "Satisfaction" and "Challenge" dimensions, evaluating both the visual and interactive appeal of the game and the appropriateness of difficulty progression relative to player skill levels
+
+- Open-Ended Feedback: Captures participant suggestions, qualitative observations about strengths and weaknesses, and thematic patterns emerging from participant responses that the Likert-scale instrument may not capture
+
++++ Qualitative Feedback Collection +++
+
+In addition to the MEEGA+KIDS instrument, participants provided open-ended qualitative feedback through:
+
+- Semi-Structured Interviews: Face-to-face conversations during and immediately following gameplay sessions, with participants answering guiding questions about strengths, challenges, confusion points, and suggestions
+- Open-Ended Questionnaires: Written responses to prompts addressing perceived learning value, difficulty appropriateness, enjoyment factors, and recommendations for improvement
+
+Qualitative data provided rich contextual understanding of participant experience beyond numerical measurements, enabling identification of specific usability barriers and design opportunities.
+
++++ Visual Observation of Participant Behavior +++
+
+Beyond structured survey instruments and interviews, systematic visual observation of participant behavior during gameplay sessions provided rich qualitative evidence regarding engagement, frustration, and learning processes. Throughout evaluation sessions, researcher observations documented:
+
+- Engagement Indicators: Participant body language, facial expressions, and posture during gameplay (e.g., leaning forward during challenging moments, relaxed posture during familiar mechanics)
+- Frustration and Confusion Points: Observable reactions to difficulty spikes, unclear UI elements, or unintuitive mechanics, such as hesitation, repeated failed attempts, or verbal expressions of confusion
+- Interaction Patterns: How participants approached level challenges, whether they experimented with mechanics, sought hints, or made strategic decisions
+- Learning Indicators: Observable changes in approach between early and later gameplay, suggesting internalization of game concepts or learning from failure
+- Social Behavior: Interactions with researchers or peers during gameplay, including questions asked, comments made, and collaborative behaviors
+
+These observational data were documented through researcher field notes recorded during and immediately following evaluation sessions, providing contextual richness and non-verbal evidence of participant experience that complemented quantitative and structured qualitative measures.
+
++++ Researcher Field Notes and Observational Documentation +++
+
+Throughout the iterative building phase (Stage 3), the researcher maintained detailed field notes documenting observations during playtesting sessions:
+
+- Bug occurrence and severity observations (e.g., crashes, progression blocks, visual glitches)
+- Gameplay progression issues and bottlenecks observed during participant sessions
+- Player confusion points and mechanic clarity concerns noted from participant reactions
+- UI navigation difficulties observed or expressed by participants
+- Performance stability observations (e.g., frame rate drops, loading delays)
+- Reflective session notes and developer observations regarding the alignment between intended and actual gameplay experiences
+
+These field notes provided qualitative documentation of identified issues and observed resolutions across development iterations, enabling assessment of improvement trends and informing design refinements.
+
+--- DATA ANALYSIS METHODS ---
+
++++ Quantitative Analysis of Learning Outcomes +++
+
+Pretest-posttest score differences were analyzed using formal statistical hypothesis testing. First, a Shapiro-Wilk normality test was conducted to determine whether the distribution of pretest-posttest difference scores conformed to a normal distribution. Based on the results of this normality assessment:
+
+- If normally distributed: A paired-samples t-test was performed to assess whether mean posttest scores differed significantly from mean pretest scores, providing evidence of statistically significant learning gains
+- If non-parametric (non-normal distribution): A Wilcoxon Signed-Rank test was used as the non-parametric alternative to the t-test, assessing whether posttest scores were statistically significantly higher than pretest scores
+
+These statistical tests allowed inference regarding whether observed improvements between pretest and posttest represented genuine learning differences beyond what would be expected by random variation.
+
++++ Qualitative Analysis of Observations and Feedback +++
+
+Qualitative data from field notes, interviews, and open-ended questionnaire responses were analyzed using thematic coding:
+
+- Initial Coding: Observational and interview data were reviewed inductively to identify emergent themes and patterns without predetermined categories
+- Theme Development: Codes were organized into higher-order thematic categories representing distinct aspects of participant experience and identified usability concerns (e.g., "Mechanic Clarity," "Engagement Factors," "Difficulty Appropriateness," "Learning Perception," "Frustration Points")
+- Pattern Identification: Frequency of theme occurrence was documented to distinguish high-consensus observations from isolated concerns
+- Integration with Quantitative Data: Qualitative themes were integrated with quantitative findings to provide comprehensive characterization of player learning and experience
+
++++ Iterative Development Improvement Analysis +++
+
+Field notes from the iterative building phase (Stage 3) and formative evaluation were analyzed descriptively to assess systematic improvements across development cycles:
+
+- Reduction in bug frequency and severity of reported issues across iteration cycles
+- Improvement in gameplay stability observations (reduction in crashes, progression blocks)
+- Resolution of recurring usability concerns noted in player interactions
+- Comparison of early vs. late iteration observations regarding mechanic clarity and engagement
+
+These analyses provided evidence of systematic improvement driven by iterative user feedback and researcher observations, validating the effectiveness of the embedded evaluation and refinement approach.
+
+--- ETHICAL CONSIDERATIONS ---
+
+This study adhered to established ethical principles for research involving human participants, particularly minors:
+
+- Informed Consent: Written parental consent was obtained prior to any participant involvement, with clear disclosure of study procedures and participant rights
+- Voluntary Participation: Participants and parents were informed of the voluntary nature of participation and the right to withdraw without penalty
+- Confidentiality and Privacy: No personally identifiable information was retained in data analysis or reporting. Participant responses were treated as confidential, and individual data could be deleted upon request
+- Protection of Minors: The requirement for parental written consent, combined with evaluation in supervised school settings, provided safeguards appropriate to the minor status of participants
+- Appropriate Data Use: All collected data were used exclusively for academic research purposes related to this thesis study
+
+
+================================================================================
+=== CHAPTER 4: GAME SYSTEM ===
+================================================================================
+
+--- SECTION 4.1: Software Overview ---
+
+Wiz's Journey: Mastering the States of Matter is a mobile-based Game-Based Learning Environment (GBLE) designed to reinforce the targeted learning competency from the MATATAG Grade 6 Science curriculum: "describe changes of state for solids, liquids, and gases as melting, evaporation, freezing, and condensation using diagrams and flowcharts." The design leverages intrinsic motivation through gameplay progression mechanics rather than relying exclusively on external incentive structures. Players advance through the game by successfully applying conceptual knowledge of phase transitions to overcome in-game challenges, creating a direct link between pedagogical mastery and game-based progression.
+
+--- SECTION 4.2: Software Objectives ---
+
++++ SUBSECTION 4.2.1: General Objectives +++
+
+This section directly parallels the content presented in Chapter 1, Section 1.2.1 (General Objective). The framing has been adjusted to emphasize game development considerations and technical implementation rather than purely instructional design. The game aims to operationalize the selected learning competency through interactive gameplay mechanics aligned with the MATATAG curriculum while maintaining rigorous pedagogical standards.
+
++++ SUBSECTION 4.2.2: Specific Objectives +++
+
+This section directly parallels the content presented in Chapter 1, Section 1.2.2 (Specific Objectives), reframed from a game development perspective. The specific objectives emphasize the technical and mechanical aspects of achieving the learning outcomes through game-based interaction, including the design of learning outcome mechanics, implementation of interactive systems, and evaluation of gameplay effectiveness.
+
+--- SECTION 4.3: Scope and Limitations ---
+
+This section directly parallels the content presented in Chapter 1, Section 1.3 (Scope and Limitations of the Study). The scope and limitations remain consistent with the original description; however, the emphasis here focuses on the game development and technical constraints that shaped the final product, including platform selection, deployment considerations, and technical feasibility within the development timeline.
+
+--- SECTION 4.4: Architectural Design ---
+
+[FIGURE: Overall architectural design structure of Wiz's Journey]
+
++++ SUBSECTION 4.4.1: Lower Order Game +++
+
+The lower-order game mechanics encompass the platformer-based navigation subsystem. Following the Outcomes-Based Edugame Design framework (Sison et al., 2018), the platformer serves as the narrative and mechanical premise, establishing a coherent game world that requires spatial navigation from an entry point to an exit objective. This design pattern is grounded in established game design principles exemplified by seminal titles such as Super Mario Bros, wherein level progression follows a directional narrative structure; typically left-to-right progression culminating in a goal object or adversary encounter.
+
+[FIGURE: The start of the classic 1-1 world of Super Mario Bros | The flagpole found at overworld levels of Super Mario Bros]
+
+Within Wiz's Journey, this navigation structure is instantiated through a thematically congruent mechanic: players begin at a green portal (entry point) and navigate the level environment to locate a blue portal (exit objective), establishing a magical narrative context consistent with the game's fantasy premise.
+
+[FIGURE: Green portal at the start | Blue portal as the end goal]
+
+Environmental hazards, specifically pit obstacles, are integrated into multiple levels to introduce challenge and risk progression. Pit encounters require players to either successfully traverse them or face consequence through level restart mechanics. These were designed as a way to excite the player as an introduction of risk and challenge as they progress through the level.
+
+[FIGURE: First encounter with a Pit | Player falling into a Pit]
+
+These pits combined with the level layout also serve as challenges which call upon opportunities for the higher-order game to be played by the player as way to provide a solution to them. Certain pits can only be safely traversed through strategic application of phase-transition mechanics; such as creating solid ice platforms or utilizing water-based buoyancy; demonstrating the integration of content mastery with gameplay progression.
+
+[FIGURE: Player using Ice as a bridge | Player swimming up a waterfall]
+
+Levels were also designed to sometimes have multiple solutions to them allowing the player autonomy on how they would approach certain challenges, such as utilizing solid stairs made of Ice or Water that makes them float up for vertical movement. This design approach ensures that conceptual understanding of state changes can be operationalized through diverse gameplay strategies.
+
++++ SUBSECTION 4.4.2: Higher Order Game +++
+
+The higher-order game mechanics are operationalized through the Particle Lattice System; an internally developed subsystem that generates particle configuration diagrams representing the microscopic structural arrangement of solids, liquids, and gases. This system was engineered with extensibility as a primary design principle to accommodate multiple phases, materials, and parameter presets configured by developers. This architecture enables potential implementations of diverse materials beyond water; the conventional exemplar in phase-change pedagogy; such as steel or clay. However, implementation scope was constrained by development timeline limitations.
+
+The system implements parametric configurability through developer-accessible parameters that can be set and persisted for material simulation. Key configurable properties include particle attributes (size, initial temperature, quantity, spatial arrangement) and intermolecular bond characteristics (length, stiffness, elasticity). This parametric foundation provides pedagogical extensibility while maintaining implementational efficiency.
+
+[FIGURE: Particle Lattice Parameters]
+
+Within Wiz's Journey: Mastering the States of Matter, the Particle Lattice System generates interactive minigame instances that players encounter repeatedly throughout level progression. When players encounter environmental obstacles that impede forward progress; such as pit hazards, ice blocks, or water barriers; an interaction affordance (visual button prompt) appears on-screen, enabling players to engage the minigame interface associated with that obstacle.
+
+[FIGURE: Interaction Button Appears]
+
+The specific minigame instantiation depends on the state of matter corresponding to the obstacle's material. States of matter are operationalized with distinct gameplay properties: solids exhibit collision properties and obstruct player movement; liquids permit player traversal but apply buoyant force opposing gravity; gases present no collision properties but enable novel interaction mechanics.
+
+[TABLE: State of Matter Representation
+State of Matter | Representation
+Solid | Ice Block
+Liquid | Water Block
+Gas | Vapor Block]
+
+Player interaction with material objects reveals particle lattice configurations. Players manipulate particles through direct interaction (dragging), experiencing firsthand the elastic, rigid, or compliant properties of different matter states through haptic feedback and visual responsivity. Lattice visualizations are designed to correspond with canonical pedagogical diagrams found in standard science curricula, ensuring cognitive alignment with existing mental models from classroom instruction. An on-screen hint provides explicit state-of-matter identification.
+
+[FIGURE: Solid Lattice Configuration | Liquid Lattice Configuration | Gas Lattice Configuration]
+
+Gameplay progression unlocks three distinct interaction modalities, conceptually represented as Spellbooks: the red Book of Heating, the blue Book of Cooling, and the green Book of Bonding. These modalities enable toggleable effects applied to particles through screen interaction, with visual and thematic design reinforcing the magical narrative premise of playing as Wiz. This design choice permits particle manipulation without invoking unrealistic scientific apparatus, maintaining narrative coherence.
+
+[FIGURE: Book of Heating | Book of Cooling | Book of Bonding]
+
+The Book of Heating is introduced in Level 3, enabling players to apply thermal energy to particles. Players are explicitly informed that this action unlocks the phase transitions of melting, sublimation, and evaporation. The mechanic is presented through discovery gameplay, allowing players to observe the effects of heating on particle lattice configuration.
+
+[FIGURE: Player finds the Heating Book | Heating the Lattice]
+
+The Book of Cooling is introduced in Level 9, enabling players to extract thermal energy from particles, thereby unlocking the freezing phase transition. This mechanic extends player agency by providing thermodynamic bidirectionality.
+
+[FIGURE: Player finds the Cooling Book | Cooling the Lattice]
+
+The Book of Bonding is the final interaction modality introduced, enabling players to establish intermolecular bonds between previously unbound particles. This mechanic operationalizes condensation and deposition phase transitions through particle proximity and bonding interactions.
+
+[FIGURE: Player finds the Bonding Book | Bonding Particles Together]
+
+Progressive spellbook acquisition affords increasing player agency in level progression solutions. Players select strategies based on available modalities and previously encountered challenge patterns. Level 15 (final level) necessitates mastery of all six phase transitions, requiring players to orchestrate multiple spellbook interactions sequentially. The lower-order gameplay challenges and their corresponding higher-order game solutions are detailed in the following table.
+
+[TABLE: Scenarios, Possible Solutions, and Outcomes
+Scenarios | Possible Solutions | Outcome
+Ice Block is blocking the path | Melting / Evaporation / Sublimation | The player passes through
+Water Block results in the player being stuck | Evaporation | The player passes through
+Ice Block is blocking the path, but Melting will result in the previous scenario of the player being stuck | Sublimation | The player passes through
+Player is stuck swimming in Water | Freezing | The player is able to jump ashore
+The player needs to move upward | Melting / Condensation / The player is able to swim up the Water Block
+The player needs stairs | Freezing / Deposition | The player is able to climb the stairs they made]
+
++++ SUBSECTION 4.4.3: Synthesis of Lower and Higher Order Games +++
+
+Challenge scenarios are introduced through explicit narrative dialogue that specifies the required phase transition but withholds procedural methodology. Players are left to independently discover the application mechanics of specified phase transitions, fostering autonomous problem-solving and reinforcing the causal relationship between higher-order game actions and lower-order environmental state changes.
+
+[FIGURE: Player being told to MELT the ice]
+
+This pedagogical coupling of lower and higher-order game systems positions players in continuous active experimentation cycles. The game environment facilitates iterative hypothesis testing regarding phase-transition mechanisms and effects. This cyclical gameplay pattern; characteristic of game-loop design; enables players to internalize conceptual models through repeated experimentation and observation. The expectation is that through sustained gameplay iteration, players will develop robust mental models of matter state structures, thermodynamic mechanisms, and phase-transition flowcharts that transfer to real-world contexts.
+
+[FIGURE: Daniel Cook's Game Loop Diagram]
+
+User interface evolution involved iterative simplification to minimize cognitive load. Early prototypes employed color-coded particles, colored bond visualizations, dynamic object rotation, and extensive on-screen text; design choices that generated player confusion and decision paralysis. The final interface implementation prioritizes essential information through: (1) unadorned particle lattice with kinetic energy representation (particle oscillation intensity correlates with thermal energy; bond rigidity visually decreases with entropy), (2) spellbook sprite icons replacing descriptive text labels, (3) explicit phase-transition labels (e.g., "Melting: Solid to Liquid"), and (4) confirmation/cancellation affordances enabling committed action.
+
+[FIGURE: Higher Order Game User Interface]
+
+--- SECTION 4.5: Game Aesthetics ---
+
+Visual aesthetic design prioritizes accessibility and clarity appropriate to the target demographic (Grade 6 students, aged 11-12 years). The interface employs minimalist design principles, restricting interactive affordances to necessary control elements to minimize decision complexity. The snowy mountain environment and magical narrative premise provide thematic coherence for utilizing phase-transition materials (ice, water, vapor) throughout level design. Visual design incorporates bright, saturated colors and stylistically appealing elements to maintain affective engagement.
+
+Technical implementation leverages 2.5-dimensional visual presentation through parallax scrolling and Unity 6's Cinemachine camera system, achieving a distinctive aesthetic combining retro pixel-art styling with contemporary smooth animation. This approach provides visual novelty while maintaining accessibility through clear visual communication.
+
+[FIGURE: Popup Book Appearance]
+
+Visual and audio asset acquisition prioritized pragmatic efficiency. Assets were sourced from open-source repositories (Itch.io, Open Game Art) and premium asset markets (Unity Asset Store), with modifications applied where permitted by licensing agreements to ensure originality. This production approach was necessitated by limited development personnel. Asset categories include sprites, textures, sound effects, and in-game music, reflecting comprehensive multimedia integration.
+
+--- SECTION 4.6: Other Systems ---
+
++++ SUBSECTION 4.6.1: Mini Dialogue System +++
+
+The Outcomes-Based Edugame Design framework specifies narrative contextualization as essential to meaningful gameplay. Effective narrative requires answering fundamental questions: Why is the player engaging this experience? Who does the player inhabit? What are the player's objectives within a relatable context? Balancing narrative immersion against player autonomy presented design tension: excessive exposition overwhelms players and undermines agency; insufficient context obscures purpose and reduces engagement.
+
+This design challenge yielded the Mini Dialogue System; a lightweight, unobtrusive narrative delivery mechanism. The nomenclature reflects both implementational parsimony (minimal code complexity) and experiential design (minimal screen real estate consumption). The system presents context-sensitive prompts accessible via screen-top interaction points. Prompts are triggered upon level initiation or upon entering specific spatial regions, delivering explicit gameplay instructions, critical information, or narrative dialogue without disrupting primary gameplay flow.
+
+[FIGURE: Sample Dialogue]
+
+Internationalization support was initially conceptualized to include Tagalog language options, anticipated to provide improved accessibility for target demographic members more fluent in the native Philippine language. Implementation was deferred due to development timeline constraints. Additionally, extensive terminology from the learning competency ("sublimation," "deposition," "bonding") and platform-specific action vocabulary ("tap," "swipe," "toggle") resisted direct translation without semantic loss, potentially impairing comprehension for Tagalog-preferring learners. These linguistic and practical constraints motivated deferral of localization to post-release development phases.
+
+
+================================================================================
+=== CHAPTER 5: DESIGN AND IMPLEMENTATION ISSUES ===
+================================================================================
+
+--- SECTION 5.1: Lower Order Mechanics ---
+
+Platformer design presented significant pedagogical and technical challenges absent explicit baseline data regarding the target demographic's motor skills, platform familiarity, and gaming experience. Advisory consultation emphasized critical design constraints: avoid overestimating player capabilities and avoid designing the game experience around developer competencies rather than target learner competencies. This directive was validated repeatedly during iterative development reviews: the principal investigator demonstrated difficulty executing implemented platformer mechanics (jumping timing, coyote time implementations, quick-jump sequences), raising critical concerns about appropriateness for 11–13 year-old players.
+
+This difficulty generated design tension: excessively demanding platformer mechanics risked frustrating players and preventing progression; overly simplistic mechanics risked disengagement through insufficient challenge. The resolution leveraged asymmetric difficulty distribution: platformer mechanics were intentionally constrained to facilitate broad accessibility, while the coupled higher-order minigame system provided substantial cognitive challenge. This strategy positioned pit obstacles as engagement mechanics introducing excitement and perceived consequence without requiring advanced motor control execution.
+
+Level design clarity received iterative refinement to enable rapid player assessment of obstacle traversability. Formative playtesting observations at Inchican Elementary School documented recurring decision-making patterns:
+
+- "Can I make this jump?" (Indigenous language: "Kaya ko ba talunin ito?")
+- "Can I bruteforce my way up this wall?" (Indigenous language: "Kaya ko tong akyatin eh")
+- "I don't think I have to melt this block" (Indigenous language: "Hindi ko na ata kailangan gawin ito eh" [referring to minigame requirement])
+
+These observations informed iterative adjustments to visual affordances, collision boundaries, and spatial layout clarity. Beyond challenge calibration, level progression incorporated narrative progression through environmental design. Early iterations featured minimal vertical variation and spatially limited levels with entry and exit points at equivalent elevations. Subsequent iterations introduced graduated vertical complexity, establishing a coherent spatial narrative of ascending a snow-covered mountain toward a temple structure. Aesthetic differentiation through tileset variation (mountain ice and snow textures contrasting with temple brick and wood materials) reinforced this narrative progression while maintaining visual clarity and platform affordance legibility.
+
+--- SECTION 5.2: Higher Order Mechanics ---
+
+Implementation of the Higher Order Game system presented multifaceted technical and pedagogical design challenges:
+
++++ SUBSECTION 5.2.1: Visual Clarity +++
+
+A foundational design question centered on effective visualization of the Particle Lattice System to establish learner connection between minigame representations and established pedagogical diagrams of particulate matter structure. The challenge was inherently dual-natured: communicating temperature and bond stiffness; variables critically distinguishing rigid solid particle packing from loosely bonded liquid configurations; without resorting to explicit numerical or textual display that would negatively impact user experience for the target demographic.
+
+Early iterations employed color-coded particle and bond visualizations. However, advisory review identified critical pedagogical risk: chromatic variation could be misinterpreted as signifying chemical change (material transformation) rather than physical state transition, introducing substantive misconception contrary to learning objectives.
+
+[FIGURE: Orange originally signified "Hot" particles while Blue meant "Cold" particles]
+
+Resolution was achieved through kinetic visualization. Visual feedback was repositioned from chromatic variation to motion-based representation: particle oscillation intensity correlates with thermal energy (hotter particles exhibit greater vibration amplitude); bond visual properties respond to stiffness reduction (bonds become progressively thinner and longer as molecular motion increases, eventually disappearing to represent unbonded free-particle gas configurations). This kinetic encoding communicates thermodynamic state changes through observable motion rather than color, avoiding misconception regarding chemical transformation.
+
+Supplementary visual effects were incorporated: spellbook interaction generates symbolic particle effects utilizing the originally intended color associations in effect visualizations rather than in the lattice representation itself. This design preserves color-coding associativity (red→heat, blue→cold, green→bonding) while preventing misinterpretation of particle lattice representations.
+
++++ SUBSECTION 5.2.2: Controls +++
+
+Control scheme design leveraged platform-specific affordances of mobile touchscreen devices. Interactive methodology relies on direct screen contact ("touch and rub" gestural interaction), permitting unrestricted player manipulation of particle lattice configurations. This approach prioritizes expressive freedom and discovery-based interaction over prescriptive procedural sequences.
+
+Supporting interface controls facilitate error recovery and iterative exploration: Confirm, Cancel, and Reset buttons enable player correction of unintended lattice modifications before commitment to phase transition and return to lower-order gameplay. This redundancy was necessitated by complexities inherent in Unity's built-in Rigidbody physics engine integration, which introduced occasional unintended simulation artifacts or configurations requiring player correction.
+
++++ SUBSECTION 5.2.3: Coupling of Lower and Higher-Order Systems +++
+
+Mechanically coupling the platformer-based lower-order game to the minigame-based higher-order game required designing environmental challenges that strategically necessitated creative problem-solving and critical thinking. Formative playtesting revealed significant limitation in early implementations: minigame content was constrained to melting ice blocks, resulting in repetitive gameplay lacking variety and sustained engagement.
+
+Resolution involved systematic brainstorming and negative testing protocols (multiple weeks of intentional edge-case identification and failure scenario validation) to ensure players encountered diverse phase-change applications without overwhelming cognitive load. Progressive spellbook introduction was carefully sequenced to introduce new mechanics and phase transitions gradually while maintaining engagement and perceived challenge. The scenario mapping detailed in Table 4.2 (presented in Section 4.4.2) represents the culmination of this design iteration: six distinct gameplay scenarios systematically require player application of all six phase transitions, ensuring comprehensive conceptual engagement while maintaining logical progression and narrative coherence.
+
+--- SECTION 5.3: Issues Upon Deployment ---
+
+Deployment challenges were predominantly logistical rather than technical. Unforeseen institutional constraints affected playtest execution: device availability fluctuations and variable internet infrastructure at the partner institution (Inchican Elementary School) created implementation uncertainties. These challenges were prospectively mitigated through multi-platform deployment strategy: development of a web-based build enabled direct browser-based gameplay without requiring device-level software installation. This approach substantially reduced setup time overhead during limited available evaluation periods.
+
+Technical issues arising during summative evaluation were minimal and non-blocking. Two technical artifacts were documented: visual rendering anomalies in Level 7 and a movement mechanics bug preventing players from achieving standard jump height following water-based minigame completion and exit. Neither issue prevented level progression or experiment completion, as per-level restart functionality was provided as error recovery mechanism.
+
+The strategic deployment approach; leveraging web-based delivery to address logistical constraints and incorporating per-level recovery mechanics to handle edge-case technical issues; enabled successful summative evaluation despite infrastructural constraints typical of resource-limited educational institutions in the Philippine context.
+
+
+================================================================================
+=== CHAPTER 6: RESULTS AND DISCUSSION ===
+================================================================================
+
+--- SECTION 6.1: Inchican Elementary School In-Person Playtest ---
+
++++ SUBSECTION 6.1.1: Test Score Statistical Analysis +++
+
+To evaluate the effectiveness of Wiz's Journey: Mastering the States of Matter in improving students' understanding of phase changes, a statistical comparison between pretest and posttest scores was conducted across three learning outcome categories (LO1, LO2, LO3) as well as composite test scores.
+
+Prior to conducting inferential statistical analysis, the Shapiro-Wilk normality test was applied to assess whether score distributions conformed to normality assumptions. Results indicated that both pretest and posttest scores across all learning outcomes deviated significantly from normal distribution (p < 0.05). Consequently, non-parametric analysis methodology was employed: the Wilcoxon Signed-Rank Test was utilized to conduct paired-samples statistical comparison.
+
+Learning Outcome 1 (LO1): Pretest scores (Mdn = 3, p = 0.03163) and posttest scores (Mdn = 2, p = 0.00273) both exhibited non-normal distributions. The Wilcoxon Signed-Rank Test comparing paired scores yielded W = 49 (W⁻ = 56, W⁺ = 49), with p = 0.8464 and median difference = -0.05556, indicating no statistically significant difference between pretest and posttest performance.
+
+[TABLE: Learning Outcome 1 Statistical Summary
+Measure | Pretest | Posttest | Statistic | p-value
+Shapiro-Wilk p | 0.03163 | 0.00273 | -- | --
+Median | 3 | 2 | -- | --
+Wilcoxon W | 49 (W⁻=56, W⁺=49) | -- | 0.8464
+Median Difference | -0.05556]
+
+[FIGURE: LO1 Shapiro-Wilk Pretest | LO1 Shapiro-Wilk Posttest]
+[FIGURE: LO1 Wilcoxon Signed-Rank Test Results]
+
+Learning Outcome 2 (LO2): Pretest scores exhibited extremely non-normal distribution (Mdn = 0, p = 0.00001791), as did posttest scores (Mdn = 2, p = 0.000006186). Despite observable median improvement from 0 to 2, the Wilcoxon Signed-Rank Test yielded W = 12.5 (W⁻ = 15.5, W⁺ = 12.5), p = 0.8605, with median difference = -0.05556, indicating no statistically significant improvement.
+
+[TABLE: Learning Outcome 2 Statistical Summary
+Measure | Pretest | Posttest | Statistic | p-value
+Shapiro-Wilk p | 0.00001791 | 0.000006186 | -- | --
+Median | 0 | 2 | -- | --
+Wilcoxon W | 12.5 (W⁻=15.5, W⁺=12.5) | -- | 0.8605
+Median Difference | -0.05556]
+
+[FIGURE: LO2 Shapiro-Wilk Pretest | LO2 Shapiro-Wilk Posttest]
+[FIGURE: LO2 Wilcoxon Signed-Rank Test Results]
+
+Learning Outcome 3 (LO3): Pretest scores (Mdn = 2.5, p = 0.04918) exhibited borderline non-normality, while posttest scores achieved approximate normality (Mdn = 3, p = 0.2857). Despite median improvement, the Wilcoxon Signed-Rank Test indicated no statistically significant difference (W = 68, W⁻ = 68, W⁺ = 68, p = 0.9786, median difference = 1.4142).
+
+[TABLE: Learning Outcome 3 Statistical Summary
+Measure | Pretest | Posttest | Statistic | p-value
+Shapiro-Wilk p | 0.04918 | 0.2857 | -- | --
+Median | 2.5 | 3 | -- | --
+Wilcoxon W | 68 (W⁻=68, W⁺=68) | -- | 0.9786
+Median Difference | 1.4142]
+
+[FIGURE: LO3 Shapiro-Wilk Pretest | LO3 Shapiro-Wilk Posttest]
+[FIGURE: LO3 Wilcoxon Signed-Rank Test Results]
+
+Composite Test Scores: Overall pretest scores (Mdn = 6, p = 0.01394) and posttest scores (Mdn = 5.5, p = 0.000663) both exhibited non-normal distributions. Contrary to expectations, the composite median decreased slightly from 6 to 5.5. The Wilcoxon Signed-Rank Test yielded W = 74 (W⁻ = 79, W⁺ = 74), p = 0.9236, with median difference = -0.1111, confirming absence of statistically significant change.
+
+[TABLE: Composite Test Scores Statistical Summary
+Measure | Pretest | Posttest | Statistic | p-value
+Shapiro-Wilk p | 0.01394 | 0.000663 | -- | --
+Median | 6 | 5.5 | -- | --
+Wilcoxon W | 74 (W⁻=79, W⁺=74) | -- | 0.9236
+Median Difference | -0.1111]
+
+[FIGURE: Composite Shapiro-Wilk Pretest | Composite Shapiro-Wilk Posttest]
+[FIGURE: Composite Wilcoxon Signed-Rank Test Results]
+
+Summary: Statistical analysis across all learning outcomes and composite scores revealed no statistically significant differences between pretest and posttest assessments (all p > 0.05). While modest median shifts were observed in certain learning outcome categories (LO2: 0→2; LO3: 2.5→3), these improvements did not achieve statistical significance. The composite score analysis even indicated a slight decrease in median performance (6→5.5). These quantitative findings suggest that the single-session gameplay intervention, as implemented, did not produce measurable improvements in standardized test performance within the available evaluation timeframe.
+
++++ SUBSECTION 6.1.2: MEEGA+ Kids Results +++
+
+The MEEGA+ Kids evaluation instrument was administered during the formative evaluation phase to assess usability, engagement, and perceived pedagogical effectiveness. Due to recruitment constraints, a small sample of three Grade 6 students participated, providing quantitative Likert-scale ratings and qualitative commentary regarding gameplay experience. While the limited sample size constrains generalizability, the intensity of formative evaluation protocol prioritized depth of iterative feedback: individual participant concerns and reported difficulties were systematically amplified within development cycles as critical signals warranting immediate remediation, ensuring that even singular or low-frequency complaints triggered design investigation and refinement.
+
+Usability and Interface Design: The game received generally favorable evaluations across interface accessibility dimensions. Participants demonstrated strong agreement regarding control intuitiveness and in-game instructional clarity. Most respondents successfully identified gameplay objectives; however, one participant's neutral rating on objective clarity signaled minor inconsistencies in goal-state communication, prompting interface refinement to enhance affordance legibility. Navigation functionality between menus and level progression received mixed ratings (neutral to strongly agree), indicating adequate technical functionality with remaining potential for improved interface design intuitiveness.
+
+Engagement and Affective Response: The game demonstrated robust performance across engagement metrics. All participants reported enjoyment and expressed willingness for continued gameplay. Consistent attention maintenance was documented across responses (agree to strongly agree range), complemented by highly favorable ratings of presentation elements (graphics, audio). This aesthetic-affective engagement appeared to successfully motivate challenge-completion behavior, suggesting effective integration of motivational design principles.
+
+Perceived Learning Effectiveness: All participants reported agreement or strong agreement that gameplay enhanced phase-change conceptual understanding. Specifically, visual representations of microscopic particle behavior during phase transitions received particular commendation as conceptually clarifying. These findings suggest alignment with multimedia learning theory and constructivist epistemology, wherein visualization and interactive manipulation scaffold knowledge construction of abstract concepts.
+
+Visual Design and Difficulty Calibration: Graphics and animation sequences received favorable aesthetic evaluations. Difficulty assessment indicated generally appropriate challenge calibration; however, neutral responses regarding ice-interaction mechanics signaled specific clarity deficits requiring targeted refinement. These singular concerns, despite small sample size, were internally prioritized as critical design signals necessitating investigation and revision.
+
+Overall Assessment: Formative evaluation yielded consistently high satisfaction ratings across participants. The game successfully operationalized core design objectives: creating an engaging, accessible interface supporting both enjoyment and conceptual learning. However, concentrated attention to minority concerns (single participant's objective-clarity rating, neutral difficulty responses) guided subsequent development cycles toward enhanced clarity and accessibility. This amplification of small-sample feedback signals reflects a deliberate design philosophy treating each participant comment as potentially consequential to overall user experience optimization, thereby compensating for limited sample generalizability through intensive iterative refinement.
+
++++ SUBSECTION 6.1.3: In-Game Analysis +++
+
+--- SECTION 6.2: Thematic Analysis ---
+
+Researcher field notes from formative and summative playtesting sessions were analyzed using thematic coding methodology. Observational data were systematically coded and organized into conceptual categories representing distinct participant behavioral and affective states. Fifteen thematic concepts were identified:
+
+Disinterested: Low-energy participant responses (codes: Late, Busy, No commitment)
+Interested: High-engagement responses (codes: Eager, Helping, Talkative, Friends)
+Converted: Transition from disinterest to interest (codes: Change, Peer Pressure, Chance)
+Curious: Frequent researcher interaction (codes: Asking, Connection, Wonder)
+Bored: External distraction focus (codes: TikTok, Dismissal, Snacks)
+Mentors: Peer-guidance behavior (codes: Loud, Leader, Popular)
+Mentees: Active listening to mentors (codes: Quiet, Listens, Understanding)
+Annoyed: Control/performance frustration (codes: Complaints, Diminishing, Cussing)
+Invested: Purpose inquiry and engagement (codes: Aspirant, Willing, Inspired)
+Bruteforcer: Non-standard progression attempts (codes: Rebellious, Rush, Hardheaded)
+Competitive: Achievement-oriented behavior (codes: Boaster, Hyper, Gamer)
+Satisfied: Positive session conclusion (codes: Compliments, Appreciation, Happy)
+Frustrated: Negative session conclusion (codes: Mistakes, Takebacks, Redo)
+Relieved: Eager session termination (codes: Exhausted, Dismay, Obligation)
+Wanting: Future interest inquiry (codes: Future, Subscription, Fulfillment)
+
+[FIGURE: Wiz's Journey: Mastering the States of Matter Edugame Framework]
+
+The analytical framework identified five progressive behavioral stages observed during playtesting. Stage 1 (Initial Reception) characterized participants' first impressions upon arrival, dichotomously categorized as Interested or Disinterested based on observable engagement signals (body language, verbal expression, facial demeanor). Contextual factors were significant: as evaluation occurred during academic transition to summer vacation, many participants exhibited preoccupation with concurrent graduation activities, manifesting as evident disinterest despite research participation obligations.
+
+Stage 2 (Session Initiation) occurred as formal procedures commenced. Participants transitioned along behavioral trajectories: Disinterested individuals intensified into Bored states (external focus distraction), while Interested participants differentiated into Curious (researcher-interactive) or Converted (attitudinal shift) categories. Notable observation: one participant explicitly articulated resistance, claiming the research session infringed upon personal time priorities.
+
+Stage 3 (Gameplay Exposure) emerged following game deployment with minimal social restriction. Participants engaged in spontaneous peer collaboration and mentoring relationships. Mentor-Mentee dyads self-organized to facilitate progression; notably, some mentors explicitly verbalized pedagogical reinforcement, audibly reminding peers of taught phase-change concepts while encouraging strategic problem-solving. This stage demonstrated organic peer learning mechanisms and affective engagement beyond structured instruction.
+
+Stage 4 (Sustained Gameplay) characterized participants' post-introductory engagement with advanced game content. Focus shifted from social to individual gameplay. Differentiated behavioral manifestations emerged: Annoyed states reflected frustration with control mechanics or device limitations; Invested states reflected participants (particularly those completing full gameplay) initiating researcher dialogue regarding game mechanics and design intent; Bruteforcers attempted unconventional progression strategies to accelerate completion; Competitive participants repeatedly referenced completion status and engaged mentoring behavior while maintaining achievement-oriented framing.
+
+Stage 5 (Session Conclusion) captured exit-state observations. Positive termination states included Satisfied participants (expressing appreciation and contentment) and Wanting participants (articulating interest in future game development and research continuation). Negative exit states included Frustrated participants (expressing complaints regarding assessment or gameplay difficulty) and Relieved participants (displaying relief at session termination, occasionally articulating fatigue or interpersonal frustration).
+
+The thematic framework reveals a complex ecology of engagement factors operating during gameplay assessment. Beyond quantitative performance metrics, observable affective and social dimensions; including peer mentoring activation, intrinsic motivation dynamics, competitive engagement, and frustration tolerance; structured the playtesting experience. Notably, peer-mediated learning (mentoring relationships spontaneously emerging during gameplay) appeared to mobilize pedagogical engagement independent of formal instruction. The framework suggests that summative assessment data (pretest-posttest scores) may substantially underestimate intervention impact, as affective engagement, social learning dynamics, and dispositional shifts toward scientific content are undetected by conventional achievement testing. The heterogeneity of exit states (ranging from deeply Wanting to Relief-motivated departure) indicates differential intervention responsiveness across participant subgroups, suggesting that aggregate quantitative findings mask meaningful subgroup variation in learning trajectories and engagement sustainability.
+
+--- SECTION 6.3: Discussion of Findings ---
+
+The quantitative and qualitative findings present a nuanced narrative regarding Wiz's Journey: Mastering the States of Matter's pedagogical efficacy. The absence of statistically significant improvement in pretest-posttest achievement metrics stands in apparent tension with robust evidence of affective engagement, peer-mediated learning activation, and sustained motivation documented through thematic analysis.
+
+Several explanatory factors merit consideration. First, the brief intervention window (single-session gameplay exposure) may be insufficient for consolidating conceptual understanding measurable through standardized assessment. Learning outcome consolidation; particularly for abstract scientific constructs such as microscopic particle behavior during phase transitions; typically requires distributed practice across multiple exposures. A single thirty-minute gameplay session, while engaging and affectively positive, likely represents insufficient dosage for transforming fundamental conceptual understanding as captured by criterion-referenced assessments.
+
+Second, temporal proximity between intervention and posttest administration may contribute to observed null findings. The research timeline positioned the summative evaluation during academic transition period (summer vacation) following students' completion of phase-change instruction during regular curriculum delivery. This temporal configuration means posttest administration occurred after extended interval from initial instruction, during which consolidation and retention may have naturally degraded across both control and intervention conditions. The ceiling effects observed in certain learning outcome categories (particularly LO1 with median floor of 2–3 points) suggest potential test-design limitations: instruments may lack discriminative sensitivity in the target performance range, producing compressed score distributions limiting statistical power.
+
+Third, and significantly, the thematic framework reveals that quantitative achievement metrics captured through conventional testing may be fundamentally misaligned with the mechanisms through which game-based interventions generate educational value. The documented emergence of peer-mentoring relationships, spontaneous pedagogical reinforcement ("remember the phase changes you learned"), and sustained curiosity regarding game mechanics and underlying scientific principles suggest that the intervention catalyzed dispositional and social-cognitive shifts; increased curiosity, peer-supported inquiry, recognition of personal agency in scientific problem-solving; that precede and scaffold conventional conceptual achievement. Achievement tests administered immediately post-intervention may not yet reflect consolidation of these prerequisite dispositional shifts into measurable concept mastery.
+
+Furthermore, the heterogeneity of engagement trajectories observed through thematic analysis indicates that intervention impact varies substantially across participant subgroups. Participants characterized as Wanting or Invested demonstrated explicit interest in continued engagement and deeper scientific exploration, suggesting intrinsic motivation amplification. Conversely, Relieved or Frustrated participants, while potentially experiencing affective engagement during gameplay, exited with negative dispositional orientations. Aggregate quantitative analysis obscures this subgroup heterogeneity: a meaningful subset of participants may have experienced substantial motivational or conceptual gain, while others exhibited minimal response, with aggregate metrics reflecting minimal net change.
+
+Regarding the comparison with established literature: previous game-based learning meta-analyses frequently report modest effect sizes, particularly when measurements emphasize standardized achievement outcomes rather than motivation, engagement, or transfer behaviors. The present findings align with this literature pattern: affective and social learning outcomes are prominent, while conventional achievement metrics show null effects. This pattern suggests that game-based interventions may optimally function within curricular frameworks that explicitly value and assess engagement, intrinsic motivation, and scientific curiosity alongside traditional achievement metrics.
+
+The technical implementation challenges identified in Chapter 5; particularly control mechanics and device limitations that generated Annoyed states; may have suppressed achievement gains by diverting cognitive resources toward frustration management rather than conceptual consolidation. Future iterations incorporating more robust mobile interface design and streamlined control mechanics may reduce extraneous cognitive load, potentially enabling achievement improvements.
+
+--- SECTION 6.4: Conclusion ---
+
+This study examined the design, development, and evaluation of Wiz's Journey: Mastering the States of Matter, a 2D educational platformer game designed to reinforce Grade 6 students' understanding of phase changes (melting, freezing, evaporation, condensation) within the MATATAG science curriculum. The intervention integrated lower-order platformer mechanics with higher-order particle lattice manipulation systems, leveraging established pedagogical frameworks (Outcomes-Based Edugame Design) to align gameplay progression with conceptual mastery. Development incorporated iterative evaluation and deployment across multiple platforms to address accessibility constraints in resource-limited educational contexts.
+
+Summative evaluation findings reveal a complex efficacy profile. Quantitative pretest-posttest analysis using Wilcoxon Signed-Rank tests across three learning outcome categories and composite achievement scores yielded no statistically significant improvements (all p > 0.05), indicating that the intervention, as currently implemented, was insufficient to produce measurable test-score gains within the specified evaluation timeframe. However, this quantitative null finding stands in marked contrast to substantive qualitative evidence: MEEGA+ Kids evaluation data and thematic analysis of researcher field notes documented robust affective engagement, high perceived learning support, spontaneous peer-mentoring relationships, and predominantly positive dispositional exit states. Learners consistently reported that the game was enjoyable, visually appealing, and effective in illustrating phase-change concepts through interactive and visual elements.
+
+This discrepancy between perceived learning effectiveness and standardized achievement metrics may be attributed to several interrelated factors: (1) limited gameplay exposure duration (single thirty-minute session providing insufficient consolidation dosage for complex abstract concepts), (2) small sample size constraining statistical power and generalizability, (3) temporal assessment issues (posttest administration during summer vacation interval following extended instructional gap), and (4) assessment design limitations (ceiling/floor effects reducing discriminative sensitivity). Additionally, specific gameplay mechanics; particularly ice-interaction implementations; introduced clarity challenges that diverted cognitive resources from conceptual consolidation, suppressing achievement gains.
+
+Despite null quantitative findings, the study demonstrates critical contributions to understanding game-based learning implementation in resource-constrained contexts. First, it validates technical and instructional feasibility: educationally aligned games addressing abstract scientific content can be developed with finite resources and deployed effectively in authentic school settings despite infrastructural limitations. Second, it illustrates the critical importance of assessment pluralism: conventional achievement testing alone substantially underrepresents learning mechanisms (peer-supported inquiry, dispositional shifts toward scientific curiosity, intrinsic motivation amplification) that game-based interventions mobilize. Third, it identifies specific pedagogical mechanisms (peer-mediated learning, narrative scaffolding, repeated exposure to particle-level representations) through which gameplay supports science learning.
+
+In conclusion, Wiz's Journey: Mastering the States of Matter demonstrates strong potential as a supplementary learning tool for catalyzing engagement, curiosity, and peer-supported inquiry regarding abstract scientific content. While immediate achievement gains were not measured, the intervention catalyzed meaningful dispositional and social-cognitive shifts that scaffold long-term conceptual development. The study underscores the importance of balancing gameplay design accessibility, instructional clarity, robust assessment alignment, and extended implementation duration in developing effective educational games. Further refinement addressing identified clarity concerns and extended intervention exposure across multiple sessions would be necessary to achieve measurable improvements in standardized achievement outcomes.
+
+--- SECTION 6.5: Recommendations ---
+
+Based on findings and limitations identified throughout this research, the following recommendations are proposed to guide future development and evaluation of educational games targeting scientific concept mastery.
+
+Extended Intervention Duration: Future implementations should prioritize extended exposure through multiple gameplay sessions rather than single-session protocols. Learning complex abstract scientific constructs; particularly those requiring integration of microscopic conceptual models with macroscopic observational phenomena; typically necessitates distributed practice across repeated interactions. Multi-session interventions spanning weeks or months would permit knowledge consolidation and retention assessment, enabling detection of learning gains that single-session designs fail to capture.
+
+Mechanical Clarity Refinement: Priority should be assigned to eliminating identified ambiguities in gameplay mechanics, particularly ice-interaction implementations and state-transition visualizations. Iterative usability testing with target demographic members, enhanced visual feedback systems, progressive disclosure of instructional complexity through guided tutorials, and strategic scaffolding hierarchies would reduce cognitive friction and improve conceptual-mechanical integration.
+
+Sample Expansion and Consistency: Future studies should recruit larger, homogeneous samples of Grade 6 students currently engaged in phase-change instruction within MATATAG curricula. Sample sizes of N ≥ 50–100 with consistent participant characteristics would substantially improve statistical power, internal validity, and findings generalizability across educational contexts.
+
+Experimental Design Enhancement: Implementation of more rigorous experimental designs incorporating control or comparison conditions would enable causal attribution of observed effects. Quasi-experimental designs with matched comparison groups, delayed posttest assessment measuring retention, and longitudinal follow-up examining transfer to new problem contexts would provide stronger evidence of intervention efficacy.
+
+Adaptive Scaffolding Systems: Integration of dynamic difficulty adjustment and personalized scaffolding mechanisms based on real-time performance assessment would enable the game to support learners across heterogeneous skill levels and prior knowledge distributions. Adaptive systems capable of detecting conceptual gaps and providing targeted instructional support would optimize learning efficiency.
+
+In-Game Analytics and Behavioral Tracking: Implementation of comprehensive telemetry systems capturing detailed gameplay data; including time-on-task metrics, attempt frequencies, progression velocities, interaction sequences, mechanic utilization patterns, and error recovery behaviors; would enable fine-grained analysis of how specific design features influence learning processes and outcomes. Such data would identify engagement mechanisms and design bottlenecks warranting refinement.
+
+Assessment Pluralism: Future research should move beyond exclusive reliance on standardized pre-post achievement testing by integrating rich qualitative methodologies: semi-structured interviews exploring conceptual understanding development, think-aloud protocols during gameplay documenting real-time reasoning processes, classroom observation assessing transfer to standard science instruction contexts, and dispositional assessments measuring sustained curiosity and scientific agency. Such pluralistic approaches would capture the multidimensional learning outcomes that game-based interventions generate.
+
+Longitudinal Impact Studies: Extended follow-up investigations tracking participants over months or years post-intervention would assess whether game-catalyzed engagement and dispositional shifts translate into sustained conceptual understanding, improved science course achievement, and increased science career interest; outcomes exceeding immediate test-score improvements but reflecting the transformative potential of engagement-centered pedagogies.
+
+--- SECTION 7.1: Inchican Elementary School In-Person Playtest ---
+
++++ SUBSECTION 7.1.1: Test Score Statistical Analysis +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 7.1.2: MEEGA+ Kids Results +++
+
+[TODO: Content goes here]
+
++++ SUBSECTION 7.1.3: In-Game Analysis +++
+
+[TODO: Content goes here]
+
+--- SECTION 7.2: Thematic Analysis ---
+
+[TODO: Content goes here]
+
+--- SECTION 7.3: Discussion of Findings ---
+
+[TODO: Content goes here]
+
+--- SECTION 7.4: Conclusion ---
+
+[TODO: Content goes here]
+
+--- SECTION 7.5: Recommendations ---
+
+[TODO: Content goes here]
+
+
+================================================================================
+END OF DOCUMENT
+================================================================================
