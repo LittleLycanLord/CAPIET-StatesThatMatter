@@ -21,6 +21,8 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{soul}
 \usepackage[backend=biber,style=apa]{biblatex}
 
 % Bibliography
@@ -47,6 +49,12 @@
   {\normalfont\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}
   {\normalfont\bfseries}{\thesubsection}{1em}{}
+
+% Toggleable change highlighting (set to false to hide highlights)
+\newif\ifshowchanges
+\showchangestrue
+\sethlcolor{yellow}
+\newcommand{\chg}[1]{\ifshowchanges\hl{#1}\else#1\fi}
 
 \begin{document}
 
