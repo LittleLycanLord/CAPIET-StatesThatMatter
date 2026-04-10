@@ -1,13 +1,13 @@
 \chapter{DESIGN AND IMPLEMENTATION ISSUES}
 
 % ============================================================================
-% Section 5.1: Lower Order Mechanics
+% Section 5.1: Platformer Mechanics
 % ============================================================================
-\section{Lower Order Mechanics}
+\section{\texorpdfstring{\chg{Platformer Mechanics}}{Platformer Mechanics}}
 
 Platformer design presented significant pedagogical and technical challenges absent explicit baseline data regarding the target demographic's motor skills, platform familiarity, and gaming experience. Advisory consultation emphasized critical design constraints: avoid overestimating player capabilities and avoid designing the game experience around developer competencies rather than target learner competencies. This directive was validated repeatedly during iterative development reviews: the principal investigator demonstrated difficulty executing implemented platformer mechanics (jumping timing, coyote time implementations, quick-jump sequences), raising critical concerns about appropriateness for 11-13 year-old players.
 
-This difficulty generated design tension: excessively demanding platformer mechanics risked frustrating players and preventing progression; overly simplistic mechanics risked disengagement through insufficient challenge. The resolution leveraged asymmetric difficulty distribution: platformer mechanics were intentionally constrained to facilitate broad accessibility, while the coupled higher-order minigame system provided substantial cognitive challenge. This strategy positioned pit obstacles as engagement mechanics introducing excitement and perceived consequence without requiring advanced motor control execution.
+This difficulty generated design tension: excessively demanding platformer mechanics risked frustrating players and preventing progression; overly simplistic mechanics risked disengagement through insufficient challenge. The resolution leveraged asymmetric difficulty distribution: platformer mechanics were intentionally constrained to facilitate broad accessibility, while the coupled \chg{Particle Lattice Minigame} system provided substantial cognitive challenge. This strategy positioned pit obstacles as engagement mechanics introducing excitement and perceived consequence without requiring advanced motor control execution.
 
 Level design clarity received iterative refinement to enable rapid player assessment of obstacle traversability. Formative playtesting observations at Inchican Elementary School documented recurring decision-making patterns:
 
@@ -20,11 +20,11 @@ Level design clarity received iterative refinement to enable rapid player assess
 These observations informed iterative adjustments to visual affordances, collision boundaries, and spatial layout clarity. Beyond challenge calibration, level progression incorporated narrative progression through environmental design. Early iterations featured minimal vertical variation and spatially limited levels with entry and exit points at equivalent elevations. Subsequent iterations introduced graduated vertical complexity, establishing a coherent spatial narrative of ascending a snow-covered mountain toward a temple structure. Aesthetic differentiation through tileset variation (mountain ice and snow textures contrasting with temple brick and wood materials) reinforced this narrative progression while maintaining visual clarity and platform affordance legibility.
 
 % ============================================================================
-% Section 5.2: Higher Order Mechanics
+% Section 5.2: Particle Lattice Minigame Mechanics
 % ============================================================================
-\section{Higher Order Mechanics}
+\section{\texorpdfstring{\chg{Particle Lattice Minigame Mechanics}}{Particle Lattice Minigame Mechanics}}
 
-Implementation of the Higher Order Game system presented multifaceted technical and pedagogical design challenges:
+Implementation of the \chg{Particle Lattice Minigame} system presented multifaceted technical and pedagogical design challenges:
 
 % ============================================================================
 % Subsection 5.2.1: Visual Clarity
@@ -53,14 +53,14 @@ Supplementary visual effects were incorporated: spellbook interaction generates 
 
 Control scheme design leveraged platform-specific affordances of mobile touchscreen devices. Interactive methodology relies on direct screen contact (``touch and rub'' gestural interaction), permitting unrestricted player manipulation of particle lattice configurations. This approach prioritizes expressive freedom and discovery-based interaction over prescriptive procedural sequences.
 
-Supporting interface controls facilitate error recovery and iterative exploration: Confirm, Cancel, and Reset buttons enable player correction of unintended lattice modifications before commitment to phase transition and return to lower-order gameplay. This redundancy was necessitated by complexities inherent in Unity's built-in Rigidbody physics engine integration, which introduced occasional unintended simulation artifacts or configurations requiring player correction.
+Supporting interface controls facilitate error recovery and iterative exploration: Confirm, Cancel, and Reset buttons enable player correction of unintended lattice modifications before commitment to phase transition and return to \chg{platformer} gameplay. This redundancy was necessitated by complexities inherent in Unity's built-in Rigidbody physics engine integration, which introduced occasional unintended simulation artifacts or configurations requiring player correction.
 
 % ============================================================================
 % Subsection 5.2.3: Coupling
 % ============================================================================
-\subsection{Coupling of Lower and Higher-Order Systems}
+\subsection{\texorpdfstring{\chg{Coupling of Platformer and Particle Lattice Minigame Systems}}{Coupling of Platformer and Particle Lattice Minigame Systems}}
 
-Mechanically coupling the platformer-based lower-order game to the minigame-based higher-order game required designing environmental challenges that strategically necessitated creative problem-solving and critical thinking. Formative playtesting revealed significant limitation in early implementations: minigame content was constrained to melting ice blocks, resulting in repetitive gameplay lacking variety and sustained engagement.
+Mechanically coupling the \chg{platformer} to the \chg{Particle Lattice Minigame} required designing environmental challenges that strategically necessitated creative problem-solving and critical thinking. Formative playtesting revealed significant limitation in early implementations: minigame content was constrained to melting ice blocks, resulting in repetitive gameplay lacking variety and sustained engagement.
 
 Resolution involved systematic brainstorming and negative testing protocols (multiple weeks of intentional edge-case identification and failure scenario validation) to ensure players encountered diverse phase-change applications without overwhelming cognitive load. Progressive spellbook introduction was carefully sequenced to introduce new mechanics and phase transitions gradually while maintaining engagement and perceived challenge. The scenario mapping detailed in Table 4.2 (presented in Section 4.4.2) represents the culmination of this design iteration: six distinct gameplay scenarios systematically require player application of all six phase transitions, ensuring comprehensive conceptual engagement while maintaining logical progression and narrative coherence.
 

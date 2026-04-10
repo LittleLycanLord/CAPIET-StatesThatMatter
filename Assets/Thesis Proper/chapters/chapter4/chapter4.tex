@@ -46,11 +46,11 @@ This section directly parallels the content presented in Chapter 1, Section 1.3 
 \end{figure}
 
 % ============================================================================
-% Subsection 4.4.1: Lower Order Game
+% Subsection 4.4.1: Platformer
 % ============================================================================
-\subsection{Lower Order Game}
+\subsection{\texorpdfstring{\chg{Platformer}}{Platformer}}
 
-The lower-order game mechanics encompass the platformer-based navigation subsystem. Following the Outcomes-Based Edugame Design framework (Sison et al., 2018), the platformer serves as the narrative and mechanical premise, establishing a coherent game world that requires spatial navigation from an entry point to an exit objective. This design pattern is grounded in established game design principles exemplified by seminal titles such as \textit{Super Mario Bros}, wherein level progression follows a directional narrative structure---typically left-to-right progression culminating in a goal object or adversary encounter.
+The \chg{platformer} mechanics encompass the platformer-based navigation subsystem. Following the Outcomes-Based Edugame Design framework (Sison et al., 2018), the platformer serves as the narrative and mechanical premise, establishing a coherent game world that requires spatial navigation from an entry point to an exit objective. This design pattern is grounded in established game design principles exemplified by seminal titles such as \textit{Super Mario Bros}, wherein level progression follows a directional narrative structure---typically left-to-right progression culminating in a goal object or adversary encounter.
 
 \begin{figure}[H]
 \centering
@@ -113,7 +113,7 @@ Environmental hazards, specifically pit obstacles, are integrated into multiple 
 \label{fig:pit_mechanics}
 \end{figure}
 
-These pits combined with the level layout also serve as challenges which call upon opportunities for the higher-order game to be played by the player as a way to provide a solution to them. Certain pits can only be safely traversed through strategic application of phase-transition mechanics---such as creating solid ice platforms or utilizing water-based buoyancy---demonstrating the integration of content mastery with gameplay progression.
+These pits combined with the level layout also serve as challenges which call upon opportunities for the \chg{Particle Lattice Minigame} to be played by the player as a way to provide a solution to them. Certain pits can only be safely traversed through strategic application of phase-transition mechanics---such as creating solid ice platforms or utilizing water-based buoyancy---demonstrating the integration of content mastery with gameplay progression.
 
 \begin{figure}[H]
 \centering
@@ -137,11 +137,11 @@ These pits combined with the level layout also serve as challenges which call up
 Levels were also designed to sometimes have multiple solutions to them allowing the player autonomy on how they would approach certain challenges, such as utilizing solid stairs made of Ice or Water that makes them float up for vertical movement. This design approach ensures that conceptual understanding of state changes can be operationalized through diverse gameplay strategies.
 
 % ============================================================================
-% Subsection 4.4.2: Higher Order Game
+% Subsection 4.4.2: Particle Lattice Minigame
 % ============================================================================
-\subsection{Higher Order Game}
+\subsection{\texorpdfstring{\chg{Particle Lattice Minigame}}{Particle Lattice Minigame}}
 
-The higher-order game mechanics are operationalized through the Particle Lattice System---an internally developed subsystem that generates particle configuration diagrams representing the microscopic structural arrangement of solids, liquids, and gases. This system was engineered with extensibility as a primary design principle to accommodate multiple phases, materials, and parameter presets configured by developers. This architecture enables potential implementations of diverse materials beyond water---the conventional exemplar in phase-change pedagogy---such as steel or clay. However, implementation scope was constrained by development timeline limitations.
+The \chg{Particle Lattice Minigame} mechanics are operationalized through the Particle Lattice System---an internally developed subsystem that generates particle configuration diagrams representing the microscopic structural arrangement of solids, liquids, and gases. This system was engineered with extensibility as a primary design principle to accommodate multiple phases, materials, and parameter presets configured by developers. This architecture enables potential implementations of diverse materials beyond water---the conventional exemplar in phase-change pedagogy---such as steel or clay. However, implementation scope was constrained by development timeline limitations.
 
 The system implements parametric configurability through developer-accessible parameters that can be set and persisted for material simulation. Key configurable properties include particle attributes (size, initial temperature, quantity, spatial arrangement) and intermolecular bond characteristics (length, stiffness, elasticity). This parametric foundation provides pedagogical extensibility while maintaining implementational efficiency.
 
@@ -297,7 +297,7 @@ The Book of Bonding is the final interaction modality introduced, enabling playe
 \label{fig:bonding_mechanic}
 \end{figure}
 
-Progressive spellbook acquisition affords increasing player agency in level progression solutions. Players select strategies based on available modalities and previously encountered challenge patterns. Level 15 (final level) necessitates mastery of all six phase transitions, requiring players to orchestrate multiple spellbook interactions sequentially. The lower-order gameplay challenges and their corresponding higher-order game solutions are detailed in Table 4.2.
+Progressive spellbook acquisition affords increasing player agency in level progression solutions. Players select strategies based on available modalities and previously encountered challenge patterns. Level 15 (final level) necessitates mastery of all six phase transitions, requiring players to orchestrate multiple spellbook interactions sequentially. The \chg{platformer} gameplay challenges and their corresponding \chg{minigame} solutions are detailed in Table 4.2.
 
 \begin{table}[H]
 \centering
@@ -318,11 +318,11 @@ The player needs ``stairs'' & Freezing / Deposition & The player is able to clim
 \end{table}
 
 % ============================================================================
-% Subsection 4.4.3: Synthesis of Lower and Higher Order Games
+% Subsection 4.4.3: Synthesis of Platformer and Particle Lattice Minigame
 % ============================================================================
-\subsection{Synthesis of Lower and Higher Order Games}
+\subsection{\texorpdfstring{\chg{Synthesis of Platformer and Particle Lattice Minigame}}{Synthesis of Platformer and Particle Lattice Minigame}}
 
-Challenge scenarios are introduced through explicit narrative dialogue that specifies the required phase transition but withholds procedural methodology. Players are left to independently discover the application mechanics of specified phase transitions, fostering autonomous problem-solving and reinforcing the causal relationship between higher-order game actions and lower-order environmental state changes.
+Challenge scenarios are introduced through explicit narrative dialogue that specifies the required phase transition but withholds procedural methodology. Players are left to independently discover the application mechanics of specified phase transitions, fostering autonomous problem-solving and reinforcing the causal relationship between \chg{minigame interactions} and \chg{platformer} environmental state changes.
 
 \begin{figure}[H]
 \centering
@@ -331,7 +331,7 @@ Challenge scenarios are introduced through explicit narrative dialogue that spec
 \label{fig:explicit_instruction}
 \end{figure}
 
-This pedagogical coupling of lower and higher-order game systems positions players in continuous active experimentation cycles. The game environment facilitates iterative hypothesis testing regarding phase-transition mechanisms and effects. This cyclical gameplay pattern---characteristic of game-loop design (Cook, 2006)---enables players to internalize conceptual models through repeated experimentation and observation. The expectation is that through sustained gameplay iteration, players will develop robust mental models of matter state structures, thermodynamic mechanisms, and phase-transition flowcharts that transfer to real-world contexts.
+This pedagogical coupling of \chg{platformer} and \chg{minigame} systems positions players in continuous active experimentation cycles. The game environment facilitates iterative hypothesis testing regarding phase-transition mechanisms and effects. This cyclical gameplay pattern---characteristic of game-loop design (Cook, 2006)---enables players to internalize conceptual models through repeated experimentation and observation. The expectation is that through sustained gameplay iteration, players will develop robust mental models of matter state structures, thermodynamic mechanisms, and phase-transition flowcharts that transfer to real-world contexts.
 
 \begin{figure}[H]
 \centering
@@ -345,7 +345,7 @@ User interface evolution involved iterative simplification to minimize cognitive
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth]{CurrentUI.png}
-\caption{Higher Order Game User Interface}
+\caption{\texorpdfstring{\chg{Particle Lattice Minigame User Interface}}{Particle Lattice Minigame User Interface}}
 \label{fig:higher_order_ui}
 \end{figure}
 

@@ -17,17 +17,17 @@
 \contentsline {subsection}{\numberline {2.2.2}Misconceptions in Melting and Freezing Cycles}{8}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Remediation of Matter Misconceptions Through Knowledge Revision}{9}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Middle School Misconceptions About Matter Cycles and Conservation}{9}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Game-Based Learning}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Developmental Strategies of Edugames}{10}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.3}Game-Based Learning}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Developmental Strategies of Edugames}{9}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Effectiveness of games in education}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Game-Based Learning in the Philippines}{12}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Game-Based Learning in the Philippines}{11}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Theoretical Framework}{12}{section.2.4}%
 \contentsline {subsubsection}{Tier 1: Primary Theoretical Anchors}{12}{subsubsection*.5}%
 \contentsline {subsubsection}{Tier 2: Supporting Theories}{13}{subsubsection*.6}%
-\contentsline {subsubsection}{Tier 3: Operational Frameworks}{14}{subsubsection*.7}%
-\contentsline {section}{\numberline {2.5}Conceptual Framework}{15}{section.2.5}%
+\contentsline {subsubsection}{Tier 3: Operational Frameworks}{13}{subsubsection*.7}%
+\contentsline {section}{\numberline {2.5}Conceptual Framework}{14}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Input Component}{15}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Process Component}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Process Component}{15}{subsection.2.5.2}%
 \contentsline {subsubsection}{Iterative Development Phase (Internal Refinement)}{16}{subsubsection*.9}%
 \contentsline {subsubsection}{Final Evaluation Phase (Summative Assessment)}{16}{subsubsection*.10}%
 \contentsline {subsection}{\numberline {2.5.3}Output Component}{17}{subsection.2.5.3}%
@@ -65,37 +65,37 @@
 \contentsline {subsection}{\numberline {4.2.2}Specific Objectives}{30}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Scope and Limitations}{31}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Architectural Design}{32}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Lower Order Game}{32}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Higher Order Game}{34}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Synthesis of Lower and Higher Order Games}{40}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.1}\chg {Platformer}}{32}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}\chg {Particle Lattice Minigame}}{34}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}\chg {Synthesis of Platformer and Particle Lattice Minigame}}{40}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}Game Aesthetics}{42}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Other Systems}{43}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Mini Dialogue System}{43}{subsection.4.6.1}%
 \contentsline {chapter}{\numberline {5}DESIGN AND IMPLEMENTATION ISSUES}{45}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Lower Order Mechanics}{45}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Higher Order Mechanics}{46}{section.5.2}%
+\contentsline {section}{\numberline {5.1}\chg {Platformer Mechanics}}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}\chg {Particle Lattice Minigame Mechanics}}{46}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Visual Clarity}{46}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Controls}{47}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Coupling of Lower and Higher-Order Systems}{47}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.3}\chg {Coupling of Platformer and Particle Lattice Minigame Systems}}{47}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}Issues Upon Deployment}{48}{section.5.3}%
 \contentsline {chapter}{\numberline {6}RESULTS AND DISCUSSION}{49}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Inchican Elementary School In-Person Playtest}{49}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Test Score Statistical Analysis}{49}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}MEEGA+ Kids Results}{55}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}In-Game Analysis}{57}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Thematic Analysis}{57}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Discussion of Findings}{59}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Conclusion}{61}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Recommendations}{63}{section.6.5}%
-\contentsline {chapter}{REFERENCES}{65}{chapter*.51}%
-\contentsline {chapter}{APPENDICES}{67}{appendix*.52}%
-\contentsline {section}{Appendix A: Field Notes}{67}{section*.53}%
-\contentsline {section}{Appendix B: Pre-Test Exam}{74}{section*.53}%
-\contentsline {section}{Appendix C: Post-Test Exam}{77}{section*.53}%
-\contentsline {section}{Appendix D: Parental Consent Form}{80}{section*.53}%
-\contentsline {section}{Appendix E: Student Assent Form}{83}{section*.53}%
-\contentsline {section}{Appendix F: PT v0.1 Responses}{85}{section*.53}%
-\contentsline {section}{Appendix G: PT v0.2 Responses}{91}{section*.53}%
-\contentsline {section}{Appendix H: Summative PT - Google Forms}{107}{section*.53}%
-\contentsline {section}{Appendix I: Summative Playtest Data}{120}{section*.53}%
-\contentsline {section}{Appendix J: Facebook Page}{123}{section*.53}%
+\contentsline {subsection}{\numberline {6.1.2}Per-Item Analysis}{55}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}MEEGA+ Kids Results}{57}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}In-Game Analysis}{58}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Thematic Analysis}{58}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Discussion of Findings}{61}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Conclusion}{62}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Recommendations}{64}{section.6.5}%
+\contentsline {chapter}{APPENDICES}{66}{appendix*.51}%
+\contentsline {section}{Appendix A: Field Notes}{66}{section*.52}%
+\contentsline {section}{Appendix B: Pre-Test Exam}{73}{section*.52}%
+\contentsline {section}{Appendix C: Post-Test Exam}{76}{section*.52}%
+\contentsline {section}{Appendix D: Parental Consent Form}{79}{section*.52}%
+\contentsline {section}{Appendix E: Student Assent Form}{82}{section*.52}%
+\contentsline {section}{Appendix F: PT v0.1 Responses}{84}{section*.52}%
+\contentsline {section}{Appendix G: PT v0.2 Responses}{90}{section*.52}%
+\contentsline {section}{Appendix H: Summative PT - Google Forms}{106}{section*.52}%
+\contentsline {section}{Appendix I: Summative Playtest Data}{119}{section*.52}%
+\contentsline {section}{Appendix J: Facebook Page}{121}{section*.52}%

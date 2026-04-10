@@ -54,7 +54,7 @@
 \newif\ifshowchanges
 \showchangestrue
 \sethlcolor{yellow}
-\newcommand{\chg}[1]{\ifshowchanges\hl{#1}\else#1\fi}
+\DeclareRobustCommand{\chg}[1]{\ifshowchanges\hl{#1}\else#1\fi}
 
 \begin{document}
 
